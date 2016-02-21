@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.5.12)  21 FEB 2016 17:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.5.12)  21 FEB 2016 19:46
 entering extended mode
  %&-line parsing enabled.
 **tesis_de_licenciatura.tex
@@ -592,44 +592,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-<figuras/calidad_ai1.png, id=90, 349.305pt x 311.1625pt>
-File: figuras/calidad_ai1.png Graphic file (type png)
-
-<use figuras/calidad_ai1.png>
-<figuras/ai1_lci.png, id=91, 1237.62375pt x 773.89125pt>
+<figuras/ai1_lci.png, id=90, 1237.62375pt x 773.89125pt>
 File: figuras/ai1_lci.png Graphic file (type png)
 
 <use figuras/ai1_lci.png> [22]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/mapa_kegg.png, id=95, 497.86pt x 591.20876pt>
+<figuras/mapa_kegg.png, id=94, 497.86pt x 591.20876pt>
 File: figuras/mapa_kegg.png Graphic file (type png)
 
 <use figuras/mapa_kegg.png> [23]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/ejemplo_de_go.png, id=99, 682.55pt x 701.62125pt>
+<figuras/ejemplo_de_go.png, id=98, 682.55pt x 701.62125pt>
 File: figuras/ejemplo_de_go.png Graphic file (type png)
 
 <use figuras/ejemplo_de_go.png>
-<figuras/codigos_de_evidencia.png, id=100, 702.625pt x 702.625pt>
+<figuras/codigos_de_evidencia.png, id=99, 702.625pt x 702.625pt>
 File: figuras/codigos_de_evidencia.png Graphic file (type png)
 
-<use figuras/codigos_de_evidencia.png>) [24 <./figuras/calidad_ai1.png>]
-[25 <./figuras/ai1_lci.png>]
+<use figuras/codigos_de_evidencia.png>) [24 <./figuras/ai1_lci.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26]
+[25]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28 <./figuras/mapa_kegg.png>] [29 <./figuras/ejemplo_de_go.png>] [30 <./f
+[26] [27 <./figuras/mapa_kegg.png>] [28 <./figuras/ejemplo_de_go.png>] [29 <./f
 iguras/codigos_de_evidencia.png (PNG copy)>]
 \openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
 
@@ -641,7 +633,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
 
  []
 
-[31
+[30
 
 
 
@@ -650,38 +642,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[32] [33] <figuras/perfiles_sin_agrupar.png, id=141, 702.625pt x 702.625pt>
+[31] [32] <figuras/perfiles_sin_agrupar.png, id=136, 702.625pt x 702.625pt>
 File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
 
 <use figuras/perfiles_sin_agrupar.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/perfiles_anti_coregulados.png, id=142, 702.625pt x 702.625pt>
+<figuras/perfiles_anti_coregulados.png, id=137, 702.625pt x 702.625pt>
 File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_anti_coregulados.png>
-<figuras/perfiles_coregulados.png, id=143, 702.625pt x 702.625pt>
+<figuras/perfiles_coregulados.png, id=138, 702.625pt x 702.625pt>
 File: figuras/perfiles_coregulados.png Graphic file (type png)
 
-<use figuras/perfiles_coregulados.png> [34]
+<use figuras/perfiles_coregulados.png> [33]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35 <./figuras/perfiles_sin_agrupar.png (PNG copy)>] [36 <./figuras/perfiles_an
+[34 <./figuras/perfiles_sin_agrupar.png (PNG copy)>] [35 <./figuras/perfiles_an
 ti_coregulados.png (PNG copy)> <./figuras/perfiles_coregulados.png (PNG copy)>]
-[37
+[36
 
-] <figuras/dag.png, id=158, 454.69875pt x 313.17pt>
+] <figuras/dag.png, id=153, 454.69875pt x 313.17pt>
 File: figuras/dag.png Graphic file (type png)
  <use figuras/dag.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[38] [39 <./figuras/dag.png>]
+[37] [38 <./figuras/dag.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
@@ -692,15 +684,15 @@ Overfull \hbox (2.52522pt too wide) in paragraph at lines 171--173
 en-tos jer^^Sarquicos y agru-pamien-
  []
 
-[40] <figuras/ejemplo_k_means.png, id=169, 702.625pt x 401.5pt>
+[39] <figuras/ejemplo_k_means.png, id=164, 702.625pt x 401.5pt>
 File: figuras/ejemplo_k_means.png Graphic file (type png)
 
 <use figuras/ejemplo_k_means.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] [42 <./figuras/ejemplo_k_means.png (PNG copy)>] [43]
-<figuras/agrupamiento_jerarquico.png, id=180, 702.625pt x 702.625pt>
+[40] [41 <./figuras/ejemplo_k_means.png (PNG copy)>] [42]
+<figuras/agrupamiento_jerarquico.png, id=175, 702.625pt x 702.625pt>
 File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 
 <use figuras/agrupamiento_jerarquico.png>
@@ -712,58 +704,58 @@ Overfull \hbox (17.12924pt too wide) in paragraph at lines 248--248
 []\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pamien-to jer^^Sarquico 
  []
 
-<figuras/corte_arbol_estatico.png, id=181, 702.625pt x 702.625pt>
+<figuras/corte_arbol_estatico.png, id=176, 702.625pt x 702.625pt>
 File: figuras/corte_arbol_estatico.png Graphic file (type png)
 
-<use figuras/corte_arbol_estatico.png> [44]
+<use figuras/corte_arbol_estatico.png> [43]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45 <./figuras/agrupamiento_jerarquico.png (PNG copy)>] [46 <./figuras/corte_ar
+[44 <./figuras/agrupamiento_jerarquico.png (PNG copy)>] [45 <./figuras/corte_ar
 bol_estatico.png (PNG copy)>]
 Overfull \hbox (1.51135pt too wide) in paragraph at lines 265--266
 []\OT1/cmr/m/n/12 Los ob-je-tos que est^^San muy lejos del grupo son ex-clu-i-d
 os del grupo aunque pertenez-
  []
 
-<figuras/cut_tree_dynamic_ejemplo.png, id=192, 969.6225pt x 413.545pt>
+<figuras/cut_tree_dynamic_ejemplo.png, id=187, 969.6225pt x 413.545pt>
 File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
 
 <use figuras/cut_tree_dynamic_ejemplo.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47]
-<figuras/ejemplo_k_means_ward_single.png, id=196, 916.42375pt x 627.34375pt>
+[46]
+<figuras/ejemplo_k_means_ward_single.png, id=191, 916.42375pt x 627.34375pt>
 File: figuras/ejemplo_k_means_ward_single.png Graphic file (type png)
 
-<use figuras/ejemplo_k_means_ward_single.png> [48 <./figuras/cut_tree_dynamic_e
+<use figuras/ejemplo_k_means_ward_single.png> [47 <./figuras/cut_tree_dynamic_e
 jemplo.png>]
-<figuras/ejemplo_k_means_ward_single_2.png, id=202, 914.41624pt x 473.77pt>
+<figuras/ejemplo_k_means_ward_single_2.png, id=196, 914.41624pt x 473.77pt>
 File: figuras/ejemplo_k_means_ward_single_2.png Graphic file (type png)
 
 <use figuras/ejemplo_k_means_ward_single_2.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [49 <./figuras/ejemplo_k_means_ward_single.png>] [50 <./figuras/ejemplo_k_mea
+) [48 <./figuras/ejemplo_k_means_ward_single.png>] [49 <./figuras/ejemplo_k_mea
 ns_ward_single_2.png>]
 \openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
 
  (./cap_4_analisis_de_datos_transcripcionales.tex
 Cap\'{\i }tulo 4.
-[51
+[50
 
 
 
-]) [52]
+]) [51]
 Cap\'{\i }tulo 5.
-[53
+[52
 
 
 ]
 Cap\'{\i }tulo 6.
-[54
+[53
 
 ] (./tesis_de_licenciatura.bbl
 Overfull \hbox (52.58104pt too wide) in paragraph at lines 35--40
@@ -783,7 +775,7 @@ Overfull \hbox (40.78813pt too wide) in paragraph at lines 48--53
 nExpress.jsp\OT1/cmr/m/n/12 . 
  []
 
-[55
+[54
 
 
 ]
@@ -792,19 +784,19 @@ Overfull \hbox (15.53102pt too wide) in paragraph at lines 129--136
 le/pii/S0378437198004944 
  []
 
-[56] [57]) [58] (./tesis_de_licenciatura.aux
+[55] [56]) [57] (./tesis_de_licenciatura.aux
 (./cap_0_motivaciones_y_objetivos.aux) (./cap_1_introduccion.aux)
 (./cap_2_materiales_y_metodos.aux)
 (./cap_3_metodos_de_agrupamiento_de_datos.aux)
 (./cap_4_analisis_de_datos_transcripcionales.aux)) ) 
 Here is how much of TeX's memory you used:
- 3356 strings out of 495061
- 44152 string characters out of 1182621
- 126418 words of memory out of 3000000
- 6444 multiletter control sequences out of 15000+50000
+ 3350 strings out of 495061
+ 44009 string characters out of 1182621
+ 123407 words of memory out of 3000000
+ 6439 multiletter control sequences out of 15000+50000
  11669 words of font info for 42 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,7n,27p,1465b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,7n,27p,1465b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/f
 onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
@@ -818,9 +810,9 @@ s/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis_de_licenciatura.pdf (59 pages, 3010288 bytes).
+Output written on tesis_de_licenciatura.pdf (58 pages, 2989539 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
+ 279 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

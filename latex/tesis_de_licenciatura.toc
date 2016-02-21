@@ -7,43 +7,43 @@
 \contentsline {section}{\numberline {2.2}Conjunto de datos Wiegel}{21}
 \contentsline {section}{\numberline {2.3}PIN - Redes de interacci\IeC {\'o}n de prote\IeC {\'\i }nas}{22}
 \contentsline {subsection}{\numberline {2.3.1}PIN AI1 y LCI binaria}{23}
-\contentsline {section}{\numberline {2.4}KEGG - V\IeC {\'\i }as metab\IeC {\'o}licas}{24}
+\contentsline {section}{\numberline {2.4}KEGG - V\IeC {\'\i }as metab\IeC {\'o}licas}{23}
 \contentsline {section}{\numberline {2.5}GO - Ontolog\IeC {\'\i }a gen\IeC {\'e}tica}{25}
-\contentsline {chapter}{\numberline {3}M\IeC {\'e}todos de agrupamiento de datos}{31}
-\contentsline {section}{\numberline {3.1}Similaridad, distancia y disimilaridad}{32}
-\contentsline {subsection}{\numberline {3.1.1}Medidas de distancia}{33}
-\contentsline {subsubsection}{Distancia euclidiana}{33}
-\contentsline {subsubsection}{Distancia Manhattan o Taxicab}{33}
-\contentsline {subsubsection}{Distancia m\IeC {\'a}xima}{34}
-\contentsline {subsubsection}{Distancia de Minkowsky}{34}
-\contentsline {subsubsection}{Coeficiente de correlaci\IeC {\'o}n de Pearson}{34}
-\contentsline {subsection}{\numberline {3.1.2}Similaridad sem\IeC {\'a}ntica}{37}
-\contentsline {subsubsection}{Comparaci\IeC {\'o}n de t\IeC {\'e}rminos en GO}{37}
-\contentsline {section}{\numberline {3.2}Estrategias de agrupamiento}{40}
-\contentsline {section}{\numberline {3.3}Agrupamientos no jer\IeC {\'a}rquicos}{40}
-\contentsline {subsection}{\numberline {3.3.1}K-means}{41}
-\contentsline {subsection}{\numberline {3.3.2}PAM}{41}
-\contentsline {section}{\numberline {3.4}Agrupamientos jer\IeC {\'a}rquicos}{42}
-\contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo de Ward}{43}
-\contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de enlace \IeC {\'u}nico (o single-link en ingl\IeC {\'e}s)}{43}
-\contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo de enlace completo (o complete-link en ingl\IeC {\'e}s)}{44}
-\contentsline {subsection}{\numberline {3.4.4}Representaci\IeC {\'o}n de un agrupamiento jer\IeC {\'a}rquico - dendrogramas}{44}
-\contentsline {section}{\numberline {3.5}Detectando grupos en el agrupamiento jer\IeC {\'a}rquico}{44}
-\contentsline {subsection}{\numberline {3.5.1}Corte de \IeC {\'a}rbol est\IeC {\'a}tico}{44}
-\contentsline {subsection}{\numberline {3.5.2}Corte de \IeC {\'a}rbol din\IeC {\'a}mico h\IeC {\'\i }brido}{46}
-\contentsline {section}{\numberline {3.6}Infomap y CNM}{48}
-\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de dataset transcripcional Wiegel}{51}
-\contentsline {section}{\numberline {4.1}Descripci\IeC {\'o}n del dataset}{51}
-\contentsline {section}{\numberline {4.2}M\IeC {\'e}tricas transcripcionales}{51}
-\contentsline {section}{\numberline {4.3}Clustering}{51}
-\contentsline {subsection}{\numberline {4.3.1}Proceso de filtrado y estandarizaci\IeC {\'o}n de datos}{51}
-\contentsline {subsection}{\numberline {4.3.2}Clustering con k-means}{51}
-\contentsline {subsection}{\numberline {4.3.3}Clustering con dynamic tree cut}{51}
-\contentsline {subsection}{\numberline {4.3.4}An\IeC {\'a}lisis de los m\IeC {\'e}todos y problemas de escala de resoluci\IeC {\'o}n}{51}
-\contentsline {section}{\numberline {4.4}Coherencia entre la m\IeC {\'e}trica transcripcional y otros espacios de conocimiento}{51}
-\contentsline {subsection}{\numberline {4.4.1}Interacting densities}{52}
-\contentsline {subsection}{\numberline {4.4.2}Test de fisher}{52}
-\contentsline {subsection}{\numberline {4.4.3}KTA y zKTA}{52}
-\contentsline {chapter}{\numberline {5}Metricas mixtas}{53}
-\contentsline {section}{\numberline {5.1}KTA local}{53}
-\contentsline {chapter}{\numberline {6}conclusiones y perspectivas}{54}
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todos de agrupamiento de datos}{30}
+\contentsline {section}{\numberline {3.1}Similaridad, distancia y disimilaridad}{31}
+\contentsline {subsection}{\numberline {3.1.1}Medidas de distancia}{32}
+\contentsline {subsubsection}{Distancia euclidiana}{32}
+\contentsline {subsubsection}{Distancia Manhattan o Taxicab}{32}
+\contentsline {subsubsection}{Distancia m\IeC {\'a}xima}{33}
+\contentsline {subsubsection}{Distancia de Minkowsky}{33}
+\contentsline {subsubsection}{Coeficiente de correlaci\IeC {\'o}n de Pearson}{33}
+\contentsline {subsection}{\numberline {3.1.2}Similaridad sem\IeC {\'a}ntica}{36}
+\contentsline {subsubsection}{Comparaci\IeC {\'o}n de t\IeC {\'e}rminos en GO}{36}
+\contentsline {section}{\numberline {3.2}Estrategias de agrupamiento}{39}
+\contentsline {section}{\numberline {3.3}Agrupamientos no jer\IeC {\'a}rquicos}{39}
+\contentsline {subsection}{\numberline {3.3.1}K-means}{40}
+\contentsline {subsection}{\numberline {3.3.2}PAM}{40}
+\contentsline {section}{\numberline {3.4}Agrupamientos jer\IeC {\'a}rquicos}{41}
+\contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo de Ward}{42}
+\contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de enlace \IeC {\'u}nico (o single-link en ingl\IeC {\'e}s)}{42}
+\contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo de enlace completo (o complete-link en ingl\IeC {\'e}s)}{43}
+\contentsline {subsection}{\numberline {3.4.4}Representaci\IeC {\'o}n de un agrupamiento jer\IeC {\'a}rquico - dendrogramas}{43}
+\contentsline {section}{\numberline {3.5}Detectando grupos en el agrupamiento jer\IeC {\'a}rquico}{43}
+\contentsline {subsection}{\numberline {3.5.1}Corte de \IeC {\'a}rbol est\IeC {\'a}tico}{43}
+\contentsline {subsection}{\numberline {3.5.2}Corte de \IeC {\'a}rbol din\IeC {\'a}mico h\IeC {\'\i }brido}{45}
+\contentsline {section}{\numberline {3.6}Infomap y CNM}{47}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de dataset transcripcional Wiegel}{50}
+\contentsline {section}{\numberline {4.1}Descripci\IeC {\'o}n del dataset}{50}
+\contentsline {section}{\numberline {4.2}M\IeC {\'e}tricas transcripcionales}{50}
+\contentsline {section}{\numberline {4.3}Clustering}{50}
+\contentsline {subsection}{\numberline {4.3.1}Proceso de filtrado y estandarizaci\IeC {\'o}n de datos}{50}
+\contentsline {subsection}{\numberline {4.3.2}Clustering con k-means}{50}
+\contentsline {subsection}{\numberline {4.3.3}Clustering con dynamic tree cut}{50}
+\contentsline {subsection}{\numberline {4.3.4}An\IeC {\'a}lisis de los m\IeC {\'e}todos y problemas de escala de resoluci\IeC {\'o}n}{50}
+\contentsline {section}{\numberline {4.4}Coherencia entre la m\IeC {\'e}trica transcripcional y otros espacios de conocimiento}{50}
+\contentsline {subsection}{\numberline {4.4.1}Interacting densities}{51}
+\contentsline {subsection}{\numberline {4.4.2}Test de fisher}{51}
+\contentsline {subsection}{\numberline {4.4.3}KTA y zKTA}{51}
+\contentsline {chapter}{\numberline {5}Metricas mixtas}{52}
+\contentsline {section}{\numberline {5.1}KTA local}{52}
+\contentsline {chapter}{\numberline {6}conclusiones y perspectivas}{53}

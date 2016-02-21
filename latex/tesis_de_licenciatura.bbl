@@ -35,13 +35,28 @@
 \textsc{M.~Babu}.
 \newblock \emph{{An Introduction to Microarray Data Analysis}}.
 \newblock Computational Genomics: Theory and Application  (2004) 225.
-\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/chapter-final.pdf}
+\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/%
+chapter-final.pdf}
 
 \bibitem{Schulze2001}
 \textsc{A.~Schulze}.
 \newblock \emph{{Navigating gene expression using microarrays: a technology
   review.}}
 \newblock Nature cell biology \textbf{3} (2001) E190.
+
+\bibitem{AtGenExpress}
+\textsc{arabidopsis.org}.
+\newblock \emph{Microarray data from AtGenExpress}.
+\newblock
+  \url{https://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.%
+jsp}.
+
+\bibitem{Kilian2007}
+\textsc{J.~Kilian} \emph{et~al.}
+\newblock \emph{{The AtGenExpress global stress expression data set: Protocols,
+  evaluation and model data analysis of UV-B light, drought and cold stress
+  responses}}.
+\newblock Plant Journal \textbf{50} (2007) 347.
 
 \bibitem{Hahn2013}
 \textsc{Arabidopsis-Interactome-Mapping-Consortium}.
@@ -116,7 +131,8 @@
   of an ill-posed problem}}.
 \newblock Physica A: Statistical Mechanics and its Applications \textbf{263}
   (1999) 158.
-\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378437198004944}
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S03784%
+37198004944}
 
 \bibitem{Chen2009}
 \textsc{S.~Chen} \emph{et~al.}
@@ -139,6 +155,13 @@
   with application to socio-economic stratification}}.
 \newblock Journal of the Royal Statistical Society. Series C: Applied
   Statistics \textbf{62} (2013) 309.
+
+\bibitem{Eisen1998}
+\textsc{M.~Eisen}.
+\newblock \emph{{Cluster analysis and display of genome-wide expression
+  patterns}}.
+\newblock Proceedings of the National Academy of Sciences of the United States
+  of America \textbf{95} (1998) 14863.
 
 \bibitem{Lin1998}
 \textsc{D.~Lin}.

@@ -21,15 +21,31 @@ Estos tecnologías plantean entonces el problema de como analizar bastas cantida
 	\item Proveer evidencia de la función de proteínas cuyo rol en el organismo se desconoce
 \end{enumerate}
 En la actualidad, la aparición de tecnologías más rápidas y económicas de secuenciamiento, conocidas colectivamente como Next-generation sequencing (Secuenciamiento de próxima generación), están comenzando a dejar obsoleta la tecnología de micromatrices. Sin embargo, las mismas siguen siendo una herramienta útil en el estudio de los perfiles de expresión genética.\\
-En este trabajo, analizaremos el dataset Wiegel, datos obtenidos mediante esta tecnología.\\
-\hl{poner algo sobre Wiegel y si se uso single channel o doble channel}
-\cite{Babu2004}
-\cite{Schulze2001}
-\cite{Domany2003}
+En este trabajo, analizaremos el conjunto de datos Wiegel, datos obtenidos mediante esta tecnología.\cite{Babu2004,Schulze2001,Domany2003}
+\section{Conjunto de datos Wiegel}
+En el marco del proyecto AtGenExpress, (un esfuerzo multinacional desarrollado para descubrir el transcriptoma del organismo modelo multicelular Arabidopsis thaliana), el grupo \textit{Weigel \& Lohmann}, de Alemania, realizó en el año 2004 un exhaustivo estudio de expresión del transcriptoma de Arabidopsis thaliana utilizando las micromatrices de ADN Affymetrix ATH1, con el objetivo de comprender las complejas redes de genes que, se conjetura, controlan la tolerancia de la planta al estrés. Para ello, se sometió a plantas de Arabidopsis, de idéntico genotipo y de idénticas condiciones de crecimiento, a diversos tratamientos de estrés.\\
+Los tratamientos de estrés se realizaron de tal forma de excluir efectos circadianos (oscilaciones de las variables biológicas en intervalos regulares de tiempo asociadas con un cambio ambiental rítmico), tomando muestras o de la raiz (root) o del tallo (shoot) en dos réplicas biológicas cada 0 minutos, 30 minutos, 1 hora, 3 horas, 6 horas, 12 horas y 24 horas luego del comienzo del tratamiento. En algunos de los tratamientos, por ejemplo, de luz ultravioleta, las alteraciones transcripcionales producto del estrés son fueron tan rápidas que se tomaron además muestras a los 15 minutos del comienzo  del mismo. Las muestras de control se tomaron de plantas no sometidas a ningún tratamiento de estrés de la misma forma que con las plantas tratadas.\\
+Además de un tratamiento de control, se realizaron los siguientos tratamientos de estrés:
+\subsubsection*{Tratamiento de frío}
+Las cajas conteniendo las plantas fueron transferidas a hielo para un rápido enfriamiento y mantenidas a 4\degree C en un cuarto frío hasta la cosecha.
+\subsubsection*{Tratamiento de calor}
+Las cajas fueron transferidas a una incubadora y sometidas a una temperatura de 38\degree C durante 3 horas antes de la cosecha.
+\subsubsection*{Tratamiento osmótico y de sal}
+Se removieron las balsas de polipropileno que sostienen a las plantas y se agregaron a la solución acuosa, mannitol y NaCl en na concentración final de 300 mM y 150 mM respectivamente. Luego, se devolvieron las balsas a su lugar hasta la cosecha.
+\subsubsection*{Tratamiento de heridas}
+Se hirió a las plantas utilizando un elemento punzante consistente en 16 agujas, tres veces por hoja, dejando en promedio entre 3 y 4 agujeros.
+\subsubsection*{Tratamiento de sequía}
+Las plantas fueron expuestas a una corriente de aire durante 15 minuto, lapso durante el cual perdieron un 10\% de su peso. Luego, se las devolvió a la cámara de cultivo hasta la cosecha.
+\subsubsection*{Tratamiento con luz ultravioleta B}
+Se irradió a las plantas durante 15 minutos con luz ultravioleta B. Bajo estas condiciones se induce una respuesta de la planta tanto para daño por radiación de onda corta como para radiación ultravioleta.
+
+Además de estos tratamientos, se sometió de forma similar a tratamientos oxidativos, de genotoxicidad y de calor y recuperación.
+\hl{en el paper no figura la informacion de los tratamientos de genotoxic, oxidative y heat and recovery}
+\cite{AtGenExpress, Kilian2007}
 \section{PIN - Redes de interacción de proteínas}
 \label{sec:redes}
-Las redes son construcciones útiles para esquematizar la organización de las interacciones en distinto tipo de sistemas. Las redes son particularmente valiosas a la hora de caracterizar interacciones interdependientes, es decir, interacciones tales que una interacción entre los componentes A y B, afectan las interacciones entre los componentes B y C y así sucesivamente.\\
-La mayor parte de las funciones biológicas en una célula es llevada a cabo por proteínas a través de procesos de interacción entre ellas. Por lo tanto, es de fundamental importancia conocer no solo los niveles de expresión de una dada proteína, sino también, en simultaneo, las interacciones que lleva a cabo con otras proteínas. El registro en forma global de estas interacciones conforma lo que se denomina red de interacción de proteínas o PIN, y si la misma contempla la totalidad de las proteínas de una dada especie, la PIN correspondiente se conoce como interactoma completo.\\
+Las redes son construcciones útiles para esquematizar la organización de las interacciones en distinto tipo de sistemas. Las redes permiten tener una vision global de como estan organizadas dichas interacciones.\\
+La mayor parte de las funciones biológicas en una célula es llevada a cabo por proteínas a través de procesos de interacción fisica entre ellas, por ejemplo formando complejos proteicos. Por lo tanto, es de fundamental importancia conocer no solo los niveles de expresión de una dada proteína, sino también, en simultaneo, las interacciones que lleva a cabo con otras proteínas. El registro en forma global de estas interacciones conforma lo que se denomina red de interacción de proteínas o PIN, y si la misma contempla la totalidad de las proteínas de una dada especie, la PIN correspondiente se conoce como interactoma completo.\\
 \subsection{PIN AI1 y LCI binaria}
 A lo largo de esta tesis se analizaron dos redes de interacción de proteínas con el objetivo de utilizarlas como referencia.\\
 La primera, una red binaria de interacción de proteínas en todo el proteoma para la planta \textit{Arabidopsis thaliana} consistente en aproximadamente 5700 interacciones altamente confiables entre alrededor de 2700 proteínas, obtenida de \cite{Hahn2013}, material suplementario, tabla 4.\\

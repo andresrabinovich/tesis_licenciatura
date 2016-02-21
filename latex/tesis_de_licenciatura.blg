@@ -1,9 +1,10 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: tesis_de_licenciatura.aux
-A level-1 auxiliary file: cap_1_introduccion_y_motivaciones.aux
+A level-1 auxiliary file: cap_0_motivaciones_y_objetivos.aux
+A level-1 auxiliary file: cap_1_introduccion.aux
 A level-1 auxiliary file: cap_2_materiales_y_metodos.aux
 A level-1 auxiliary file: cap_3_metodos_de_agrupamiento_de_datos.aux
+A level-1 auxiliary file: cap_4_analisis_de_datos_transcripcionales.aux
 The style file: formato_bibliografia.bst
 Database file #1: bibliografia.bib
 Warning--empty journal in Domany2003
@@ -15,45 +16,45 @@ Warning--empty journal in Lee2004
 Warning--missing publisher in Kogan2006
 Warning--empty journal in Ibrahim2012
 Warning--empty journal in Langfelder2007
-You've used 38 entries,
+You've used 41 entries,
             2638 wiz_defined-function locations,
-            834 strings with 10726 characters,
-and the built_in function-call counts, 9853 in all, are:
-= -- 654
-> -- 207
+            854 strings with 11448 characters,
+and the built_in function-call counts, 10653 in all, are:
+= -- 707
+> -- 224
 < -- 2
-+ -- 98
-- -- 49
-* -- 549
-:= -- 1156
-add.period$ -- 105
-call.type$ -- 38
++ -- 106
+- -- 53
+* -- 590
+:= -- 1246
+add.period$ -- 114
+call.type$ -- 41
 change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 47
-duplicate$ -- 1037
-empty$ -- 1095
-format.name$ -- 60
-if$ -- 2230
+cite$ -- 50
+duplicate$ -- 1117
+empty$ -- 1187
+format.name$ -- 65
+if$ -- 2415
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 254
-newline$ -- 194
-num.names$ -- 38
-pop$ -- 381
+int.to.str$ -- 41
+missing$ -- 273
+newline$ -- 209
+num.names$ -- 41
+pop$ -- 410
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 270
+skip$ -- 298
 stack$ -- 0
-substring$ -- 238
-swap$ -- 623
+substring$ -- 264
+swap$ -- 673
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 62
-width$ -- 40
-write$ -- 374
+while$ -- 67
+width$ -- 43
+write$ -- 403
 (There were 9 warnings)

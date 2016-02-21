@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tesis_de_licenciatura.aux
+A level-1 auxiliary file: cap_1_introduccion_y_motivaciones.aux
+A level-1 auxiliary file: cap_2_materiales_y_metodos.aux
+A level-1 auxiliary file: cap_3_metodos_de_agrupamiento_de_datos.aux
+The style file: formato_bibliografia.bst
+Database file #1: bibliografia.bib
+Warning--empty journal in Domany2003
+Warning--missing publisher in Alberts2015
+Warning--empty journal in Berenstein2014
+Warning--missing publisher in Gan2007
+Warning--missing publisher in Kheng2010
+Warning--empty journal in Lee2004
+Warning--missing publisher in Kogan2006
+Warning--empty journal in Ibrahim2012
+Warning--empty journal in Langfelder2007
+You've used 38 entries,
+            2638 wiz_defined-function locations,
+            834 strings with 10726 characters,
+and the built_in function-call counts, 9853 in all, are:
+= -- 654
+> -- 207
+< -- 2
++ -- 98
+- -- 49
+* -- 549
+:= -- 1156
+add.period$ -- 105
+call.type$ -- 38
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 1037
+empty$ -- 1095
+format.name$ -- 60
+if$ -- 2230
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 254
+newline$ -- 194
+num.names$ -- 38
+pop$ -- 381
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 270
+stack$ -- 0
+substring$ -- 238
+swap$ -- 623
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 9
+while$ -- 62
+width$ -- 40
+write$ -- 374
+(There were 9 warnings)

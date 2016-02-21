@@ -1,0 +1,222 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem{functional_genomics_definition_nature}
+\textsc{Nature.com}.
+\newblock \emph{Functional genomics}.
+\newblock Accedido: 2016-01-13.
+\newline\urlprefix\url{http://www.nature.com/subjects/functional-genomics}
+
+\bibitem{functional_genomics_definition_wikipedia}
+\textsc{Wikipedia.org}.
+\newblock \emph{Functional genomics}.
+\newblock Accedido: 2016-01-13.
+\newline\urlprefix\url{https://en.wikipedia.org/wiki/Functional-genomics}
+
+\bibitem{Domany2003}
+\textsc{E.~Domany}.
+\newblock \emph{{Cluster Analysis of Gene Expression Data 1}} \textbf{110}
+  (2003) 1117.
+
+\bibitem{Alberts2015}
+\textsc{B.~Alberts}.
+\newblock \emph{{Molecular Biology of The Cell}}, volume~6 (2015).
+
+\bibitem{Bose2016}
+\textsc{B.~Bose}.
+\newblock \emph{{In Vitro Differention of Pluripotent Stem Cells into
+  Functional B Islets Under 2D and 3D Culture Conditions and In Vivo
+  Preclinical Validation of 3D Islets}}.
+\newblock Methods in Molecular Biology  (2016) 257.
+
+\bibitem{Babu2004}
+\textsc{M.~Babu}.
+\newblock \emph{{An Introduction to Microarray Data Analysis}}.
+\newblock Computational Genomics: Theory and Application  (2004) 225.
+\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/chapter-final.pdf}
+
+\bibitem{Schulze2001}
+\textsc{A.~Schulze}.
+\newblock \emph{{Navigating gene expression using microarrays: a technology
+  review.}}
+\newblock Nature cell biology \textbf{3} (2001) E190.
+
+\bibitem{Hahn2013}
+\textsc{Arabidopsis-Interactome-Mapping-Consortium}.
+\newblock \emph{{Evidence for Network Evolution in an Arabidopsis Interactome
+  Map}}.
+\newblock Annual review of plant biology \textbf{10} (2013) 161.
+
+\bibitem{Bruckner2009}
+\textsc{A.~Br{\"{u}}ckner} \emph{et~al.}
+\newblock \emph{{Yeast two-hybrid, a powerful tool for systems biology}}.
+\newblock International Journal of Molecular Sciences \textbf{10} (2009) 2763.
+
+\bibitem{Cusick2009}
+\textsc{M.~E. Cusick} \emph{et~al.}
+\newblock \emph{{NIH Public Access}}.
+\newblock Nature Methods \textbf{6} (2009) 39.
+
+\bibitem{Segal2003}
+\textsc{E.~Segal} \emph{et~al.}
+\newblock \emph{{Discovering molecular pathways from protein interaction and
+  gene expression data}}.
+\newblock Bioinformatics \textbf{19} (2003).
+
+\bibitem{Kanehisa2000}
+\textsc{M.~Kanehisa}.
+\newblock \emph{{Yeast Biochemical Pathways. KEGG: Kyoto encyclopedia of genes
+  and genomes}}.
+\newblock Nucleic Acids Res \textbf{28} (2000) 27.
+\newline\urlprefix\url{http://pathway.yeastgenome.org/biocyc/}
+
+\bibitem{Pandey2008}
+\textsc{J.~Pandey} \emph{et~al.}
+\newblock \emph{{Functional coherence in domain interaction networks}}.
+\newblock Bioinformatics \textbf{24} (2008) 28.
+
+\bibitem{Resnik1995}
+\textsc{P.~Resnik}.
+\newblock \emph{{Using Information Content to Evaluate Semantic Similarity in a
+  Taxonomy}}.
+\newblock roceedings of the 14th international joint conference on Artificial
+  intelligence - Volume 1 - IJCAI'95 \textbf{1} (1995) 6.
+\newline\urlprefix\url{http://arxiv.org/abs/cmp-lg/9511007}
+
+\bibitem{Pesquita2009}
+\textsc{C.~Pesquita} \emph{et~al.}
+\newblock \emph{{Semantic similarity in biomedical ontologies}}.
+\newblock PLoS Computational Biology \textbf{5} (2009).
+
+\bibitem{Berenstein2014}
+\textsc{A.~Berenstein}.
+\newblock \emph{{An{\'{a}}lisis de redes complejas en sistemas biomoleculares}}
+   (2014).
+
+\bibitem{Ashburner}
+\textsc{Ashburner}.
+\newblock \emph{{Gene ontology: tool for the unification of biology}}.
+\newblock Nat Genet \textbf{25} (2000).
+
+\bibitem{Gan2007}
+\textsc{G.~Gan} \emph{et~al.}
+\newblock \emph{{Data Clustering: Theory, Algorithms, and Applications}},
+  volume~20 (2007).
+
+\bibitem{Halkidi2001}
+\textsc{M.~Halkidi} \emph{et~al.}
+\newblock \emph{{On clustering validation techniques}}.
+\newblock Journal of Intelligent Information Systems \textbf{17} (2001) 107.
+
+\bibitem{Domany1999}
+\textsc{E.~Domany}.
+\newblock \emph{{Superparamagnetic clustering of data—the definitive solution
+  of an ill-posed problem}}.
+\newblock Physica A: Statistical Mechanics and its Applications \textbf{263}
+  (1999) 158.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378437198004944}
+
+\bibitem{Chen2009}
+\textsc{S.~Chen} \emph{et~al.}
+\newblock \emph{{On the similarity metric and the distance metric}}.
+\newblock Theoretical Computer Science \textbf{410} (2009) 2365.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/j.tcs.2009.02.023}
+
+\bibitem{Kheng2010}
+\textsc{L.~W. Kheng}.
+\newblock \emph{{Image Registration}} (2010).
+
+\bibitem{Dhaeseleer2005}
+\textsc{P.~D'haeseleer}.
+\newblock \emph{{How does gene expression clustering work?}}
+\newblock Nat Biotech \textbf{24} (2005).
+
+\bibitem{Hennig2013}
+\textsc{C.~Hennig}.
+\newblock \emph{{How to find an appropriate clustering for mixed-type variables
+  with application to socio-economic stratification}}.
+\newblock Journal of the Royal Statistical Society. Series C: Applied
+  Statistics \textbf{62} (2013) 309.
+
+\bibitem{Lin1998}
+\textsc{D.~Lin}.
+\newblock \emph{{An Information-Theoretic Definition of Similarity}}.
+\newblock In: Proc. of the 15th Internatio- nal Conference on Machine Learning
+  (1998) 296.
+
+\bibitem{Jiang1997}
+\textsc{J.~Jiang}.
+\newblock \emph{{Semantic Similarity Based on Corpus Statistics and Lexical
+  Taxonomy}}.
+\newblock Proceedings of International Conference Research on Computational
+  Linguistics  (1997) 19.
+
+\bibitem{Lee2004}
+\textsc{H.~K. Lee} \emph{et~al.}
+\newblock \emph{{Coexpression Analysis of Human Genes Across Many Microarray
+  Data Sets}}  (2004) 1085.
+
+\bibitem{Sevilla2005}
+\textsc{J.~Sevilla}.
+\newblock \emph{{Correlation between gene expression and go semantic
+  similarity}}.
+\newblock In: IEEE/ACMTransactions on Computational Biology and Bioinformatics
+  (2005).
+
+\bibitem{Lord2003}
+\textsc{P.~Lord}.
+\newblock \emph{Investigating semantic similarity measures across the Gene
+  Ontology: the relationship between sequence and annotation.}
+\newblock Bioinformatics  (2003).
+
+\bibitem{Kogan2006}
+\textsc{J.~Kogan}.
+\newblock \emph{{Introduction to Clustering Large and High-Dimensional Data}}
+  (2006).
+
+\bibitem{Hartigan1979}
+\textsc{J.~Hartigan}.
+\newblock \emph{{A K-Means Clustering Algorithm}}.
+\newblock Journal of the Royal Statistical Society \textbf{28} (1979) 100.
+
+\bibitem{Park2009}
+\textsc{H.~S. Park}.
+\newblock \emph{{A simple and fast algorithm for K-medoids clustering}}.
+\newblock Expert Systems with Applications \textbf{36} (2009) 3336.
+
+\bibitem{Ibrahim2012}
+\textsc{L.~Ibrahim}.
+\newblock \emph{{Using Modified Partitioning Around Medoids Clustering
+  Technique in Mobile Network Planning}} \textbf{9} (2012) 299.
+
+\bibitem{Johnson1967}
+\textsc{J.~Stephen}.
+\newblock \emph{{Hierarchical clustering schemes}}.
+\newblock Psychometrika  (1967).
+
+\bibitem{Shalizi2009}
+\textsc{C.~Shalizi}.
+\newblock \emph{{Distances between Clustering , Hierarchical Clustering}}.
+\newblock Data Mining  (2009) 36.
+
+\bibitem{Langfelder2008}
+\textsc{P.~Langfelder} \emph{et~al.}
+\newblock \emph{{Defining clusters from a hierarchical cluster tree: The
+  Dynamic Tree Cut package for R}}.
+\newblock Bioinformatics \textbf{24} (2008) 719.
+
+\bibitem{Langfelder2007}
+\textsc{P.~Langfelder} \emph{et~al.}
+\newblock \emph{{Dynamic Tree Cut : in-depth description , tests and
+  applications}}  (2007) 1.
+
+\bibitem{Rosvall2008}
+\textsc{M.~Rosvall}.
+\newblock \emph{{Maps of random walks on complex networks reveal community
+  structure.}}
+\newblock Proceedings of the National Academy of Sciences of the United States
+  of America \textbf{105} (2008) 1118.
+
+\end{thebibliography}

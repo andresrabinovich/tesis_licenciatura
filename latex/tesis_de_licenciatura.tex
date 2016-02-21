@@ -1,0 +1,52 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{color, soul}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{verbatim} %para comentarios multilinea
+\graphicspath{{figuras/}}
+\usepackage[left=3cm,right=3cm,bottom=3.5cm,top=3.5cm]{geometry}
+\usepackage{cite}
+
+\newcommand{\paginaenblanco}{\clearpage\mbox{}\newpage}
+
+\title{
+	{\large Análisis y detección de correlaciones en relevamientos transcripcionales de gran escala}\\
+    {Tesis de Licenciatura en Ciencias Físicas}\\
+	{\large Facultad de Ciencias Exactas y Naturales}\\
+	{\large Universidad de Buenos Aires}
+}
+\author{Andrés Rabinovich}
+\date{Marzo 2016}
+
+\begin{document}
+
+\maketitle
+\paginaenblanco
+\chapter*{Hoja a completar por los jurados}
+\paginaenblanco
+\chapter*{Resumen}
+\paginaenblanco
+\chapter*{Abstract}
+\paginaenblanco
+\chapter*{Dedicatoria}
+\paginaenblanco
+
+\tableofcontents
+
+\include{cap_0_motivaciones_y_objetivos}
+\include{cap_1_introduccion}
+\include{cap_2_materiales_y_metodos}
+\include{cap_3_metodos_de_agrupamiento_de_datos}
+\include{cap_4_analisis_de_datos_transcripcionales}
+\chapter{Metricas mixtas}
+\section{KTA local}
+\hl{caracterizacion de KTA local}
+
+\chapter{conclusiones y perspectivas}
+\clearpage
+\bibliographystyle{formato_bibliografia}
+\bibliography{bibliografia}
+\end{document}
+

@@ -68,16 +68,11 @@ La Enciclopedia de Genes y Genomas de Kyoto (KEGG, por sus siglas en inglés), e
     \caption{Mapa KEGG de la vía metabólica de Arabidopsis Thaliana  \textit{Synthesis and degradation of ketone bodies} \hl{comentar mas o cambiar el idioma del grafico}}
     \label{fig:mapa_kegg}
 \end{figure}
-La misma provee de una base de datos de vías metabólicas que contiene recursos para la representación de procesos celulares tales como el metabolismo, transducción de señales y ciclo celular. La figura \ref{fig:mapa_kegg} muestra un mapa KEGG de la vía metabólica de Arabidopsis Thaliana ``Synthesis and degradation of ketone bodies''. En la misma, se puede observar que apriori, la estructura de una via metabolica excede el lenguaje de redes. Las interacciones metabolicas suelen involucrar sutratos, productos y enzimas en relaciones que son dificil de capturar utilizando unicamente interacciones binarias. 
-
-\hl{poner el nombre del tipo que hizo el paquete graphite? o buscar un paper que hable sobre como mapear vias metabolicas en redes?}
-
-En nuestro trabajo utilizamos el abordaje de nombre_de_autor y colaboradores [cita] para mapear vias metabólicas en redes
-En este trabajo utilizamos la base de datos KEGG de vías metabólicas de la planta \textit{Arabidospsis thaliana} disponible a través del paquete ``graphite'' (GRAPH Interaction from pathway Topological Environment) del lenguaje de programación R.\\
-
-
+La misma provee de una base de datos de vías metabólicas que contiene recursos para la representación de procesos celulares tales como el metabolismo, transducción de señales y ciclo celular. La figura \ref{fig:mapa_kegg} muestra un mapa KEGG de la vía metabólica de Arabidopsis Thaliana ``Synthesis and degradation of ketone bodies''. En la misma, se puede observar que a priori, la estructura de una vis metabólica excede el lenguaje de redes. Las interacciones metabólicas suelen involucrar sustratos, productos y enzimas en relaciones que son difícil de capturar utilizando únicamente interacciones binarias. 
+\hl{poner el nombre del tipo que hizo el paquete graphite o buscar un paper que hable sobre como mapear vias metabolicas en redes?}
+En nuestro trabajo utilizamos el abordaje de nombredeautor y colaboradores [cita] para mapear vias metabólicas en redes En este trabajo utilizamos la base de datos KEGG de vías metabólicas de la planta \textit{Arabidospsis thaliana} disponible a través del paquete ``graphite'' (GRAPH Interaction from pathway Topological Environment) del lenguaje de programación R.\\
 Se conformó una red uniendo todas las vías metabólicas presentes en la base de datos y teniendo en cuenta solamente aquellos genes presentes en el conjunto de datos Weigel \hl{poner tamanio de la red, nodos y arcos}.
-\cite{Segal2003}\cite{Kanehisa2000}
+\cite{Segal2003, Kanehisa2000}
 \section{GO - Ontología genética}
 Poder comparar y clasificar entidades es un mecanismo fundamental de las ciencias biológicas. El advenimiento de tecnologías de alto rendimiento hace que sea necesario adoptar sistemas de representación del conocimiento que sean objetivos y estandarizados. Esto llevó al desarrollo de diversas ontologías para anotación de genes y de sus productos, y en particular, al desarrollo de la Ontología Génica (Gene ontology, GO por sus siglas en inglés).
 El proyecto de Ontología Génica (GO) es un consorcio que intenta mantener un vocabulario y una descripción consistente de conceptos biológicos a lo largo de distintas bases de datos. Esta ontología provee un vocabulario controlado de términos definidos para caracterizar las propiedades de productos génicos (proteínas y secuencias de ARN, por ejemplo).\\
@@ -86,7 +81,7 @@ Un termino de un proceso biológico (BP) describe una serie de eventos realizado
 Un término de componente celular (CC) describe un componente de una célula que es parte de un objeto mayor, como ser una estructura anatómica (por ejemplo, retículo endoplasmático rígido, núcleo, etc.) o un grupo de productos génicos (por ejemplo, ribosoma, proteasoma, etc.).\\
 Finalmente, los términos de función molecular (MF) describen las actividades que ocurren a nivel molecular, por ejemplo, ``actividad catalítica'' o ``actividad de transporte''.\\
 Cada una de estas tres ontologias está estructurada como un grafo acíclico dirigido (DAG por sus siglas en inglés).\\
-Cada nodo representa un término que describe alguna función. Los términos se unen entre si mediante relaciones del tipo ``es un'' o ``es parte de'', donde el primero expresa una relación de clase-subclase y el segundo una relación de parte-todo (figura \ref{fig:ejemplo_de_go}). Cuando un producto génico es descrito por un termino GO, se dice que el mismo está anotado en ese término, ya sea de forma directa o a través de herencia, ya que estar anotado en un término implica estar anotado en todos los términos ancestrales, regla conocida como \textit{regla del camino verdadero}.\\
+Cada nodo representa un término que describe alguna función. Los términos se unen entre si mediante relaciones direccionales del tipo ``es un'' o ``es parte de'', donde el primero expresa una relación de clase-subclase y el segundo una relación de parte-todo (figura \ref{fig:ejemplo_de_go}). Cuando un producto génico es descrito por un termino GO, se dice que el mismo está anotado en ese término, ya sea de forma directa o a través de herencia, ya que estar anotado en un término implica estar anotado en todos los términos ancestrales, regla conocida como \textit{regla del camino verdadero}.\\
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{ejemplo_de_go}
@@ -96,12 +91,41 @@ Cada nodo representa un término que describe alguna función. Los términos se 
 Formalmente, podemos describir estás relaciones de la ontología GO de la siguiente manera:\\
 Sea $C=\{c_i / 1\leq i \leq N\}$ un conjunto ordenado finito de conceptos que representan términos GO. Los mismos se relacionan entre si a través de las relaciones antes consignadas, de tal forma que $c_i \rightarrow c_j$ denota que $c_i$ es un/es parte de $c_j$. Basado en esto, es posible definir una relación binaria sobre $C$, denotada por $\preceq$, tal que $c_i \preceq c_j$, es decir $c_j$ es un ancestro de $c_i$ en la jerarquía GO. Notar entonces que si $c_k \preceq c_i$ y $c_i \preceq c_j \Rightarrow c_k \preceq c_j$ (regla del camino verdadero). En cada grafo existe un término raíz de la jerarquía $r$, tal que $c_i \preceq r \forall c_i \in C$.\\
 Los conceptos más generales se hallarán más próximos al término raíz, mientras que los más específicos e informativos se alejarán del mismo. La anotación de un gen o producto génico se realiza siempre al nodo mas especifico, pudiendo ser anotado además en varios conceptos biológicos a la vez.\\
-Una anotación en GO consiste en un término GO junto con una referencia que describe el tipo de trabajo o análisis que se realizó para asociar un gen con un término específico. Cada anotación debe además incluir un código de evidencia que indica la forma en que se justifica la anotación a un término particular, lo que le confiere un grado de fiabilidad.\\En particular, existen dos grupos de anotaciones, aquellas que fueron curadas manualmente y aquellas que fueron inferidas de anotaciones electrónicas (IEA). Este último tipo de anotaciones funcionales se realiza de forma automatizada sin que intermedie un curador e involucran comparaciones por similitud de secuencia o anotaciones transferidas de bases de datos y por lo tanto poseen una baja calidad y una gran cobertura, formando alrededor del 40\% de las anotaciones totales. Además, dentro del grupo de las anotaciones que fueron curadas manualmente, se tienen aquellas que fueron inferidas por medio de experimentos (IDA, IEP, IGI, IMP, IPI), aquellas que fueron inferidas por medio de análisis computacional (IBA, ISS, RCA, ISM). La figura \ref{fig:codigos_de_evidencia} muestra la fracción que representa cada tipo de anotación para cada ontología.
+Una anotación en GO para un dado producto génico consiste en un término GO junto con una referencia que describe el tipo de trabajo o análisis que se realizó para asociar un gen con un término específico. Cada anotación debe además incluir un código de evidencia que indica la forma en que se justifica la anotación a un término particular, lo que le confiere un grado de fiabilidad.\\En particular, existen dos grupos de anotaciones, aquellas que fueron curadas manualmente y aquellas que fueron inferidas de anotaciones electrónicas (IEA). Este último tipo de anotaciones funcionales se realiza de forma automatizada sin que intermedie un curador e involucran comparaciones por similitud de secuencia o anotaciones transferidas de bases de datos y por lo tanto poseen una baja calidad y una gran cobertura, formando alrededor del 40\% de las anotaciones totales. Además, dentro del grupo de las anotaciones que fueron curadas manualmente, se tienen aquellas que fueron inferidas por medio de experimentos (IDA, IEP, IGI, IMP, IPI), aquellas que fueron inferidas por medio de análisis computacional (IBA, ISS, RCA, ISM). La tabla \ref{tab:tipos_de_anotaciones} muestra una descripción de cada código de anotación.\\
+\begin{sidewaystable}
+\centering
+\begin{tabular}{| p{4cm} | p{1cm} | p{3cm} | p{8cm} |}
+\hline
+Anotación (inferida de)      & Siglas & Tipo & Descripción \\
+\hline
+Ensayo directo        & IDA & Experimental & Indica que se llevó a cabo un ensayo directo para determinar la función, proceso o componente indicado por el término GO. \\
+\hline
+Patrón de expresión   & IEP & Experimental & Cubre casos donde la anotación fue inferida por el tiempo o lugar de expresión de un gen. \\
+\hline
+Interacción genética  & IGI & Experimental & Incluye cualquier combinación de alteraciones en la secuencia (mutaciones) o la expresión de más de un gen/producto génico.\\
+\hline
+Fenotipo mutante      & IMP & Experimental & Cubre los casos donde la función, proceso o localización celular de un producto génico es inferido basado en diferencias en la función, proceso o localización celular entre dos alelos diferentes del gen correspondiente.\\
+\hline
+Interacción física    & IPI & Experimental & Cubre interacciones físicas entre la entidad de interés y otra molécula (como ser proteínas, iones o complejos).\\                                    
+\hline
+Aspecto biológico de un ancestro & IBA & Análisis comp. & Tipo de evidencia filogenética en donde un aspecto de un descendiente es inferido a través de la caracterización de un aspecto de un gen ancestral.\\                                             
+\hline
+Secuencia o similaridad estructural & ISS & Análisis comp. & Se utiliza cuando un análisis basado en secuencia forma la base de la anotación y la revisión de la misma se realiza de forma manual.\\                                             
+\hline
+Análisis computacional revisado & RCA & Análisis comp. & Se utiliza para anotaciones realizadas en base a predicciones de análisis computacional de conjuntos de datos de experimentos de gran escala.\\    
+\hline                                         
+Modelo de secuencia & ISM & Análisis comp. & Se utiliza cuando la evidencia de algún tipo de modelo estadístico es usada para realizar predicciones sobre un producto génico.\\                                             
+\hline
+\end{tabular}
+\caption{Códigos de evidencia GO}
+\label{tab:tipos_de_anotaciones}
+\end{sidewaystable}
+La figura \ref{fig:codigos_de_evidencia} muestra la fracción que representa cada tipo de anotación para cada ontología.\\
+Las cantidad total de anotaciones para BP, MF y CC, sin tener en cuenta aquellas pertenecientes a la categoría IEA, totalizan 2540816, 207087 y 1043851 anotaciones respectivamente.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{codigos_de_evidencia}
     \caption{Códigos de evidencia en cada una de las ontologías y la fracción del total que representan. \hl{comentar mas}}
     \label{fig:codigos_de_evidencia}
 \end{figure}
-Las cantidad total de anotaciones para BP, MF y CC, sin tener en cuenta aquellas pertenecientes a la categoría IEA, totalizan 2540816, 207087 y 1043851 anotaciones respectivamente.\\
-En particular, en este trabajo se tuvieron en cuenta únicamente las evidencias obtenidas experimentalmente. Para ello, se tomaron dos subconjuntos de anotaciones de la ontología BP, que llamaremos BPA, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 512235 anotaciones y BPB, consistente en las anotaciones IDA, IPI, IGI, IMP y IEP, con un total de 573688. Además, se utilizó un subconjunto de la ontología CC, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 693991 anotaciones.\cite{Pandey2008} \cite{Resnik1995} \cite{Bose2016} \cite{Pesquita2009} \cite{Berenstein2014} \cite{Ashburner}
+En particular, en este trabajo se tuvieron en cuenta únicamente las evidencias obtenidas experimentalmente. Para ello, se tomaron dos subconjuntos de anotaciones de la ontología BP, que llamaremos BPA, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 512235 anotaciones y BPB, consistente en las anotaciones IDA, IPI, IGI, IMP y IEP, con un total de 573688. Además, se utilizó un subconjunto de la ontología CC, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 693991 anotaciones. cite{Pandey2008, Resnik1995, Bose2016, Pesquita2009, Berenstein2014, Ashburner}

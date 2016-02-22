@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.5.12)  21 FEB 2016 19:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  22 FEB 2016 09:25
 entering extended mode
  %&-line parsing enabled.
 **tesis_de_licenciatura.tex
 (./tesis_de_licenciatura.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, spanish, galician, catalan, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size12.clo
@@ -252,12 +252,6 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-
-Package babel Warning: No hyphenation patterns were loaded for
-(babel)                the language `Spanish'
-(babel)                I will use the patterns loaded for \language=0 instead.
-
-\l@spanish = a dialect from \language0
 \es@datefmt=\count89
 \es@quottoks=\toks16
 \es@quotdepth=\count90
@@ -265,7 +259,8 @@ Package babel Info: Making " an active character on input line 492.
 Package babel Info: Making . an active character on input line 585.
 Package babel Info: Making < an active character on input line 630.
 Package babel Info: Making > an active character on input line 630.
-)) (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/etc/texmf/tex/latex/config/color.cfg
@@ -402,37 +397,66 @@ Package: cite 2009/08/29  v 5.2
 (/usr/share/texmf-texlive/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(./tesis_de_licenciatura.aux (./cap_0_motivaciones_y_objetivos.aux)
-(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
-(./cap_3_metodos_de_agrupamiento_de_datos.aux)
-(./cap_4_analisis_de_datos_transcripcionales.aux))
+(/usr/share/texmf-texlive/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count107
+\rotFPtop=\skip47
+\rotFPbot=\skip48
+\rot@float@box=\box28
+\rot@mess@toks=\toks31
+)
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
+)
+\c@ContinuedFloat=\count108
+Package caption Info: rotating package is loaded.
+)
+(/usr/share/texmf-texlive/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count109
+\c@subtable=\count110
+)
+(./tesis_de_licenciatura.aux (./cap_3_metodos_de_agrupamiento_de_datos.aux))
 \openout1 = `tesis_de_licenciatura.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen122
-\scratchbox=\box28
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen123
-\MPnumerator=\count111
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count111
+\scratchdimen=\dimen128
+\scratchbox=\box29
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen129
+\MPnumerator=\count115
+\everyMPtoPDFconversion=\toks33
 )
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -475,17 +499,19 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-LaTeX Info: Redefining \celsius on input line 24.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 24.
+LaTeX Info: Redefining \celsius on input line 27.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 27.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 24.
-Package gensymb Info: Using \Omega for \ohm on input line 24.
+LaTeX Info: Redefining \ohm on input line 27.
+Package gensymb Info: Using \Omega for \ohm on input line 27.
 
 Package gensymb Warning: Not defining \micro.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1
@@ -507,192 +533,67 @@ Package gensymb Warning: Not defining \micro.
 
 ] [9
 
-] (./tesis_de_licenciatura.toc [10
-
-]
-Overfull \hbox (6.63774pt too wide) in paragraph at lines 43--43
- [][] []\OT1/cmr/m/n/12 Coherencia en-tre la m^^Setri-ca tran-scrip-cional y ot
-ros es-pa-cios de conocimien- 
- []
-
-)
+] (./tesis_de_licenciatura.toc)
 \tf@toc=\write3
 \openout3 = `tesis_de_licenciatura.toc'.
 
- [11]
-\openout2 = `cap_0_motivaciones_y_objetivos.aux'.
-
- (./cap_0_motivaciones_y_objetivos.tex [12
-
-
-])
-Underfull \hbox (badness 10000) in paragraph at lines 11--39
-
- []
-
-[13]
-\openout2 = `cap_1_introduccion.aux'.
-
- (./cap_1_introduccion.tex
-Cap\'{\i }tulo 1.
-<figuras/celula_eucariota.png, id=49, 1361.085pt x 796.9775pt>
-File: figuras/celula_eucariota.png Graphic file (type png)
-
-<use figuras/celula_eucariota.png>
-<figuras/adn1.png, id=51, 1339.0025pt x 794.97pt>
-File: figuras/adn1.png Graphic file (type png)
- <use figuras/adn1.png>
-Underfull \hbox (badness 10000) in paragraph at lines 5--21
-
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14
-
-
+ [10
 
 ]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/adn2.png, id=55, 926.46124pt x 329.23pt>
-File: figuras/adn2.png Graphic file (type png)
- <use figuras/adn2.png>
-<figuras/adn3.png, id=56, 526.96875pt x 614.295pt>
-File: figuras/adn3.png Graphic file (type png)
- <use figuras/adn3.png>)
-[15 <./figuras/celula_eucariota.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./figuras/adn1.png>] [17 <./figuras/adn2.png>] [18 <./figuras/adn3.png>]
-\openout2 = `cap_2_materiales_y_metodos.aux'.
-
-
-(./cap_2_materiales_y_metodos.tex
-Cap\'{\i }tulo 2.
-<figuras/micromatriz.png, id=74, 1118.1775pt x 806.01125pt>
-File: figuras/micromatriz.png Graphic file (type png)
-
-<use figuras/micromatriz.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[19
-
-
-
-] [20 <./figuras/micromatriz.png>] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
-
- []
-
-<figuras/ai1_lci.png, id=90, 1237.62375pt x 773.89125pt>
-File: figuras/ai1_lci.png Graphic file (type png)
-
-<use figuras/ai1_lci.png> [22]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/mapa_kegg.png, id=94, 497.86pt x 591.20876pt>
-File: figuras/mapa_kegg.png Graphic file (type png)
-
-<use figuras/mapa_kegg.png> [23]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/ejemplo_de_go.png, id=98, 682.55pt x 701.62125pt>
-File: figuras/ejemplo_de_go.png Graphic file (type png)
-
-<use figuras/ejemplo_de_go.png>
-<figuras/codigos_de_evidencia.png, id=99, 702.625pt x 702.625pt>
-File: figuras/codigos_de_evidencia.png Graphic file (type png)
-
-<use figuras/codigos_de_evidencia.png>) [24 <./figuras/ai1_lci.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[26] [27 <./figuras/mapa_kegg.png>] [28 <./figuras/ejemplo_de_go.png>] [29 <./f
-iguras/codigos_de_evidencia.png (PNG copy)>]
 \openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
 
 
 (./cap_3_metodos_de_agrupamiento_de_datos.tex
-Cap\'{\i }tulo 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--8
-
- []
-
-[30
-
+Cap\'{\i }tulo 1.
+[11
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[31] [32] <figuras/perfiles_sin_agrupar.png, id=136, 702.625pt x 702.625pt>
-File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
-
-<use figuras/perfiles_sin_agrupar.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/perfiles_anti_coregulados.png, id=137, 702.625pt x 702.625pt>
+[12] [13]
+<figuras/perfiles_anti_coregulados.png, id=56, 702.625pt x 702.625pt>
 File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_anti_coregulados.png>
-<figuras/perfiles_coregulados.png, id=138, 702.625pt x 702.625pt>
+<figuras/perfiles_coregulados.png, id=57, 702.625pt x 702.625pt>
 File: figuras/perfiles_coregulados.png Graphic file (type png)
 
-<use figuras/perfiles_coregulados.png> [33]
+<use figuras/perfiles_coregulados.png>
+<figuras/perfiles_sin_agrupar.png, id=58, 702.625pt x 702.625pt>
+File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
+
+<use figuras/perfiles_sin_agrupar.png> [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[15 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfiles_co
+regulados.png (PNG copy)> <./figuras/perfiles_sin_agrupar.png (PNG copy)>]
+[16] [17
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[34 <./figuras/perfiles_sin_agrupar.png (PNG copy)>] [35 <./figuras/perfiles_an
-ti_coregulados.png (PNG copy)> <./figuras/perfiles_coregulados.png (PNG copy)>]
-[36
-
-] <figuras/dag.png, id=153, 454.69875pt x 313.17pt>
+] <figuras/dag.png, id=75, 454.69875pt x 313.17pt>
 File: figuras/dag.png Graphic file (type png)
- <use figuras/dag.png>
+
+<use figuras/dag.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[37] [38 <./figuras/dag.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+[18] [19 <./figuras/dag.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-
-Overfull \hbox (2.52522pt too wide) in paragraph at lines 171--173
-\OT1/cmr/m/n/12 di-vidirse (en-tre otros) fun-da-men-tal-mente en-tre agru-pami
-en-tos jer^^Sarquicos y agru-pamien-
- []
-
-[39] <figuras/ejemplo_k_means.png, id=164, 702.625pt x 401.5pt>
+[20] <figuras/ejemplo_k_means.png, id=88, 702.625pt x 401.5pt>
 File: figuras/ejemplo_k_means.png Graphic file (type png)
 
 <use figuras/ejemplo_k_means.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40] [41 <./figuras/ejemplo_k_means.png (PNG copy)>] [42]
-<figuras/agrupamiento_jerarquico.png, id=175, 702.625pt x 702.625pt>
+[21] [22 <./figuras/ejemplo_k_means.png (PNG copy)>] [23]
+<figuras/agrupamiento_jerarquico.png, id=98, 702.625pt x 702.625pt>
 File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 
 <use figuras/agrupamiento_jerarquico.png>
@@ -700,62 +601,48 @@ File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (17.12924pt too wide) in paragraph at lines 248--248
-[]\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pamien-to jer^^Sarquico 
+Overfull \hbox (5.24925pt too wide) in paragraph at lines 251--251
+[]\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
  []
 
-<figuras/corte_arbol_estatico.png, id=176, 702.625pt x 702.625pt>
+<figuras/corte_arbol_estatico.png, id=99, 702.625pt x 702.625pt>
 File: figuras/corte_arbol_estatico.png Graphic file (type png)
 
-<use figuras/corte_arbol_estatico.png> [43]
+<use figuras/corte_arbol_estatico.png> [24]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44 <./figuras/agrupamiento_jerarquico.png (PNG copy)>] [45 <./figuras/corte_ar
+[25 <./figuras/agrupamiento_jerarquico.png (PNG copy)>] [26 <./figuras/corte_ar
 bol_estatico.png (PNG copy)>]
-Overfull \hbox (1.51135pt too wide) in paragraph at lines 265--266
-[]\OT1/cmr/m/n/12 Los ob-je-tos que est^^San muy lejos del grupo son ex-clu-i-d
-os del grupo aunque pertenez-
- []
-
-<figuras/cut_tree_dynamic_ejemplo.png, id=187, 969.6225pt x 413.545pt>
+<figuras/cut_tree_dynamic_ejemplo.png, id=111, 969.6225pt x 413.545pt>
 File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
 
 <use figuras/cut_tree_dynamic_ejemplo.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[46]
-<figuras/ejemplo_k_means_ward_single.png, id=191, 916.42375pt x 627.34375pt>
+[27]
+
+LaTeX Warning: Reference `sec:redes' on page 28 undefined on input line 291.
+
+<figuras/ejemplo_k_means_ward_single.png, id=115, 916.42375pt x 627.34375pt>
 File: figuras/ejemplo_k_means_ward_single.png Graphic file (type png)
 
-<use figuras/ejemplo_k_means_ward_single.png> [47 <./figuras/cut_tree_dynamic_e
+<use figuras/ejemplo_k_means_ward_single.png> [28 <./figuras/cut_tree_dynamic_e
 jemplo.png>]
-<figuras/ejemplo_k_means_ward_single_2.png, id=196, 914.41624pt x 473.77pt>
+<figuras/ejemplo_k_means_ward_single_2.png, id=120, 914.41624pt x 473.77pt>
 File: figuras/ejemplo_k_means_ward_single_2.png Graphic file (type png)
 
 <use figuras/ejemplo_k_means_ward_single_2.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [48 <./figuras/ejemplo_k_means_ward_single.png>] [49 <./figuras/ejemplo_k_mea
-ns_ward_single_2.png>]
-\openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
-
- (./cap_4_analisis_de_datos_transcripcionales.tex
-Cap\'{\i }tulo 4.
-[50
-
-
-
-]) [51]
-Cap\'{\i }tulo 5.
-[52
-
+) [29 <./figuras/ejemplo_k_means_ward_single.png>] [30 <./figuras/ejemplo_k_mea
+ns_ward_single_2.png>] [31
 
 ]
-Cap\'{\i }tulo 6.
-[53
+Cap\'{\i }tulo 2.
+[32
 
 ] (./tesis_de_licenciatura.bbl
 Overfull \hbox (52.58104pt too wide) in paragraph at lines 35--40
@@ -765,8 +652,8 @@ m/microarray/chapter-final.pdf
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 48--53
-[]\OT1/cmr/m/sc/12 arabidopsis.org\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 Mi-croar-
-ray da-ta from At-Gen-Ex-press\OT1/cmr/m/n/12 .
+[]\OT1/cmr/m/sc/12 arabidopsis.org\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 Mi-cro-ar
+ray da-ta from At-Ge-nEx-press\OT1/cmr/m/n/12 .
  []
 
 
@@ -775,7 +662,7 @@ Overfull \hbox (40.78813pt too wide) in paragraph at lines 48--53
 nExpress.jsp\OT1/cmr/m/n/12 . 
  []
 
-[54
+[33
 
 
 ]
@@ -784,35 +671,40 @@ Overfull \hbox (15.53102pt too wide) in paragraph at lines 129--136
 le/pii/S0378437198004944 
  []
 
-[55] [56]) [57] (./tesis_de_licenciatura.aux
-(./cap_0_motivaciones_y_objetivos.aux) (./cap_1_introduccion.aux)
-(./cap_2_materiales_y_metodos.aux)
-(./cap_3_metodos_de_agrupamiento_de_datos.aux)
-(./cap_4_analisis_de_datos_transcripcionales.aux)) ) 
+[34] [35]) [36] (./tesis_de_licenciatura.aux
+(./cap_3_metodos_de_agrupamiento_de_datos.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3350 strings out of 495061
- 44009 string characters out of 1182621
- 123407 words of memory out of 3000000
- 6439 multiletter control sequences out of 15000+50000
- 11669 words of font info for 42 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 27i,7n,27p,1465b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-mi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis_de_licenciatura.pdf (58 pages, 2989539 bytes).
+ 4359 strings out of 494999
+ 60840 string characters out of 1180816
+ 143301 words of memory out of 3000000
+ 7477 multiletter control sequences out of 15000+50000
+ 12315 words of font info for 44 fonts, out of 3000000 for 9000
+ 54 hyphenation exceptions out of 8191
+ 36i,9n,38p,1465b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on tesis_de_licenciatura.pdf (37 pages, 821258 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
+ 203 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

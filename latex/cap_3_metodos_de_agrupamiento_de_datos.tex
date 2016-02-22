@@ -4,17 +4,13 @@ Son métodos no supervisados ya que en un proceso de agrupación no existen clas
 Estas técnicas permiten el descubrimiento o identificación de distribuciones y patrones subyacentes en los datos, posibilitando obtener conclusiones sobre los mismos, lo que las hace una de las herramientas más útiles en procesos de minería de datos y aprendizaje automatizado en campos tan diversos como las ciencias sociales, las ciencias médicas y la ingeniería.\\
 Dependiendo de los criterios utilizados para realizar la partición, un proceso de agrupamiento puede resultar en diferentes particiones. Como ejemplo de esto podemos tomar el conjunto de números $\{-5, -3, -2, 2, 3\}$. Si decidimos agruparlos por su módulo, obtendremos los conjuntos $\{-5\}$, $\{-3, 3\}$, $\{-2, 2\}$, mientras que si decidimos agruparlos por positividad o negatividad, obtendremos los conjuntos $\{-5, -3, -2\}$ y $\{2, 3\}$. También podríamos haber optado por agrupar por paridad, si son o no primos, etc. Como se observa de un ejemplo tan sencillo, es de fundamental importancia la elección de las propiedades de los objetos a partir de las cuales realizar el agrupamiento.
 \hl{poner las imagenes de las dos particiones posibles del ejemplo}\\
-En el presente trabajo nos interesará agrupar y caracterizar conjuntos de genes de un organismo modelo, la planta \textit{Arabidopsis thaliana}, en base a sus perfiles de expresión génica a lo largo de diversos tratamientos.\\
-
-\cite{Gan2007}
-\cite{Halkidi2001}
-\cite{Domany1999}
-
+En el presente trabajo nos interesará agrupar y caracterizar conjuntos de genes de un organismo modelo, la planta \textit{Arabidopsis thaliana}, en base a sus perfiles de expresión génica a lo largo de diversos tratamientos.\cite{Gan2007, Halkidi2001, Domany1999}\\
+Discutiremos a continuación diferentes metodologías y criterios de similaridad que pueden ser considerados para ello.
 \section{Similaridad, distancia y disimilaridad}
 Las distancias y similaridades tienen un rol preponderante en el análisis de agrupamiento de datos y por regla general son conceptos recíprocos.\\
-Una medida de similaridad o coeficiente de similaridad se utiliza para indicar de forma cuantitativa la fuerza de la relación entre dos objetos del conjunto. Los $i = 1, 2, ...N$ objetos del conjunto pueden ser definidos en términos de las coordenadas $\vec{Xi}$ de sus puntos representativos en un espacio $d-dimensional$. Sean $\vec{x}=\{x_0, x_1,...,x_d\}$ e $\vec{y}=\{y_0, y_1,...,y_d\}$ dos puntos $d-dimensionales$. Entonces, el coeficiente de similaridad entre ambos será una función de sus atributos:
+Una medida de similaridad o coeficiente de similaridad se utiliza para indicar de forma cuantitativa la fuerza de la relación entre dos objetos del conjunto. Los $i = 1, 2, ...N$ objetos de un conjunto $E$ pueden ser definidos en términos de las coordenadas $\vec{Xi}$ de sus puntos representativos en un espacio $d-dimensional$. Sean $\vec{x}=\{x_0, x_1,...,x_d\}$ e $\vec{y}=\{y_0, y_1,...,y_d\}$ dos puntos $d-dimensionales$. Entonces, el coeficiente de similaridad entre ambos será una función de sus atributos:
 \begin{equation}
-	s(\vec{x}, \vec{y}) = s(x_0, x_1,...,x_d, y_0, y_1,...,y_d)
+	s(\vec{x}, \vec{y}) = s((x_0, x_1,...,x_d), (y_0, y_1,...,y_d))
 \end{equation}
 con $s$ una función simétrica, es decir, $s(\vec{x}, \vec{y}) = s(\vec{y}, \vec{x})$. Cuanto mayor es el coeficiente de similaridad, mayor es la similaridad entre ambos.\\
 Por otro lado, las medidas de disimilaridad o de distancia se comportan de forma inversa, a mayor distancia o disimilaridad, más diferentes son dos puntos.
@@ -28,7 +24,7 @@ Una métrica de distancia es una función $d \in R$ definida sobre un conjunto $
 con $\vec{x},\vec{y},\vec{z}$ objetos arbitrarios del conjunto.\\
 
 Una medida de disimilaridad es una métrica si cumple con las propiedades antes enunciadas. \\
-Aunque no pareciera existir una definición formal de métrica de similaridad, \cite{Chen2009} definen una métrica de similaridad como una función $s$ que cumple:
+Aunque no pareciera existir una definición formal de métrica de similaridad, Chen y colaboradores definen una métrica de similaridad como una función $s$ que cumple:
 \begin{enumerate}
 \item $s(\vec{x}, \vec{y}) = s(\vec{y}, \vec{x})$
 \item $s(\vec{x}, \vec{x}) \geq 0$
@@ -36,8 +32,8 @@ Aunque no pareciera existir una definición formal de métrica de similaridad, \
 \item $s(\vec{x}, \vec{x}) = s(\vec{y}, \vec{y}) = s(\vec{x}, \vec{y}) \iff x=y$
 \item $s(\vec{x}, \vec{y}) + s(\vec{y}, \vec{z}) \leq s(\vec{x}, \vec{z}) + s(\vec{y}, \vec{y})$
 \end{enumerate}
-Si bien es deseable que una similaridad o disimilaridad sea una métrica, existen muchas medidas de similaridad o disimilaridad que dan excelentes resultados en técnicas de agrupamiento de datos sin ser métricas, es decir, sin que necesariamente cumplan la desigualdad triangular o el item 5 de métrica de similaridad.\\
-Finalmente, los objetos del conjunto pueden ser especificados por medio de una ``matriz de distancia'' de $N\times N$ cuyos elementos $d_{ij}$ indican la disimilaridad entre los puntos $i$ y $j$.\cite{Halkidi2001}\cite{Domany1999}\cite{Gan2007}\cite{Kheng2010}
+Si bien es deseable que una similaridad o disimilaridad sea una métrica, existen muchas medidas de similaridad o disimilaridad que dan excelentes resultados en técnicas de agrupamiento de datos sin ser métricas, es decir, sin que necesariamente cumplan la desigualdad triangular o el item 5 de métrica de similaridad.\cite{Chen2009}\\
+Finalmente, los objetos del conjunto pueden ser especificados por medio de una ``matriz de distancia'' de $N\times N$ cuyos elementos $d_{ij}$ indican la disimilaridad entre los puntos $i$ y $j$.\cite{Halkidi2001, Domany1999, Gan2007, Kheng2010}
 
 \subsection{Medidas de distancia}
 El análisis de datos de expresión genética se basa principalmente en la comparación de perfiles de expresión génica. Para poder comprarlos, se requiere una medida que cuantifique cuan similares o disimilares son los objetos considerados. La elección de una medida de distancia será entonces de fundamental importancia para lograr agrupamientos que tengan sentido en el contexto de los datos analizados. En las subsiguientes secciones se listarán las medidas de distancia más comúnmente utilizadas en el agrupamiento de datos (no necesariamente de datos de perfiles de expresión).
@@ -66,14 +62,30 @@ Para dos puntos $\vec{x}$ e $\vec{y}$ en un espacio $d-dimensional$, la distanci
 \end{equation}
 $r$ es el orden de la distancia de Minkowsky. Notar que si tomamos $r = 2,1,\inf$ obtenemos la distancia euclidiana, la Manhattan y la máxima, respectivamente.
 \subsubsection{Coeficiente de correlación de Pearson}
-Una de las métricas más utilizadas para medir similaridad entre perfiles de expresión, como los que se observan en la figura \ref{fig:perfiles_sin_agrupar}, es el coeficiente de correlación de Pearson \cite{Babu2004}.\\
-El coeficiente de correlación fue descubierto originalmente por Bravais en 1846, pero fue Pearson quién demostró que este coeficiente era la mejor correlación posible entre dos secuencias de números\cite{Kheng2010}.\\
-\begin{figure}[h]
+Una de las métricas más utilizadas para medir similaridad entre perfiles de expresión, como los presentados en la figura \ref{fig:perfiles_sin_agrupar}, es el coeficiente de correlación de Pearson \cite{Babu2004}.\\
+El coeficiente de correlación fue desarrollado por Karl Pearson basado en ideas introducidas por Francis Galton alrededor del año 1880.\\
+\begin{figure*}[t!]
     \centering
-    \includegraphics[width=0.5\textwidth]{perfiles_sin_agrupar}
+    \begin{subfigure}[t]{0.33\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_anti_coregulados}
+    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados y anti co-regulados.}
+    \label{fig:perfiles_anti_coregulados}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.33\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_coregulados}
+    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados.}
+    \label{fig:perfiles_coregulados}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.33\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_sin_agrupar}
     \caption{Perfiles de expresión para el tratamiento \textit{Control} de cinco genes tomados al azar.}
     \label{fig:perfiles_sin_agrupar}
-\end{figure}
+    \end{subfigure}    
+    \caption{Distintos grupos de perfiles de expresión}
+\end{figure*}
 Para dos puntos $\vec{x}$ e $\vec{y}$ en un espacio $d-dimensional$, representando el perfil de expresión de dos genes a lo largo de un dado tratamiento, el CCP se define como:
 \begin{equation}
 	r(\vec{x}, \vec{y}) = \frac{\sum\limits_{i=1}^d(x_i-\bar{x})(y_i-\bar{y})}{[\sum\limits_{i=1}^d(x_i-\bar{x})^2]^\frac{1}{2}[\sum\limits_{i=1}^d(y_i-\bar{y})^2]^\frac{1}{2}}
@@ -91,18 +103,9 @@ o alternativamente:
 	\label{eq:distancia_correlacion_absoluta}
 \end{equation}
 En el caso de la distancia definida en \ref{eq:distancia_correlacion_absoluta}, al tomar el valor absoluto del CCP, genes cuyos perfiles son iguales pero opuestos (están anti co-regulados) pueden encontrarse más cerca en el sentido de $d_{ccp}$ que aquellos que son regulados hacia arriba o abajo pero en distintas magnitudes. Por lo tanto, esta distancia permite encontrar grupos de genes que son co-regulados, sin importar en que sentido (Figura \ref{fig:perfiles_anti_coregulados}) sean co-regulados.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{perfiles_anti_coregulados}
-    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados y anti co-regulados.}
-    \label{fig:perfiles_anti_coregulados}
-\end{figure}
 En el caso de la distancia definida en \ref{eq:distancia_correlacion}, solamente se consideran cercanos aquellos genes cuyos perfiles sean co-regulados o bien hacia arriba o bien hacia abajo (Figura \ref{fig:perfiles_coregulados}).
 \begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{perfiles_coregulados}
-    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados.}
-    \label{fig:perfiles_coregulados}
+
 \end{figure}
 \cite{Hennig2013}\cite{Kheng2010}\cite{Babu2004}\cite{Gan2007}\\
 En el presente trabajo se utilizará como distancia la definida en \ref{eq:distancia_correlacion} para encontrar grupos de genes que únicamente se hayan co-regulado o bien hacia arriba o bien hacia abajo \cite{Eisen1998} \hl{discutir o buscar un paper mejor que justifique esto}.
@@ -303,3 +306,6 @@ Distintos métodos darán distintos resultados, dependiendo del conjunto de dato
     \caption{Algunos casos para los cuales los métodos de k-means o de Ward se comportan ``mejor'' que el método de enlace único (single-link).\hl{citar correctamente}}
     \label{fig:ejemplo_k_means_ward_single_2}
 \end{figure}
+
+\subsection{Matriz de similaridad topológica - TOM y GTOM}
+\hl{completar con tom y gtom}

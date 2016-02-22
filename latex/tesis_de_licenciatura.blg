@@ -1,9 +1,15 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: tesis_de_licenciatura.aux
+A level-1 auxiliary file: cap_0_motivaciones_y_objetivos.aux
+A level-1 auxiliary file: cap_1_introduccion.aux
+A level-1 auxiliary file: cap_2_materiales_y_metodos.aux
 A level-1 auxiliary file: cap_3_metodos_de_agrupamiento_de_datos.aux
+A level-1 auxiliary file: cap_4_analisis_de_datos_transcripcionales.aux
 The style file: formato_bibliografia.bst
 Database file #1: bibliografia.bib
+Warning--empty journal in Domany2003
+Warning--missing publisher in Alberts2015
 Warning--missing publisher in Gan2007
 Warning--missing publisher in Kheng2010
 Warning--empty journal in Lee2004
@@ -11,45 +17,45 @@ Warning--missing publisher in Kogan2006
 Warning--empty journal in Ibrahim2012
 Warning--empty journal in Langfelder2007
 Warning--empty journal in Berenstein2014
-You've used 29 entries,
+You've used 42 entries,
             2638 wiz_defined-function locations,
-            782 strings with 9238 characters,
-and the built_in function-call counts, 7532 in all, are:
-= -- 506
-> -- 156
-< -- 1
-+ -- 74
-- -- 37
-* -- 422
-:= -- 899
-add.period$ -- 80
-call.type$ -- 29
-change.case$ -- 0
+            862 strings with 11688 characters,
+and the built_in function-call counts, 10952 in all, are:
+= -- 729
+> -- 233
+< -- 2
++ -- 110
+- -- 55
+* -- 605
+:= -- 1278
+add.period$ -- 117
+call.type$ -- 42
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 787
-empty$ -- 832
-format.name$ -- 45
-if$ -- 1706
+cite$ -- 51
+duplicate$ -- 1145
+empty$ -- 1217
+format.name$ -- 68
+if$ -- 2483
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 191
-newline$ -- 149
-num.names$ -- 29
-pop$ -- 279
+int.to.str$ -- 42
+missing$ -- 279
+newline$ -- 215
+num.names$ -- 42
+pop$ -- 424
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 207
+skip$ -- 311
 stack$ -- 0
-substring$ -- 196
-swap$ -- 467
-text.length$ -- 1
+substring$ -- 275
+swap$ -- 688
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 7
-while$ -- 48
-width$ -- 31
-write$ -- 287
-(There were 7 warnings)
+warning$ -- 9
+while$ -- 68
+width$ -- 44
+write$ -- 414
+(There were 9 warnings)

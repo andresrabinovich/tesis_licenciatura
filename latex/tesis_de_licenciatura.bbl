@@ -3,6 +3,94 @@
 \providecommand{\urlprefix}{URL }
 \providecommand{\selectlanguage}[1]{\relax}
 
+\bibitem{functional_genomics_definition_nature}
+\textsc{Nature.com}.
+\newblock \emph{Functional genomics}.
+\newblock Accedido: 2016-01-13.
+\newline\urlprefix\url{http://www.nature.com/subjects/functional-genomics}
+
+\bibitem{functional_genomics_definition_wikipedia}
+\textsc{Wikipedia.org}.
+\newblock \emph{Functional genomics}.
+\newblock Accedido: 2016-01-13.
+\newline\urlprefix\url{https://en.wikipedia.org/wiki/Functional-genomics}
+
+\bibitem{Domany2003}
+\textsc{E.~Domany}.
+\newblock \emph{{Cluster Analysis of Gene Expression Data 1}} \textbf{110}
+  (2003) 1117.
+
+\bibitem{Alberts2015}
+\textsc{B.~Alberts}.
+\newblock \emph{{Molecular Biology of The Cell}}, volume~6 (2015).
+
+\bibitem{Bose2016}
+\textsc{B.~Bose}.
+\newblock \emph{{In Vitro Differention of Pluripotent Stem Cells into
+  Functional B Islets Under 2D and 3D Culture Conditions and In Vivo
+  Preclinical Validation of 3D Islets}}.
+\newblock Methods in Molecular Biology  (2016) 257.
+
+\bibitem{Babu2004}
+\textsc{M.~Babu}.
+\newblock \emph{{An Introduction to Microarray Data Analysis}}.
+\newblock Computational Genomics: Theory and Application  (2004) 225.
+\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/chapter-final.pdf}
+
+\bibitem{Schulze2001}
+\textsc{A.~Schulze}.
+\newblock \emph{{Navigating gene expression using microarrays: a technology
+  review.}}
+\newblock Nature cell biology \textbf{3} (2001) E190.
+
+\bibitem{AtGenExpress}
+\textsc{arabidopsis.org}.
+\newblock \emph{Microarray data from AtGenExpress}.
+\newblock
+  \url{https://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp}.
+
+\bibitem{Kilian2007}
+\textsc{J.~Kilian} \emph{et~al.}
+\newblock \emph{{The AtGenExpress global stress expression data set: Protocols,
+  evaluation and model data analysis of UV-B light, drought and cold stress
+  responses}}.
+\newblock Plant Journal \textbf{50} (2007) 347.
+
+\bibitem{Hahn2013}
+\textsc{Arabidopsis-Interactome-Mapping-Consortium}.
+\newblock \emph{{Evidence for Network Evolution in an Arabidopsis Interactome
+  Map}}.
+\newblock Annual review of plant biology \textbf{10} (2013) 161.
+
+\bibitem{Bruckner2009}
+\textsc{A.~Br{\"{u}}ckner} \emph{et~al.}
+\newblock \emph{{Yeast two-hybrid, a powerful tool for systems biology}}.
+\newblock International Journal of Molecular Sciences \textbf{10} (2009) 2763.
+
+\bibitem{Cusick2009}
+\textsc{M.~E. Cusick} \emph{et~al.}
+\newblock \emph{{NIH Public Access}}.
+\newblock Nature Methods \textbf{6} (2009) 39.
+
+\bibitem{Graphite2015}
+\textsc{G.~Sales} \emph{et~al.}
+\newblock \emph{graphite: GRAPH Interaction from pathway Topological
+  Environment} (2015).
+\newblock R package version 1.16.0.
+
+\bibitem{Segal2003}
+\textsc{E.~Segal} \emph{et~al.}
+\newblock \emph{{Discovering molecular pathways from protein interaction and
+  gene expression data}}.
+\newblock Bioinformatics \textbf{19} (2003).
+
+\bibitem{Kanehisa2000}
+\textsc{M.~Kanehisa}.
+\newblock \emph{{Yeast Biochemical Pathways. KEGG: Kyoto encyclopedia of genes
+  and genomes}}.
+\newblock Nucleic Acids Res \textbf{28} (2000) 27.
+\newline\urlprefix\url{http://pathway.yeastgenome.org/biocyc/}
+
 \bibitem{Gan2007}
 \textsc{G.~Gan} \emph{et~al.}
 \newblock \emph{{Data Clustering: Theory, Algorithms, and Applications}},
@@ -30,12 +118,6 @@
 \bibitem{Kheng2010}
 \textsc{L.~W. Kheng}.
 \newblock \emph{{Image Registration}} (2010).
-
-\bibitem{Babu2004}
-\textsc{M.~Babu}.
-\newblock \emph{{An Introduction to Microarray Data Analysis}}.
-\newblock Computational Genomics: Theory and Application  (2004) 225.
-\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/chapter-final.pdf}
 
 \bibitem{Dhaeseleer2005}
 \textsc{P.~D'haeseleer}.
@@ -81,13 +163,6 @@
 \textsc{C.~Pesquita} \emph{et~al.}
 \newblock \emph{{Semantic similarity in biomedical ontologies}}.
 \newblock PLoS Computational Biology \textbf{5} (2009).
-
-\bibitem{Bose2016}
-\textsc{B.~Bose}.
-\newblock \emph{{In Vitro Differention of Pluripotent Stem Cells into
-  Functional B Islets Under 2D and 3D Culture Conditions and In Vivo
-  Preclinical Validation of 3D Islets}}.
-\newblock Methods in Molecular Biology  (2016) 257.
 
 \bibitem{Lee2004}
 \textsc{H.~K. Lee} \emph{et~al.}

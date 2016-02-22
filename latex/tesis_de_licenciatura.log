@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  22 FEB 2016 17:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  22 FEB 2016 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -447,7 +447,10 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 (./tesis_de_licenciatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
- (./cap_3_metodos_de_agrupamiento_de_datos.aux))
+ (./cap_0_motivaciones_y_objetivos.aux)
+(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
+(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux))
 \openout1 = `tesis_de_licenciatura.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -593,26 +596,17 @@ Package caption Info: End \AtBeginDocument code.
 ] (./tesis_de_licenciatura.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [10
+
+])
 \tf@toc=\write3
 \openout3 = `tesis_de_licenciatura.toc'.
 
- [10
-
-]
+ [11]
 \openout2 = `cap_0_motivaciones_y_objetivos.aux'.
 
 
-(./cap_0_motivaciones_y_objetivos.tex
-
-LaTeX Warning: Citation `functional_genomics_definition_nature' on page 11 unde
-fined on input line 6.
-
-
-LaTeX Warning: Citation `functional_genomics_definition_wikipedia' on page 11 u
-ndefined on input line 6.
-
-[11
+(./cap_0_motivaciones_y_objetivos.tex [12
 
 
 ])
@@ -620,49 +614,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--42
 
  []
 
-[12]
+[13]
 \openout2 = `cap_1_introduccion.aux'.
 
  (./cap_1_introduccion.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation `Domany2003' on page 13 undefined on input line 2.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 13 undefined on input line 2.
-
-
-LaTeX Warning: Reference `fig:celula_eucariota' on page 13 undefined on input l
-ine 5.
-
-
-LaTeX Warning: Reference `fig:adn1' on page 13 undefined on input line 6.
-
-<figuras/celula_eucariota.png, id=47, 1361.085pt x 796.9775pt>
+<figuras/celula_eucariota.png, id=50, 1361.085pt x 796.9775pt>
 File: figuras/celula_eucariota.png Graphic file (type png)
 
 <use figuras/celula_eucariota.png>
 Package pdftex.def Info: figuras/celula_eucariota.png used on input line 9.
 (pdftex.def)             Requested size: 354.86412pt x 207.78082pt.
 
-
-LaTeX Warning: Citation `Alberts2015' on page 13 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 13 undefined on input line 10.
-
-<figuras/adn1.png, id=49, 1339.0025pt x 794.97pt>
+<figuras/adn1.png, id=52, 1339.0025pt x 794.97pt>
 File: figuras/adn1.png Graphic file (type png)
  <use figuras/adn1.png>
 Package pdftex.def Info: figuras/adn1.png used on input line 16.
 (pdftex.def)             Requested size: 354.86412pt x 210.67818pt.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 13 undefined on input line 17.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 13 undefined on input line 17.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
@@ -671,7 +639,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13
+[14
 
 
 
@@ -679,47 +647,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:adn2' on page 14 undefined on input line 24.
-
-<figuras/adn2.png, id=53, 926.46124pt x 329.23pt>
+<figuras/adn2.png, id=56, 926.46124pt x 329.23pt>
 File: figuras/adn2.png Graphic file (type png)
  <use figuras/adn2.png>
 Package pdftex.def Info: figuras/adn2.png used on input line 27.
 (pdftex.def)             Requested size: 354.86412pt x 126.1084pt.
 
-
-LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 28.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 28.
-
-<figuras/adn3.png, id=54, 526.96875pt x 614.295pt>
+<figuras/adn3.png, id=57, 526.96875pt x 614.295pt>
 File: figuras/adn3.png Graphic file (type png)
  <use figuras/adn3.png>
 Package pdftex.def Info: figuras/adn3.png used on input line 35.
 (pdftex.def)             Requested size: 221.78923pt x 258.54579pt.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 36.
-
-
-LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 36.
-
-) [14 <./figuras/celula_eucariota.png>]
+)
+[15 <./figuras/celula_eucariota.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./figuras/adn1.png>] [16 <./figuras/adn2.png>] [17 <./figuras/adn3.png>]
+[16 <./figuras/adn1.png>] [17 <./figuras/adn2.png>] [18 <./figuras/adn3.png>]
 \openout2 = `cap_2_materiales_y_metodos.aux'.
 
 
 (./cap_2_materiales_y_metodos.tex
 Cap\'{\i }tulo 2.
-<figuras/micromatriz.png, id=71, 1118.1775pt x 806.01125pt>
+<figuras/micromatriz.png, id=75, 1118.1775pt x 806.01125pt>
 File: figuras/micromatriz.png Graphic file (type png)
 
 <use figuras/micromatriz.png>
@@ -729,104 +682,42 @@ Package pdftex.def Info: figuras/micromatriz.png used on input line 10.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18
+[19
 
 
 
-]
-
-LaTeX Warning: Citation `Schulze2001' on page 19 undefined on input line 24.
-
-
-LaTeX Warning: Citation `Domany2003' on page 19 undefined on input line 24.
-
-[19 <./figuras/micromatriz.png>] [20]
-
-LaTeX Warning: Citation `AtGenExpress' on page 21 undefined on input line 44.
-
-
-LaTeX Warning: Citation `Kilian2007' on page 21 undefined on input line 44.
-
-
+] [20 <./figuras/micromatriz.png>] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
-
-LaTeX Warning: Citation `Hahn2013' on page 21 undefined on input line 51.
-
-
-LaTeX Warning: Citation `Bruckner2009' on page 21 undefined on input line 51.
-
-
-LaTeX Warning: Citation `Hahn2013' on page 21 undefined on input line 53.
-
-
-LaTeX Warning: Citation `Cusick2009' on page 21 undefined on input line 53.
-
-
-LaTeX Warning: Reference `fig:ai1_lci' on page 21 undefined on input line 54.
-
-<figuras/ai1_lci.png, id=88, 1237.62375pt x 773.89125pt>
+<figuras/ai1_lci.png, id=91, 1237.62375pt x 773.89125pt>
 File: figuras/ai1_lci.png Graphic file (type png)
 
 <use figuras/ai1_lci.png>
 Package pdftex.def Info: figuras/ai1_lci.png used on input line 57.
 (pdftex.def)             Requested size: 354.86412pt x 221.89566pt.
-
-
-LaTeX Warning: Citation `Hahn2013' on page 21 undefined on input line 58.
-
-
-LaTeX Warning: Citation `Hahn2013' on page 21 undefined on input line 58.
-
-[21]
+ [22]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:mapa_kegg' on page 22 undefined on input line 62.
-
-
-<figuras/mapa_kegg.png, id=92, 497.86pt x 591.20876pt>
+<figuras/mapa_kegg.png, id=95, 497.86pt x 591.20876pt>
 File: figuras/mapa_kegg.png Graphic file (type png)
 
 <use figuras/mapa_kegg.png>
 Package pdftex.def Info: figuras/mapa_kegg.png used on input line 66.
 (pdftex.def)             Requested size: 354.86412pt x 421.41202pt.
-
-
-LaTeX Warning: Reference `fig:mapa_kegg' on page 22 undefined on input line 70.
-
-
-
-LaTeX Warning: Citation `Graphite2015' on page 22 undefined on input line 71.
-
-
-LaTeX Warning: Citation `Segal2003' on page 22 undefined on input line 73.
-
-
-LaTeX Warning: Citation `Kanehisa2000' on page 22 undefined on input line 73.
-
-[22]
+ [23]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:ejemplo_de_go' on page 23 undefined on input line
- 82.
-
-<figuras/ejemplo_de_go.png, id=96, 682.55pt x 701.62125pt>
+[24 <./figuras/ai1_lci.png>]
+<figuras/ejemplo_de_go.png, id=104, 682.55pt x 701.62125pt>
 File: figuras/ejemplo_de_go.png Graphic file (type png)
 
 <use figuras/ejemplo_de_go.png>
 Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 85.
 (pdftex.def)             Requested size: 221.78923pt x 227.98137pt.
-
-
-LaTeX Warning: Reference `tab:tipos_de_anotaciones' on page 23 undefined on inp
-ut line 92.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--97
 []\OT1/cmr/m/n/12 Anotaci^^Son (in-fe-ri-da
@@ -847,147 +738,139 @@ Underfull \hbox (badness 4479) in paragraph at lines 113--113
 []\OT1/cmr/m/n/12 An^^Sali-sis compu-tacio-
  []
 
-
-LaTeX Warning: Reference `fig:codigos_de_evidencia' on page 23 undefined on inp
-ut line 121.
-
-<figuras/codigos_de_evidencia.png, id=97, 702.625pt x 702.625pt>
+<figuras/codigos_de_evidencia.png, id=105, 702.625pt x 702.625pt>
 File: figuras/codigos_de_evidencia.png Graphic file (type png)
 
 <use figuras/codigos_de_evidencia.png>
 Package pdftex.def Info: figuras/codigos_de_evidencia.png used on input line 12
 5.
 (pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
-) [23 <./figuras/ai1_lci.png>]
+)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24]
+[25]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26] [27 <./figuras/mapa_kegg.png>] [28 <./figuras/ejemplo_de_go.png>]
-[29 <./figuras/codigos_de_evidencia.png>]
+[26] [27] [28 <./figuras/mapa_kegg.png>] [29 <./figuras/ejemplo_de_go.png>]
+[30 <./figuras/codigos_de_evidencia.png>]
 \openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
 
 
 (./cap_3_metodos_de_agrupamiento_de_datos.tex
 Cap\'{\i }tulo 3.
-[30
+[31
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 24--25
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[31] [32]
-<figuras/perfiles_anti_coregulados.png, id=137, 702.625pt x 702.625pt>
+[32] [33]
+<figuras/perfiles_anti_coregulados.png, id=140, 702.625pt x 702.625pt>
 File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_anti_coregulados.png>
 Package pdftex.def Info: figuras/perfiles_anti_coregulados.png used on input li
-ne 72.
+ne 71.
 (pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
 
-<figuras/perfiles_coregulados.png, id=138, 702.625pt x 702.625pt>
+<figuras/perfiles_coregulados.png, id=141, 702.625pt x 702.625pt>
 File: figuras/perfiles_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_coregulados.png>
-Package pdftex.def Info: figuras/perfiles_coregulados.png used on input line 78
+Package pdftex.def Info: figuras/perfiles_coregulados.png used on input line 77
 .
 (pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
 
-<figuras/perfiles_sin_agrupar.png, id=139, 702.625pt x 702.625pt>
+<figuras/perfiles_sin_agrupar.png, id=142, 702.625pt x 702.625pt>
 File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
 
 <use figuras/perfiles_sin_agrupar.png>
-Package pdftex.def Info: figuras/perfiles_sin_agrupar.png used on input line 84
+Package pdftex.def Info: figuras/perfiles_sin_agrupar.png used on input line 83
 .
 (pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
- [33] [34 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfi
+ [34] [35 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfi
 les_coregulados.png (PNG copy)> <./figuras/perfiles_sin_agrupar.png (PNG copy)>
-] [35] [36
+] [36] [37
 
 ]
-<figuras/dag.png, id=156, 454.69875pt x 313.17pt>
+<figuras/dag.png, id=159, 454.69875pt x 313.17pt>
 File: figuras/dag.png Graphic file (type png)
  <use figuras/dag.png>
-Package pdftex.def Info: figuras/dag.png used on input line 129.
+Package pdftex.def Info: figuras/dag.png used on input line 128.
 (pdftex.def)             Requested size: 221.78923pt x 152.75696pt.
 
-[37 <./figuras/dag.png>] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 170--173
+[38 <./figuras/dag.png>] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-[39] <figuras/ejemplo_k_means.png, id=167, 702.625pt x 401.5pt>
+[40] <figuras/ejemplo_k_means.png, id=170, 702.625pt x 401.5pt>
 File: figuras/ejemplo_k_means.png Graphic file (type png)
 
 <use figuras/ejemplo_k_means.png>
-Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 187.
+Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 186.
 (pdftex.def)             Requested size: 354.86412pt x 202.78346pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40] [41 <./figuras/ejemplo_k_means.png (PNG copy)>] [42]
-<figuras/agrupamiento_jerarquico.png, id=178, 702.625pt x 702.625pt>
+[41] [42 <./figuras/ejemplo_k_means.png (PNG copy)>] [43]
+<figuras/agrupamiento_jerarquico.png, id=181, 702.625pt x 702.625pt>
 File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 
 <use figuras/agrupamiento_jerarquico.png>
 Package pdftex.def Info: figuras/agrupamiento_jerarquico.png used on input line
- 245.
+ 244.
 (pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.24925pt too wide) in paragraph at lines 250--250
+Overfull \hbox (5.24925pt too wide) in paragraph at lines 249--249
 []\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
  []
 
-<figuras/corte_arbol_estatico.png, id=179, 702.625pt x 702.625pt>
+<figuras/corte_arbol_estatico.png, id=182, 702.625pt x 702.625pt>
 File: figuras/corte_arbol_estatico.png Graphic file (type png)
 
 <use figuras/corte_arbol_estatico.png>
 Package pdftex.def Info: figuras/corte_arbol_estatico.png used on input line 25
-6.
+5.
 (pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
- [43]
+ [44]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44 <./figuras/agrupamiento_jerarquico.png>] [45 <./figuras/corte_arbol_estatic
+[45 <./figuras/agrupamiento_jerarquico.png>] [46 <./figuras/corte_arbol_estatic
 o.png (PNG copy)>]
-<figuras/cut_tree_dynamic_ejemplo.png, id=190, 969.6225pt x 413.545pt>
+<figuras/cut_tree_dynamic_ejemplo.png, id=193, 969.6225pt x 413.545pt>
 File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
 
 <use figuras/cut_tree_dynamic_ejemplo.png>
 Package pdftex.def Info: figuras/cut_tree_dynamic_ejemplo.png used on input lin
-e 281.
+e 280.
 (pdftex.def)             Requested size: 354.86412pt x 151.34967pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[46]
-
-LaTeX Warning: Reference `sec:redes' on page 47 undefined on input line 291.
-
-[47 <./figuras/cut_tree_dynamic_ejemplo.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 299--45
+[47] [48 <./figuras/cut_tree_dynamic_ejemplo.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 298--45
 
  []
 
-[48]
+[49]
 \openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
 
  (./cap_4_analisis_de_datos_transcripcionales.tex
 Cap\'{\i }tulo 4.
-[49
+[50
 
 
 
@@ -998,72 +881,78 @@ Overfull \hbox (4.91425pt too wide) in paragraph at lines 17--46
 [][][]Gx/LCI,[]
  []
 
-[50]
+[51]
 Cap\'{\i }tulo 5.
-[51
+[52
 
 
 ]
 Cap\'{\i }tulo 6.
-[52
+[53
 
 ] (./tesis_de_licenciatura.bbl
-Overfull \hbox (15.53102pt too wide) in paragraph at lines 17--23
-\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
-le/pii/S0378437198004944 
- []
-
-
 Overfull \hbox (52.58104pt too wide) in paragraph at lines 35--39
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.mrc-lmb.cam.ac.uk/genomes/madan
 m/microarray/chapter-final.pdf 
  []
 
-[53
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+[]\OT1/cmr/m/sc/12 arabidopsis.org\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 Mi-cro-ar
+ray da-ta from At-Ge-nEx-press\OT1/cmr/m/n/12 .
+ []
 
 
-] [54]) [55] (./tesis_de_licenciatura.aux
+Overfull \hbox (40.78813pt too wide) in paragraph at lines 47--51
+\OT1/cmtt/m/n/12 https://www.arabidopsis.org/portals/expression/microarray/ATGe
+nExpress.jsp\OT1/cmr/m/n/12 . 
+ []
+
+[54
+
+
+]
+Overfull \hbox (15.53102pt too wide) in paragraph at lines 105--111
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
+le/pii/S0378437198004944 
+ []
+
+[55] [56]) [57] (./tesis_de_licenciatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 
 (./cap_0_motivaciones_y_objetivos.aux) (./cap_1_introduccion.aux)
 (./cap_2_materiales_y_metodos.aux)
 (./cap_3_metodos_de_agrupamiento_de_datos.aux)
-(./cap_4_analisis_de_datos_transcripcionales.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(./cap_4_analisis_de_datos_transcripcionales.aux)) ) 
 Here is how much of TeX's memory you used:
- 5383 strings out of 494917
- 78565 string characters out of 6178372
- 174287 words of memory out of 5000000
- 8480 multiletter control sequences out of 15000+600000
+ 5397 strings out of 494917
+ 78992 string characters out of 6178372
+ 172812 words of memory out of 5000000
+ 8486 multiletter control sequences out of 15000+600000
  12315 words of font info for 44 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  38i,14n,39p,1417b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis_de_licenciatura.pdf (56 pages, 2804405 bytes).
+</usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt12.pfb>
+Output written on tesis_de_licenciatura.pdf (58 pages, 2808022 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
+ 286 PDF objects out of 1000 (max. 8388607)
+ 179 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  22 FEB 2016 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  24 FEB 2016 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -606,15 +606,20 @@ LaTeX Info: Redefining \% on input line 1.
 \openout2 = `cap_0_motivaciones_y_objetivos.aux'.
 
 
-(./cap_0_motivaciones_y_objetivos.tex [12
-
-
-])
-Underfull \hbox (badness 10000) in paragraph at lines 11--42
+(./cap_0_motivaciones_y_objetivos.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
  []
 
-[13]
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+[12
+
+
+]) [13]
 \openout2 = `cap_1_introduccion.aux'.
 
  (./cap_1_introduccion.tex
@@ -705,47 +710,46 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figuras/mapa_kegg.png Graphic file (type png)
 
 <use figuras/mapa_kegg.png>
-Package pdftex.def Info: figuras/mapa_kegg.png used on input line 66.
+Package pdftex.def Info: figuras/mapa_kegg.png used on input line 67.
 (pdftex.def)             Requested size: 354.86412pt x 421.41202pt.
  [23]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./figuras/ai1_lci.png>]
-<figuras/ejemplo_de_go.png, id=104, 682.55pt x 701.62125pt>
+<figuras/ejemplo_de_go.png, id=99, 682.55pt x 701.62125pt>
 File: figuras/ejemplo_de_go.png Graphic file (type png)
 
 <use figuras/ejemplo_de_go.png>
-Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 85.
+Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 87.
 (pdftex.def)             Requested size: 221.78923pt x 227.98137pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
 []\OT1/cmr/m/n/12 Anotaci^^Son (in-fe-ri-da
  []
 
 
-Overfull \hbox (0.98723pt too wide) in paragraph at lines 97--97
+Overfull \hbox (0.98723pt too wide) in paragraph at lines 99--99
 []\OT1/cmr/m/n/12 Siglas| 
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 111--111
+Underfull \hbox (badness 1072) in paragraph at lines 113--113
 []\OT1/cmr/m/n/12 Secuencia o si-mi-la-ri-
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 113--113
+Underfull \hbox (badness 4479) in paragraph at lines 115--115
 []\OT1/cmr/m/n/12 An^^Sali-sis compu-tacio-
  []
 
-<figuras/codigos_de_evidencia.png, id=105, 702.625pt x 702.625pt>
+<figuras/codigos_de_evidencia.png, id=100, 702.625pt x 702.625pt>
 File: figuras/codigos_de_evidencia.png Graphic file (type png)
 
 <use figuras/codigos_de_evidencia.png>
 Package pdftex.def Info: figuras/codigos_de_evidencia.png used on input line 12
-5.
+7.
 (pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
-)
+) [24 <./figuras/ai1_lci.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -813,7 +817,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
 File: figuras/ejemplo_k_means.png Graphic file (type png)
 
 <use figuras/ejemplo_k_means.png>
-Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 186.
+Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 187.
 (pdftex.def)             Requested size: 354.86412pt x 202.78346pt.
 
 
@@ -825,14 +829,14 @@ File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 
 <use figuras/agrupamiento_jerarquico.png>
 Package pdftex.def Info: figuras/agrupamiento_jerarquico.png used on input line
- 244.
+ 245.
 (pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.24925pt too wide) in paragraph at lines 249--249
+Overfull \hbox (5.24925pt too wide) in paragraph at lines 250--250
 []\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
  []
 
@@ -841,7 +845,7 @@ File: figuras/corte_arbol_estatico.png Graphic file (type png)
 
 <use figuras/corte_arbol_estatico.png>
 Package pdftex.def Info: figuras/corte_arbol_estatico.png used on input line 25
-5.
+7.
 (pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
  [44]
 
@@ -854,14 +858,14 @@ File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
 
 <use figuras/cut_tree_dynamic_ejemplo.png>
 Package pdftex.def Info: figuras/cut_tree_dynamic_ejemplo.png used on input lin
-e 280.
+e 282.
 (pdftex.def)             Requested size: 354.86412pt x 151.34967pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47] [48 <./figuras/cut_tree_dynamic_ejemplo.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 298--45
+Underfull \hbox (badness 10000) in paragraph at lines 300--45
 
  []
 
@@ -875,7 +879,7 @@ Cap\'{\i }tulo 4.
 
 
 ])
-Overfull \hbox (4.91425pt too wide) in paragraph at lines 17--46
+Overfull \hbox (4.91425pt too wide) in paragraph at lines 19--46
 [][][]\OT1/cmr/m/n/12 GOCC []zK[]-[]TA:[] [][][]por[] [][][]tra[]-[]ta[]-[]mien
 []-[]to[] [][][]Gx/GOBPa,[] [][][]Gx/GOBPb,[] [][][]Gx/GOCC,[] [][][]Gx/PIN,[] 
 [][][]Gx/LCI,[]
@@ -891,19 +895,19 @@ Cap\'{\i }tulo 6.
 [53
 
 ] (./tesis_de_licenciatura.bbl
-Overfull \hbox (52.58104pt too wide) in paragraph at lines 35--39
+Overfull \hbox (52.58104pt too wide) in paragraph at lines 53--57
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.mrc-lmb.cam.ac.uk/genomes/madan
 m/microarray/chapter-final.pdf 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--51
+Underfull \hbox (badness 10000) in paragraph at lines 65--69
 []\OT1/cmr/m/sc/12 arabidopsis.org\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 Mi-cro-ar
 ray da-ta from At-Ge-nEx-press\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (40.78813pt too wide) in paragraph at lines 47--51
+Overfull \hbox (40.78813pt too wide) in paragraph at lines 65--69
 \OT1/cmtt/m/n/12 https://www.arabidopsis.org/portals/expression/microarray/ATGe
 nExpress.jsp\OT1/cmr/m/n/12 . 
  []
@@ -912,7 +916,7 @@ nExpress.jsp\OT1/cmr/m/n/12 .
 
 
 ]
-Overfull \hbox (15.53102pt too wide) in paragraph at lines 105--111
+Overfull \hbox (15.53102pt too wide) in paragraph at lines 110--116
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
 le/pii/S0378437198004944 
  []
@@ -926,10 +930,10 @@ LaTeX Info: Redefining \% on input line 6.
 (./cap_3_metodos_de_agrupamiento_de_datos.aux)
 (./cap_4_analisis_de_datos_transcripcionales.aux)) ) 
 Here is how much of TeX's memory you used:
- 5397 strings out of 494917
- 78992 string characters out of 6178372
- 172812 words of memory out of 5000000
- 8486 multiletter control sequences out of 15000+600000
+ 5404 strings out of 494917
+ 79137 string characters out of 6178372
+ 175880 words of memory out of 5000000
+ 8493 multiletter control sequences out of 15000+600000
  12315 words of font info for 44 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  38i,14n,39p,1417b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -949,7 +953,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on tesis_de_licenciatura.pdf (58 pages, 2808022 bytes).
+Output written on tesis_de_licenciatura.pdf (58 pages, 2806196 bytes).
 PDF statistics:
  286 PDF objects out of 1000 (max. 8388607)
  179 compressed objects within 2 object streams

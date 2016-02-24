@@ -170,6 +170,7 @@ En la sección anterior abordamos distintas metodologías para cuantificar la no
 En lo que sigue introduciremos las diferentes estrategias de agrupamiento de datos utilizadas en este trabajo, tanto para agrupamiento de perfiles transcripcionales como de armado de comunidades en las redes presentadas anteriormente.\\
 Es posible distinguir dos tipos de agrupamientos, conocidos como agrupamiento duro (hard clustering en inglés), y agrupamiento difuso (fuzzy clustering en inglés). En el primer caso, el de agrupamiento duro, cada objeto del conjunto de datos es asignado a un y solo un grupo, mientras que en el segundo caso, el de agrupamiento difuso, un elemento del conjunto puede pertenecer a varios grupos, con distinta probabilidad. En este trabajo utilizaremos únicamente métodos de agrupamiento duro.\\
 \section{Agrupamientos no jerárquicos}
+\label{sec:agrupamientos_no_jerarquicos}
 Además de la distinción mencionada más arriba, los métodos de agrupamiento pueden dividirse (entre otros) fundamentalmente entre agrupamientos jerárquicos y agrupamientos no jerárquicos.
 Las dos estrategias de agrupamientos no jerárquicos que se presentan a continuación fueron utilizadas en el desarrollo de este trabajo.
 \subsection{K-means}
@@ -247,6 +248,7 @@ A modo ilustrativo, la figura \ref{fig:agrupamiento_jerarquico} muestra el agrup
 \end{figure}
 De estos gráficos es claro que cada método produce una secuencia diferente de particiones, y dependerá de la aplicación que se requiera, cual de los métodos utilizar.
 \section{Detectando grupos en el agrupamiento jerárquico}
+\label{sec:grupos_en_agrupamiento_jerarquico}
 El agrupamiento jerárquico organiza los objetos en árboles (dendrogramas) cuyas ramas son los grupos deseados. El proceso de detección de grupos se conoce como corte de árbol, corte de ramas o podado de ramas. 
 \subsection{Corte de árbol estático}
 El método más sencillo de podado es conocido como corte de árbol estático, y funciona definiendo cada rama contigua debajo de una altura fija de corte, como un grupo separado. La cantidad de grupos obtenidos por éste método depende fuertemente de la altura de  corte elegida. La figura \ref{fig:corte_arbol_estatico} muestra dos alturas de corte posibles y los grupos que se obtienen a partir de cada una de ellas.

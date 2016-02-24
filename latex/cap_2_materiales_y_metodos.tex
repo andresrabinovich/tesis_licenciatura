@@ -1,9 +1,10 @@
-\chapter{Materiales y Metodos}
+\chapter{Materiales y Metodos}\label{materiales_y_metodos}
 Las técnicas de relevamientos transcripcionales de gran escala, tales como las micromatrices de ADN y secuenciamientos de ARN (secuenciadores de próxima generación), permiten el monitoreo en paralelo de la totalidad del genoma. En este capítulo daremos una introducción al funcionamiento del primer tipo de tecnologías, que será la que usaremos extensivamente en este trabajo, y a los diferentes conjuntos de datos que utilizaremos.\cite{Bose2016}
 
 \section{Micromatrices de ADN}
 La tecnología de micromatrices de ADN se constituyó como una herramienta indispensable para el monitoréo de niveles de expresión a lo largo de todo el genoma de un organismo, estimando la concentración de ARNm que está siendo exportado desde el núcleo celular hacia el citoplasma para la síntesis de determinadas proteínas.\\
 Una micromatriz es típicamente un portaobjetos de vidrio u otra superficie sólida a la cual se le adosan de forma ordenada y en lugares específicos (llamados sondas) moléculas de ADN. Un mismo sitio puede contener varios millones de copias de moléculas idénticas de ADN de composición conocida (tanto genómico como hebras cortas de oligo-nucleótidos) que se corresponden de forma unívoca con un gen. Una micromatriz de ADN puede medir en simultaneo los niveles de expresión de hasta 40000 genes distintos.\\
+En la actualidad, la aparición de tecnologías más rápidas (y cada vez más económicas) de secuenciamiento, conocidas colectivamente como Secuenciamiento de próxima generación (Next-generation sequencing) y RNA-seq, están comenzando a dejar obsoleta la tecnología de micromatrices. Sin embargo, las mismas siguen siendo una herramienta útil en el estudio de los perfiles de expresión genética.\\
 Dependiendo de la tecnología utilizada, las micromatrices pueden ser de canal único o de doble canal.\\
 \begin{figure}[h]
     \centering
@@ -20,12 +21,11 @@ Estos tecnologías plantean entonces el problema de como analizar bastas cantida
 	\item Agrupar tumores para su clasificación clínica
 	\item Proveer evidencia de la función de proteínas cuyo rol en el organismo se desconoce
 \end{enumerate}
-En la actualidad, la aparición de tecnologías más rápidas y económicas de secuenciamiento, conocidas colectivamente como Next-generation sequencing (Secuenciamiento de próxima generación), están comenzando a dejar obsoleta la tecnología de micromatrices. Sin embargo, las mismas siguen siendo una herramienta útil en el estudio de los perfiles de expresión genética.\\
-En este trabajo, analizaremos el conjunto de datos Wiegel, datos obtenidos mediante esta tecnología.\cite{Babu2004,Schulze2001,Domany2003}
-\section{Conjunto de datos Wiegel}
+En este trabajo, analizaremos el conjunto de datos Wiegel, datos obtenidos mediante esta tecnología, que detallaremos a continuación.\cite{Babu2004,Schulze2001,Domany2003}
+\section{Conjunto de datos transcripcionales Wiegel}\label{sec:wiegel}
 En el marco del proyecto AtGenExpress, (un esfuerzo multinacional desarrollado para descubrir el transcriptoma del organismo modelo multicelular Arabidopsis thaliana), el grupo \textit{Weigel \& Lohmann}, de Alemania, realizó en el año 2004 un exhaustivo estudio de expresión del transcriptoma de Arabidopsis thaliana utilizando las micromatrices de ADN Affymetrix ATH1, con el objetivo de comprender las complejas redes de genes que, se conjetura, controlan la tolerancia de la planta al estrés. Para ello, se sometió a plantas de Arabidopsis, de idéntico genotipo y de idénticas condiciones de crecimiento, a diversos tratamientos de estrés.\\
-Los tratamientos de estrés se realizaron de tal forma de excluir efectos circadianos (oscilaciones de las variables biológicas en intervalos regulares de tiempo asociadas con un cambio ambiental rítmico), tomando muestras o de la raiz (root) o del tallo (shoot) en dos réplicas biológicas cada 0 minutos, 30 minutos, 1 hora, 3 horas, 6 horas, 12 horas y 24 horas luego del comienzo del tratamiento. En algunos de los tratamientos, por ejemplo, de luz ultravioleta, las alteraciones transcripcionales producto del estrés son fueron tan rápidas que se tomaron además muestras a los 15 minutos del comienzo  del mismo. Las muestras de control se tomaron de plantas no sometidas a ningún tratamiento de estrés de la misma forma que con las plantas tratadas.\\
-Además de un tratamiento de control, se realizaron los siguientos tratamientos de estrés:
+Los tratamientos de estrés se realizaron de tal forma de excluir efectos circadianos (oscilaciones de las variables biológicas en intervalos regulares de tiempo asociadas con un cambio ambiental rítmico), tomando muestras o de la raíz (root) o del tallo (shoot) en dos réplicas biológicas cada 0 minutos, 30 minutos, 1 hora, 3 horas, 6 horas, 12 horas y 24 horas luego del comienzo del tratamiento. En algunos de los tratamientos, por ejemplo, de luz ultravioleta, las alteraciones transcripcionales producto del estrés fueron tan rápidas que se tomaron además muestras a los 15 minutos del comienzo  del mismo. Las muestras de control se tomaron de plantas no sometidas a ningún tratamiento de estrés de la misma forma que con las plantas tratadas.\\
+Además de un tratamiento de control, se realizaron los siguientes tratamientos de estrés:
 \subsubsection*{Tratamiento de frío}
 Las cajas conteniendo las plantas fueron transferidas a hielo para un rápido enfriamiento y mantenidas a 4\degree C en un cuarto frío hasta la cosecha.
 \subsubsection*{Tratamiento de calor}
@@ -59,6 +59,7 @@ El solapamiento observado entre ambas se encuentra en el rango esperado dado la 
     \label{fig:ai1_lci}
 \end{figure}
 \section{KEGG - Vías metabólicas}
+\label{sec:kegg}
 Una vía metabólica es un conjunto de reacciones químicas que suceden dentro de una célula. En una vía, la sustancia quimica inicial, llamada metabolito, es modificada por una serie de reacciones químicas catalizadas por enzimas. En estas reacciones, el producto de una enzima es utilizado como substrato por la siguiente enzima y así hasta alcanzar un producto final, que puede usarse inmediatamente, almacenarse o iniciar una nueva vía metabólica. El metabolismo de una célula consise en una red o vías interconectadas que permiten la síntesis o ruptura de las moléculas, acciones conocidas como anabolismo y catabolismo, respectivamente. Descubrir este tipo de redes es fundamental para obtener una imagen global de la actividad celular (figura \ref{fig:mapa_kegg}).\\
 La Enciclopedia de Genes y Genomas de Kyoto (KEGG, por sus siglas en inglés), es una base de datos sobre diversos genomas, vías biológicas, enfermedades, drogas y sustancias químicas.
 \begin{figure}[h]
@@ -72,6 +73,7 @@ En nuestro trabajo utilizamos el abordaje de Gabriele Sales y colaboradores \cit
 Se conformó una red uniendo todas las vías metabólicas presentes en la base de datos y teniendo en cuenta solamente aquellos genes presentes en el conjunto de datos Weigel, obteniéndose una red de 1992 nodos y 23009 arcos.
 \cite{Segal2003, Kanehisa2000}
 \section{GO - Ontología genética}
+\label{sec:go}
 Poder comparar y clasificar entidades es un mecanismo fundamental de las ciencias biológicas. El advenimiento de tecnologías de alto rendimiento hace que sea necesario adoptar sistemas de representación del conocimiento que sean objetivos y estandarizados. Esto llevó al desarrollo de diversas ontologías para anotación de genes y de sus productos, y en particular, al desarrollo de la Ontología Génica (Gene ontology, GO por sus siglas en inglés).
 El proyecto de Ontología Génica (GO) es un consorcio que intenta mantener un vocabulario y una descripción consistente de conceptos biológicos a lo largo de distintas bases de datos. Esta ontología provee un vocabulario controlado de términos definidos para caracterizar las propiedades de productos génicos (proteínas y secuencias de ARN, por ejemplo).\\
 El proyecto GO consta de tres ontologías estructuradas que describen los productos génicos en terminos de sus procesos biológicos asociados (ontología \textit{Biological Process}, BP), de sus componentes celulares (ontología \textit{Cellular Component}, CC) y de sus funciones moleculares (ontología \textit{Molecular Function}, MF).\\

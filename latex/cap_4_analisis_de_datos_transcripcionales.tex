@@ -1,11 +1,22 @@
-\chapter{Análisis de dataset transcripcional Wiegel}
+\chapter{Análisis de conjunto de datos transcripcionales Wiegel}
+En este capítulo analizaremos el conjunto de datos transcripcionales Wiegel \& Lohmann para la planta Arabidopsis thaliana presentados en la sección \ref{sec:wiegel}, utilizando para ello los métodos de agrupamiento k-means (sección \ref{sec:agrupamientos_no_jerarquicos}) y corte de árbol dinámico híbrido (sección \ref{sec:grupos_en_agrupamiento_jerarquico}) introducidos en el capítulo \ref{materiales_y_metodos} para obtener grupos en el espacio de expresión.\\
+Una vez obtenidos los grupos en el espacio de expresión, utilizaremos los índices BHI e Interacting Densities para cuantificar el grado de coherencia entre estas estructuras y los conocimientos (entendidos como nociones de similitud) en el espacio GO.\\
+Luego, analizaremos la coherencia de los resultados obtenidos en el espacio de expresión con la de resultados obtenidos en otros espacios de conocimiento, como GO (sección \ref{sec:go}), PIN  (sección \ref{sec:redes}) y KEGG (sección \ref{sec:kegg}), esperando que estos conocimientos sean diferentes pero no ortogonales, utilizando para ello el índice KTA. 
 \section{Descripción del dataset}
+\hl{esto esta en \label{sec:wiegel}. habra que profundizar mas?}
 \section{Métricas transcripcionales}
-\section{Clustering}
+\hl{esto esta en el capitulo 3, o la idea es poner otra cosa?}
+\section{Agrupamiento}
+
 \subsection{Proceso de filtrado y estandarización de datos}
-\subsection{Clustering con k-means}
-\subsection{Clustering con dynamic tree cut}
+El conjunto de datos Wiegel utilizado consta de los niveles de expresión de 22810 sondas que se mapean a 20149 genes a lo largo de 11 tratamientos diferentes y con entre 4 y 9 muestreos en dos réplicas. Para poder manejar esta cantidad de información es necesario realizar un filtrado previo de los datos que permita quedarse únicamente con aquellos genes que se expresaron o inhibieron, ya que serán estos los genes de interés.\\
+Para ello,  
+\subsection{Agrupamiento con k-means}
+
+\subsection{Agrupamiento con dynamic tree cut}
+
 \subsection{Análisis de los métodos y problemas de escala de resolución}
+
 \section{Coherencia entre la métrica transcripcional y otros espacios de conocimiento}
 \hl{idea esperamos que los conocimientos (entendidos como nociones de similitud) de los distintos espacios sean diferentes pero no ortogonales...cuantificacion...veamos que estructuras son en cierto grado coherentes}
 \subsection{Interacting densities}

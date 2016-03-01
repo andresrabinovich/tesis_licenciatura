@@ -90,7 +90,11 @@ Para dos puntos $\vec{x}$ e $\vec{y}$ en un espacio $d-dimensional$, representan
 \begin{equation}
 	r(\vec{x}, \vec{y}) = \frac{\sum\limits_{i=1}^d(x_i-\bar{x})(y_i-\bar{y})}{[\sum\limits_{i=1}^d(x_i-\bar{x})^2]^\frac{1}{2}[\sum\limits_{i=1}^d(y_i-\bar{y})^2]^\frac{1}{2}}
 \end{equation}
-El centrar alrededor de la media permite comparar la forma de ambos perfiles, en lugar de su magnitud.\\
+o de forma equivalente:
+\begin{equation}
+	r(\vec{x}, \vec{y}) = \frac{\frac{1}{d-1}\sum\limits_{i=1}^d(x_i-\bar{x})(y_i-\bar{y})}{s_x s_y}
+\end{equation}
+con $s$ la desviación estandar de la muestra. El centrar alrededor de la media permite comparar la forma de ambos perfiles, en lugar de su magnitud.\\
 Valores altos de $r$ implican que las fluctuaciones respecto de la media de las respectivas componentes se encuentran ``en sincronia''. En caso de no estarlo el valor esperado tiende a cero. Finalmente si las fluctuaciones tienden a ocurrir ``sincronizadamente'' pero en sentidos opuestos $r \Rightarrow -1$.\\
 En nuestro caso, $r=+1$ corresponde a genes que estan siendo coexpresados por la maquinaria celular, mientras que $r=-1$ a genes anti-coexpresados. En el primer caso los perfiles de ambos genes
 (apropiadamente reescaleados) coinciden perfectamente, mientras que en el segundo son perfectamente opuestos.\\

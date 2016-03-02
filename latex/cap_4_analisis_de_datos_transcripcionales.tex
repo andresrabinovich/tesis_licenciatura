@@ -65,7 +65,7 @@ Calor y recuperación & 0.65 & 2 & 1944 \\
 \hline                                         
 \end{tabular}
 \caption{Cantidad de genes y filtros utilizados por tratamiento.}
-\label{tab:genes_por_tratamiento}
+\label{tabla:genes_por_tratamiento}
 \end{table}
 \subsection{Agrupamiento con k-means}
 El método de agrupamiento k-means hace uso de la distancia euclidia para minimizar la suma de los cuadrados. Si los datos están estandarizados y centrados, es posible relacionar la distancia euclidia $d$ con el coeficiente de correlación mediante la fórmula:
@@ -109,8 +109,67 @@ Se observa que la cantidad de grupos que maximiza estos índices es 2. Se realiz
 \end{figure}
 Estas estructuras tan grandes son de difícil interpretación biológica, ya que si bien las respuestas de expresión dentro de cada grupo son similares, existe mucha heterogeneidad en las funciones biológicas de los genes que los componen. El método k-means está entonces trabajando a una escala que no permite extraer información biológica de los grupos. Será necesario entonces aumentar la granularidad mediante otros métodos de agrupamiento.
 \subsection{Agrupamiento con corte de árbol dinámico}
-Utilizando el método de corte de árbol dinámico se realizó para cada tratamiento 
-\hl{ideas: poner aca que se probo con deepsplit 1 y deepsplit 4. Que se logra meter mucho mejor, mostrar algunos perfiles para algun tratamiento para ambos y mostrar quizas una tabla con cada tratamiento cuantos clusters y que tamanios. charlar de nuevo sobre la escala.}
+Utilizando el método de corte de árbol dinámico se realizó un agrupamiento para cada tratamiento, utilizando alternativamente los parámetros $deepSplit=1$ (menor granularidad) y $deepSplit=4$ (mayor granularidad). Las figuras \ref{fig:perfiles_ds_1} y \ref{fig:perfiles_ds_4} muestran algunos de los perfiles obtenidos con cada parámetro respectivamente para el tratamiento ``Frío''.\\ 
+En general, para todos los tratamientos, los grupos obtenidos por este método tienen mayor correlación media ($\rho$)que los obtenidos por el método k-means, obteniéndose una mayor cantidad de grupos con el $deepsplit=4$ que con $deepsplit=1$.\\
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_ds_1}
+    \caption{Perfiles obtenidos con $deepsplit=1$.}
+    \label{fig:perfiles_ds_1}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_ds_4}
+    \caption{Perfiles obtenidos con $deepsplit=4$.}
+    \label{fig:perfiles_ds_4}
+    \end{subfigure}
+    \caption{Perfiles de expresión génica obtenidos con el método corte de árbol dinámico para $deepsplit=1$ y $deepsplit=4$ para el tratamiento 'Frío'. En negro, el valor medio de cada grupo.}
+\end{figure*}
+
+Para cada parámetro, cada tratamiento y cada grupo, se realizó un control nulo consistente en tomar la misma cantidad de genes presentes en el grupo, pero de forma aleatoria, del conjunto de genes que formaban el tratamiento, y medir su correlación media. Esto se realizó 1000 veces para cada grupo. Las figuras \ref{ref:correlacion_media_por_tamano_ds_1} y \ref{ref:correlacion_media_por_tamano_ds_4} muestran la correlación media por tamaño de grupo y el control nulo para $deepsplit=1$ y $deepsplit=4$ respectivamente. Los grupos fueron agrupados por tamaño de a 10 genes, donde los colores más claros indican mayor cantidad de grupos que los oscuros. El gráfico tiene además la media, en negro, y el segundo y tercer cuartil, en gris, para la distribución del control nulo.
+
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{correlacion_media_por_tamano_ds_1}
+    \caption{Correlación media por tamaño de grupo para los grupos obtenidos con $deepsplit=1$.}
+    \label{fig:correlacion_media_por_tamano_ds_1}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{correlacion_media_por_tamano_ds_4}
+    \caption{Correlación media por tamaño de grupo para los grupos obtenidos con $deepsplit=4$.}
+    \label{fig:correlacion_media_por_tamano_ds_4}
+    \end{subfigure}
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{histograma_ds_1}
+    \caption{Histograma por tamaño de grupo para los grupos obtenidos con $deepsplit=1$.}
+    \label{fig:histograma_ds_1}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{histograma_ds_4}
+    \caption{Histograma por tamaño de grupo para los grupos obtenidos con $deepsplit=4$.}
+    \label{fig:histograma_ds_4}
+    \end{subfigure}    
+    \caption{Correlación media por tamaño de grupo para los grupos obtenidos por corte de árbol dinámico con $deepsplit=1$, $deepsplit=4$ y control nulo para todos los tratamientos y sus respectivos histogramas}
+\end{figure*}
+Se observa que la correlación media de los grupos es en todos los casos superior a la del control nulo. Esto muestra que existe estructura en los grupos hallados para ambos parámetros. \\
+Por otro lado, en las figuras \ref{ref:histograma_ds_1} y \ref{ref:histograma_ds_4} se observa que $deepsplit=1$ llega a tener grupos de mayor tamaño que $deepsplit=4$. Esto es esperable ya que cada parámetro aumenta o disminuye la granularidad del método. Estos grupos de $deepsplit=1$ comparativamente grandes tienen alta correlación. Sin embargo hay una menor correlación en los grupos pequeños para $deesplit=1$ que para $deesplit=1$. Una posible explicación para esto es que para que exista un grupo grande, es necesario que el mismo tenga alta correlación. De lo contrario, el método buscará partirlo en grupos más chicos hasta maximizar la correlación de cada grupo.\\
+Otra forma de visualizar esta diferencia en los tamaños de los grupos que obtiene cada método es mediante la función de distribución acumulada empírica que se observa en la figura \ref{fig:ecdf_k_ds1_ds4}. En la misma se observa que corte de árbol dinámico con $deepsplit=4$ produce la mayor cantidad de grupos con los menores tamaños, seguida por la misma técnica pero con $deepsplit=1$ y finalmente por k-means con solamente dos grupos muy masivos.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{ecdf_k_ds1_ds4}
+    \caption{Función de distribución acumulada empírica para los métodos k-means (k=2) y corte de árbol dinámico (ds=1 y ds=4) para el tratamiento 'Frío'.}
+    \label{fig:ecdf_k_ds1_ds4}
+\end{figure}
+Por otro lado, para poder caracterizar la granularidad de las particiones halladas con cada método, 
+
 \subsection{Análisis de los métodos y problemas de escala de resolución}
 
 \section{Coherencia entre la métrica transcripcional y otros espacios de conocimiento}

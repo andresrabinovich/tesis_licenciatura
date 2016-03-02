@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  1 MAR 2016 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  2 MAR 2016 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -568,375 +568,43 @@ Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
-
-(./cap_3_metodos_de_agrupamiento_de_datos.tex
-Cap\'{\i }tulo 1.
-
-LaTeX Warning: Citation `Gan2007' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation `Halkidi2001' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation `Domany1999' on page 1 undefined on input line 6.
-
-[1
-
-
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-LaTeX Warning: Citation `Chen2009' on page 2 undefined on input line 35.
-
-
-LaTeX Warning: Citation `Halkidi2001' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation `Domany1999' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation `Gan2007' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation `Kheng2010' on page 2 undefined on input line 36.
-
-[2] [3]
-
-LaTeX Warning: Reference `fig:perfiles_sin_agrupar' on page 4 undefined on inpu
-t line 65.
-
-
-LaTeX Warning: Citation `Babu2004' on page 4 undefined on input line 65.
-
-<figuras/perfiles_anti_coregulados.png, id=21, 702.625pt x 702.625pt>
-File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
-
-<use figuras/perfiles_anti_coregulados.png>
-Package pdftex.def Info: figuras/perfiles_anti_coregulados.png used on input li
-ne 71.
-(pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
-
-<figuras/perfiles_coregulados.png, id=22, 702.625pt x 702.625pt>
-File: figuras/perfiles_coregulados.png Graphic file (type png)
-
-<use figuras/perfiles_coregulados.png>
-Package pdftex.def Info: figuras/perfiles_coregulados.png used on input line 77
-.
-(pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
-
-<figuras/perfiles_sin_agrupar.png, id=23, 702.625pt x 702.625pt>
-File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
-
-<use figuras/perfiles_sin_agrupar.png>
-Package pdftex.def Info: figuras/perfiles_sin_agrupar.png used on input line 83
-.
-(pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
-
-
-LaTeX Warning: Citation `Dhaeseleer2005' on page 4 undefined on input line 101.
-
-
-[4]
-
-LaTeX Warning: Reference `eq:distancia_correlacion_absoluta' on page 5 undefine
-d on input line 111.
-
-
-LaTeX Warning: Reference `fig:perfiles_anti_coregulados' on page 5 undefined on
- input line 111.
-
-
-LaTeX Warning: Reference `eq:distancia_correlacion' on page 5 undefined on inpu
-t line 112.
-
-
-LaTeX Warning: Reference `fig:perfiles_coregulados' on page 5 undefined on inpu
-t line 112.
-
-
-LaTeX Warning: Citation `Hennig2013' on page 5 undefined on input line 112.
-
-
-LaTeX Warning: Citation `Kheng2010' on page 5 undefined on input line 112.
-
-
-LaTeX Warning: Citation `Babu2004' on page 5 undefined on input line 112.
-
-
-LaTeX Warning: Citation `Gan2007' on page 5 undefined on input line 112.
-
-
-LaTeX Warning: Reference `eq:distancia_correlacion' on page 5 undefined on inpu
-t line 113.
-
-
-LaTeX Warning: Citation `Eisen1998' on page 5 undefined on input line 113.
-
-[5 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfiles_cor
-egulados.png (PNG copy)> <./figuras/perfiles_sin_agrupar.png (PNG copy)>]
-[6]
-
-LaTeX Warning: Citation `Resnik1995' on page 7 undefined on input line 124.
-
-[7
-
-]
-
-LaTeX Warning: Reference `fig:dag' on page 8 undefined on input line 129.
-
-<figuras/dag.png, id=41, 454.69875pt x 313.17pt>
-File: figuras/dag.png Graphic file (type png)
- <use figuras/dag.png>
-Package pdftex.def Info: figuras/dag.png used on input line 132.
-(pdftex.def)             Requested size: 221.78923pt x 152.75696pt.
-
-
-LaTeX Warning: Citation `Lin1998' on page 8 undefined on input line 136.
-
-
-LaTeX Warning: Citation `Jiang1997' on page 8 undefined on input line 136.
-
-[8 <./figuras/dag.png>]
-
-LaTeX Warning: Citation `Pesquita2009' on page 9 undefined on input line 144.
-
-
-LaTeX Warning: Citation `Bose2016' on page 9 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Lee2004' on page 9 undefined on input line 147.
-
-
-LaTeX Warning: Citation `Sevilla2005' on page 9 undefined on input line 157.
-
-[9]
-
-LaTeX Warning: Citation `Lord2003' on page 10 undefined on input line 161.
-
-
-LaTeX Warning: Citation `Pesquita2009' on page 10 undefined on input line 165.
-
-
-LaTeX Warning: Citation `Resnik1995' on page 10 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Pesquita2009' on page 10 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Bose2016' on page 10 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Lin1998' on page 10 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Jiang1997' on page 10 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Sevilla2005' on page 10 undefined on input line 170.
-
-
-LaTeX Warning: Citation `Lord2003' on page 10 undefined on input line 170.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--176
-
- []
-
-[10]
-
-LaTeX Warning: Reference `fig:ejemplo_k_means' on page 11 undefined on input li
-ne 188.
-
-<figuras/ejemplo_k_means.png, id=53, 702.625pt x 401.5pt>
-File: figuras/ejemplo_k_means.png Graphic file (type png)
-
-<use figuras/ejemplo_k_means.png>
-Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 191.
-(pdftex.def)             Requested size: 354.86412pt x 202.78346pt.
-
-
-LaTeX Warning: Citation `Kogan2006' on page 11 undefined on input line 196.
-
-
-LaTeX Warning: Citation `Hartigan1979' on page 11 undefined on input line 196.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11]
-
-LaTeX Warning: Citation `Park2009' on page 12 undefined on input line 205.
-
-
-LaTeX Warning: Citation `Ibrahim2012' on page 12 undefined on input line 205.
-
-[12 <./figuras/ejemplo_k_means.png (PNG copy)>]
-
-LaTeX Warning: Reference `eq:ESS' on page 13 undefined on input line 222.
-
-
-LaTeX Warning: Citation `Johnson1967' on page 13 undefined on input line 230.
-
-[13]
-
-LaTeX Warning: Citation `Shalizi2009' on page 14 undefined on input line 239.
-
-
-LaTeX Warning: Citation `Gan2007' on page 14 undefined on input line 239.
-
-
-LaTeX Warning: Citation `Johnson1967' on page 14 undefined on input line 239.
-
-
-LaTeX Warning: Reference `fig:agrupamiento_jerarquico' on page 14 undefined on 
-input line 246.
-
-<figuras/agrupamiento_jerarquico.png, id=64, 702.625pt x 702.625pt>
-File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
-
-<use figuras/agrupamiento_jerarquico.png>
-Package pdftex.def Info: figuras/agrupamiento_jerarquico.png used on input line
- 249.
-(pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (5.24925pt too wide) in paragraph at lines 254--254
-[]\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
- []
-
-
-LaTeX Warning: Reference `fig:corte_arbol_estatico' on page 14 undefined on inp
-ut line 258.
-
-<figuras/corte_arbol_estatico.png, id=65, 702.625pt x 702.625pt>
-File: figuras/corte_arbol_estatico.png Graphic file (type png)
-
-<use figuras/corte_arbol_estatico.png>
-Package pdftex.def Info: figuras/corte_arbol_estatico.png used on input line 26
-1.
-(pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
-
-
-LaTeX Warning: Citation `Domany1999' on page 14 undefined on input line 266.
-
-
-LaTeX Warning: Citation `Langfelder2008' on page 14 undefined on input line 266
-.
-
-[14]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15 <./figuras/agrupamiento_jerarquico.png>]
-
-LaTeX Warning: Citation `Langfelder2008' on page 16 undefined on input line 268
-.
-
-[16 <./figuras/corte_arbol_estatico.png (PNG copy)>]
-<figuras/cut_tree_dynamic_ejemplo.png, id=76, 969.6225pt x 413.545pt>
-File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
-
-<use figuras/cut_tree_dynamic_ejemplo.png>
-Package pdftex.def Info: figuras/cut_tree_dynamic_ejemplo.png used on input lin
-e 286.
-(pdftex.def)             Requested size: 354.86412pt x 151.34967pt.
-
-
-LaTeX Warning: Citation `Langfelder2008' on page 17 undefined on input line 287
-.
-
-
-LaTeX Warning: Citation `Langfelder2008' on page 17 undefined on input line 287
-.
-
-
-LaTeX Warning: Reference `fig:cut_tree_dynamic_ejemplo' on page 17 undefined on
- input line 290.
-
-
-LaTeX Warning: Citation `Langfelder2008' on page 17 undefined on input line 293
-.
-
-
-LaTeX Warning: Citation `Langfelder2007' on page 17 undefined on input line 293
-.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[17]
-
-LaTeX Warning: Reference `sec:redes' on page 18 undefined on input line 296.
-
-[18 <./figuras/cut_tree_dynamic_ejemplo.png>]
-
-LaTeX Warning: Citation `Horvath2007' on page 19 undefined on input line 306.
-
-
-LaTeX Warning: Citation `Rosvall2008' on page 19 undefined on input line 307.
-
-
-LaTeX Warning: Citation `Clauset2004' on page 19 undefined on input line 307.
-
-
-LaTeX Warning: Citation `Berenstein2014' on page 19 undefined on input line 309
-.
-
-
-LaTeX Warning: Citation `Rosvall2008' on page 19 undefined on input line 309.
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 304--46
-
- []
-
-[19]
 \openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
 
- (./cap_4_analisis_de_datos_transcripcionales.tex
-Cap\'{\i }tulo 2.
+(./cap_4_analisis_de_datos_transcripcionales.tex
+Cap\'{\i }tulo 1.
 
-LaTeX Warning: Reference `sec:wiegel' on page 20 undefined on input line 2.
-
-
-LaTeX Warning: Reference `sec:agrupamientos_no_jerarquicos' on page 20 undefine
-d on input line 2.
+LaTeX Warning: Reference `sec:wiegel' on page 1 undefined on input line 2.
 
 
-LaTeX Warning: Reference `sec:grupos_en_agrupamiento_jerarquico' on page 20 und
-efined on input line 2.
+LaTeX Warning: Reference `sec:agrupamientos_no_jerarquicos' on page 1 undefined
+ on input line 2.
 
 
-LaTeX Warning: Reference `materiales_y_metodos' on page 20 undefined on input l
-ine 2.
+LaTeX Warning: Reference `sec:grupos_en_agrupamiento_jerarquico' on page 1 unde
+fined on input line 2.
 
 
-LaTeX Warning: Reference `sec:go' on page 20 undefined on input line 4.
+LaTeX Warning: Reference `materiales_y_metodos' on page 1 undefined on input li
+ne 2.
 
 
-LaTeX Warning: Reference `sec:redes' on page 20 undefined on input line 4.
+LaTeX Warning: Reference `sec:go' on page 1 undefined on input line 4.
 
 
-LaTeX Warning: Reference `sec:kegg' on page 20 undefined on input line 4.
+LaTeX Warning: Reference `sec:redes' on page 1 undefined on input line 4.
 
 
-<figuras/densidad_de_desviacion_estandar.png, id=88, 1117.17375pt x 751.80875pt
->
+LaTeX Warning: Reference `sec:kegg' on page 1 undefined on input line 4.
+
+
+<figuras/densidad_de_desviacion_estandar.png, id=1, 1117.17375pt x 751.80875pt>
 File: figuras/densidad_de_desviacion_estandar.png Graphic file (type png)
- <use figuras/densidad_de_desviacion_estandar.png>
+<use figuras/densidad_de_desviacion_estandar.png>
 Package pdftex.def Info: figuras/densidad_de_desviacion_estandar.png used on in
 put line 20.
 (pdftex.def)             Requested size: 177.42868pt x 119.39706pt.
 
-<figuras/densidad_para_niveles.png, id=89, 1117.17375pt x 751.80875pt>
+<figuras/densidad_para_niveles.png, id=2, 1117.17375pt x 751.80875pt>
 File: figuras/densidad_para_niveles.png Graphic file (type png)
 
 <use figuras/densidad_para_niveles.png>
@@ -944,68 +612,158 @@ Package pdftex.def Info: figuras/densidad_para_niveles.png used on input line 2
 6.
 (pdftex.def)             Requested size: 177.42868pt x 119.39706pt.
 
-
-LaTeX Warning: Reference `tabla:genes_por_tratamiento' on page 20 undefined on 
-input line 32.
-
-
 Overfull \hbox (6.3522pt too wide) in paragraph at lines 13--34
 \OT1/cmr/m/n/12 Una vez apli-ca-do es-te fil-tro por des-via-ci^^Son es-tan-dar
 , se aplic^^So un fil-tro de ti-po ``$\OML/cmm/m/it/12 KsobreA$\OT1/cmr/m/n/12 
 '',
  []
 
-[20
+[1
 
 
 
-] [21] <figuras/barrido_k_ch.png, id=96, 1204.5pt x 966.61125pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<figuras/barrido_k_ch.png, id=16, 1204.5pt x 966.61125pt>
 File: figuras/barrido_k_ch.png Graphic file (type png)
 
 <use figuras/barrido_k_ch.png>
 Package pdftex.def Info: figuras/barrido_k_ch.png used on input line 91.
 (pdftex.def)             Requested size: 199.60895pt x 160.17719pt.
 
-<figuras/barrido_k_dunn.png, id=97, 1204.5pt x 966.61125pt>
+<figuras/barrido_k_dunn.png, id=17, 1204.5pt x 966.61125pt>
 File: figuras/barrido_k_dunn.png Graphic file (type png)
 
 <use figuras/barrido_k_dunn.png>
 Package pdftex.def Info: figuras/barrido_k_dunn.png used on input line 97.
 (pdftex.def)             Requested size: 199.60895pt x 160.17719pt.
 
-<figuras/perfiles_k_means.png, id=98, 1380.15625pt x 717.68124pt>
+<figuras/perfiles_k_means.png, id=18, 1380.15625pt x 717.68124pt>
 File: figuras/perfiles_k_means.png Graphic file (type png)
 
 <use figuras/perfiles_k_means.png>
 Package pdftex.def Info: figuras/perfiles_k_means.png used on input line 106.
 (pdftex.def)             Requested size: 354.86412pt x 184.523pt.
- [22 <./figuras/densidad_de_desviacion_estandar.png (PNG copy)> <./figuras/dens
-idad_para_niveles.png>]
+ [3 <./figuras/densidad_de_desviacion_estandar.png (PNG copy)> <./figuras/densi
+dad_para_niveles.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23])
-Overfull \hbox (4.91425pt too wide) in paragraph at lines 122--47
+<figuras/perfiles_ds_1.png, id=26, 1204.5pt x 903.375pt>
+File: figuras/perfiles_ds_1.png Graphic file (type png)
+
+<use figuras/perfiles_ds_1.png>
+Package pdftex.def Info: figuras/perfiles_ds_1.png used on input line 118.
+(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+
+<figuras/perfiles_ds_4.png, id=27, 1204.5pt x 903.375pt>
+File: figuras/perfiles_ds_4.png Graphic file (type png)
+
+<use figuras/perfiles_ds_4.png>
+Package pdftex.def Info: figuras/perfiles_ds_4.png used on input line 124.
+(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+ [4]
+
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 5 unde
+fined on input line 131.
+
+
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 5 unde
+fined on input line 131.
+
+<figuras/correlacion_media_por_tamano_ds_1.png, id=31, 1204.5pt x 903.375pt>
+File: figuras/correlacion_media_por_tamano_ds_1.png Graphic file (type png)
+
+<use figuras/correlacion_media_por_tamano_ds_1.png>
+Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_1.png used on 
+input line 137.
+(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+
+Underfull \hbox (badness 1210) in paragraph at lines 138--138
+[]\OT1/cmr/m/n/10.95 (a) |Co-rre-la-ci^^Son me-dia por ta-ma~no de
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 138--138
+\OT1/cmr/m/n/10.95 gru-po pa-ra los gru-pos ob-te-ni-dos con
+ []
+
+<figuras/correlacion_media_por_tamano_ds_4.png, id=32, 1204.5pt x 903.375pt>
+File: figuras/correlacion_media_por_tamano_ds_4.png Graphic file (type png)
+
+<use figuras/correlacion_media_por_tamano_ds_4.png>
+Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_4.png used on 
+input line 143.
+(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+
+Underfull \hbox (badness 1107) in paragraph at lines 144--144
+[]\OT1/cmr/m/n/10.95 (b) |Co-rre-la-ci^^Son me-dia por ta-ma~no de
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 144--144
+\OT1/cmr/m/n/10.95 gru-po pa-ra los gru-pos ob-te-ni-dos con
+ []
+
+<figuras/histograma_ds_1.png, id=33, 1204.5pt x 903.375pt>
+File: figuras/histograma_ds_1.png Graphic file (type png)
+
+<use figuras/histograma_ds_1.png>
+Package pdftex.def Info: figuras/histograma_ds_1.png used on input line 150.
+(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+
+<figuras/histograma_ds_4.png, id=34, 1204.5pt x 903.375pt>
+File: figuras/histograma_ds_4.png Graphic file (type png)
+
+<use figuras/histograma_ds_4.png>
+Package pdftex.def Info: figuras/histograma_ds_4.png used on input line 156.
+(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+
+
+LaTeX Warning: Reference `ref:histograma_ds_1' on page 5 undefined on input lin
+e 163.
+
+
+LaTeX Warning: Reference `ref:histograma_ds_4' on page 5 undefined on input lin
+e 163.
+
+
+LaTeX Warning: Reference `fig:ecdf_k_ds1_ds4' on page 5 undefined on input line
+ 164.
+
+<figuras/ecdf_k_ds1_ds4.png, id=35, 1204.5pt x 903.375pt>
+File: figuras/ecdf_k_ds1_ds4.png Graphic file (type png)
+
+<use figuras/ecdf_k_ds1_ds4.png>
+Package pdftex.def Info: figuras/ecdf_k_ds1_ds4.png used on input line 167.
+(pdftex.def)             Requested size: 266.14978pt x 199.61153pt.
+ [5 <./figuras/barrido_k_ch.png> <./figuras/barrido_k_dunn.png>] [6 <./figuras/
+perfiles_k_means.png (PNG copy)> <./figuras/perfiles_ds_1.png (PNG copy)> <./fi
+guras/perfiles_ds_4.png (PNG copy)>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./figuras/correlacion_media_por_tamano_ds_1.png (PNG copy)> <./figuras/corr
+elacion_media_por_tamano_ds_4.png (PNG copy)> <./figuras/histograma_ds_1.png> <
+./figuras/histograma_ds_4.png>])
+Overfull \hbox (4.91425pt too wide) in paragraph at lines 180--47
 [][][]\OT1/cmr/m/n/12 GOCC []zK[]-[]TA:[] [][][]por[] [][][]tra[]-[]ta[]-[]mien
 []-[]to[] [][][]Gx/GOBPa,[] [][][]Gx/GOBPb,[] [][][]Gx/GOCC,[] [][][]Gx/PIN,[] 
 [][][]Gx/LCI,[]
  []
 
-[24 <./figuras/barrido_k_ch.png> <./figuras/barrido_k_dunn.png>] [25 <./figuras
-/perfiles_k_means.png (PNG copy)>] (./tesis_de_licenciatura.bbl
+[8 <./figuras/ecdf_k_ds1_ds4.png (PNG copy)>] (./tesis_de_licenciatura.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 6.
 
-) [26
+) [9
 
 
 
 ] (./tesis_de_licenciatura.aux
-(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux)
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-
-(./cap_4_analisis_de_datos_transcripcionales.aux))
+)
 
 LaTeX Warning: There were undefined references.
 
@@ -1014,29 +772,26 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 5312 strings out of 494917
- 77486 string characters out of 6178372
- 167122 words of memory out of 5000000
- 8433 multiletter control sequences out of 15000+600000
- 10480 words of font info for 37 fonts, out of 8000000 for 9000
+ 5272 strings out of 494917
+ 76844 string characters out of 6178372
+ 164236 words of memory out of 5000000
+ 8399 multiletter control sequences out of 15000+600000
+ 10973 words of font info for 39 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 38i,10n,39p,1417b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,39p,928b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on tesis_de_licenciatura.pdf (26 pages, 1114275 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmti10.pfb>
+Output written on tesis_de_licenciatura.pdf (9 pages, 1287685 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

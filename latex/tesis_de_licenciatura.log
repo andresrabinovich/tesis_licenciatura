@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  2 MAR 2016 17:39
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  2 MAR 2016 23:27
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **tesis_de_licenciatura.tex
 (./tesis_de_licenciatura.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 7 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, spanish, galician, catalan, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -24,20 +24,20 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -186,8 +186,8 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -217,8 +217,8 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -241,44 +241,38 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
+\es@datefmt=\count89
 \es@quottoks=\toks16
-\es@quotdepth=\count89
-Package babel Info: Making " an active character on input line 516.
-Package babel Info: Making . an active character on input line 617.
-Package babel Info: Making < an active character on input line 662.
-Package babel Info: Making > an active character on input line 662.
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count90
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count91
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+(/usr/share/texmf-texlive/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks17
 \SOUL@lasttoken=\toks18
@@ -290,71 +284,71 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen105
 \SOUL@ulht=\dimen106
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks22
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 )
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks23
 \ex@=\dimen109
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen110
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count91
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count92
-\leftroot@=\count93
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count94
-\DOTSCASE@=\count95
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen111
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
 \tag@help=\toks24
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
 \andhelp@=\toks25
 \eqnshift@=\dimen112
 \alignsep@=\dimen113
@@ -366,88 +360,79 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip45
 \multlinetaggap=\skip46
 \mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks28
 \verbatim@line=\toks29
 \verbatim@in@stream=\read1
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count103
-\Gm@cntv=\count104
-\c@Gm@tempcnt=\count105
+\Gm@cnth=\count104
+\Gm@cntv=\count105
+\c@Gm@tempcnt=\count106
 \Gm@bindingoffset=\dimen118
 \Gm@wd@mp=\dimen119
 \Gm@odd@mp=\dimen120
 \Gm@even@mp=\dimen121
-\Gm@layoutwidth=\dimen122
-\Gm@layoutheight=\dimen123
-\Gm@layouthoffset=\dimen124
-\Gm@layoutvoffset=\dimen125
 \Gm@dimlist=\toks30
 )
-(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
 )
-(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
+(/usr/share/texmf-texlive/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+(/usr/share/texmf-texlive/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count106
+\c@r@tfl@t=\count107
 \rotFPtop=\skip47
 \rotFPbot=\skip48
 \rot@float@box=\box28
 \rot@mess@toks=\toks31
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen126
-\captionmargin@=\dimen127
-\captionwidth=\dimen128
-\caption@tempdima=\dimen129
-\caption@indent=\dimen130
-\caption@parindent=\dimen131
-\caption@hangindent=\dimen132
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen122
+\captionmargin@=\dimen123
+\captionwidth=\dimen124
+\caption@indent=\dimen125
+\caption@parindent=\dimen126
+\caption@hangindent=\dimen127
 )
-\c@ContinuedFloat=\count107
+\c@ContinuedFloat=\count108
 Package caption Info: rotating package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count108
-\c@subtable=\count109
+(/usr/share/texmf-texlive/tex/latex/caption/subcaption.sty
+Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
+\c@subfigure=\count109
+\c@subtable=\count110
 )
-(./tesis_de_licenciatura.aux (./cap_4_analisis_de_datos_transcripcionales.aux)
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-)
+(./tesis_de_licenciatura.aux (./cap_0_motivaciones_y_objetivos.aux)
+(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
+(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux))
 \openout1 = `tesis_de_licenciatura.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
@@ -462,99 +447,61 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen133
+\scratchcounter=\count111
+\scratchdimen=\dimen128
 \scratchbox=\box29
-\nofMPsegments=\count111
-\nofMParguments=\count112
+\nofMPsegments=\count112
+\nofMParguments=\count113
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen134
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen129
+\MPnumerator=\count115
 \everyMPtoPDFconversion=\toks33
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: class default
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 85.35826pt, 443.57848pt, 85.35826pt
+v-parts: 99.58464pt, 595.8007pt, 99.58464pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  443.57848pt
+\textheight 595.8007pt
+\oddsidemargin  13.08827pt
+\evensidemargin 13.08827pt
+\topmargin  -9.68535pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 44.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
-* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=443.57848pt
-* \textheight=595.8007pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-9.68535pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
 LaTeX Info: Redefining \celsius on input line 27.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 27.
 
@@ -568,116 +515,543 @@ Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
+\openout2 = `cap_0_motivaciones_y_objetivos.aux'.
 
-(./cap_4_analisis_de_datos_transcripcionales.tex
-Cap\'{\i }tulo 1.
+(./cap_0_motivaciones_y_objetivos.tex
 
-LaTeX Warning: Reference `sec:wiegel' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Reference `sec:agrupamientos_no_jerarquicos' on page 1 undefined
- on input line 2.
+LaTeX Warning: Citation `functional_genomics_definition_nature' on page 1 undef
+ined on input line 6.
 
 
-LaTeX Warning: Reference `sec:grupos_en_agrupamiento_jerarquico' on page 1 unde
-fined on input line 2.
+LaTeX Warning: Citation `functional_genomics_definition_wikipedia' on page 1 un
+defined on input line 6.
 
 
-LaTeX Warning: Reference `materiales_y_metodos' on page 1 undefined on input li
-ne 2.
+LaTeX Warning: Citation `Hahn2013' on page 1 undefined on input line 10.
 
 
-LaTeX Warning: Reference `sec:go' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `Kanehisa2000' on page 1 undefined on input line 10.
 
 
-LaTeX Warning: Reference `sec:redes' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `org.At.tair.db2015' on page 1 undefined on input line 
+10.
 
 
-LaTeX Warning: Reference `sec:kegg' on page 1 undefined on input line 4.
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
 
 
-<figuras/densidad_de_desviacion_estandar.png, id=1, 1117.17375pt x 751.80875pt>
-File: figuras/densidad_de_desviacion_estandar.png Graphic file (type png)
-<use figuras/densidad_de_desviacion_estandar.png>
-Package pdftex.def Info: figuras/densidad_de_desviacion_estandar.png used on in
-put line 20.
-(pdftex.def)             Requested size: 177.42868pt x 119.39706pt.
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
-<figuras/densidad_para_niveles.png, id=2, 1117.17375pt x 751.80875pt>
-File: figuras/densidad_para_niveles.png Graphic file (type png)
-
-<use figuras/densidad_para_niveles.png>
-Package pdftex.def Info: figuras/densidad_para_niveles.png used on input line 2
-6.
-(pdftex.def)             Requested size: 177.42868pt x 119.39706pt.
-
-Overfull \hbox (6.3522pt too wide) in paragraph at lines 13--34
-\OT1/cmr/m/n/12 Una vez apli-ca-do es-te fil-tro por des-via-ci^^Son es-tan-dar
-, se aplic^^So un fil-tro de ti-po ``$\OML/cmm/m/it/12 KsobreA$\OT1/cmr/m/n/12 
-'',
  []
 
 [1
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<figuras/barrido_k_ch.png, id=16, 1204.5pt x 966.61125pt>
-File: figuras/barrido_k_ch.png Graphic file (type png)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) [2]
+\openout2 = `cap_1_introduccion.aux'.
 
-<use figuras/barrido_k_ch.png>
-Package pdftex.def Info: figuras/barrido_k_ch.png used on input line 91.
-(pdftex.def)             Requested size: 199.60895pt x 160.17719pt.
 
-<figuras/barrido_k_dunn.png, id=17, 1204.5pt x 966.61125pt>
-File: figuras/barrido_k_dunn.png Graphic file (type png)
+(./cap_1_introduccion.tex
+Cap\'{\i }tulo 1.
 
-<use figuras/barrido_k_dunn.png>
-Package pdftex.def Info: figuras/barrido_k_dunn.png used on input line 97.
-(pdftex.def)             Requested size: 199.60895pt x 160.17719pt.
+LaTeX Warning: Citation `Domany2003' on page 3 undefined on input line 2.
 
-<figuras/perfiles_k_means.png, id=18, 1380.15625pt x 717.68124pt>
-File: figuras/perfiles_k_means.png Graphic file (type png)
 
-<use figuras/perfiles_k_means.png>
-Package pdftex.def Info: figuras/perfiles_k_means.png used on input line 106.
-(pdftex.def)             Requested size: 354.86412pt x 184.523pt.
- [3 <./figuras/densidad_de_desviacion_estandar.png (PNG copy)> <./figuras/densi
-dad_para_niveles.png>]
+LaTeX Warning: Citation `Alberts2015' on page 3 undefined on input line 2.
+
+<figuras/celula_eucariota.png, id=10, 1361.085pt x 796.9775pt>
+File: figuras/celula_eucariota.png Graphic file (type png)
+
+<use figuras/celula_eucariota.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 3 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 3 undefined on input line 10.
+
+<figuras/adn1.png, id=12, 1339.0025pt x 794.97pt>
+File: figuras/adn1.png Graphic file (type png)
+ <use figuras/adn1.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 3 undefined on input line 17.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 3 undefined on input line 17.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/perfiles_ds_1.png, id=26, 1204.5pt x 903.375pt>
+[3
+
+
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/adn2.png, id=16, 926.46124pt x 329.23pt>
+File: figuras/adn2.png Graphic file (type png)
+ <use figuras/adn2.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 4 undefined on input line 28.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 4 undefined on input line 28.
+
+<figuras/adn3.png, id=17, 526.96875pt x 614.295pt>
+File: figuras/adn3.png Graphic file (type png)
+ <use figuras/adn3.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 4 undefined on input line 36.
+
+) [4 <./figuras/celula_eucariota.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./figuras/adn1.png>] [6 <./figuras/adn2.png>] [7 <./figuras/adn3.png>]
+\openout2 = `cap_2_materiales_y_metodos.aux'.
+
+
+(./cap_2_materiales_y_metodos.tex
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `Bose2016' on page 8 undefined on input line 2.
+
+<figuras/micromatriz.png, id=35, 1118.1775pt x 806.01125pt>
+File: figuras/micromatriz.png Graphic file (type png)
+
+<use figuras/micromatriz.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8
+
+
+
+] [9 <./figuras/micromatriz.png>]
+
+LaTeX Warning: Citation `Babu2004' on page 10 undefined on input line 24.
+
+
+LaTeX Warning: Citation `Schulze2001' on page 10 undefined on input line 24.
+
+
+LaTeX Warning: Citation `Domany2003' on page 10 undefined on input line 24.
+
+[10]
+
+LaTeX Warning: Citation `AtGenExpress' on page 11 undefined on input line 44.
+
+
+LaTeX Warning: Citation `Kilian2007' on page 11 undefined on input line 44.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+
+LaTeX Warning: Citation `Hahn2013' on page 11 undefined on input line 51.
+
+
+LaTeX Warning: Citation `Bruckner2009' on page 11 undefined on input line 51.
+
+
+LaTeX Warning: Citation `Hahn2013' on page 11 undefined on input line 53.
+
+
+LaTeX Warning: Citation `Cusick2009' on page 11 undefined on input line 53.
+
+<figuras/ai1_lci.png, id=51, 1237.62375pt x 773.89125pt>
+File: figuras/ai1_lci.png Graphic file (type png)
+
+<use figuras/ai1_lci.png>
+
+LaTeX Warning: Citation `Hahn2013' on page 11 undefined on input line 58.
+
+
+LaTeX Warning: Citation `Hahn2013' on page 11 undefined on input line 58.
+
+[11]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/mapa_kegg.png, id=55, 497.86pt x 591.20876pt>
+File: figuras/mapa_kegg.png Graphic file (type png)
+
+<use figuras/mapa_kegg.png>
+
+LaTeX Warning: Citation `Graphite2015' on page 12 undefined on input line 72.
+
+
+LaTeX Warning: Citation `Segal2003' on page 12 undefined on input line 74.
+
+
+LaTeX Warning: Citation `Kanehisa2000' on page 12 undefined on input line 74.
+
+[12]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/ejemplo_de_go.png, id=59, 682.55pt x 701.62125pt>
+File: figuras/ejemplo_de_go.png Graphic file (type png)
+
+<use figuras/ejemplo_de_go.png>
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]\OT1/cmr/m/n/12 Anotaci^^Son (in-fe-ri-da
+ []
+
+
+Overfull \hbox (0.98723pt too wide) in paragraph at lines 99--99
+[]\OT1/cmr/m/n/12 Siglas| 
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 113--113
+[]\OT1/cmr/m/n/12 Secuencia o si-mi-la-ri-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 115--115
+[]\OT1/cmr/m/n/12 An^^Sali-sis compu-tacio-
+ []
+
+<figuras/codigos_de_evidencia.png, id=60, 702.625pt x 702.625pt>
+File: figuras/codigos_de_evidencia.png Graphic file (type png)
+
+<use figuras/codigos_de_evidencia.png>) [13 <./figuras/ai1_lci.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15] [16] [17 <./figuras/mapa_kegg.png>] [18 <./figuras/ejemplo_de_go.png>]
+[19 <./figuras/codigos_de_evidencia.png (PNG copy)>]
+\openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
+
+
+(./cap_3_metodos_de_agrupamiento_de_datos.tex
+Cap\'{\i }tulo 3.
+
+LaTeX Warning: Citation `Gan2007' on page 20 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Halkidi2001' on page 20 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Domany1999' on page 20 undefined on input line 6.
+
+[20
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+LaTeX Warning: Citation `Chen2009' on page 21 undefined on input line 35.
+
+
+LaTeX Warning: Citation `Halkidi2001' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Domany1999' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Gan2007' on page 21 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Kheng2010' on page 21 undefined on input line 36.
+
+[21] [22]
+
+LaTeX Warning: Citation `Babu2004' on page 23 undefined on input line 65.
+
+<figuras/perfiles_anti_coregulados.png, id=100, 702.625pt x 702.625pt>
+File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
+
+<use figuras/perfiles_anti_coregulados.png>
+<figuras/perfiles_coregulados.png, id=101, 702.625pt x 702.625pt>
+File: figuras/perfiles_coregulados.png Graphic file (type png)
+
+<use figuras/perfiles_coregulados.png>
+<figuras/perfiles_sin_agrupar.png, id=102, 702.625pt x 702.625pt>
+File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
+
+<use figuras/perfiles_sin_agrupar.png>
+
+LaTeX Warning: Citation `Dhaeseleer2005' on page 23 undefined on input line 101
+.
+
+[23]
+
+LaTeX Warning: Citation `Hennig2013' on page 24 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Kheng2010' on page 24 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Babu2004' on page 24 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Gan2007' on page 24 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Eisen1998' on page 24 undefined on input line 113.
+
+[24 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfiles_co
+regulados.png (PNG copy)> <./figuras/perfiles_sin_agrupar.png (PNG copy)>]
+[25]
+
+LaTeX Warning: Citation `Resnik1995' on page 26 undefined on input line 124.
+
+[26
+
+] <figuras/dag.png, id=119, 454.69875pt x 313.17pt>
+File: figuras/dag.png Graphic file (type png)
+ <use figuras/dag.png>
+
+LaTeX Warning: Citation `Lin1998' on page 27 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Jiang1997' on page 27 undefined on input line 136.
+
+[27 <./figuras/dag.png>]
+
+LaTeX Warning: Citation `Pesquita2009' on page 28 undefined on input line 144.
+
+
+LaTeX Warning: Citation `Bose2016' on page 28 undefined on input line 145.
+
+
+LaTeX Warning: Citation `Lee2004' on page 28 undefined on input line 147.
+
+
+LaTeX Warning: Citation `Sevilla2005' on page 28 undefined on input line 157.
+
+[28]
+
+LaTeX Warning: Citation `Lord2003' on page 29 undefined on input line 161.
+
+
+LaTeX Warning: Citation `Pesquita2009' on page 29 undefined on input line 165.
+
+
+LaTeX Warning: Citation `Resnik1995' on page 29 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Pesquita2009' on page 29 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Bose2016' on page 29 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Lin1998' on page 29 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Jiang1997' on page 29 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Sevilla2005' on page 29 undefined on input line 170.
+
+
+LaTeX Warning: Citation `Lord2003' on page 29 undefined on input line 170.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
+
+ []
+
+[29] <figuras/ejemplo_k_means.png, id=130, 702.625pt x 401.5pt>
+File: figuras/ejemplo_k_means.png Graphic file (type png)
+
+<use figuras/ejemplo_k_means.png>
+
+LaTeX Warning: Citation `Kogan2006' on page 30 undefined on input line 196.
+
+
+LaTeX Warning: Citation `Hartigan1979' on page 30 undefined on input line 196.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30]
+
+LaTeX Warning: Citation `Park2009' on page 31 undefined on input line 205.
+
+
+LaTeX Warning: Citation `Ibrahim2012' on page 31 undefined on input line 205.
+
+[31 <./figuras/ejemplo_k_means.png (PNG copy)>]
+
+LaTeX Warning: Citation `Johnson1967' on page 32 undefined on input line 230.
+
+[32]
+
+LaTeX Warning: Citation `Shalizi2009' on page 33 undefined on input line 239.
+
+
+LaTeX Warning: Citation `Gan2007' on page 33 undefined on input line 239.
+
+
+LaTeX Warning: Citation `Johnson1967' on page 33 undefined on input line 239.
+
+<figuras/agrupamiento_jerarquico.png, id=141, 702.625pt x 702.625pt>
+File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
+
+<use figuras/agrupamiento_jerarquico.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (5.24925pt too wide) in paragraph at lines 254--254
+[]\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
+ []
+
+<figuras/corte_arbol_estatico.png, id=142, 702.625pt x 702.625pt>
+File: figuras/corte_arbol_estatico.png Graphic file (type png)
+
+<use figuras/corte_arbol_estatico.png>
+
+LaTeX Warning: Citation `Domany1999' on page 33 undefined on input line 266.
+
+
+LaTeX Warning: Citation `Langfelder2008' on page 33 undefined on input line 266
+.
+
+[33]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34 <./figuras/agrupamiento_jerarquico.png (PNG copy)>]
+
+LaTeX Warning: Citation `Langfelder2008' on page 35 undefined on input line 268
+.
+
+[35 <./figuras/corte_arbol_estatico.png (PNG copy)>]
+<figuras/cut_tree_dynamic_ejemplo.png, id=153, 969.6225pt x 413.545pt>
+File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
+
+<use figuras/cut_tree_dynamic_ejemplo.png>
+
+LaTeX Warning: Citation `Langfelder2008' on page 36 undefined on input line 287
+.
+
+
+LaTeX Warning: Citation `Langfelder2008' on page 36 undefined on input line 287
+.
+
+
+LaTeX Warning: Citation `Langfelder2008' on page 36 undefined on input line 293
+.
+
+
+LaTeX Warning: Citation `Langfelder2007' on page 36 undefined on input line 293
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36] [37 <./figuras/cut_tree_dynamic_ejemplo.png>]
+
+LaTeX Warning: Citation `Horvath2007' on page 38 undefined on input line 306.
+
+
+LaTeX Warning: Citation `Rosvall2008' on page 38 undefined on input line 307.
+
+
+LaTeX Warning: Citation `Clauset2004' on page 38 undefined on input line 307.
+
+
+LaTeX Warning: Citation `Berenstein2014' on page 38 undefined on input line 309
+.
+
+
+LaTeX Warning: Citation `Rosvall2008' on page 38 undefined on input line 309.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 304--46
+
+ []
+
+[38]
+\openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
+
+ (./cap_4_analisis_de_datos_transcripcionales.tex
+Cap\'{\i }tulo 4.
+
+<figuras/densidad_de_desviacion_estandar.png, id=165, 1117.17375pt x 751.80875p
+t>
+File: figuras/densidad_de_desviacion_estandar.png Graphic file (type png)
+ <use figuras/densidad_de_desviacion_estandar.png>
+<figuras/densidad_para_niveles.png, id=166, 1117.17375pt x 751.80875pt>
+File: figuras/densidad_para_niveles.png Graphic file (type png)
+
+<use figuras/densidad_para_niveles.png>
+Overfull \hbox (6.3522pt too wide) in paragraph at lines 13--34
+\OT1/cmr/m/n/12 Una vez apli-ca-do es-te fil-tro por des-via-ci^^Son es-tan-dar
+, se aplic^^So un fil-tro de ti-po ``$\OML/cmm/m/it/12 KsobreA$\OT1/cmr/m/n/12 
+'',
+ []
+
+[39
+
+
+
+] [40] <figuras/barrido_k_ch.png, id=173, 1204.5pt x 966.61125pt>
+File: figuras/barrido_k_ch.png Graphic file (type png)
+
+<use figuras/barrido_k_ch.png>
+<figuras/barrido_k_dunn.png, id=174, 1204.5pt x 966.61125pt>
+File: figuras/barrido_k_dunn.png Graphic file (type png)
+
+<use figuras/barrido_k_dunn.png>
+<figuras/perfiles_k_means.png, id=175, 1380.15625pt x 717.68124pt>
+File: figuras/perfiles_k_means.png Graphic file (type png)
+
+<use figuras/perfiles_k_means.png> [41 <./figuras/densidad_de_desviacion_estand
+ar.png (PNG copy)> <./figuras/densidad_para_niveles.png (PNG copy)>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/perfiles_ds_1.png, id=180, 1204.5pt x 903.375pt>
 File: figuras/perfiles_ds_1.png Graphic file (type png)
 
 <use figuras/perfiles_ds_1.png>
-Package pdftex.def Info: figuras/perfiles_ds_1.png used on input line 118.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-<figuras/perfiles_ds_4.png, id=27, 1204.5pt x 903.375pt>
+<figuras/perfiles_ds_4.png, id=181, 1204.5pt x 903.375pt>
 File: figuras/perfiles_ds_4.png Graphic file (type png)
 
-<use figuras/perfiles_ds_4.png>
-Package pdftex.def Info: figuras/perfiles_ds_4.png used on input line 124.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
- [4]
+<use figuras/perfiles_ds_4.png> [42]
 
-LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 5 unde
-fined on input line 131.
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 43 und
+efined on input line 131.
 
 
-LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 5 unde
-fined on input line 131.
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 43 und
+efined on input line 131.
 
-<figuras/correlacion_media_por_tamano_ds_1.png, id=31, 1204.5pt x 903.375pt>
+<figuras/correlacion_media_por_tamano_ds_1.png, id=185, 1204.5pt x 903.375pt>
 File: figuras/correlacion_media_por_tamano_ds_1.png Graphic file (type png)
 
 <use figuras/correlacion_media_por_tamano_ds_1.png>
-Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_1.png used on 
-input line 137.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
 Underfull \hbox (badness 1210) in paragraph at lines 138--138
 []\OT1/cmr/m/n/10.95 (a) |Co-rre-la-ci^^Son me-dia por ta-ma~no de
  []
@@ -687,14 +1061,10 @@ Underfull \hbox (badness 2142) in paragraph at lines 138--138
 \OT1/cmr/m/n/10.95 gru-po pa-ra los gru-pos ob-te-ni-dos con
  []
 
-<figuras/correlacion_media_por_tamano_ds_4.png, id=32, 1204.5pt x 903.375pt>
+<figuras/correlacion_media_por_tamano_ds_4.png, id=186, 1204.5pt x 903.375pt>
 File: figuras/correlacion_media_por_tamano_ds_4.png Graphic file (type png)
 
 <use figuras/correlacion_media_por_tamano_ds_4.png>
-Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_4.png used on 
-input line 143.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
 Underfull \hbox (badness 1107) in paragraph at lines 144--144
 []\OT1/cmr/m/n/10.95 (b) |Co-rre-la-ci^^Son me-dia por ta-ma~no de
  []
@@ -704,94 +1074,88 @@ Underfull \hbox (badness 2142) in paragraph at lines 144--144
 \OT1/cmr/m/n/10.95 gru-po pa-ra los gru-pos ob-te-ni-dos con
  []
 
-<figuras/histograma_ds_1.png, id=33, 1204.5pt x 903.375pt>
+<figuras/histograma_ds_1.png, id=187, 1204.5pt x 903.375pt>
 File: figuras/histograma_ds_1.png Graphic file (type png)
 
 <use figuras/histograma_ds_1.png>
-Package pdftex.def Info: figuras/histograma_ds_1.png used on input line 150.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-<figuras/histograma_ds_4.png, id=34, 1204.5pt x 903.375pt>
+<figuras/histograma_ds_4.png, id=188, 1204.5pt x 903.375pt>
 File: figuras/histograma_ds_4.png Graphic file (type png)
 
 <use figuras/histograma_ds_4.png>
-Package pdftex.def Info: figuras/histograma_ds_4.png used on input line 156.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
+
+LaTeX Warning: Reference `ref:histograma_ds_1' on page 43 undefined on input li
+ne 163.
 
 
-LaTeX Warning: Reference `ref:histograma_ds_1' on page 5 undefined on input lin
-e 163.
+LaTeX Warning: Reference `ref:histograma_ds_4' on page 43 undefined on input li
+ne 163.
 
-
-LaTeX Warning: Reference `ref:histograma_ds_4' on page 5 undefined on input lin
-e 163.
-
-
-LaTeX Warning: Reference `fig:ecdf_k_ds1_ds4' on page 5 undefined on input line
- 164.
-
-<figuras/ecdf_k_ds1_ds4.png, id=35, 1204.5pt x 903.375pt>
+<figuras/ecdf_k_ds1_ds4.png, id=189, 1204.5pt x 903.375pt>
 File: figuras/ecdf_k_ds1_ds4.png Graphic file (type png)
 
 <use figuras/ecdf_k_ds1_ds4.png>
-Package pdftex.def Info: figuras/ecdf_k_ds1_ds4.png used on input line 167.
-(pdftex.def)             Requested size: 266.14978pt x 199.61153pt.
- [5 <./figuras/barrido_k_ch.png> <./figuras/barrido_k_dunn.png>] [6 <./figuras/
-perfiles_k_means.png (PNG copy)> <./figuras/perfiles_ds_1.png (PNG copy)> <./fi
-guras/perfiles_ds_4.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:fraccion_de_km_en_ds1' on page 43 undefined on in
+put line 171.
+
+
+LaTeX Warning: Reference `fig:fraccion_de_ds1_en_ds4' on page 43 undefined on i
+nput line 171.
+
+[43 <./figuras/barrido_k_ch.png (PNG copy)> <./figuras/barrido_k_dunn.png (PNG 
+copy)>] [44 <./figuras/perfiles_k_means.png (PNG copy)> <./figuras/perfiles_ds_
+1.png (PNG copy)> <./figuras/perfiles_ds_4.png (PNG copy)>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./figuras/correlacion_media_por_tamano_ds_1.png (PNG copy)> <./figuras/corr
-elacion_media_por_tamano_ds_4.png (PNG copy)> <./figuras/histograma_ds_1.png> <
-./figuras/histograma_ds_4.png>])
-Overfull \hbox (4.91425pt too wide) in paragraph at lines 180--47
+[45 <./figuras/correlacion_media_por_tamano_ds_1.png (PNG copy)> <./figuras/cor
+relacion_media_por_tamano_ds_4.png (PNG copy)> <./figuras/histograma_ds_1.png (
+PNG copy)> <./figuras/histograma_ds_4.png (PNG copy)>])
+Overfull \hbox (4.91425pt too wide) in paragraph at lines 181--47
 [][][]\OT1/cmr/m/n/12 GOCC []zK[]-[]TA:[] [][][]por[] [][][]tra[]-[]ta[]-[]mien
 []-[]to[] [][][]Gx/GOBPa,[] [][][]Gx/GOBPb,[] [][][]Gx/GOCC,[] [][][]Gx/PIN,[] 
 [][][]Gx/LCI,[]
  []
 
-[8 <./figuras/ecdf_k_ds1_ds4.png (PNG copy)>] (./tesis_de_licenciatura.bbl
+[46 <./figuras/ecdf_k_ds1_ds4.png (PNG copy)>] (./tesis_de_licenciatura.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 6.
 
-) [9
+) [47
 
 
 
-] (./tesis_de_licenciatura.aux
-(./cap_4_analisis_de_datos_transcripcionales.aux)
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-)
+] (./tesis_de_licenciatura.aux (./cap_0_motivaciones_y_objetivos.aux)
+(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
+(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux))
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 5272 strings out of 494917
- 76844 string characters out of 6178372
- 164236 words of memory out of 5000000
- 8399 multiletter control sequences out of 15000+600000
- 10973 words of font info for 39 fonts, out of 8000000 for 9000
- 62 hyphenation exceptions out of 8191
- 38i,10n,39p,928b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti10.pfb>
-Output written on tesis_de_licenciatura.pdf (9 pages, 1287685 bytes).
+ 4505 strings out of 494999
+ 65231 string characters out of 1180816
+ 157301 words of memory out of 3000000
+ 7581 multiletter control sequences out of 15000+50000
+ 11320 words of font info for 40 fonts, out of 3000000 for 9000
+ 54 hyphenation exceptions out of 8191
+ 36i,14n,38p,1417b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on tesis_de_licenciatura.pdf (47 pages, 3942131 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 257 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

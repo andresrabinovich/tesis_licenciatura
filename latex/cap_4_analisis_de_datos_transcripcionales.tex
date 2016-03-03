@@ -161,16 +161,34 @@ Para cada parámetro, cada tratamiento y cada grupo, se realizó un control nulo
 \end{figure*}
 Se observa que la correlación media de los grupos es en todos los casos superior a la del control nulo. Esto muestra que existe estructura en los grupos hallados para ambos parámetros. \\
 Por otro lado, en las figuras \ref{ref:histograma_ds_1} y \ref{ref:histograma_ds_4} se observa que $deepsplit=1$ llega a tener grupos de mayor tamaño que $deepsplit=4$. Esto es esperable ya que cada parámetro aumenta o disminuye la granularidad del método. Estos grupos de $deepsplit=1$ comparativamente grandes tienen alta correlación. Sin embargo hay una menor correlación en los grupos pequeños para $deesplit=1$ que para $deesplit=1$. Una posible explicación para esto es que para que exista un grupo grande, es necesario que el mismo tenga alta correlación. De lo contrario, el método buscará partirlo en grupos más chicos hasta maximizar la correlación de cada grupo.\\
-Otra forma de visualizar esta diferencia en los tamaños de los grupos que obtiene cada método es mediante la función de distribución acumulada empírica que se observa en la figura \ref{fig:ecdf_k_ds1_ds4}. En la misma se observa que corte de árbol dinámico con $deepsplit=4$ produce la mayor cantidad de grupos con los menores tamaños, seguida por la misma técnica pero con $deepsplit=1$ y finalmente por k-means con solamente dos grupos muy masivos.
+
+\subsection{Comparación de escalas de resolución de los métodos}
+Otra forma de visualizar la diferencia en los tamaños de los grupos que obtiene cada método es mediante la función de distribución acumulada empírica que se observa en la figura \ref{fig:ecdf_k_ds1_ds4}. En la misma se observa que corte de árbol dinámico con $deepsplit=4$ produce la mayor cantidad de grupos con los menores tamaños, seguida por la misma técnica pero con $deepsplit=1$ y finalmente por k-means con solamente dos grupos muy masivos.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{ecdf_k_ds1_ds4}
     \caption{Función de distribución acumulada empírica para los métodos k-means (k=2) y corte de árbol dinámico (ds=1 y ds=4) para el tratamiento 'Frío'.}
     \label{fig:ecdf_k_ds1_ds4}
 \end{figure}
-Por otro lado, para poder caracterizar la granularidad de las particiones halladas con cada método, 
+Por otro lado, para poder caracterizar la granularidad de las particiones halladas con cada método, podemos calcular la fracción de los grupos más grandes de una partición en otra partición. Las figuras \ref{fig:fraccion_de_km_en_ds1} y \ref{fig:fraccion_de_ds1_en_ds4} muestran como están distribuidos los dos grupos de la partición k-means en los grupos de la partición corte de árbol dinámico con $deepsplit=1$ y los 4 grupos más grandes de la partición corte de árbol dinámico con $deepsplit=1$ en la de $deepsplit=4$. \hl{completar con que significa la linea punteada}
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}[t]{0.8\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{fraccion_de_km_en_ds1}
+    \caption{Fracción de grupos de $deepsplit=1$ en los grupos k-means.}
+    \label{fig:fraccion_de_km_en_ds1}
+    \end{subfigure}
 
-\subsection{Análisis de los métodos y problemas de escala de resolución}
+    \begin{subfigure}[t]{0.8\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{fraccion_de_ds1_en_ds4}
+    \caption{Fracción de grupos de $deepsplit=4$ en los grupos más masivos de $deepsplit=1$.}
+    \label{fig:fraccion_de_ds1_en_ds4}
+    \end{subfigure}
+    \caption{Fracción de grupos de una partición más fina dentro de grupos en una partición más gruesa para el tratamiento 'Frío', con $deepsplit=1$, $deepsplit=4$ y k-means. \hl{completar con que significan los colores y la linea punteada}}
+\end{figure*}
+En cada caso, se observa que los grupos más grandes de una partición con menor granularidad se parten en grupos más pequeños en otra partición con mayor granularidad, es decir, la partición $deepsplit=4$ está contenida en la partición $deepsplit=1$ (es un refinamiento de la misma) y esta a su vez está contenida en la partición k-means.
 
 \section{Coherencia entre la métrica transcripcional y otros espacios de conocimiento}
 \hl{idea esperamos que los conocimientos (entendidos como nociones de similitud) de los distintos espacios sean diferentes pero no ortogonales...cuantificacion...veamos que estructuras son en cierto grado coherentes}

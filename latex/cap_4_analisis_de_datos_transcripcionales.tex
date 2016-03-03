@@ -3,28 +3,22 @@ En este capítulo analizaremos el conjunto de datos transcripcionales Wiegel \& 
 Una vez obtenidos los grupos en el espacio de expresión, utilizaremos los índices BHI e Interacting Densities para cuantificar el grado de coherencia entre estas estructuras y los conocimientos (entendidos como nociones de similitud) en el espacio GO.\\
 Luego, analizaremos la coherencia de los resultados obtenidos en el espacio de expresión con la de resultados obtenidos en otros espacios de conocimiento, como GO (sección \ref{sec:go}), PIN  (sección \ref{sec:redes}) y KEGG (sección \ref{sec:kegg}), esperando que estos conocimientos sean diferentes pero no ortogonales, utilizando para ello el índice KTA. 
 
-\section{Descripción del dataset}
-\hl{esto esta en sec:wiegel habra que profundizar mas?}
-\section{Métricas transcripcionales}
-\hl{esto esta en el capitulo 3, o la idea es poner otra cosa?}
-\section{Agrupamiento}
-
-\subsection{Proceso de filtrado}
+\section{Proceso de filtrado}
 El conjunto de datos Wiegel utilizado consta de los niveles de expresión de 22810 sondas que se mapean a 20149 genes a lo largo de 11 tratamientos diferentes y con entre 4 y 9 muestreos en dos réplicas. Para poder manejar esta cantidad de información es necesario realizar un filtrado (una selección) previo de los datos que permita quedarse únicamente con aquellos genes que se expresaron o inhibieron, ya que serán estos los genes que estarán siendo regulados en función del tratamiento y por lo tanto los de interés.\\
-Para ello, se aplicaron dos tipos de filtros por tratamiento, por desviación estandar y por de tipo ``$K sobre A$''. Para el primero, se calculó la desviación estandar por gen a lo largo de todo el tratamiento y se decidió tomar los genes cuya desviación estandar se encontrara en el cuantil 0.9, es decir, utilizar el 10\% de los genes con mayor desviación estandar, considerando estos como los que formaron parte de la respuesta biológica al tratamiento. La figura \ref{fig:densidad_de_desviacion_estandar} muestra la distribución de probabilidad acumulada (empírica) de la desviación estandar para los genes del tratamiento ``Cold''.\\
-Una vez aplicado este filtro por desviación estandar, se aplicó un filtro de tipo ``$K sobre A$'', que toma unicamente con aquellos genes que tengan al menos $K$ datos por encima del valor $A$. En nuestro caso, decidimos utilizar como valor de $K$, la mitad de las mediciones que tuviera el tratamiento. Si el tratamiento tenía mediciones cada 0 minutos, 30 minutos, 1 hora, 3 horas, 6 horas, 12 horas y 24, es decir, 6 mediciones en total, se tomó $K = 3$. Para $A$, se decidió utilizar una medida usual de $A=4$, ya que valores de señal menores a $4$ no se distinguen del ruido \hl{paper sobre esto? cuales son las unidades de estos datos? son en escala logaritmica?}. La figura \ref{fig:densidad_para_niveles} muestra la distribución de probabilidad para los niveles de expresión para el tratamiento ``Cold''.
+Para ello, se aplicaron dos tipos de filtros por tratamiento, por desviación estándar y por de tipo ``$K sobre A$''. Para el primero, se calculó la desviación estándar por gen a lo largo de todo el tratamiento y se decidió tomar los genes cuya desviación estándar se encontrara en el cuantil 0.9, es decir, utilizar el 10\% de los genes con mayor desviación estándar, considerando estos como los que formaron parte de la respuesta biológica al tratamiento. La figura \ref{fig:densidad_de_desviacion_estandar} muestra la distribución de probabilidad acumulada (empírica) de la desviación estándar para los genes del tratamiento ``Frío''.\\
+Una vez aplicado este filtro por desviación estándar, se aplicó un filtro de tipo ``$K sobre A$'', que toma unicamente con aquellos genes que tengan al menos $K$ datos por encima del valor $A$. En nuestro caso, decidimos utilizar como valor de $K$, la mitad de las mediciones que tuviera el tratamiento. Si el tratamiento tenía mediciones cada 0 minutos, 30 minutos, 1 hora, 3 horas, 6 horas, 12 horas y 24, es decir, 6 mediciones en total, se tomó $K = 3$. Para $A$, se decidió utilizar una medida usual de $A=4$, ya que valores de señal menores a $4$ no se distinguen del ruido \hl{paper sobre esto? cuales son las unidades de estos datos? son en escala logaritmica?}. La figura \ref{fig:densidad_para_niveles} muestra la distribución de probabilidad para los niveles de expresión para el tratamiento ``Frío''.
 \begin{figure*}[t!]
     \centering
     \begin{subfigure}[t]{0.4\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{densidad_de_desviacion_estandar}
-    \caption{Distribución de probabilidad acumulada de la desviación estandar para los genes del tratamiento \textit{Cold}. Todos los genes con desviación estandar menor que la indicada por la recta vertical roja son descartados.}
+    \caption{Distribución de probabilidad acumulada de la desviación estándar para los genes del tratamiento \textit{Frío}. Todos los genes con desviación estándar menor que la indicada por la recta vertical roja son descartados.}
     \label{fig:densidad_de_desviacion_estandar}
     \end{subfigure}
     \begin{subfigure}[t]{0.4\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{densidad_para_niveles}
-    \caption{distribución de probabilidad para los niveles de expresión para el tratamiento \textit{Cold}. La recta vertical roja muestra el valor a partir del cual se hace un corte.}
+    \caption{distribución de probabilidad para los niveles de expresión para el tratamiento \textit{Frío}. La recta vertical roja muestra el valor a partir del cual se hace un corte.}
     \label{fig:densidad_para_niveles}
     \end{subfigure}
     \caption{Funciones de distribución de probabilidad para perfiles de expresión}
@@ -67,12 +61,12 @@ Calor y recuperación & 0.65 & 2 & 1944 \\
 \caption{Cantidad de genes y filtros utilizados por tratamiento.}
 \label{tabla:genes_por_tratamiento}
 \end{table}
-\subsection{Agrupamiento con k-means}
-El método de agrupamiento k-means hace uso de la distancia euclidia para minimizar la suma de los cuadrados. Si los datos están estandarizados y centrados, es posible relacionar la distancia euclidia $d$ con el coeficiente de correlación mediante la fórmula:
+\section{Agrupamiento con k-means}
+El método de agrupamiento k-means hace uso de la distancia euclidiana para minimizar la suma de los cuadrados. Si los datos están estandarizados y centrados, es posible relacionar la distancia euclidiana $d$ con el coeficiente de correlación mediante la fórmula:
 \begin{equation}
 	d(\vec{x}, \vec{y}) = \sqrt{2(d-1)(1-r(\vec{x}, \vec{y}))}
 \end{equation}
-y por lo tanto, para datos estandarizados, la distancia euclidia se comportará de forma similar a la distancia de correlación y podremos utilizar el método k-means. \hl{revisar esta frase y que quiero decir}\\
+y por lo tanto, para datos estandarizados, la distancia euclidiana se comportará de forma similar a la distancia de correlación y podremos utilizar el método k-means.\\
 Para decidir el k a utilizar en el método, se realizó un barrido variando k entre $k=2$ y $k=30$ con pasos de 1. Al tratarse de un método heurístico, no existe garantía de convergencia al óptimo global y el resultado del mismo puede entonces depender de los grupos iniciales. Por lo tanto, para cada k, se realizaron cien agrupamientos y se midieron los índices de validación internos Calinski-Harabasz y Dunn en cada uno, definidos respectivamente como:
 \begin{equation}
 	CH_k = \frac{SS_B}{SS_W}\frac{n-k}{n-1}
@@ -108,94 +102,87 @@ Se observa que la cantidad de grupos que maximiza estos índices es 2. Se realiz
     \label{fig:perfiles_k_means}
 \end{figure}
 Estas estructuras tan grandes son de difícil interpretación biológica, ya que si bien las respuestas de expresión dentro de cada grupo son similares, existe mucha heterogeneidad en las funciones biológicas de los genes que los componen. El método k-means está entonces trabajando a una escala que no permite extraer información biológica de los grupos. Será necesario entonces aumentar la granularidad mediante otros métodos de agrupamiento.
-\subsection{Agrupamiento con corte de árbol dinámico}
-Utilizando el método de corte de árbol dinámico se realizó un agrupamiento para cada tratamiento, utilizando alternativamente los parámetros $deepSplit=1$ (menor granularidad) y $deepSplit=4$ (mayor granularidad). Las figuras \ref{fig:perfiles_ds_1} y \ref{fig:perfiles_ds_4} muestran algunos de los perfiles obtenidos con cada parámetro respectivamente para el tratamiento ``Frío''.\\ 
-En general, para todos los tratamientos, los grupos obtenidos por este método tienen mayor correlación media ($\rho$)que los obtenidos por el método k-means, obteniéndose una mayor cantidad de grupos con el $deepsplit=4$ que con $deepsplit=1$.\\
+\section{Agrupamiento con corte de árbol dinámico}
+Utilizando el método de corte de árbol dinámico se realizó un agrupamiento para cada tratamiento, utilizando alternativamente los parámetros $deepSplit=1$ (que llamaremos $ds1$, de menor granularidad) y $deepSplit=4$ (que llamaremos $ds4$, de mayor granularidad). Las figuras \ref{fig:perfiles_ds_1} y \ref{fig:perfiles_ds_4} muestran algunos de los perfiles obtenidos con cada parámetro respectivamente para el tratamiento ``Frío''.\\ 
+En general, para todos los tratamientos, los grupos obtenidos por este método tienen mayor correlación media ($\rho$)que los obtenidos por el método k-means, obteniéndose una mayor cantidad de grupos con el $ds4$ que con $ds1$.\\
 \begin{figure*}[t!]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{perfiles_ds_1}
-    \caption{Perfiles obtenidos con $deepsplit=1$.}
+    \caption{Perfiles obtenidos con $ds1$.}
     \label{fig:perfiles_ds_1}
     \end{subfigure}
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{perfiles_ds_4}
-    \caption{Perfiles obtenidos con $deepsplit=4$.}
+    \caption{Perfiles obtenidos con $ds4$.}
     \label{fig:perfiles_ds_4}
     \end{subfigure}
-    \caption{Perfiles de expresión génica obtenidos con el método corte de árbol dinámico para $deepsplit=1$ y $deepsplit=4$ para el tratamiento 'Frío'. En negro, el valor medio de cada grupo.}
+    \caption{Perfiles de expresión génica obtenidos con el método corte de árbol dinámico para $ds1$ y $ds4$ para el tratamiento 'Frío'. En negro, el valor medio de cada grupo.}
 \end{figure*}
 
-Para cada parámetro, cada tratamiento y cada grupo, se realizó un control nulo consistente en tomar la misma cantidad de genes presentes en el grupo, pero de forma aleatoria, del conjunto de genes que formaban el tratamiento, y medir su correlación media. Esto se realizó 1000 veces para cada grupo. Las figuras \ref{ref:correlacion_media_por_tamano_ds_1} y \ref{ref:correlacion_media_por_tamano_ds_4} muestran la correlación media por tamaño de grupo y el control nulo para $deepsplit=1$ y $deepsplit=4$ respectivamente. Los grupos fueron agrupados por tamaño de a 10 genes, donde los colores más claros indican mayor cantidad de grupos que los oscuros. El gráfico tiene además la media, en negro, y el segundo y tercer cuartil, en gris, para la distribución del control nulo.
+Para cada parámetro, cada tratamiento y cada grupo, se realizó un control nulo consistente en tomar la misma cantidad de genes presentes en el grupo, pero de forma aleatoria, del conjunto de genes que formaban el tratamiento, y medir su correlación media. Esto se realizó 1000 veces para cada grupo. Las figuras \ref{ref:correlacion_media_por_tamano_ds_1} y \ref{ref:correlacion_media_por_tamano_ds_4} muestran la correlación media por tamaño de grupo y el control nulo para $ds1$ y $ds4$ respectivamente. Los grupos fueron agrupados por tamaño de a 10 genes, donde los colores más claros indican mayor cantidad de grupos que los oscuros. El gráfico tiene además la media, en negro, y el segundo y tercer cuartil, en gris, para la distribución del control nulo.
 
 \begin{figure*}[t!]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{correlacion_media_por_tamano_ds_1}
-    \caption{Correlación media por tamaño de grupo para los grupos obtenidos con $deepsplit=1$.}
+    \caption{Correlación media por tamaño de grupo para los grupos obtenidos con $ds1$.}
     \label{fig:correlacion_media_por_tamano_ds_1}
     \end{subfigure}
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{correlacion_media_por_tamano_ds_4}
-    \caption{Correlación media por tamaño de grupo para los grupos obtenidos con $deepsplit=4$.}
+    \caption{Correlación media por tamaño de grupo para los grupos obtenidos con $ds4$.}
     \label{fig:correlacion_media_por_tamano_ds_4}
     \end{subfigure}
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{histograma_ds_1}
-    \caption{Histograma por tamaño de grupo para los grupos obtenidos con $deepsplit=1$.}
+    \caption{Histograma por tamaño de grupo para los grupos obtenidos con $ds1$.}
     \label{fig:histograma_ds_1}
     \end{subfigure}
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{histograma_ds_4}
-    \caption{Histograma por tamaño de grupo para los grupos obtenidos con $deepsplit=4$.}
+    \caption{Histograma por tamaño de grupo para los grupos obtenidos con $ds4$.}
     \label{fig:histograma_ds_4}
     \end{subfigure}    
-    \caption{Correlación media por tamaño de grupo para los grupos obtenidos por corte de árbol dinámico con $deepsplit=1$, $deepsplit=4$ y control nulo para todos los tratamientos y sus respectivos histogramas}
+    \caption{Correlación media por tamaño de grupo para los grupos obtenidos por corte de árbol dinámico con $ds1$, $ds4$ y control nulo para todos los tratamientos y sus respectivos histogramas}
 \end{figure*}
 Se observa que la correlación media de los grupos es en todos los casos superior a la del control nulo. Esto muestra que existe estructura en los grupos hallados para ambos parámetros. \\
-Por otro lado, en las figuras \ref{ref:histograma_ds_1} y \ref{ref:histograma_ds_4} se observa que $deepsplit=1$ llega a tener grupos de mayor tamaño que $deepsplit=4$. Esto es esperable ya que cada parámetro aumenta o disminuye la granularidad del método. Estos grupos de $deepsplit=1$ comparativamente grandes tienen alta correlación. Sin embargo hay una menor correlación en los grupos pequeños para $deesplit=1$ que para $deesplit=1$. Una posible explicación para esto es que para que exista un grupo grande, es necesario que el mismo tenga alta correlación. De lo contrario, el método buscará partirlo en grupos más chicos hasta maximizar la correlación de cada grupo.\\
+Por otro lado, en las figuras \ref{ref:histograma_ds_1} y \ref{ref:histograma_ds_4} se observa que $ds1$ llega a tener grupos de mayor tamaño que $ds4$. Esto es esperable ya que cada parámetro aumenta o disminuye la granularidad del método. Estos grupos de $ds1$ comparativamente grandes tienen alta correlación. Sin embargo hay una menor correlación en los grupos pequeños para $deesplit=1$ que para $deesplit=1$. Una posible explicación para esto es que para que exista un grupo grande, es necesario que el mismo tenga alta correlación. De lo contrario, el método buscará partirlo en grupos más chicos hasta maximizar la correlación de cada grupo.\\
 
-\subsection{Comparación de escalas de resolución de los métodos}
-Otra forma de visualizar la diferencia en los tamaños de los grupos que obtiene cada método es mediante la función de distribución acumulada empírica que se observa en la figura \ref{fig:ecdf_k_ds1_ds4}. En la misma se observa que corte de árbol dinámico con $deepsplit=4$ produce la mayor cantidad de grupos con los menores tamaños, seguida por la misma técnica pero con $deepsplit=1$ y finalmente por k-means con solamente dos grupos muy masivos.
+\section{Comparación de escalas de resolución de los métodos}
+Otra forma de visualizar la diferencia en los tamaños de los grupos que obtiene cada método es mediante la función de distribución acumulada empírica que se observa en la figura \ref{fig:ecdf_k_ds1_ds4}. En la misma se observa que corte de árbol dinámico con $ds4$ produce la mayor cantidad de grupos con los menores tamaños, seguida por la misma técnica pero con $ds1$ y finalmente por k-means con solamente dos grupos muy masivos.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{ecdf_k_ds1_ds4}
     \caption{Función de distribución acumulada empírica para los métodos k-means (k=2) y corte de árbol dinámico (ds=1 y ds=4) para el tratamiento 'Frío'.}
     \label{fig:ecdf_k_ds1_ds4}
 \end{figure}
-Por otro lado, para poder caracterizar la granularidad de las particiones halladas con cada método, podemos calcular la fracción de los grupos más grandes de una partición en otra partición. Las figuras \ref{fig:fraccion_de_km_en_ds1} y \ref{fig:fraccion_de_ds1_en_ds4} muestran como están distribuidos los dos grupos de la partición k-means en los grupos de la partición corte de árbol dinámico con $deepsplit=1$ y los 4 grupos más grandes de la partición corte de árbol dinámico con $deepsplit=1$ en la de $deepsplit=4$. \hl{completar con que significa la linea punteada}
+Por otro lado, para poder caracterizar la granularidad de las particiones halladas con cada método, podemos calcular la fracción de los grupos más grandes de una partición en otra partición. Las figuras \ref{fig:fraccion_de_km_en_ds1} y \ref{fig:fraccion_de_ds1_en_ds4} muestran como están distribuidos los dos grupos de la partición k-means en los grupos de la partición corte de árbol dinámico con $ds1$ y los 4 grupos más grandes de la partición corte de árbol dinámico con $ds1$ en la de $ds4$.
 \begin{figure*}[t!]
     \centering
-    \begin{subfigure}[t]{0.8\textwidth}
+    \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{fraccion_de_km_en_ds1}
-    \caption{Fracción de grupos de $deepsplit=1$ en los grupos k-means.}
+    \caption{Fracción de grupos de $ds1$ en los grupos k-means.}
     \label{fig:fraccion_de_km_en_ds1}
     \end{subfigure}
 
     \begin{subfigure}[t]{0.8\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{fraccion_de_ds1_en_ds4}
-    \caption{Fracción de grupos de $deepsplit=4$ en los grupos más masivos de $deepsplit=1$.}
+    \caption{Fracción de grupos de $ds4$ en los grupos más masivos de $ds1$.}
     \label{fig:fraccion_de_ds1_en_ds4}
     \end{subfigure}
-    \caption{Fracción de grupos de una partición más fina dentro de grupos en una partición más gruesa para el tratamiento 'Frío', con $deepsplit=1$, $deepsplit=4$ y k-means. \hl{completar con que significan los colores y la linea punteada}}
+    \caption{Fracción de grupos de una partición más fina dentro de grupos en una partición más gruesa para el tratamiento 'Frío', con $ds1$, $ds4$ y k-means. En rojo, aquellos subgrupos que están contenidos en más de un 50\% en el grupo. La linea punteada marca el porcentaje del grupo que representa el total del subgrupo.}
 \end{figure*}
-En cada caso, se observa que los grupos más grandes de una partición con menor granularidad se parten en grupos más pequeños en otra partición con mayor granularidad, es decir, la partición $deepsplit=4$ está contenida en la partición $deepsplit=1$ (es un refinamiento de la misma) y esta a su vez está contenida en la partición k-means.
-
-\section{Coherencia entre la métrica transcripcional y otros espacios de conocimiento}
-\hl{idea esperamos que los conocimientos (entendidos como nociones de similitud) de los distintos espacios sean diferentes pero no ortogonales...cuantificacion...veamos que estructuras son en cierto grado coherentes}
-\subsection{Interacting densities}
-\hl{genex1 /genex4  VS BPa/BPb/CC}
-\hl{PINinfomap / KEGGinfomap/LCI para referencia}
-\subsection{KTA y zKTA}
-\hl{Global}
-\hl{KTA Genex por tratamiento + PIN + KEGG + LCI / GOBPa, GOBPb, GOCC}
-\hl{zKTA: por tratamiento Gx/GOBPa, Gx/GOBPb, Gx/GOCC, Gx/PIN, Gx/LCI, Gx/Kegg}
+Aquellos subgrupos (los grupos de una partición contenidos en el grupo de otra partición) que están contenidos en más (menos) de un 50\% en el grupo aparecen en rojo (negro). La linea punteada indica el porcentaje del grupo que representaría el subgrupo, si el subgrupo estuviera contenido completamente en el grupo.
+En cada caso, se observa que los grupos más grandes de una partición con menor granularidad se parten en grupos más pequeños en otra partición con mayor granularidad, es decir, la partición $ds4$ está contenida en la partición $ds1$ (es un refinamiento de la misma) y esta a su vez está contenida en la partición k-means.\\
+\section{Discusión}
+En el presente análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $ds1$ y $ds4$, encontramos que todos los métodos producen particiones altamente coherentes, con el método k-means generando las particiones más gruesas y los métodos subsiguientes, refinamientos de las mismas. La alta coherencia detectada es indicativo de que cada método logra  hallar estructuras en el espacio de expresión génica, aunque no siempre es factible realizar una interpretación biológica de las estructuras encontradas. Sobre todo en los grupos encontrados con k-means, que solamente toman en cuenta la expresión o inhibición de los genes. En los siguientes capítulos introduciremos algunas herramientas que nos permitirán cuantificar la homogeneidad biológica de las particiones para encontrar la escala óptima en el análisis de expresión.

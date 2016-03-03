@@ -165,6 +165,7 @@ El segúndo método, propuesto en \cite{Lord2003}, consiste en tomar el valor me
 Finalmente, el tercer método, propuesto en \cite{Pesquita2009}, implica tomar el valor medio de los máximos de cada fila, el valor medio de los máximos de cada columna, y quedarse con el máximo de esos dos valores. Este criterio de similaridad se conoce como \textit{rcmax}:
 \begin{equation}
 	Sim_{rcmax}(GO(g_1), GO(g_2)) = \max\{\frac{1}{N}\sum\limits_{i}\max\limits_{1\leq j \leq M}S_{ij}, \frac{1}{M}\sum\limits_{j}\max\limits_{1\leq i \leq N}S_{ij}\}
+	\label{eq:sim_rcmax}
 \end{equation}
 Como muchos genes están anotados en conceptos muy diversos por participar en procesos biológicos muy distintos, e incluso puede haber genes que no están anotados en ningún concepto, la medida de similaridad $Sim_{med}$ tiende a dar valores más bajos que otros métodos. Por el contrario, la medida $Sim_{max}$ tiende a dar valores más altos, por ser una medida más optimista. En este trabajo utilizaremos el tercer método, $Sim_{rcmax}$, por ser un compromiso entre ambos casos extremos.
 \cite{Resnik1995, Pesquita2009, Bose2016, Lin1998, Jiang1997, Sevilla2005, Lord2003}

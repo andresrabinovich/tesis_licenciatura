@@ -27,6 +27,8 @@ Finalmente, el índice de homogeneidad biológica estandarizado para un grupo, z
 	zBHI = \frac{BHI-<BHI_r>}{s(BHI_r)}
 \end{equation}
 donde $<BHI_r>$ es el valor medio del conjunto de valores del BHI del grupo para un control nulo de 1000 reasignaciones de las etiquetas de la partición y $s(BHI_r)$ es la desviación estandar de la muestra para el mismo conjunto.\\
+Se realizó además un control nulo tomando de entre todos los tratamientos 6000 genes que pasaron los filtros. Se formaron grupos de distinto tamaño, desde grupos de \hl{10} genes hasta grupos de \hl{500} genes tomando genes al azar de entre los 6000. Para cada tamaño, se realizaron 1000 grupos aleatorios y se calculó su BHI. Se encontró que el valor medio de los ensambles se mantenía aproximadamente constante, mientras que existía una dependencia de la desviación estandar con el tamaño de los grupos. Se realizaron dos ajustes por funciones de ley de potencias, para tamaños entre 1 y 50 y de 51 en adelante. Las funciones halladas permiten rápidamente obtener el BHI aleatorio medio para una partición de cualquier tamaño y su desviación estandar.
+\hl{poner quizas el grafico de las power laws con sus desviaciones estandar}
 Para caracterizar el comportamiento de cada uno de estos índices se midieron los mismos para el tratamiento ``Frío'' y se calculó su correlación de a pares de índices. La figura \ref{fig:correlacion_de_a_pares_bhi} muestra las distribuciones y correlaciones de a pares para estos índices. Se encuentra que los índices modificados tienen una alta correlación entre ellos y con BHI, y por lo tanto, no aportan más información que la que se obtiene a través del índice original. Por ser el más sencillo de calcular, es el que utilizaremos como criterio de validación externa de la calidad de una partición.
 \begin{figure}[h]
     \centering
@@ -45,11 +47,4 @@ Se observa que de los dos grupos de kmeans, solo uno presenta un BHI superior al
     \label{fig:bhi_km_ds1_ds4}
 \end{figure}
 Finalmente, para la partición $deepsplit=4$, el BHI del 40\% de los grupos se encuentra por sobre el tercer cuartil del control nulo. Esto sugiere que si bien el aumentar la granularidad de la partición con el método corte de árbol dinámico resulta en un aumento de la consistencia biológica global de las estructuras observadas, esto no implica que las resoluciones utilizadas sean las óptimas, ya que por lo general el BHI no es superior al del control nulo.\\
-A pesar que en el análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $deepsplit=1$ y $deepsplit=4$ encontramos que todos los métodos producen particiones altamente coherentes, el análisis de BHI indicaría que las particiones halladas no permitirían .\\
-En el capitulo siguiente introduciremos algunas herramientas que buscarán cuantificar la homogeneidad biológica de particiones para encontrar dicha escala.
-COMPLETAR 
-deberiamos poder decir que en general no es buno el valor de bhi
-y que mayor resolucion en geneX no mejora.
-cuantificar con un observable para ver esto
-
-conclusion: con el espacio geneX podemos encontrar estructura que no siempre es facil de interpretar a la luz de conocimiento almacenado en estructura de GO....por un lado esto sucede cuando hay bodoques, pero tampoco mejora demasiado cuando se consideran particiones con estructuras de mas resolucion en este espacio -> vamos por metrica mixt
+A pesar de que en el análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $deepsplit=1$ y $deepsplit=4$ encontramos que todos los métodos producen particiones altamente coherentes, el análisis de BHI indica que las particiones halladas no pueden ser fácilmente interpretadas a la luz del conocimiento biológico almacenado en GO.

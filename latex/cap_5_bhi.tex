@@ -1,5 +1,5 @@
 \chapter{Congruencia biológica}
-Esperamos que los conocimientos (entendidos como nociones de similitud) de los distintos espacios (el de expresión y el biológico) sean diferentes pero no ortogonales. Por lo tanto, una vez detectadas las estructuras en distintas resoluciones en el espacio de expresión, nos interesará cuantificar la congruencia biológica de las mismas. Para ello haremos uso de varios índices, BHI, $BHI_{IC}$ IC, $BHI_{Resnik}$ y zBHI que servirán como criterios biológicos de validación externos.
+Esperamos que los conocimientos (entendidos como nociones de similitud) de los distintos espacios (el de expresión y el biológico) sean diferentes pero no ortogonales. Por lo tanto, una vez detectadas las estructuras en distintas resoluciones en el espacio de expresión, nos interesará cuantificar la congruencia biológica de las mismas. Para ello haremos uso de varios índices, BHI, $BHI_{IC}$, $BHI_{Resnik}$, zBHI e ID que servirán como criterios biológicos de validación externos.
 
 \section{Índice de homogeneidad biológica}
 El índice de homogeneidad biológica (o BHI por sus siglas en inglés) de una partición, introducido por Datta \cite{Datta2006} es un observable que cuantifica el grado en que una partición presenta grupos biológicamente homogéneos, reportando, para cada grupo, la máxima proporción de pares de genes agrupados que comparten una misma clase funcional de Ontología Génica. Consideremos dos genes $x$ e $y$ que pertenecen a un mismo grupo $D$ de una partición dada, con un total de $k$ grupos, y sean $C(x)$ y $C(y)$ los conjuntos de todas las clases funcionales que tienen anotados a los genes $x$ e $y$ respectivamente. Sea además la función indicadora $I(C(x)=C(y))$ que toma el valor $1$ si hay al menos una clase en donde ambos genes estén anotados, y $0$ en caso contrario. Entonces, el índice de homogeneidad biológica queda definido como:
@@ -37,6 +37,13 @@ Para caracterizar el comportamiento de cada uno de estos índices se midieron lo
     \caption{Correlación de a pares para los distintos índices de homogeneidad biológica presentados para cada uno de los grupos del tratamiento 'Frío' obtenidos con $ds=1$. Se observa que todos los índices tienen una alta correlación entre si.}
     \label{fig:correlacion_de_a_pares_bhi}
 \end{figure}
+
+\section{Densidades de interacción}
+El índice de Densidades de interacción, o ID, de una partición, introducido por Dutkowski en \cite{Dutkowski2013} es un observable que cuantifica el grado en que los genes de una partición comparten anotaciones en GO y además forman parte del mismo grupo. El mismo se define para una ontología GO (utilizaremos las definidas en la sección \label{sec:go}, GO BPA, GO BPB y GO CC) y una partición como:
+\begin{equation}
+	ID(GO_j) = \frac{# Pares de genes en GO_j que aparecen juntos en un mismo grupo C_x}{# Pares de genes en GO_j}
+\end{equation}
+Por ejemplo, si 
 
 \section{Congruencia biológica de las particiones}
 

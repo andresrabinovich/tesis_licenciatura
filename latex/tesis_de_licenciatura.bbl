@@ -1,6 +1,19 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem{Datta2006}
+\textsc{S.~Datta}.
+\newblock \emph{{Methods for evaluating clustering algorithms for gene
+  expression data using a reference set of functional classes.}}
+\newblock BMC bioinformatics \textbf{7} (2006) 397.
+\newline\urlprefix\url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1590054{\{}{\&}{\}}tool=pmcentrez{\{}{\&}{\}}rendertype=abstract}
+
+\bibitem{Dutkowski2013}
+\textsc{J.~Dutkowski} \emph{et~al.}
+\newblock \emph{{A gene ontology inferred from molecular networks.}}
+  \textbf{31} (2013) 38.
+\newline\urlprefix\url{http://www.nature.com/nbt/journal/v31/n1/abs/nbt.2463.html$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3654867{\&}tool=pmcentrez{\&}rendertype=abstract}
 
 \end{thebibliography}

@@ -27,9 +27,10 @@ Finalmente, el índice de homogeneidad biológica estandarizado para un grupo, z
 	zBHI = \frac{BHI-<BHI_r>}{s(BHI_r)}
 \end{equation}
 donde $<BHI_r>$ es el valor medio del conjunto de valores del BHI del grupo para un control nulo de 1000 reasignaciones de las etiquetas de la partición y $s(BHI_r)$ es la desviación estandar de la muestra para el mismo conjunto.\\
-Se realizó además un control nulo tomando de entre todos los tratamientos 6000 genes que pasaron los filtros. Se formaron grupos de distinto tamaño, desde grupos de \hl{10} genes hasta grupos de \hl{500} genes tomando genes al azar de entre los 6000. Para cada tamaño, se realizaron 1000 grupos aleatorios y se calculó su BHI. Se encontró que el valor medio de los ensambles se mantenía aproximadamente constante, mientras que existía una dependencia de la desviación estandar con el tamaño de los grupos. Se realizaron dos ajustes por funciones de ley de potencias, para tamaños entre 1 y 50 y de 51 en adelante. Las funciones halladas permiten rápidamente obtener el BHI aleatorio medio para una partición de cualquier tamaño y su desviación estandar.
-\hl{poner quizas el grafico de las power laws con sus desviaciones estandar}
-Para caracterizar el comportamiento de cada uno de estos índices se midieron los mismos para el tratamiento ``Frío'' y se calculó su correlación de a pares de índices. La figura \ref{fig:correlacion_de_a_pares_bhi} muestra las distribuciones y correlaciones de a pares para estos índices. Se encuentra que los índices modificados tienen una alta correlación entre ellos y con BHI, y por lo tanto, no aportan más información que la que se obtiene a través del índice original. Por ser el más sencillo de calcular, es el que utilizaremos como criterio de validación externa de la calidad de una partición.
+Se realizó además dos tipos de controles nulos.\\
+El primero, un control nulo que llamaremos ``control nulo 1'', se realizó tomando de entre todos los tratamientos 6000 genes que pasaron los filtros. Se formaron grupos de distinto tamaño, desde grupos de 2 genes hasta grupos de \hl{500} genes tomando genes al azar de entre los 6000 con reposición. Para cada tamaño, se realizaron 1000 grupos aleatorios y se calculó su BHI. Se encontró que el valor medio de los ensambles se mantenía aproximadamente constante, mientras que existía una dependencia de la desviación estandar con el tamaño de los grupos. Se realizaron dos ajustes por funciones de ley de potencias, para tamaños entre 1 y 50 y de 51 en adelante. Las funciones halladas permiten rápidamente obtener el BHI aleatorio medio para una partición de cualquier tamaño y su desviación estandar.\\
+El segundo, que llamaremos ``control nulo 2'', consistió en realizar 1000 reasignaciones aleatorias de las etiquetas de cada partición y calcular el BHI de cada grupo de la misma. Encontramos que la media de BHI calculada de esta manera coincidía con la del control nulo anterior, pero no así su desviación estandar. Concluimos que la diferencia fundamental se basa en que en el segundo caso, en la reasignación de etiquetas, se mantiene siempre la estructura de tamaños de la partición, mientras que en el primer caso, cada grupo fue tomado por separado.\\
+Para caracterizar el comportamiento de cada uno de estos índices se midieron los mismos para cada tratamiento y se calculó su correlación de a pares de índices. La figura \ref{fig:correlacion_de_a_pares_bhi} muestra las distribuciones y correlaciones de a pares para estos índices en el tratamiento ``Frío''. Se encuentra que los índices modificados tienen una alta correlación entre ellos y con BHI, y por lo tanto, no aportan más información que la que se obtiene a través del índice original. Por ser el más sencillo de calcular, es el que utilizaremos como criterio de validación externa de la calidad de una partición.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{correlacion_de_a_pares_bhi}
@@ -38,13 +39,27 @@ Para caracterizar el comportamiento de cada uno de estos índices se midieron lo
 \end{figure}
 
 \section{Congruencia biológica de las particiones}
-Los valores de BHI calculados para cada uno de los grupos del tratamiento ``frío'' en las particiones k-means (puntos rojos), $deepsplit=1$ (triángulos verdes) y $deepsplit=4$ (cuadrados azules) se presentan en la figura \ref{fig:bhi_km_ds1_ds4} junto con un control nulo consistente en 1000 reasignaciones aleatorias de las etiquetas de cada partición. Los grupos fueron ordenados según su masa de forma creciente.\\
-Se observa que de los dos grupos de kmeans, solo uno presenta un BHI superior al tercer cuartil para el control nulo, mientras que para $deepsplit=1$, solo el 30\% de los grupos lo superan.
-\begin{figure}[h]
+
+Los valores de BHI calculados para cada uno de los grupos del tratamiento ``frío'' en las particiones k-means (puntos rojos), $ds1$ (triángulos verdes) y $ds4$ (cuadrados azules) se presentan en las figuras \ref{fig:bhi_km_ds1_ds4_control1}, con control nulo 1 y \ref{fig:bhi_km_ds1_ds4_control2} con control nulo 2. Los grupos fueron ordenados según su masa de forma creciente.\\
+Se observa que de los dos grupos de kmeans, solo uno presenta un BHI superior a una desviación estandar para el control nulo 1 y del tercer cuartil para el control nulo 2, mientras que para $ds1$, el 45\% de los grupos superan una desviación estandar para control nulo 1 y el 30\% de los grupos superan el tercer cuartil para el control nulo 2.
+\begin{figure*}[t!]
     \centering
-    \includegraphics[width=0.8\textwidth]{bhi_km_ds1_ds4}
-    \caption{Índice de Homogeneidad Biológica, BHI, para cada uno de los grupos del tratamiento 'Frío' obtenidos con kmeans, $deepsplit=1$ y $deepsplit=4$.}
-    \label{fig:bhi_km_ds1_ds4}
-\end{figure}
-Finalmente, para la partición $deepsplit=4$, el BHI del 40\% de los grupos se encuentra por sobre el tercer cuartil del control nulo. Esto sugiere que si bien el aumentar la granularidad de la partición con el método corte de árbol dinámico resulta en un aumento de la consistencia biológica global de las estructuras observadas, esto no implica que las resoluciones utilizadas sean las óptimas, ya que por lo general el BHI no es superior al del control nulo.\\
-A pesar de que en el análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $deepsplit=1$ y $deepsplit=4$ encontramos que todos los métodos producen particiones altamente coherentes, el análisis de BHI indica que las particiones halladas no pueden ser fácilmente interpretadas a la luz del conocimiento biológico almacenado en GO.
+    \begin{subfigure}[t]{0.8\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{bhi_km_ds1_ds4_control1}
+    \caption{BHI para cada uno de los grupos del tratamiento 'Frío' obtenidos con kmeans, $ds1$ y $ds4$ y control nulo 1. En turquesa, el valor medio del BHI, en violeta una desviación estandar por sobre el valor medio y en negro una desviación estandar por debajo del mismo.}
+    \label{fig:bhi_km_ds1_ds4_control1}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.8\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{bhi_km_ds1_ds4_control2}
+    \caption{BHI para cada uno de los grupos del tratamiento 'Frío' obtenidos con kmeans, $ds1$ y $ds4$, y control nulo 2.}
+    \label{fig:bhi_km_ds1_ds4_control2}
+    \end{subfigure}
+    \caption{Índice de Homogeneidad Biológica, BHI, para cada uno de los grupos del tratamiento 'Frío' obtenidos con kmeans, $ds1$ y $ds4$ y controles nulos.}
+\end{figure*}
+
+Finalmente, para la partición $ds4$, aproximadamente el 40\% de los grupos presenta un BHI por sobre una desviación estandar para el control nulo 1 y un 50\% presenta un BHI por sobre el tercer cuartil del control nulo 2. 
+
+Esta baja calidad en el índice BHI de las particiones se encontró de forma similar a lo largo de todos los tratamientos. Esto sugiere que si bien el aumentar la granularidad de la partición con el método corte de árbol dinámico resulta en un aumento de la consistencia biológica global de las estructuras observadas, esto no implica que las resoluciones utilizadas sean las óptimas, ya que por lo general el BHI no es superior al del control nulo.\\
+A pesar de que en el análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $ds1$ y $ds4$ encontramos que todos los métodos producen particiones altamente coherentes, el análisis de BHI indica que las particiones halladas no pueden ser fácilmente interpretadas a la luz del conocimiento biológico almacenado en GO.

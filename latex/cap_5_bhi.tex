@@ -39,11 +39,37 @@ Para caracterizar el comportamiento de cada uno de estos índices se midieron lo
 \end{figure}
 
 \section{Densidades de interacción}
-El índice de Densidades de interacción, o ID, de una partición, introducido por Dutkowski en \cite{Dutkowski2013} es un observable que cuantifica el grado en que los genes de una partición comparten anotaciones en GO y además forman parte del mismo grupo. El mismo se define para una ontología GO (utilizaremos las definidas en la sección \label{sec:go}, GO BPA, GO BPB y GO CC) y una partición como:
+El índice de Densidades de interacción, o ID, introducido por Dutkowski en \cite{Dutkowski2013} es un observable que cuantifica el grado en que los genes de una partición comparten anotaciones en GO y además forman parte del mismo grupo. El mismo se define para un término $j$ en una ontología GO (utilizaremos las definidas en la sección \label{sec:go}, GO BPA, GO BPB y GO CC) y una partición como:
 \begin{equation}
-	ID(GO_j) = \frac{# Pares de genes en GO_j que aparecen juntos en un mismo grupo C_x}{# Pares de genes en GO_j}
+	ID(GO_j) = \frac{NE(GO_j)}{N(GO_j)}
 \end{equation}
-Por ejemplo, si 
+Con $NE(GO_j)$ la cantidad de pares de genes anotados en $GO_j$ que se encuentran juntos en un mismo grupo $C_x$ y $N(GO_j)$ la cantidad de pares de genes anotados en $GO_j$.\\
+Por ejemplo, para un término $GO_j$ con 20 genes anotados y una partición de 3 grupos, donde en el primer grupo hay 5 genes que están anotados en $GO_j$, en el segundo hay dos y en el tercero hay tres, obtenemos que $ID(GO_j) = \frac{\binom{5}{2}+\binom{2}{2}+\binom{3}{2}}{\binom{20}{2}}=\frac{14}{190}\approx 0.07$.\\
+Además de calcular éste índice para todos los tratamientos para los métodos $ds1$ y $ds4$, utilizamos las tres redes presentadas en la sección \ref{sec:redes}, detectando comunidades en cada una mediante el método Infomap presentado en la sección \ref{sec:comunidades}.\\
+Finalmente, realizamos un control nulo de tipo 2 para cada tratamiento, reordenando las etiquetas de la partición de forma aleatoria 1000 veces y calculando el $ID$ en cada caso.\\
+Para cada ontología utilizada, se calculó la media de $ID$ de todos los tratamientos agrupados por cantidad de anotaciones por término, al igual que para cada una de las redes y para el control nulo. Estos valores pueden observarse en las figuras \ref{fig:interacting_densities}. Las escalas utilizadas son escalas logarítmicas. Encontramos que todas las particiones estudiadas superan los valores de $ID$ del control nulo para términos inferiores a los 2000 genes anotados, lo que implica nuevamente que los grupos poseen estructura y brindan información biológica.
+\begin{figure*}[t!]
+    \centering
+    \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{interacting_densities_cc}
+    \caption{ID para ontología CC.}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{interacting_densities_bpa}
+    \caption{ID para ontología BPA.}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{interacting_densities_bpb}
+    \caption{ID para ontología BPB.}
+    \end{subfigure}    
+    \caption{Índice de densidad de interacción, ID, para distintas redes de proteínas, vías metabólicas y particiones de expresión.}
+    \label{interacting_densities}
+\end{figure*}
+
+Por otro lado, el control nulo se mantiene prácticamente constante para todos los términos, mientras que los otros métodos presentan variabilidad. A medida que aumenta la cantidad de genes anotados en un término, se observa una disminución del valor de $ID$ consistente con que existe una mayor cantidad de genes anotados que los disponibles en el tratamiento (por ejemplo, para el término raíz hay 10 veces más genes anotados que genes en el tratamiento). De todas formas, las comunidades obtenidas a partir de las redes de proteínas y de vías metabólicas poseen en todos los casos un $DI$ superior al de las particiones de $ds1$ y $ds4$.
 
 \section{Congruencia biológica de las particiones}
 
@@ -66,7 +92,7 @@ Se observa que de los dos grupos de kmeans, solo uno presenta un BHI superior a 
     \caption{Índice de Homogeneidad Biológica, BHI, para cada uno de los grupos del tratamiento 'Frío' obtenidos con kmeans, $ds1$ y $ds4$ y controles nulos.}
 \end{figure*}
 
-Finalmente, para la partición $ds4$, aproximadamente el 40\% de los grupos presenta un BHI por sobre una desviación estandar para el control nulo 1 y un 50\% presenta un BHI por sobre el tercer cuartil del control nulo 2. 
-
+Finalmente, para la partición $ds4$, aproximadamente el 40\% de los grupos presenta un BHI por sobre una desviación estandar para el control nulo 1 y un 50\% presenta un BHI por sobre el tercer cuartil del control nulo 2.\\ 
 Esta baja calidad en el índice BHI de las particiones se encontró de forma similar a lo largo de todos los tratamientos. Esto sugiere que si bien el aumentar la granularidad de la partición con el método corte de árbol dinámico resulta en un aumento de la consistencia biológica global de las estructuras observadas, esto no implica que las resoluciones utilizadas sean las óptimas, ya que por lo general el BHI no es superior al del control nulo.\\
-A pesar de que en el análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $ds1$ y $ds4$ encontramos que todos los métodos producen particiones altamente coherentes, el análisis de BHI indica que las particiones halladas no pueden ser fácilmente interpretadas a la luz del conocimiento biológico almacenado en GO.
+A pesar de que en el análisis de estructura de los grupos obtenidos por medio de los métodos k-means, $ds1$ y $ds4$ encontramos que todos los métodos producen particiones altamente coherentes, el análisis de BHI indica que las particiones halladas no pueden ser fácilmente interpretadas a la luz del conocimiento biológico almacenado en GO.\\
+En el próximo capítulo 

@@ -294,6 +294,7 @@ Es posible controlar la sensibilidad de las divisiones de los grupos mediante el
 Para una descripción más detallada del algoritmo, el lector interesado puede referirse a \cite{Langfelder2008}, \cite{Langfelder2007}.
 
 \section{Infomap y CNM}
+\label{sec:comunidades}
 Como se desarrolló en la sección \ref{sec:redes}, las redes son construcciones útiles para esquematizar la organización de las interacciones en distintos tipos de sistemas. Sin embargo, por motivos de visualización, solo se pueden representar pequeños sistemas. Las redes reales son usualmente tan grandes que es necesario representarlas mediante algún mecanismo de granularidad más gruesa, es decir, descomponer a la red en módulos que representen varios nodos y arcos. Los módulos son conjuntos de módulos que tienen un alto solapamiento topológico. Este es el objetivo básico de lo que se conoce como \textit{detección de comunidades}.\\
 Una red puede representarse con una matriz de adjacencia $A=[a_{ij}]$ que codifica que pares de nodos están conectados. A es una matriz simétrica donde cada $a_{ij}$ puede tomar un valor entre $[0, 1]$. Para una red no pesada, $0$ indica que dos nodos no están conectados, mientras que $1$ indica que si lo están. Para una red pesada, el elemento de matriz indica la fuerza de la conexión, tomando un valor entre $[0, 1]$.\\
 A partir de la matriz de adjacencia, es posible construir una matriz de solapamiento topológico $T = [t_{ij}]$ (TOM por sus siglas en inglés) que es una medida de similaridad para redes biológicas y está definida como:

@@ -29,6 +29,7 @@ Notar que esta medida es una medida global, ya que toma en cuenta todas las simi
 Para cuantificar la coherencia métrica entre el espacio de expresión de cada tratamiento y las ontologías GOBPA, GOBPB y GOCC, utilizamos como kernel de espacio de expresión, $K_x$, la similaridad derivada de la correlación:
 \begin{equation}
 	K_x = (\frac{correlacion(g_i, g_j)+1}{2})_{ij}
+	\label{eq:similaridad_de_correlacion}
 \end{equation}
 con $g_i$ y $g_j$ genes pertenecientes al tratamiento en cuestión. Se puede demostrar que una matriz de similaridad definida de esta manera es siempre SDP.\\
 Para el kernel del espacio de ontologías, utilizamos la similaridad definida en la ecuación \ref{eq:sim_rcmax} y transformamos la matriz en SDP por medio de \ref{eq:matriz_corrida}. La matriz se construyó tomando en cuenta todos los genes del tratamiento. Si un gen del tratamiento no se encontraba anotado en la ontología, se lo anotaba al nodo raíz y por lo tanto su similaridad con el resto de los genes era cero. Se calculó entonces para cada tratamiento y cada ontología, el KTA y se construyó además un control nulo de tipo 2, realizando 1000 reordenamientos aleatorios de las etiquetas de la matriz $K_x$.\\
@@ -53,5 +54,28 @@ Las figuras \ref{fig:kta_global} presentan un boxplot para cada tratamiento y ca
     \caption{Índice de alineamiento núcleo-objetivo, KTA, para distintos tratamientos entre espacio de expresión y espació de ontología.}
     \label{kta_global}
 \end{figure*}
-En todos los casos encontramos que el KTA de expresión supera todos los valores del KTA de control nulo, lo que indica una coherencia entre la métrica de expresión transcripcional y la métrica del espacio GO. \hl{completar las conclusiones un poco mas}.
-\hl{zKTA: por tratamiento Gx/GOBPa, Gx/GOBPb, Gx/GOCC, Gx/PIN, Gx/LCI, Gx/Kegg}
+En todos los casos encontramos que el KTA de expresión supera todos los valores del KTA de control nulo, lo que indica una coherencia entre la métrica de expresión transcripcional y la métrica del espacio GO.\\
+Por otro lado, se calculó el índice KTA estandarizado definido como:
+\begin{equation}
+	zKTA = \frac{KTA-<KTA_r>}{s(KTA_r)}
+\end{equation}
+donde $<KTA_r>$ es el valor medio del conjunto de valores del KTA del grupo para un control nulo de 1000 reasignaciones de las etiquetas de la partición y $s(KTA_r)$ es la desviación estandar de la muestra para el mismo conjunto.\\
+En la figura \ref{fig:zkta_global} se consignan \hl{completar esto, habia anotado esto pero pensandolo un poco no entiendo bien que poner, si no vamos a usar las redes. zKTA: por tratamiento Gx/GOBPa, Gx/GOBPb, Gx/GOCC, Gx/PIN, Gx/LCI, Gx/Kegg}\\
+\hl{completar las conclusiones}
+\section{Alineamiento de núcleo-objetivo local}
+En la sección anterior presentamos una forma de cuantificar globalmente la coherencia entre la métrica transcripcional y el espacio GO mediante el índice KTA. Es posible redefinir este índice para obtener una medida de alineamiento de estos dos espacios pero de forma local, en las vecindades transcripcionales, para realizar un análisis de todos los genes que se expresaron o inhibieron en un tratamiento. Este índice nos será de gran utilidad en un análisis posterior para encontrar heterogeneidades en los grupos obtenidos.\hl{completar con algo mas que explique por que nos interesa hacer este analisis}.\\
+Para ello, construimos tres redes de expresión, a partir de la similaridad de correlación definida en 	\ref{eq:similaridad_de_correlacion} entre los perfiles génicos, utilizando como topología una red no dirigida con los k primeros vecinos mutuos. Construimos redes para $k=\{5, 10, 30\}$ y estudiamos su topología.\\
+\subsection{Caracterización de las redes}
+Para caracterizar las redes haremos uso de dos observables topológicos, la distribución de grado y la intermediación central o betweenness centrality.\\
+\subsection*{Distribución de grado}
+El grado $k_i$ de un nodo de la red es la cantidad de primeros vecinos que tiene el nodo.\\
+La distribución de grado $P(k)$ es entonces la probabilidad de un que nodo $i$ tomado al azar tenga grado $k$. Las figuras \ref{fig:distribucion_de_grado} muestran la distribución de grado para las tres redes estudiadas.\\
+\hl{poner las tres figuras}\\
+Se observa que el grado máximo que alcanzan estas distribuciones está relacionado directamente con el $k$ utilizado, ya que a lo sumo un nodo tendrá $k$ primeros vecinos. Por otro lado, observamos que la red con $k=30$ posee una cola más pesada que el resto. Esto implica que las conexiones entre sus nodos tienen una distribución de tipo ley de potencias, indicando que la red es una red libre de escala. Muchas redes reales poseen ese tipo de distribución de grado.\\
+\subsection*{Intermediación central o betweenness centrality}
+La longitud de un camino entre dos nodos se define como la cantidad de aristas que se recorren para llegar de un nodo al otro. El camino (o caminos) más corto es aquél camino cuya longitud es la menor entre todos los caminos. La longitud de un camino más corto se conoce como distancia geodésica.\\
+El betweenness centrality de un nodo $i$ es igual a la cantidad de caminos más cortos desde todos los nodos a todos los otros nodos que pasan por el nodo $i$. Es una medida de la influencia del nodo $i$ en la red, ya que un nodo con alto betweenness centrality recibirá una gran parte de la carga de la red, suponiendo que la carga se distribuye a través de los caminos más cortos.\\
+Muchas redes reales presentan algunos nodos de alta conectividad, llamados hubs, por donde pasa la mayor parte de la carga de la red.
+Las figuras \ref{fig:distribucion_de_betweenness} muestran la distribución de betweenness centrality para las tres redes estudiadas.\\
+\hl{poner las tres figuras}\\
+\hl{poner que se observa y que implica}\\

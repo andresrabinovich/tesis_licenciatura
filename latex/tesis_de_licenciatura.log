@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  5 MAR 2016 22:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  6 MAR 2016 15:11
 entering extended mode
  %&-line parsing enabled.
 **tesis_de_licenciatura.tex
@@ -429,23 +429,38 @@ Package: subcaption 2008/08/31 v1.0b Adding subcaptions (AR)
 \c@subfigure=\count109
 \c@subtable=\count110
 )
-(./tesis_de_licenciatura.aux (./cap_5_bhi.aux))
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(./tesis_de_licenciatura.aux (./cap_0_motivaciones_y_objetivos.aux)
+(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
+(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux) (./cap_5_bhi.aux
+
+LaTeX Warning: Label `sec:go' multiply defined.
+
+)
+(./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
+aux))
 \openout1 = `tesis_de_licenciatura.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count111
 \scratchdimen=\dimen128
@@ -499,86 +514,788 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-LaTeX Info: Redefining \celsius on input line 27.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 27.
+LaTeX Info: Redefining \celsius on input line 28.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 28.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 27.
-Package gensymb Info: Using \Omega for \ohm on input line 27.
+LaTeX Info: Redefining \ohm on input line 28.
+Package gensymb Info: Using \Omega for \ohm on input line 28.
 
 Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1
+
+] [2
+
+] [3
+
+] [4
+
+] [5
+
+] [6
+
+] [7
+
+] [8
+
+] [9
+
+]
+(./tesis_de_licenciatura.toc [10
+
+])
+\tf@toc=\write3
+\openout3 = `tesis_de_licenciatura.toc'.
+
+ [11]
+\openout2 = `cap_0_motivaciones_y_objetivos.aux'.
+
+ (./cap_0_motivaciones_y_objetivos.tex
+
+LaTeX Warning: Citation `functional_genomics_definition_nature' on page 12 unde
+fined on input line 6.
+
+
+LaTeX Warning: Citation `functional_genomics_definition_wikipedia' on page 12 u
+ndefined on input line 6.
+
+
+LaTeX Warning: Citation `Hahn2013' on page 12 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Kanehisa2000' on page 12 undefined on input line 10.
+
+
+LaTeX Warning: Citation `org.At.tair.db2015' on page 12 undefined on input line
+ 10.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+[12
+
+
+]) [13]
+\openout2 = `cap_1_introduccion.aux'.
+
+ (./cap_1_introduccion.tex
+Cap\'{\i }tulo 1.
+
+LaTeX Warning: Citation `Domany2003' on page 14 undefined on input line 2.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 2.
+
+<figuras/celula_eucariota.png, id=49, 1361.085pt x 796.9775pt>
+File: figuras/celula_eucariota.png Graphic file (type png)
+
+<use figuras/celula_eucariota.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 10.
+
+<figuras/adn1.png, id=51, 1339.0025pt x 794.97pt>
+File: figuras/adn1.png Graphic file (type png)
+ <use figuras/adn1.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 17.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 14 undefined on input line 17.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--21
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14
+
+
+
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/adn2.png, id=55, 926.46124pt x 329.23pt>
+File: figuras/adn2.png Graphic file (type png)
+ <use figuras/adn2.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 15 undefined on input line 28.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 15 undefined on input line 28.
+
+<figuras/adn3.png, id=56, 526.96875pt x 614.295pt>
+File: figuras/adn3.png Graphic file (type png)
+ <use figuras/adn3.png>
+
+LaTeX Warning: Citation `Alberts2015' on page 15 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Alberts2015' on page 15 undefined on input line 36.
+
+) [15 <./figuras/celula_eucariota.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16 <./figuras/adn1.png>] [17 <./figuras/adn2.png>] [18 <./figuras/adn3.png>]
+\openout2 = `cap_2_materiales_y_metodos.aux'.
+
+
+(./cap_2_materiales_y_metodos.tex
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `Bose2016' on page 19 undefined on input line 2.
+
+<figuras/micromatriz.png, id=74, 1118.1775pt x 806.01125pt>
+File: figuras/micromatriz.png Graphic file (type png)
+
+<use figuras/micromatriz.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19
+
+
+
+] [20 <./figuras/micromatriz.png>]
+
+LaTeX Warning: Citation `Babu2004' on page 21 undefined on input line 24.
+
+
+LaTeX Warning: Citation `Schulze2001' on page 21 undefined on input line 24.
+
+
+LaTeX Warning: Citation `Domany2003' on page 21 undefined on input line 24.
+
+[21]
+
+LaTeX Warning: Citation `AtGenExpress' on page 22 undefined on input line 44.
+
+
+LaTeX Warning: Citation `Kilian2007' on page 22 undefined on input line 44.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+
+LaTeX Warning: Citation `Hahn2013' on page 22 undefined on input line 51.
+
+
+LaTeX Warning: Citation `Bruckner2009' on page 22 undefined on input line 51.
+
+
+LaTeX Warning: Citation `Hahn2013' on page 22 undefined on input line 53.
+
+
+LaTeX Warning: Citation `Cusick2009' on page 22 undefined on input line 53.
+
+<figuras/ai1_lci.png, id=90, 1237.62375pt x 773.89125pt>
+File: figuras/ai1_lci.png Graphic file (type png)
+
+<use figuras/ai1_lci.png>
+
+LaTeX Warning: Citation `Hahn2013' on page 22 undefined on input line 58.
+
+
+LaTeX Warning: Citation `Hahn2013' on page 22 undefined on input line 58.
+
+[22]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/mapa_kegg.png, id=94, 497.86pt x 591.20876pt>
+File: figuras/mapa_kegg.png Graphic file (type png)
+
+<use figuras/mapa_kegg.png>
+
+LaTeX Warning: Citation `Graphite2015' on page 23 undefined on input line 72.
+
+
+LaTeX Warning: Citation `Segal2003' on page 23 undefined on input line 74.
+
+
+LaTeX Warning: Citation `Kanehisa2000' on page 23 undefined on input line 74.
+
+[23]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/ejemplo_de_go.png, id=98, 682.55pt x 701.62125pt>
+File: figuras/ejemplo_de_go.png Graphic file (type png)
+
+<use figuras/ejemplo_de_go.png>
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]\OT1/cmr/m/n/12 Anotaci^^Son (in-fe-ri-da
+ []
+
+
+Overfull \hbox (0.98723pt too wide) in paragraph at lines 99--99
+[]\OT1/cmr/m/n/12 Siglas| 
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 113--113
+[]\OT1/cmr/m/n/12 Secuencia o si-mi-la-ri-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 115--115
+[]\OT1/cmr/m/n/12 An^^Sali-sis compu-tacio-
+ []
+
+<figuras/codigos_de_evidencia.png, id=99, 702.625pt x 702.625pt>
+File: figuras/codigos_de_evidencia.png Graphic file (type png)
+
+<use figuras/codigos_de_evidencia.png>
+
+LaTeX Warning: Citation `Pandey2008' on page 24 undefined on input line 131.
+
+
+LaTeX Warning: Citation `Resnik1995' on page 24 undefined on input line 131.
+
+
+LaTeX Warning: Citation `Bose2016' on page 24 undefined on input line 131.
+
+
+LaTeX Warning: Citation `Pesquita2009' on page 24 undefined on input line 131.
+
+
+LaTeX Warning: Citation `Berenstein2014' on page 24 undefined on input line 131
+.
+
+
+LaTeX Warning: Citation `Ashburner' on page 24 undefined on input line 131.
+
+) [24 <./figuras/ai1_lci.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] [27] [28 <./figuras/mapa_kegg.png>] [29 <./figuras/ejemplo_de_go.png>]
+[30 <./figuras/codigos_de_evidencia.png (PNG copy)>]
+\openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
+
+
+(./cap_3_metodos_de_agrupamiento_de_datos.tex
+Cap\'{\i }tulo 3.
+
+LaTeX Warning: Citation `Gan2007' on page 31 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Halkidi2001' on page 31 undefined on input line 6.
+
+
+LaTeX Warning: Citation `Domany1999' on page 31 undefined on input line 6.
+
+[31
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+LaTeX Warning: Citation `Chen2009' on page 32 undefined on input line 35.
+
+
+LaTeX Warning: Citation `Halkidi2001' on page 32 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Domany1999' on page 32 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Gan2007' on page 32 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Kheng2010' on page 32 undefined on input line 36.
+
+[32] [33]
+
+LaTeX Warning: Citation `Babu2004' on page 34 undefined on input line 65.
+
+<figuras/perfiles_anti_coregulados.png, id=139, 702.625pt x 702.625pt>
+File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
+
+<use figuras/perfiles_anti_coregulados.png>
+<figuras/perfiles_coregulados.png, id=140, 702.625pt x 702.625pt>
+File: figuras/perfiles_coregulados.png Graphic file (type png)
+
+<use figuras/perfiles_coregulados.png>
+<figuras/perfiles_sin_agrupar.png, id=141, 702.625pt x 702.625pt>
+File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
+
+<use figuras/perfiles_sin_agrupar.png>
+
+LaTeX Warning: Citation `Dhaeseleer2005' on page 34 undefined on input line 101
+.
+
+[34]
+
+LaTeX Warning: Citation `Hennig2013' on page 35 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Kheng2010' on page 35 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Babu2004' on page 35 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Gan2007' on page 35 undefined on input line 112.
+
+
+LaTeX Warning: Citation `Eisen1998' on page 35 undefined on input line 113.
+
+[35 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfiles_co
+regulados.png (PNG copy)> <./figuras/perfiles_sin_agrupar.png (PNG copy)>]
+[36]
+
+LaTeX Warning: Citation `Resnik1995' on page 37 undefined on input line 124.
+
+[37
+
+] <figuras/dag.png, id=158, 454.69875pt x 313.17pt>
+File: figuras/dag.png Graphic file (type png)
+ <use figuras/dag.png>
+
+LaTeX Warning: Citation `Lin1998' on page 38 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Jiang1997' on page 38 undefined on input line 136.
+
+[38 <./figuras/dag.png>]
+
+LaTeX Warning: Citation `Pesquita2009' on page 39 undefined on input line 144.
+
+
+LaTeX Warning: Citation `Bose2016' on page 39 undefined on input line 145.
+
+
+LaTeX Warning: Citation `Lee2004' on page 39 undefined on input line 147.
+
+
+LaTeX Warning: Citation `Sevilla2005' on page 39 undefined on input line 157.
+
+[39]
+
+LaTeX Warning: Citation `Lord2003' on page 40 undefined on input line 161.
+
+
+LaTeX Warning: Citation `Pesquita2009' on page 40 undefined on input line 165.
+
+
+LaTeX Warning: Citation `Resnik1995' on page 40 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Pesquita2009' on page 40 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Bose2016' on page 40 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Lin1998' on page 40 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Jiang1997' on page 40 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Sevilla2005' on page 40 undefined on input line 171.
+
+
+LaTeX Warning: Citation `Lord2003' on page 40 undefined on input line 171.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
+
+ []
+
+[40] <figuras/ejemplo_k_means.png, id=169, 702.625pt x 401.5pt>
+File: figuras/ejemplo_k_means.png Graphic file (type png)
+
+<use figuras/ejemplo_k_means.png>
+
+LaTeX Warning: Citation `Kogan2006' on page 41 undefined on input line 197.
+
+
+LaTeX Warning: Citation `Hartigan1979' on page 41 undefined on input line 197.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[41]
+
+LaTeX Warning: Citation `Park2009' on page 42 undefined on input line 206.
+
+
+LaTeX Warning: Citation `Ibrahim2012' on page 42 undefined on input line 206.
+
+[42 <./figuras/ejemplo_k_means.png (PNG copy)>]
+
+LaTeX Warning: Citation `Johnson1967' on page 43 undefined on input line 231.
+
+[43]
+
+LaTeX Warning: Citation `Shalizi2009' on page 44 undefined on input line 240.
+
+
+LaTeX Warning: Citation `Gan2007' on page 44 undefined on input line 240.
+
+
+LaTeX Warning: Citation `Johnson1967' on page 44 undefined on input line 240.
+
+<figuras/agrupamiento_jerarquico.png, id=180, 702.625pt x 702.625pt>
+File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
+
+<use figuras/agrupamiento_jerarquico.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (5.24925pt too wide) in paragraph at lines 255--255
+[]\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
+ []
+
+<figuras/corte_arbol_estatico.png, id=181, 702.625pt x 702.625pt>
+File: figuras/corte_arbol_estatico.png Graphic file (type png)
+
+<use figuras/corte_arbol_estatico.png>
+
+LaTeX Warning: Citation `Domany1999' on page 44 undefined on input line 267.
+
+
+LaTeX Warning: Citation `Langfelder2008' on page 44 undefined on input line 267
+.
+
+[44]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <./figuras/agrupamiento_jerarquico.png (PNG copy)>]
+
+LaTeX Warning: Citation `Langfelder2008' on page 46 undefined on input line 269
+.
+
+[46 <./figuras/corte_arbol_estatico.png (PNG copy)>]
+<figuras/cut_tree_dynamic_ejemplo.png, id=192, 969.6225pt x 413.545pt>
+File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
+
+<use figuras/cut_tree_dynamic_ejemplo.png>
+
+LaTeX Warning: Citation `Langfelder2008' on page 47 undefined on input line 288
+.
+
+
+LaTeX Warning: Citation `Langfelder2008' on page 47 undefined on input line 288
+.
+
+
+LaTeX Warning: Citation `Langfelder2008' on page 47 undefined on input line 294
+.
+
+
+LaTeX Warning: Citation `Langfelder2007' on page 47 undefined on input line 294
+.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47] [48 <./figuras/cut_tree_dynamic_ejemplo.png>]
+
+LaTeX Warning: Citation `Horvath2007' on page 49 undefined on input line 308.
+
+
+LaTeX Warning: Citation `Rosvall2008' on page 49 undefined on input line 309.
+
+
+LaTeX Warning: Citation `Clauset2004' on page 49 undefined on input line 309.
+
+
+LaTeX Warning: Citation `Berenstein2014' on page 49 undefined on input line 311
+.
+
+
+LaTeX Warning: Citation `Rosvall2008' on page 49 undefined on input line 311.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 306--47
+
+ []
+
+[49]
+\openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
+
+ (./cap_4_analisis_de_datos_transcripcionales.tex
+Cap\'{\i }tulo 4.
+
+<figuras/densidad_de_desviacion_estandar.png, id=204, 1117.17375pt x 751.80875p
+t>
+File: figuras/densidad_de_desviacion_estandar.png Graphic file (type png)
+ <use figuras/densidad_de_desviacion_estandar.png>
+<figuras/densidad_para_niveles.png, id=205, 1117.17375pt x 751.80875pt>
+File: figuras/densidad_para_niveles.png Graphic file (type png)
+
+<use figuras/densidad_para_niveles.png>
+Overfull \hbox (6.3522pt too wide) in paragraph at lines 7--28
+\OT1/cmr/m/n/12 Una vez apli-ca-do es-te fil-tro por des-via-ci^^Son est^^Sanda
+r, se aplic^^So un fil-tro de ti-po ``$\OML/cmm/m/it/12 KsobreA$\OT1/cmr/m/n/12
+ '',
+ []
+
+[50
+
+
+
+] [51 <./figuras/densidad_de_desviacion_estandar.png (PNG copy)> <./figuras/den
+sidad_para_niveles.png (PNG copy)>]
+<figuras/barrido_k_ch.png, id=213, 1204.5pt x 966.61125pt>
+File: figuras/barrido_k_ch.png Graphic file (type png)
+
+<use figuras/barrido_k_ch.png>
+<figuras/barrido_k_dunn.png, id=214, 1204.5pt x 966.61125pt>
+File: figuras/barrido_k_dunn.png Graphic file (type png)
+
+<use figuras/barrido_k_dunn.png>
+<figuras/perfiles_k_means.png, id=215, 1380.15625pt x 717.68124pt>
+File: figuras/perfiles_k_means.png Graphic file (type png)
+
+<use figuras/perfiles_k_means.png> [52]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figuras/perfiles_ds_1.png, id=219, 1204.5pt x 903.375pt>
+File: figuras/perfiles_ds_1.png Graphic file (type png)
+
+<use figuras/perfiles_ds_1.png>
+<figuras/perfiles_ds_4.png, id=220, 1204.5pt x 903.375pt>
+File: figuras/perfiles_ds_4.png Graphic file (type png)
+
+<use figuras/perfiles_ds_4.png> [53 <./figuras/barrido_k_ch.png (PNG copy)> <./
+figuras/barrido_k_dunn.png (PNG copy)>]
+
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 54 und
+efined on input line 125.
+
+
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 54 und
+efined on input line 125.
+
+[54 <./figuras/perfiles_k_means.png (PNG copy)> <./figuras/perfiles_ds_1.png (P
+NG copy)> <./figuras/perfiles_ds_4.png (PNG copy)>]
+<figuras/correlacion_media_por_tamano_ds_1.png, id=231, 1204.5pt x 903.375pt>
+File: figuras/correlacion_media_por_tamano_ds_1.png Graphic file (type png)
+
+<use figuras/correlacion_media_por_tamano_ds_1.png>
+<figuras/correlacion_media_por_tamano_ds_4.png, id=232, 1204.5pt x 903.375pt>
+File: figuras/correlacion_media_por_tamano_ds_4.png Graphic file (type png)
+
+<use figuras/correlacion_media_por_tamano_ds_4.png>
+<figuras/histograma_ds_1.png, id=233, 1204.5pt x 903.375pt>
+File: figuras/histograma_ds_1.png Graphic file (type png)
+
+<use figuras/histograma_ds_1.png>
+<figuras/histograma_ds_4.png, id=234, 1204.5pt x 903.375pt>
+File: figuras/histograma_ds_4.png Graphic file (type png)
+
+<use figuras/histograma_ds_4.png>
+
+LaTeX Warning: Reference `ref:histograma_ds_1' on page 55 undefined on input li
+ne 157.
+
+
+LaTeX Warning: Reference `ref:histograma_ds_4' on page 55 undefined on input li
+ne 157.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+[55 <./figuras/correlacion_media_por_tamano_ds_1.png (PNG copy)> <./figuras/cor
+relacion_media_por_tamano_ds_4.png (PNG copy)> <./figuras/histograma_ds_1.png (
+PNG copy)> <./figuras/histograma_ds_4.png (PNG copy)>]
+<figuras/ecdf_k_ds1_ds4.png, id=240, 1204.5pt x 903.375pt>
+File: figuras/ecdf_k_ds1_ds4.png Graphic file (type png)
+
+<use figuras/ecdf_k_ds1_ds4.png>
+<figuras/fraccion_de_km_en_ds1.png, id=241, 903.375pt x 719.68875pt>
+File: figuras/fraccion_de_km_en_ds1.png Graphic file (type png)
+
+<use figuras/fraccion_de_km_en_ds1.png>
+<figuras/fraccion_de_ds1_en_ds4.png, id=242, 903.375pt x 719.68875pt>
+File: figuras/fraccion_de_ds1_en_ds4.png Graphic file (type png)
+
+<use figuras/fraccion_de_ds1_en_ds4.png>
+Underfull \hbox (badness 10000) in paragraph at lines 160--187
+
+ []
+
+[56 <./figuras/ecdf_k_ds1_ds4.png (PNG copy)>]) [57] [58 <./figuras/fraccion_de
+_km_en_ds1.png> <./figuras/fraccion_de_ds1_en_ds4.png (PNG copy)>]
 \openout2 = `cap_5_bhi.aux'.
 
+
 (./cap_5_bhi.tex
-Cap\'{\i }tulo 1.
+Cap\'{\i }tulo 5.
+
+LaTeX Warning: Citation `Datta2006' on page 59 undefined on input line 5.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
 
-[1
+[59
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `eq:sim_rcmax' on page 2 undefined on input line 23.
-
-<figuras/correlacion_de_a_pares_bhi.png, id=14, 1204.5pt x 579.16376pt>
+] <figuras/correlacion_de_a_pares_bhi.png, id=256, 1204.5pt x 579.16376pt>
 File: figuras/correlacion_de_a_pares_bhi.png Graphic file (type png)
 
-<use figuras/correlacion_de_a_pares_bhi.png> [2] [3 <./figuras/correlacion_de_a
-_pares_bhi.png (PNG copy)>]
+<use figuras/correlacion_de_a_pares_bhi.png> [60]
 
-LaTeX Warning: Reference `sec:redes' on page 4 undefined on input line 48.
+LaTeX Warning: Citation `Dutkowski2013' on page 61 undefined on input line 42.
 
+[61 <./figuras/correlacion_de_a_pares_bhi.png (PNG copy)>]
 
-LaTeX Warning: Reference `sec:comunidades' on page 4 undefined on input line 48
-.
+LaTeX Warning: Reference `fig:interacting_densities' on page 62 undefined on in
+put line 50.
 
-
-LaTeX Warning: Reference `fig:interacting_densities' on page 4 undefined on inp
-ut line 50.
-
-<figuras/interacting_densities_cc.png, id=22, 1204.5pt x 889.3225pt>
+<figuras/interacting_densities_cc.png, id=265, 1204.5pt x 889.3225pt>
 File: figuras/interacting_densities_cc.png Graphic file (type png)
 
 <use figuras/interacting_densities_cc.png>
-<figuras/interacting_densities_bpa.png, id=23, 1204.5pt x 889.3225pt>
+<figuras/interacting_densities_bpa.png, id=266, 1204.5pt x 889.3225pt>
 File: figuras/interacting_densities_bpa.png Graphic file (type png)
 
 <use figuras/interacting_densities_bpa.png>
-<figuras/interacting_densities_bpb.png, id=24, 1204.5pt x 889.3225pt>
+<figuras/interacting_densities_bpb.png, id=267, 1204.5pt x 889.3225pt>
 File: figuras/interacting_densities_bpb.png Graphic file (type png)
 
 <use figuras/interacting_densities_bpb.png>
-<figuras/bhi_km_ds1_ds4_control1.png, id=25, 1204.5pt x 687.56876pt>
+<figuras/bhi_km_ds1_ds4_control1.png, id=268, 1204.5pt x 687.56876pt>
 File: figuras/bhi_km_ds1_ds4_control1.png Graphic file (type png)
 
 <use figuras/bhi_km_ds1_ds4_control1.png>
-<figuras/bhi_km_ds1_ds4_control2.png, id=26, 1204.5pt x 687.56876pt>
+<figuras/bhi_km_ds1_ds4_control2.png, id=269, 1204.5pt x 687.56876pt>
 File: figuras/bhi_km_ds1_ds4_control2.png Graphic file (type png)
 
-<use figuras/bhi_km_ds1_ds4_control2.png> [4]) [5] [6 <./figuras/interacting_de
-nsities_cc.png (PNG copy)> <./figuras/interacting_densities_bpa.png (PNG copy)>
- <./figuras/interacting_densities_bpb.png (PNG copy)>] [7 <./figuras/bhi_km_ds1
-_ds4_control1.png (PNG copy)> <./figuras/bhi_km_ds1_ds4_control2.png (PNG copy)
->] (./tesis_de_licenciatura.bbl
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 11.
+<use figuras/bhi_km_ds1_ds4_control2.png> [62]) [63] [64 <./figuras/interacting
+_densities_cc.png (PNG copy)> <./figuras/interacting_densities_bpa.png (PNG cop
+y)> <./figuras/interacting_densities_bpb.png (PNG copy)>] [65 <./figuras/bhi_km
+_ds1_ds4_control1.png (PNG copy)> <./figuras/bhi_km_ds1_ds4_control2.png (PNG c
+opy)>]
+\openout2 = `cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_
+expresion.aux'.
 
 
-(/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
+(./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
+tex
+Cap\'{\i }tulo 6.
+[66
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
+
+
+LaTeX Warning: Reference `fig:kta_global' on page 67 undefined on input line 35
+.
+
+<figuras/kta_global_cc.png, id=287, 1204.5pt x 1561.835pt>
+File: figuras/kta_global_cc.png Graphic file (type png)
+
+<use figuras/kta_global_cc.png>
+<figuras/kta_global_bpa.png, id=288, 1204.5pt x 1561.835pt>
+File: figuras/kta_global_bpa.png Graphic file (type png)
+
+<use figuras/kta_global_bpa.png>
+<figuras/kta_global_bpb.png, id=289, 1204.5pt x 1561.835pt>
+File: figuras/kta_global_bpb.png Graphic file (type png)
+
+<use figuras/kta_global_bpb.png>
+
+LaTeX Warning: Float too large for page by 367.9456pt on input line 55.
+
+) [67] [68] [69 <./figuras/kta_global_cc.png (PNG copy)> <./figuras/kta_global_
+bpa.png (PNG copy)> <./figuras/kta_global_bpb.png (PNG copy)>]
+(./tesis_de_licenciatura.bbl
+Overfull \hbox (52.58104pt too wide) in paragraph at lines 53--58
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.mrc-lmb.cam.ac.uk/genomes/madan
+m/microarray/chapter-final.pdf 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--71
+[]\OT1/cmr/m/sc/12 arabidopsis.org\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 Mi-cro-ar
+ray da-ta from At-Ge-nEx-press\OT1/cmr/m/n/12 .
+ []
+
+
+Overfull \hbox (40.78813pt too wide) in paragraph at lines 66--71
+\OT1/cmtt/m/n/12 https://www.arabidopsis.org/portals/expression/microarray/ATGe
+nExpress.jsp\OT1/cmr/m/n/12 . 
+ []
+
+[70
+
+
+
+]
+Overfull \hbox (15.53102pt too wide) in paragraph at lines 140--147
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
+le/pii/S0378437198004944 
+ []
+
+[71] [72]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 274
+.
+ (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
 File: omscmtt.fd 
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 274.
 
-Overfull \hbox (243.60625pt too wide) in paragraph at lines 7--12
+Overfull \hbox (249.48119pt too wide) in paragraph at lines 269--275
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.pubmedcentral.nih.gov/articlere
 nder.fcgi?artid=1590054\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/12 g\O
 T1/cmtt/m/n/12 tool=pmcentrez\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/
@@ -586,29 +1303,33 @@ T1/cmtt/m/n/12 tool=pmcentrez\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/
  []
 
 
-Overfull \hbox (589.93138pt too wide) in paragraph at lines 14--18
+Overfull \hbox (595.80632pt too wide) in paragraph at lines 277--283
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.nature.com/nbt/journal/v31/n1/a
 bs/nbt.2463.html$\OMS/cmsy/m/n/12 n$\OT1/cmtt/m/n/12 nhttp://www.pubmedcentral.
 nih.gov/articlerender.fcgi?artid=3654867&tool=pmcentrez&rendertype=abstract 
  []
 
-) [8
-
-
-
-] (./tesis_de_licenciatura.aux (./cap_5_bhi.aux))
+) [73] (./tesis_de_licenciatura.aux (./cap_0_motivaciones_y_objetivos.aux)
+(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
+(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux) (./cap_5_bhi.aux)
+(./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
+aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 4286 strings out of 494999
- 59253 string characters out of 1180816
- 139301 words of memory out of 3000000
- 7407 multiletter control sequences out of 15000+50000
- 11444 words of font info for 41 fonts, out of 3000000 for 9000
+ 4726 strings out of 494999
+ 70277 string characters out of 1180816
+ 157301 words of memory out of 3000000
+ 7754 multiletter control sequences out of 15000+50000
+ 16033 words of font info for 61 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
- 36i,9n,38p,919b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,38p,1417b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
@@ -617,14 +1338,17 @@ lic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
 s/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.p
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesis_de_licenciatura.pdf (8 pages, 539234 bytes).
+live/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on tesis_de_licenciatura.pdf (74 pages, 4634187 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 373 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

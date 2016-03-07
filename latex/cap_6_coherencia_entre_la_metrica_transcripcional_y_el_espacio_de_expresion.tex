@@ -33,27 +33,25 @@ Para cuantificar la coherencia métrica entre el espacio de expresión de cada t
 \end{equation}
 con $g_i$ y $g_j$ genes pertenecientes al tratamiento en cuestión. Se puede demostrar que una matriz de similaridad definida de esta manera es siempre SDP.\\
 Para el kernel del espacio de ontologías, utilizamos la similaridad definida en la ecuación \ref{eq:sim_rcmax} y transformamos la matriz en SDP por medio de \ref{eq:matriz_corrida}. La matriz se construyó tomando en cuenta todos los genes del tratamiento. Si un gen del tratamiento no se encontraba anotado en la ontología, se lo anotaba al nodo raíz y por lo tanto su similaridad con el resto de los genes era cero. Se calculó entonces para cada tratamiento y cada ontología, el KTA y se construyó además un control nulo de tipo 2, realizando 1000 reordenamientos aleatorios de las etiquetas de la matriz $K_x$.\\
-Las figuras \ref{fig:kta_global} presentan un boxplot para cada tratamiento y cada ontología, con un punto rojo para el KTA de expresión y en negro, el KTA de control nulo. 
-\begin{figure*}[t!]
-    \centering
-    \begin{subfigure}[t]{0.5\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{kta_global_cc}
-    \caption{KTA para ontología CC.}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.5\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{kta_global_bpa}
-    \caption{KTA para ontología BPA.}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.5\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{kta_global_bpb}
-    \caption{KTA para ontología BPB.}
-    \end{subfigure}    
-    \caption{Índice de alineamiento núcleo-objetivo, KTA, para distintos tratamientos entre espacio de expresión y espació de ontología.}
-    \label{kta_global}
-\end{figure*}
+Las figuras \ref{fig:kta_global_cc}, \ref{fig:kta_global_bpa} y \ref{fig:kta_global_bpb} presentan un boxplot para cada tratamiento y cada ontología, con un punto rojo para el KTA de expresión y en negro, el KTA de control nulo. 
+\begin{figure}[h!]
+\centering
+\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_cc}
+\caption{KTA para distintos tratamientos entre espacio de expresión y ontología CC.}
+\label{fig:kta_global_cc}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_bpa}
+\caption{KTA para distintos tratamientos entre espacio de expresión y ontología BPA.}
+\label{fig:kta_global_bpa}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_bpb}
+\caption{KTA para distintos tratamientos entre espacio de expresión y ontología BPB.}
+\label{fig:kta_global_bpb}
+\end{figure}
 En todos los casos encontramos que el KTA de expresión supera todos los valores del KTA de control nulo, lo que indica una coherencia entre la métrica de expresión transcripcional y la métrica del espacio GO.\\
 Por otro lado, se calculó el índice KTA estandarizado definido como:
 \begin{equation}
@@ -64,18 +62,46 @@ En la figura \ref{fig:zkta_global} se consignan \hl{completar esto, habia anotad
 \hl{completar las conclusiones}
 \section{Alineamiento de núcleo-objetivo local}
 En la sección anterior presentamos una forma de cuantificar globalmente la coherencia entre la métrica transcripcional y el espacio GO mediante el índice KTA. Es posible redefinir este índice para obtener una medida de alineamiento de estos dos espacios pero de forma local, en las vecindades transcripcionales, para realizar un análisis de todos los genes que se expresaron o inhibieron en un tratamiento. Este índice nos será de gran utilidad en un análisis posterior para encontrar heterogeneidades en los grupos obtenidos.\hl{completar con algo mas que explique por que nos interesa hacer este analisis}.\\
-Para ello, construimos tres redes de expresión, a partir de la similaridad de correlación definida en 	\ref{eq:similaridad_de_correlacion} entre los perfiles génicos, utilizando como topología una red no dirigida con los k primeros vecinos mutuos. Construimos redes para $k=\{5, 10, 30\}$ y estudiamos su topología.\\
+Para ello, construimos tres redes de expresión, a partir de la similaridad de correlación definida en \ref{eq:similaridad_de_correlacion} entre los perfiles génicos, utilizando como topología una red pesada no dirigida con los k primeros vecinos mutuos, donde cada nodo es un gen y cada arista tiene un peso $w_{ij}$ entre $[0, 1]$ dado por la similaridad de correlación entre los dos genes $g_i$ y $g_j$ que son unidos por esa arista. Construimos redes para $k=\{5, 10, 30\}$ y estudiamos su topología.\\
 \subsection{Caracterización de las redes}
 Para caracterizar las redes haremos uso de dos observables topológicos, la distribución de grado y la intermediación central o betweenness centrality.\\
 \subsection*{Distribución de grado}
 El grado $k_i$ de un nodo de la red es la cantidad de primeros vecinos que tiene el nodo.\\
-La distribución de grado $P(k)$ es entonces la probabilidad de un que nodo $i$ tomado al azar tenga grado $k$. Las figuras \ref{fig:distribucion_de_grado} muestran la distribución de grado para las tres redes estudiadas.\\
-\hl{poner las tres figuras}\\
-Se observa que el grado máximo que alcanzan estas distribuciones está relacionado directamente con el $k$ utilizado, ya que a lo sumo un nodo tendrá $k$ primeros vecinos. Por otro lado, observamos que la red con $k=30$ posee una cola más pesada que el resto. Esto implica que las conexiones entre sus nodos tienen una distribución de tipo ley de potencias, indicando que la red es una red libre de escala. Muchas redes reales poseen ese tipo de distribución de grado.\\
+La distribución de grado $P(k)$ es entonces la probabilidad de un que nodo $i$ tomado al azar tenga grado $k$. La figura \ref{fig:distribucion_de_grado} muestran la distribución de grado para las tres redes construidas para el tratamiento 'Frío'. En rojo, la red de $k=5$, en azul, la de $k=10$ y en verde, $k=30$. \\
+Se observa que el grado máximo que alcanzan estas distribuciones está relacionado directamente con el $k$ utilizado, ya que a lo sumo un nodo tendrá $k$ primeros vecinos ($k$ aristas).
 \subsection*{Intermediación central o betweenness centrality}
 La longitud de un camino entre dos nodos se define como la cantidad de aristas que se recorren para llegar de un nodo al otro. El camino (o caminos) más corto es aquél camino cuya longitud es la menor entre todos los caminos. La longitud de un camino más corto se conoce como distancia geodésica.\\
 El betweenness centrality de un nodo $i$ es igual a la cantidad de caminos más cortos desde todos los nodos a todos los otros nodos que pasan por el nodo $i$. Es una medida de la influencia del nodo $i$ en la red, ya que un nodo con alto betweenness centrality recibirá una gran parte de la carga de la red, suponiendo que la carga se distribuye a través de los caminos más cortos.\\
-Muchas redes reales presentan algunos nodos de alta conectividad, llamados hubs, por donde pasa la mayor parte de la carga de la red.
-Las figuras \ref{fig:distribucion_de_betweenness} muestran la distribución de betweenness centrality para las tres redes estudiadas.\\
-\hl{poner las tres figuras}\\
-\hl{poner que se observa y que implica}\\
+Muchas redes reales presentan algunos nodos de alta conectividad, llamados hubs, por donde pasa la mayor parte de la carga de la red.\\
+Las figuras \ref{fig:distribucion_de_betweenness} muestran la distribución de betweenness centrality en función del grado para las tres redes estudiadas para el tratamiento 'Frío'.\\
+Se observa que las red de $k=5$ y $k=10$ presentan una gran dispersión en el betweenness de sus nodos, mientras que la red de $k=30$ tiene una dispersión menor y los nodos con mayor betweenness no son los más conectados, sino más bien los intermedios (alrededor de $k=15$).\\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{distribucion_de_grado}
+\caption{Distribución de grado para los nodos de las redes de k primeros vecinos mutuos, con $k=5$, $k=10$ y $k=30$ para el tratamiento 'Frío'.}
+\label{fig:distribucion_de_grado}
+\end{figure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{distribucion_de_betweenness}
+\caption{Distribución de betweenness centrality en función del grado de la red para los nodos de las redes de k primeros vecinos mutuos, con $k=5$, $k=10$ y $k=30$ para el tratamiento 'Frío'.}
+\label{fig:distribucion_de_betweenness}
+\end{figure}
+Si bien ninguna de estas redes presenta evidencias de patrones de conectividad en su caracterización, decidimos utilizar la red de $k=30$, que llamaremos $k30$, por ser una red relativamente pequeña, en el sentido de que la cantidad de nodos y aristas (por ejemplo, 1951 nodos y 18436 aristas para el tratamiento ``Frío'') permiten realizar todos los cálculos de KTA local en un tiempo computacional razonable, pero es suficientemente grande como para poder extraer información de la misma.
+\subsection{KTA local red de k=30}
+Para cada arista de la red $k30$ de cada tratamiento, encontramos su vecindario local a primeros vecinos (los primeros vecinos de los nodos unidos por la arista) y construimos la matriz de similaridad de correlación reducida, consistente en la similaridad de correlación entre esos nodos y sus primeros vecinos. Generamos además la matriz de similaridad semántica reducida usando únicamente los genes anteriores, para cada una de las ontologías GOBPA, GOBPB y GOCC.\\
+Aquellos genes que no estaban anotados en las ontologías, fueron anotados en la raíz de cada una respectivamente, por lo que los genes en la vecindad de un gen $i$ en el espacio de expresión no necesariamente son vecinos del mismo gen en el espacio de ontología. La figura \ref{fig:nx_vs_ny} consigna para la ontología GOBPA, la cantidad promedio de nodos vecinos anotados, $ny$, en la ontología en función de la cantidad de nodos vecinos en la red, $nx$, para todos los tratamientos. En rojo, un ajuste lineal por cuadrados mínimos. En todos los casos se observa una relación lineal entre la cantidad de vecinos en la red y de nodos en la ontología.\hl{discutir que significa esto}\\
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{nx_vs_ny}
+\caption{Cantidad promedio de nodos vecinos anotados, $ny$, en la ontología en función de la cantidad de nodos vecinos en la red, $nx$, para todos los tratamientos. En rojo, un ajuste lineal por cuadrados mínimos.}
+\label{fig:nx_vs_ny}
+\end{figure}
+Por otro lado, se calculó el valor medio de los pesos de los genes de una vecindad en el espacio de ontología, para todos los genes de la vecindad y únicamente para los anotados. La figura \ref{fig:wny_vs_wnyanotados} \hl{discutir que grafico aca y que significa lo que estoy viendo} \\
+Finalmente, calculamos KTA entre la matriz reducida en el espacio de expresión y las matrices reducidas previamente transformadas en SDP de las ontologías.\\
+Las figuras \ref{fig:lktaanotados_vs_wnyanotados} y \ref{fig:lktaanotados_vs_ny} muestran el KTA local solo de los genes anotados con respecto el promedio de pesos de genes anotados en una vecindad de la ontología y KTA local solo de los genes anotados y la cantidad de vecinos anotados en la ontología respectivamente. \hl{ver estos graficos e interpretar, porque no entiendo que son}
+
+
+
+
+

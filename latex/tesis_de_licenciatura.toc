@@ -49,5 +49,7 @@
 \contentsline {section}{\numberline {6.3}Alineamiento de n\IeC {\'u}cleo-objetivo local}{70}
 \contentsline {subsection}{\numberline {6.3.1}Caracterizaci\IeC {\'o}n de las redes}{70}
 \contentsline {subsection}{\numberline {6.3.2}KTA local red de k=30}{71}
-\contentsline {chapter}{\numberline {7}Metricas mixtas}{75}
-\contentsline {chapter}{\numberline {8}conclusiones y perspectivas}{76}
+\contentsline {chapter}{\numberline {7}M\IeC {\'e}trica mixta}{75}
+\contentsline {section}{\numberline {7.1}Hacia una m\IeC {\'e}trica mixta}{75}
+\contentsline {subsection}{\numberline {7.1.1}Modificaci\IeC {\'o}n de la similaridad de correlaci\IeC {\'o}n}{76}
+\contentsline {chapter}{\numberline {8}conclusiones y perspectivas}{77}

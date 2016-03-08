@@ -61,7 +61,7 @@ donde $<KTA_r>$ es el valor medio del conjunto de valores del KTA del grupo para
 En la figura \ref{fig:zkta_global} se consignan \hl{completar esto, habia anotado esto pero pensandolo un poco no entiendo bien que poner, si no vamos a usar las redes. zKTA: por tratamiento Gx/GOBPa, Gx/GOBPb, Gx/GOCC, Gx/PIN, Gx/LCI, Gx/Kegg}\\
 \hl{completar las conclusiones}
 \section{Alineamiento de núcleo-objetivo local}
-En la sección anterior presentamos una forma de cuantificar globalmente la coherencia entre la métrica transcripcional y el espacio GO mediante el índice KTA. Es posible redefinir este índice para obtener una medida de alineamiento de estos dos espacios pero de forma local, en las vecindades transcripcionales, para realizar un análisis de todos los genes que se expresaron o inhibieron en un tratamiento. Este índice nos será de gran utilidad en un análisis posterior para encontrar heterogeneidades en los grupos obtenidos.\hl{completar con algo mas que explique por que nos interesa hacer este analisis}.\\
+En la sección anterior presentamos una forma de cuantificar globalmente la coherencia entre la métrica transcripcional y el espacio GO mediante el índice KTA. Es posible redefinir este índice para obtener una medida de alineamiento de estos dos espacios pero de forma local, en las vecindades transcripcionales, para realizar un análisis de todos los genes que se expresaron o inhibieron en un tratamiento. Este índice nos será de gran utilidad en un análisis posterior para encontrar heterogeneidades en los grupos obtenidos.\\
 Para ello, construimos tres redes de expresión, a partir de la similaridad de correlación definida en \ref{eq:similaridad_de_correlacion} entre los perfiles génicos, utilizando como topología una red pesada no dirigida con los k primeros vecinos mutuos, donde cada nodo es un gen y cada arista tiene un peso $w_{ij}$ entre $[0, 1]$ dado por la similaridad de correlación entre los dos genes $g_i$ y $g_j$ que son unidos por esa arista. Construimos redes para $k=\{5, 10, 30\}$ y estudiamos su topología.\\
 \subsection{Caracterización de las redes}
 Para caracterizar las redes haremos uso de dos observables topológicos, la distribución de grado y la intermediación central o betweenness centrality.\\
@@ -75,13 +75,13 @@ El betweenness centrality de un nodo $i$ es igual a la cantidad de caminos más 
 Muchas redes reales presentan algunos nodos de alta conectividad, llamados hubs, por donde pasa la mayor parte de la carga de la red.\\
 Las figuras \ref{fig:distribucion_de_betweenness} muestran la distribución de betweenness centrality en función del grado para las tres redes estudiadas para el tratamiento 'Frío'.\\
 Se observa que las red de $k=5$ y $k=10$ presentan una gran dispersión en el betweenness de sus nodos, mientras que la red de $k=30$ tiene una dispersión menor y los nodos con mayor betweenness no son los más conectados, sino más bien los intermedios (alrededor de $k=15$).\\
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{distribucion_de_grado}
 \caption{Distribución de grado para los nodos de las redes de k primeros vecinos mutuos, con $k=5$, $k=10$ y $k=30$ para el tratamiento 'Frío'.}
 \label{fig:distribucion_de_grado}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{distribucion_de_betweenness}
 \caption{Distribución de betweenness centrality en función del grado de la red para los nodos de las redes de k primeros vecinos mutuos, con $k=5$, $k=10$ y $k=30$ para el tratamiento 'Frío'.}
@@ -90,18 +90,37 @@ Se observa que las red de $k=5$ y $k=10$ presentan una gran dispersión en el be
 Si bien ninguna de estas redes presenta evidencias de patrones de conectividad en su caracterización, decidimos utilizar la red de $k=30$, que llamaremos $k30$, por ser una red relativamente pequeña, en el sentido de que la cantidad de nodos y aristas (por ejemplo, 1951 nodos y 18436 aristas para el tratamiento ``Frío'') permiten realizar todos los cálculos de KTA local en un tiempo computacional razonable, pero es suficientemente grande como para poder extraer información de la misma.
 \subsection{KTA local red de k=30}
 Para cada arista de la red $k30$ de cada tratamiento, encontramos su vecindario local a primeros vecinos (los primeros vecinos de los nodos unidos por la arista) y construimos la matriz de similaridad de correlación reducida, consistente en la similaridad de correlación entre esos nodos y sus primeros vecinos. Generamos además la matriz de similaridad semántica reducida usando únicamente los genes anteriores, para cada una de las ontologías GOBPA, GOBPB y GOCC.\\
-Aquellos genes que no estaban anotados en las ontologías, fueron anotados en la raíz de cada una respectivamente, por lo que los genes en la vecindad de un gen $i$ en el espacio de expresión no necesariamente son vecinos del mismo gen en el espacio de ontología. La figura \ref{fig:nx_vs_ny} consigna para la ontología GOBPA, la cantidad promedio de nodos vecinos anotados, $ny$, en la ontología en función de la cantidad de nodos vecinos en la red, $nx$, para todos los tratamientos. En rojo, un ajuste lineal por cuadrados mínimos. En todos los casos se observa una relación lineal entre la cantidad de vecinos en la red y de nodos en la ontología.\hl{discutir que significa esto}\\
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{nx_vs_ny}
-\caption{Cantidad promedio de nodos vecinos anotados, $ny$, en la ontología en función de la cantidad de nodos vecinos en la red, $nx$, para todos los tratamientos. En rojo, un ajuste lineal por cuadrados mínimos.}
-\label{fig:nx_vs_ny}
+Aquellos genes que no estaban anotados en las ontologías, fueron anotados en la raíz de cada una respectivamente, por lo que los genes en la vecindad de un gen $i$ en el espacio de expresión no necesariamente son vecinos del mismo gen en el espacio de ontología.\\
+Observamos que la cantidad de nodos vecinos anotados en la ontología, $ny$, depende linealmente de la cantidad de nodos vecinos en la red, $nx$, como muestra la figura \ref{fig:nx_vs_ny}. Por otro lado, podemos ver que el promedio de los pesos en una vecindad de una arista anotados en la ontología, $wynanotados$, presenta una gran dispersión en su relación con los pesos de las aristas, como se observa en la figura \ref{fig:wy_vs_wynanotados}. Esto implica que el comportamiento en una vecindad no puede ser predicho a partir del conocimiento de un edge, sino que es necesario tomar toda la vecindad en su conjunto.
+\begin{figure}[t!]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{nx_vs_ny}
+    \caption{Primeros vecinos en GO en función de primeros vecinos en expresión.}
+    \label{fig:nx_vs_ny}
+    \end{subfigure}    
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{wy_vs_wynanotados}
+    \caption{Promedio de pesos anotados en GO en función de pesos de las aristas.}
+    \label{fig:wy_vs_wynanotados}
+    \end{subfigure}    
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{lktaanotados_vs_wnyanotados}
+    \caption{KTA local de los anotados en función del promedio de pesos anotados en GO.}
+    \label{fig:lktaanotados_vs_wnyanotados}
+    \end{subfigure}    
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{lktaanotados_vs_nyanotados}
+    \caption{KTA local de los anotados en función de la cantidad de vecinos anotados en GO.}
+    \label{fig:lktaanotados_vs_nyanotados}
+    \end{subfigure}            
+    \label{fig:ktalocal}
+    \caption{Caracterización de KTA local para tratamiento 'Frío'.}
 \end{figure}
-Por otro lado, se calculó el valor medio de los pesos de los genes de una vecindad en el espacio de ontología, para todos los genes de la vecindad y únicamente para los anotados. La figura \ref{fig:wny_vs_wnyanotados} \hl{discutir que grafico aca y que significa lo que estoy viendo} \\
-Finalmente, calculamos KTA entre la matriz reducida en el espacio de expresión y las matrices reducidas previamente transformadas en SDP de las ontologías.\\
-Las figuras \ref{fig:lktaanotados_vs_wnyanotados} y \ref{fig:lktaanotados_vs_ny} muestran el KTA local solo de los genes anotados con respecto el promedio de pesos de genes anotados en una vecindad de la ontología y KTA local solo de los genes anotados y la cantidad de vecinos anotados en la ontología respectivamente. \hl{ver estos graficos e interpretar, porque no entiendo que son}
+A partir de estas relaciones, introduciremos el índice KTA local como el índice KTA aplicado a las matrices reducidas de ambos espacios, previamente transformadas en SDP. Para caracterizar su comportamiento nos interesa observar primero que el comportamiento de este índice depende linealmente de $wynanotados$, como muestra la figura \ref{fig:lktaanotados_vs_wnyanotados}, siendo entonces coherente con el promedio de las aristas de su vecindad, lo que da cuenta que la información contenida en la ontología GO está relacionada con el índice KTA local. Por otro lado, de la figura \ref{fig:lktaanotados_vs_nyanotados} podemos verificar que no existe una dependencia fierte del KTA local con la cantidad de vecinos anotados $nyanotados$. Por lo tanto, el KTA local presenta valores más altos para vecinos con alta coherencia biológica, independientemente de la cantidad de vecinos que se tome en cuenta.
 
-
-
-
-
+En el capitulo siguiente utilizaremos los resultados obtenidos en este capítulo para desarrollar una variante al procedimiento córte de árbol dinámico que integre la información contenida en el espacio de expresión con la información contenida en el espacio de conocimientos GO para favorecer la búsqueda de estructuras biológicamente coherentes.

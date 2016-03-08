@@ -286,4 +286,17 @@
 \newblock Proceedings of the 26th Annual International Conference on Machine
   Learning - ICML 2009  (2009) 1.
 
+\bibitem{Berenstein2010}
+\textsc{A.~J. Berenstein}.
+\newblock \emph{{T{\'{e}}cnicas de Mec{\'{a}}nica estad{\'{\i}}stica para la
+  detecci{\'{o}}n de correlaciones en perfiles de expresi{\'{o}}n
+  g{\'{e}}nica.}}
+\newblock T{\'{e}}sis de Licenciatura en Ciencias F{\'{\i}}sicas  (2010).
+
+\bibitem{Horvath2005}
+\textsc{S.~Horvat}.
+\newblock \emph{{A general framework for weighted gene co-expression network
+  analysis.}}
+\newblock Stat. Appl. Genet. Mol. Biol.  (2005).
+
 \end{thebibliography}

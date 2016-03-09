@@ -9,12 +9,6 @@
 \newblock Accedido: 2016-01-13.
 \newline\urlprefix\url{http://www.nature.com/subjects/functional-genomics}
 
-\bibitem{functional_genomics_definition_wikipedia}
-\textsc{Wikipedia.org}.
-\newblock \emph{Functional genomics}.
-\newblock Accedido: 2016-01-13.
-\newline\urlprefix\url{https://en.wikipedia.org/wiki/Functional-genomics}
-
 \bibitem{Hahn2013}
 \textsc{Arabidopsis-Interactome-Mapping-Consortium}.
 \newblock \emph{{Evidence for Network Evolution in an Arabidopsis Interactome
@@ -298,5 +292,10 @@
 \newblock \emph{{A general framework for weighted gene co-expression network
   analysis.}}
 \newblock Stat. Appl. Genet. Mol. Biol.  (2005).
+
+\bibitem{Hochberg1995}
+\textsc{Y.~Hochberg}.
+\newblock \emph{{Controlling the False Discovery Rate: A Practical and Powerful
+  Approach to Multiple Testing}} \textbf{57} (1995) 289.
 
 \end{thebibliography}

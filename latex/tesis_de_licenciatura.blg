@@ -9,6 +9,7 @@ A level-1 auxiliary file: cap_4_analisis_de_datos_transcripcionales.aux
 A level-1 auxiliary file: cap_5_bhi.aux
 A level-1 auxiliary file: cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.aux
 A level-1 auxiliary file: cap_7_metrica_mixta.aux
+A level-1 auxiliary file: cap_8_conclusiones_y_perspectivas.aux
 The style file: formato_bibliografia.bst
 Database file #1: bibliografia.bib
 Warning--empty journal in Domany2003
@@ -21,45 +22,46 @@ Warning--missing publisher in Kogan2006
 Warning--empty journal in Ibrahim2012
 Warning--empty journal in Langfelder2007
 Warning--empty journal in Dutkowski2013
+Warning--empty journal in Hochberg1995
 You've used 51 entries,
             2638 wiz_defined-function locations,
-            916 strings with 13593 characters,
-and the built_in function-call counts, 13233 in all, are:
-= -- 882
+            920 strings with 13670 characters,
+and the built_in function-call counts, 13281 in all, are:
+= -- 886
 > -- 289
 < -- 2
 + -- 136
 - -- 68
-* -- 728
-:= -- 1549
-add.period$ -- 143
+* -- 738
+:= -- 1558
+add.period$ -- 142
 call.type$ -- 51
-change.case$ -- 3
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 1389
-empty$ -- 1467
+cite$ -- 62
+duplicate$ -- 1394
+empty$ -- 1468
 format.name$ -- 85
-if$ -- 2998
+if$ -- 3009
 int.to.chr$ -- 0
 int.to.str$ -- 51
-missing$ -- 337
-newline$ -- 261
+missing$ -- 339
+newline$ -- 259
 num.names$ -- 51
-pop$ -- 511
+pop$ -- 506
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 374
+skip$ -- 375
 stack$ -- 0
-substring$ -- 313
-swap$ -- 833
+substring$ -- 321
+swap$ -- 838
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 10
-while$ -- 82
+warning$ -- 11
+while$ -- 83
 width$ -- 53
-write$ -- 503
-(There were 10 warnings)
+write$ -- 501
+(There were 11 warnings)

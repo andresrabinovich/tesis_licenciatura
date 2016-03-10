@@ -1,24 +1,24 @@
-\chapter{Coherencia entre la métrica transcripcional y otros espacios de conocimiento (GO)}
+\chapter{Coherencia entre métrica transcripcional y espacio de conocimiento GO}
 En los capítulos precedentes cuantificamos por medio de diversos índices la congruencia biológica de los grupos encontrados en el espacio de expresión génica. En este capítulo buscaremos cuantificar la coherencia entre los espacios de expresión génica y de conocimiento biológico desde una óptica diferente: desde la métrica en lugar de desde las agrupaciones.
 \section{Alineamiento de núcleo-objetivo}
-Una matriz de núcleo o matriz de Gram o matriz de kernel $K$ puede ser pensada informalmente como una matriz de similaridad de a pares entre puntos de un conjunto de datos. Para un conjunto de datos $\{x_1,...,x_m\}$ esta similaridad depende de una función $k$ llamada kernel tal que:
+Una matriz de núcleo o matriz de Gram o matriz de kernel $K$ puede ser pensada informalmente como una matriz semidefinida positiva de similaridad de a pares entre puntos de un conjunto de datos. Para un conjunto de datos $\{x_1,...,x_m\}$ esta noción de similaridad esta dada en términos de una función $k$ llamada kernel tal que:
 \begin{equation}
-	K = (k(x_i, x_j))_{i,j=1}^m
+	K = K_{ij} = k(x_i, x_j)
 \end{equation}
-Una función $k(x, y)$ es un kernel si y solo si para cualquier conjunto finito de datos $C=\{x_1,...,x_m\}$ y para cualquier conjunto $\{a_1,...,a_m\} \in \mathbb{R}^m$ se tiene que:
+con $i,j=\{1,...,m\}$ y $k: \mathbb{R}^m \times \mathbb{R}^m \Rightarrow \mathbb{R}$. Una función $k(x, y)$ es un kernel si y solo si para cualquier conjunto finito de datos $C=\{x_1,...,x_m\}$ y para cualquier conjunto $\{a_1,...,a_m\} \in \mathbb{R}^m$ se tiene que:
 \begin{equation}
 	\sum_{i,j=1}^m a_ia_jk(x_i, x_j)\geq 0
 \end{equation}
-Se puede demostrar que esto implica que $K$ debe ser semidefinida positiva (SDP), es decir, $K=\sum_i \lambda _i v_i v_i'$, con $\lambda _i \geq 0$ los autovalores de la matríz $K$ y $v_i$ sus autovectores.\\
-Intuitivamente, un kernel es una transformación que mapea los puntos en un espacio de alta dimensionalidad a sus posiciones relativas mediante el uso de un producto interno.\\
-Existen multiplicidad de kernerls disponibles y para cada aplicación será necesario encontrar el adecuado.\\
+Se puede demostrar que esto implica que $K$ debe ser semidefinida positiva (SDP), es decir, $K=\sum_i \lambda _i v_i v_i'$, con $\lambda _i \geq 0$ los autovalores de la matriz $K$ y $v_i$ sus autovectores.\\
+Intuitivamente, un kernel es una transformación que mapea pares de puntos en un espacio de alta dimensionalidad a un indice de similaridad entre los mismos mediante el uso de un producto interno.\\
+Existen multiplicidad de kernels disponibles y para cada aplicación será necesario encontrar el adecuado.\\
 Es de esperar que si es posible extraer información biológica del espacio de expresión genética, entonces dos puntos que son similares (en algún sentido a definir por el kernel elegido) en el espacio de expresión, también lo sean en el espacio GO (nuevamente, en algún sentido a definir por el kernel elegido). Para cada espacio habrá que definir un kernel adecuado.\\
 Una forma de cuantificar la similaridad entre estos dos espacios es mediante una cantidad conocida como alineamiento núcleo-objetivo o KTA. El KTA de un kernel $k_1$ con respecto a un kernel $k_2$ del conjunto $C$ esta definido como:
 \begin{equation}
 	\hat{A}(S, k_1, k_2) = \frac{\langle K_1, K_2 \rangle _F}{\sqrt{\langle K_1, K_1 \rangle _F \langle K_2, K_2 \rangle _F}}
 \end{equation}
 Donde $\langle K_1, K_1 \rangle _F = \sum_{i,j=1}^m K1(x_i, x_j)K2(x_i, x_j)$ es el producto de interno de Frobenius entre matrices y $K_i$ son las matrices de kernels simétricas y semidefinida positivas de los espacios a comparar. Este índice tiene un rango entre $[0, 1]$.\cite{Cristianini2006}\\
-Es posible extender este concepto a matrices simétricas indefinidas (no SDP) $S$ mediante diversas técnicas que consisten en transformar $S$ para obtener una $S'$ SDP. La que utilizaremos en este trabajo se conoce como \textit{corrimiento del espectro}. Si $S$ es simétrica entonces admite una descomposición en autovalores y autovectores tal que $S=U\Lambda U^T$ con $U$ una matriz ortogonal y $\Lambda$ una matriz diagonal de autovalores reales, es decir, $\Lambda = diag(\lambda _1,...,\lambda _m)$. Entonces, el corrimiento del espectro consiste en correr todo el espectro de $S$ por el mínimo necesario: 
+Es posible extender este concepto a matrices simétricas indefinidas (no SDP) $S$ mediante diversas técnicas que consisten en transformar $S$ para obtener una $S'$ SDP. Esto es relevante para nosotros, porque matrices de similaridad basadas en similaridad semántica no suelen ser semidefinidas positiva. La que utilizaremos en este trabajo se conoce como \textit{corrimiento del espectro}. Si $S$ es simétrica entonces admite una descomposición en autovalores y autovectores tal que $S=U\Lambda U^T$ con $U$ una matriz ortogonal y $\Lambda$ una matriz diagonal de autovalores reales, es decir, $\Lambda = diag(\lambda _1,...,\lambda _m)$. Entonces, el corrimiento del espectro consiste en correr todo el espectro de $S$ por el mínimo necesario: 
 \begin{equation}
 	S_{corrida} = U(\Lambda + |\min{\lambda _{min}(S), 0}|I)U^T 
 	\label{eq:matriz_corrida}
@@ -31,96 +31,84 @@ Para cuantificar la coherencia métrica entre el espacio de expresión de cada t
 	K_x = (\frac{correlacion(g_i, g_j)+1}{2})_{ij}
 	\label{eq:similaridad_de_correlacion}
 \end{equation}
-con $g_i$ y $g_j$ genes pertenecientes al tratamiento en cuestión. Se puede demostrar que una matriz de similaridad definida de esta manera es siempre SDP.\\
+con $g_i$ y $g_j$ genes pertenecientes al tratamiento en cuestión.\\
 Para el kernel del espacio de ontologías, utilizamos la similaridad definida en la ecuación \ref{eq:sim_rcmax} y transformamos la matriz en SDP por medio de \ref{eq:matriz_corrida}. La matriz se construyó tomando en cuenta todos los genes del tratamiento. Si un gen del tratamiento no se encontraba anotado en la ontología, se lo anotaba al nodo raíz y por lo tanto su similaridad con el resto de los genes era cero. Se calculó entonces para cada tratamiento y cada ontología, el KTA y se construyó además un control nulo de tipo 2, realizando 1000 reordenamientos aleatorios de las etiquetas de la matriz $K_x$.\\
-Las figuras \ref{fig:kta_global_cc}, \ref{fig:kta_global_bpa} y \ref{fig:kta_global_bpb} presentan un boxplot para cada tratamiento y cada ontología, con un punto rojo para el KTA de expresión y en negro, el KTA de control nulo. 
-\begin{figure}[h!]
-\centering
-\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_cc}
-\caption{KTA para distintos tratamientos entre espacio de expresión y ontología CC.}
+Las figuras \ref{fig:kta_global_cc}, \ref{fig:kta_global_bpa} y \ref{fig:kta_global_bpb} presentan en un boxplot para cada tratamiento y cada ontología el KTA del control nulo, junto con un punto rojo para el KTA de expresión. 
+\begin{center}
+\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_cc.pdf}
+\captionof{figure}{KTA para distintos tratamientos entre espacio de expresión y ontología CC.}
 \label{fig:kta_global_cc}
-\end{figure}
-\begin{figure}[h!]
-\centering
-\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_bpa}
-\caption{KTA para distintos tratamientos entre espacio de expresión y ontología BPA.}
+\end{center}
+\begin{center}
+\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_bpa.pdf}
+\captionof{figure}{KTA para distintos tratamientos entre espacio de expresión y ontología BPA.}
 \label{fig:kta_global_bpa}
-\end{figure}
-\begin{figure}[h!]
-\centering
-\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_bpb}
-\caption{KTA para distintos tratamientos entre espacio de expresión y ontología BPB.}
+\end{center}
+\begin{center}
+\includegraphics[height=0.4\textheight, width=0.7\textwidth]{kta_global_bpb.pdf}
+\captionof{figure}{KTA para distintos tratamientos entre espacio de expresión y ontología BPB.}
 \label{fig:kta_global_bpb}
-\end{figure}
-En todos los casos encontramos que el KTA de expresión supera todos los valores del KTA de control nulo, lo que indica una coherencia entre la métrica de expresión transcripcional y la métrica del espacio GO.\\
-Por otro lado, se calculó el índice KTA estandarizado definido como:
-\begin{equation}
-	zKTA = \frac{KTA-<KTA_r>}{s(KTA_r)}
-\end{equation}
-donde $<KTA_r>$ es el valor medio del conjunto de valores del KTA del grupo para un control nulo de 1000 reasignaciones de las etiquetas de la partición y $s(KTA_r)$ es la desviación estandar de la muestra para el mismo conjunto.\\
-En la figura \ref{fig:zkta_global} se consignan \hl{completar esto, habia anotado esto pero pensandolo un poco no entiendo bien que poner, si no vamos a usar las redes. zKTA: por tratamiento Gx/GOBPa, Gx/GOBPb, Gx/GOCC, Gx/PIN, Gx/LCI, Gx/Kegg}\\
-\hl{completar las conclusiones}
+\end{center}
+En todos los casos encontramos que el KTA de expresión supera todos los valores del KTA de control nulo, lo que indica una coherencia global entre la métrica de expresión transcripcional y la métrica del espacio GO.
 \section{Alineamiento de núcleo-objetivo local}
-En la sección anterior presentamos una forma de cuantificar globalmente la coherencia entre la métrica transcripcional y el espacio GO mediante el índice KTA. Es posible redefinir este índice para obtener una medida de alineamiento de estos dos espacios pero de forma local, en las vecindades transcripcionales, para realizar un análisis de todos los genes que se expresaron o inhibieron en un tratamiento. Este índice nos será de gran utilidad en un análisis posterior para encontrar heterogeneidades en los grupos obtenidos.\\
-Para ello, construimos tres redes de expresión, a partir de la similaridad de correlación definida en \ref{eq:similaridad_de_correlacion} entre los perfiles génicos, utilizando como topología una red pesada no dirigida con los k primeros vecinos mutuos, donde cada nodo es un gen y cada arista tiene un peso $w_{ij}$ entre $[0, 1]$ dado por la similaridad de correlación entre los dos genes $g_i$ y $g_j$ que son unidos por esa arista. Construimos redes para $k=\{5, 10, 30\}$ y estudiamos su topología.\\
+En la sección anterior presentamos una forma de cuantificar globalmente la coherencia entre la métrica transcripcional y el espacio GO mediante el índice KTA. Es posible redefinir este índice para obtener una medida de alineamiento de estos dos espacios pero de forma local, en vecindades transcripcionales. Este índice nos será de gran utilidad en un análisis posterior para caracterizar la congruencia biológica en grupos de genes de similar comportamiento transcripcional y para definir una métrica mixta, que permita definir agrupamientos de genes que presente alto grado de coherencia no solo a nivel transcripcional, sino también en el espacio de conocimiento biológico.\\
+Para definir vecindades transcripcionales consideramos redes de k-primeros-vecinos-mutuos, donde cada nodo es un gen y cada arista tiene un peso $w_{ij}$ entre $[0, 1]$ dado por la similaridad de correlación entre los dos genes $g_i$ y $g_j$ que son unidos por esa arista. Construimos una red $k=30$, que llamamos $30kmnn$, y estudiamos su topología.\\
 \subsection{Caracterización de las redes}
-Para caracterizar las redes haremos uso de dos observables topológicos, la distribución de grado y la intermediación central o betweenness centrality.\\
+Para caracterizar la red haremos uso de dos observables topológicos, la distribución de grado y la intermediación central o betweenness centrality.\\
+Además, compararemos la red con dos modelos de redes aleatorias, el modelo de Erdös Renyi, que consiste en construir una red aleatoria con $N$ nodos, conectando pares elegidos al azar y omitiendo múltiples conexiones entre dos mismos nodos hasta alcanzar una cantidad total de $K$ aristas impuestas a priori \cite{Erdos1959}, y el modelo configuracional, que genera una red aleatoria a partir de fijar la distribución de grado $P(k)$ \cite{Molloy1995}.
 \subsection*{Distribución de grado}
 El grado $k_i$ de un nodo de la red es la cantidad de primeros vecinos que tiene el nodo.\\
-La distribución de grado $P(k)$ es entonces la probabilidad de un que nodo $i$ tomado al azar tenga grado $k$. La figura \ref{fig:distribucion_de_grado} muestran la distribución de grado para las tres redes construidas para el tratamiento 'Frío'. En rojo, la red de $k=5$, en azul, la de $k=10$ y en verde, $k=30$. \\
-Se observa que el grado máximo que alcanzan estas distribuciones está relacionado directamente con el $k$ utilizado, ya que a lo sumo un nodo tendrá $k$ primeros vecinos ($k$ aristas).
+La distribución de grado $P(k)$ es entonces la probabilidad de un que nodo $i$ tomado al azar tenga grado $k$.\\La figura \ref{fig:erdos_renyi_vs_30kmnn} muestra la distribución de grado en escala logarítmica de la red de 30 primeros vecinos mutuos y un modelo nulo de Erdös-Rényi con la misma cantidad de nodos y aristas. Se observa que el grado máximo que alcanzan estas distribuciones está relacionado directamente con el $k$ utilizado, ya que a lo sumo un nodo tendrá $k$ primeros vecinos ($k$ aristas). Además, se observa una discrepancia en las distribuciones de grado entre ambas, poniendo de manifiesto la existencia de patrones de correlación no triviales en la conectividad de la red $30kmnn$.
+\begin{center}
+\includegraphics[width=0.8\textwidth]{erdos_renyi_vs_30kmnn.pdf}
+\captionof{figure}{Distribución de grado para los nodos de la red $30kmnn$ para el tratamiento 'Frío' y para una red de Erdös-Rény con idéntica cantidad de nodos y aristas.}
+\label{fig:erdos_renyi_vs_30kmnn}
+\end{center}
 \subsection*{Intermediación central o betweenness centrality}
 La longitud de un camino entre dos nodos se define como la cantidad de aristas que se recorren para llegar de un nodo al otro. El camino (o caminos) más corto es aquél camino cuya longitud es la menor entre todos los caminos. La longitud de un camino más corto se conoce como distancia geodésica.\\
 El betweenness centrality de un nodo $i$ es igual a la cantidad de caminos más cortos desde todos los nodos a todos los otros nodos que pasan por el nodo $i$. Es una medida de la influencia del nodo $i$ en la red, ya que un nodo con alto betweenness centrality recibirá una gran parte de la carga de la red, suponiendo que la carga se distribuye a través de los caminos más cortos.\\
-Muchas redes reales presentan algunos nodos de alta conectividad, llamados hubs, por donde pasa la mayor parte de la carga de la red.\\
-Las figuras \ref{fig:distribucion_de_betweenness} muestran la distribución de betweenness centrality en función del grado para las tres redes estudiadas para el tratamiento 'Frío'.\\
-Se observa que las red de $k=5$ y $k=10$ presentan una gran dispersión en el betweenness de sus nodos, mientras que la red de $k=30$ tiene una dispersión menor y los nodos con mayor betweenness no son los más conectados, sino más bien los intermedios (alrededor de $k=15$).\\
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{distribucion_de_grado}
-\caption{Distribución de grado para los nodos de las redes de k primeros vecinos mutuos, con $k=5$, $k=10$ y $k=30$ para el tratamiento 'Frío'.}
-\label{fig:distribucion_de_grado}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{distribucion_de_betweenness}
-\caption{Distribución de betweenness centrality en función del grado de la red para los nodos de las redes de k primeros vecinos mutuos, con $k=5$, $k=10$ y $k=30$ para el tratamiento 'Frío'.}
-\label{fig:distribucion_de_betweenness}
-\end{figure}
-Si bien ninguna de estas redes presenta evidencias de patrones de conectividad en su caracterización, decidimos utilizar la red de $k=30$, que llamaremos $k30$, por ser una red relativamente pequeña, en el sentido de que la cantidad de nodos y aristas (por ejemplo, 1951 nodos y 18436 aristas para el tratamiento ``Frío'') permiten realizar todos los cálculos de KTA local en un tiempo computacional razonable, pero es suficientemente grande como para poder extraer información de la misma.
-\subsection{KTA local red de k=30}
-Para cada arista de la red $k30$ de cada tratamiento, encontramos su vecindario local a primeros vecinos (los primeros vecinos de los nodos unidos por la arista) y construimos la matriz de similaridad de correlación reducida, consistente en la similaridad de correlación entre esos nodos y sus primeros vecinos. Generamos además la matriz de similaridad semántica reducida usando únicamente los genes anteriores, para cada una de las ontologías GOBPA, GOBPB y GOCC.\\
+Muchas redes reales presentan algunos nodos de alta conectividad, llamados conectores o hubs, por donde pasa la mayor parte de la carga de la red.\\
+La figura \ref{fig:betweenness_er_30_conf} presenta en escala logarítmica la relación entre el betweenness y el grado $k$ de los nodos de la red $30kmnn$, en círculos grises, la de Erdös-Rényi, en triángulos amarillos y la configuracional, en rombos rojos.\\
+\begin{center}
+\includegraphics[width=0.8\textwidth]{betweenness_er_30_conf.pdf}
+\captionof{figure}{Distribución de betweenness centrality en función del grado de la red para los nodos de las redes $30kmnn$ para el tratamiento 'Frío', Erdös-Rényi y configuracional.}
+\label{fig:betweenness_er_30_conf}
+\end{center}
+En todos los casos se observa una correlación positiva entre el betweenness y el grado de la red, pero cabe destacar que para un grado fijo $k$, la red $30kmnn$ presenta una mayor dispersión en el betweenness que las otras, sobre todo en los grados más altos, y con mayor betweenness en los grados intermedios. Esto implica que existen en esta red hubs de tamaño intermedio que se conectan a otros hubs, lo que da un indicio de la existencia de una estructura modular.\\
+Estas diferencias en la distribución de grado y betweenness centrality entre la red $30kmnn$ y las redes aleatorias serían una evidencia a priori de patrones de conectividad no triviales y estructura modular, es decir, de existencia de grupos de genes dentro de la red altamente relacionados entre si. Como factor extra para elegir trabajar con la red de $30kmnn$, por ser una red con relativamente pocos nodos y aristas (por ejemplo, 1951 nodos y 18436 aristas para el tratamiento ``Frío''), es posible realizar sobre la misma todos los cálculos de KTA local en un tiempo computacional razonable.
+\subsection{KTA local red 30kmnn}
+Para cada arista de la red $30kmnn$ de cada tratamiento, encontramos su vecindario local a primeros vecinos (los primeros vecinos de los nodos unidos por la arista) y construimos la matriz de similaridad de correlación reducida, consistente en la similaridad de correlación entre esos nodos y sus primeros vecinos. Generamos además la matriz de similaridad semántica reducida usando únicamente los genes anteriores, para cada una de las ontologías GOBPA, GOBPB y GOCC.\\
 Aquellos genes que no estaban anotados en las ontologías, fueron anotados en la raíz de cada una respectivamente, por lo que los genes en la vecindad de un gen $i$ en el espacio de expresión no necesariamente son vecinos del mismo gen en el espacio de ontología.\\
 Observamos que la cantidad de nodos vecinos anotados en la ontología, $ny$, depende linealmente de la cantidad de nodos vecinos en la red, $nx$, como muestra la figura \ref{fig:nx_vs_ny}. Por otro lado, podemos ver que el promedio de los pesos en una vecindad de una arista anotados en la ontología, $wynanotados$, presenta una gran dispersión en su relación con los pesos de las aristas, como se observa en la figura \ref{fig:wy_vs_wynanotados}. Esto implica que el comportamiento en una vecindad no puede ser predicho a partir del conocimiento de un edge, sino que es necesario tomar toda la vecindad en su conjunto.
-\begin{figure}[t!]
+\begin{sidewaysfigure}[t!]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{nx_vs_ny}
+    \includegraphics[width=1\textwidth]{nx_vs_ny.pdf}
     \caption{Primeros vecinos en GO en función de primeros vecinos en expresión.}
     \label{fig:nx_vs_ny}
     \end{subfigure}    
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{wy_vs_wynanotados}
+    \includegraphics[width=1\textwidth]{wy_vs_wynanotados.pdf}
     \caption{Promedio de pesos anotados en GO en función de pesos de las aristas.}
     \label{fig:wy_vs_wynanotados}
     \end{subfigure}    
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{lktaanotados_vs_wnyanotados}
+    \includegraphics[width=1\textwidth]{lktaanotados_vs_wnyanotados.pdf}
     \caption{KTA local de los anotados en función del promedio de pesos anotados en GO.}
     \label{fig:lktaanotados_vs_wnyanotados}
     \end{subfigure}    
     \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{lktaanotados_vs_nyanotados}
+    \includegraphics[width=1\textwidth]{lktaanotados_vs_nyanotados.pdf}
     \caption{KTA local de los anotados en función de la cantidad de vecinos anotados en GO.}
     \label{fig:lktaanotados_vs_nyanotados}
     \end{subfigure}            
     \label{fig:ktalocal}
     \caption{Caracterización de KTA local para tratamiento 'Frío'.}
-\end{figure}
+\end{sidewaysfigure}
 A partir de estas relaciones, introduciremos el índice KTA local como el índice KTA aplicado a las matrices reducidas de ambos espacios, previamente transformadas en SDP. Para caracterizar su comportamiento nos interesa observar primero que el comportamiento de este índice depende linealmente de $wynanotados$, como muestra la figura \ref{fig:lktaanotados_vs_wnyanotados}, siendo entonces coherente con el promedio de las aristas de su vecindad, lo que da cuenta que la información contenida en la ontología GO está relacionada con el índice KTA local. Por otro lado, de la figura \ref{fig:lktaanotados_vs_nyanotados} podemos verificar que no existe una dependencia fierte del KTA local con la cantidad de vecinos anotados $nyanotados$. Por lo tanto, el KTA local presenta valores más altos para vecinos con alta coherencia biológica, independientemente de la cantidad de vecinos que se tome en cuenta.
 
 En el capitulo siguiente utilizaremos los resultados obtenidos en este capítulo para desarrollar una variante al procedimiento córte de árbol dinámico que integre la información contenida en el espacio de expresión con la información contenida en el espacio de conocimientos GO para favorecer la búsqueda de estructuras biológicamente coherentes.

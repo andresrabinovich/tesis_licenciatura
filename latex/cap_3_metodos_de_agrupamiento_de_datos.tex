@@ -3,7 +3,7 @@ Un método de agrupamiento de datos o método de ``clustering'', es un método d
 Son métodos no supervisados ya que en un proceso de agrupación no existen clases definidas previamente ni ejemplos de que tipo de relaciones se desea encontrar entre los objetos, por lo que el mismo proceso debe generar las clases iniciales a las cuales asignar los objetos en el proceso de clasificación.\\
 Estas técnicas permiten el descubrimiento o identificación de distribuciones y patrones subyacentes en los datos, posibilitando obtener conclusiones sobre los mismos, lo que las hace una de las herramientas más útiles en procesos de minería de datos y aprendizaje automatizado en campos tan diversos como las ciencias sociales, las ciencias médicas y la ingeniería.\\
 Dependiendo de los criterios utilizados para realizar la partición, un proceso de agrupamiento puede resultar en diferentes particiones. Como ejemplo de esto podemos tomar el conjunto de números $\{-5, -3, -2, 2, 3\}$. Si decidimos agruparlos por su módulo, obtendremos los conjuntos $\{-5\}$, $\{-3, 3\}$, $\{-2, 2\}$, mientras que si decidimos agruparlos por positividad o negatividad, obtendremos los conjuntos $\{-5, -3, -2\}$ y $\{2, 3\}$. También podríamos haber optado por agrupar por paridad, si son o no primos, etc. Como se observa de un ejemplo tan sencillo, es de fundamental importancia la elección de las propiedades de los objetos a partir de las cuales realizar el agrupamiento.\\
-En el presente trabajo nos interesará agrupar y caracterizar conjuntos de genes de un organismo modelo, la planta \textit{Arabidopsis thaliana}, en base a sus perfiles de expresión génica a lo largo de diversos tratamientos.\cite{Gan2007, Halkidi2001, Domany1999}\\
+En el presente trabajo nos interesará agrupar y caracterizar conjuntos de genes de un organismo modelo, la planta \textit{Arabidopsis thaliana}, en base a sus perfiles de expresión génica a lo largo de los diversos tratamientos presentados en el capitulo anterior.\cite{Gan2007, Halkidi2001, Domany1999}\\
 Discutiremos a continuación diferentes metodologías y criterios de similaridad que pueden ser considerados para ello.
 \section{Similaridad, distancia y disimilaridad}
 Las distancias y similaridades tienen un rol preponderante en el análisis de agrupamiento de datos y por regla general son conceptos recíprocos.\\
@@ -66,24 +66,25 @@ Una de las métricas más utilizadas para medir similaridad entre perfiles de ex
 El coeficiente de correlación fue desarrollado por Karl Pearson basado en ideas introducidas por Francis Galton alrededor del año 1880.\\
 \begin{figure*}[t!]
     \centering
-    \begin{subfigure}[t]{0.33\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{perfiles_anti_coregulados}
-    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados y anti co-regulados.}
-    \label{fig:perfiles_anti_coregulados}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.33\textwidth}
-    \centering
-    \includegraphics[width=1\textwidth]{perfiles_coregulados}
-    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados.}
-    \label{fig:perfiles_coregulados}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.33\textwidth}
+    \begin{subfigure}[t]{0.6\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{perfiles_sin_agrupar}
     \caption{Perfiles de expresión para el tratamiento \textit{Control} de cinco genes tomados al azar.}
     \label{fig:perfiles_sin_agrupar}
     \end{subfigure}    
+    
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_anti_coregulados}
+    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados y anti co-regulados.}
+    \label{fig:perfiles_anti_coregulados}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{perfiles_coregulados}
+    \caption{Perfiles de expresión para el tratamiento \textit{Control} de 10 genes que están co-regulados.}
+    \label{fig:perfiles_coregulados}
+    \end{subfigure}
     \caption{Distintos grupos de perfiles de expresión}
 \end{figure*}
 Para dos puntos $\vec{x}$ e $\vec{y}$ en un espacio $d-dimensional$, representando el perfil de expresión de dos genes a lo largo de un dado tratamiento, el CCP se define como:
@@ -116,12 +117,9 @@ En el presente trabajo se utilizará como distancia la definida en \ref{eq:dista
 La adopción de ontologías provee los medios para comparar aspectos de entidades que de otra forma no podrían ser comparados. Por ejemplo, si dos productos génicos son anotados dentro del mismo esquema, es posible compararlos mediante el análisis de los términos en los cuales están anotados de forma explícita utilizando medidas de similaridad semántica. Se define una medida de similaridad semántica como una función tal que dados dos términos de la ontología o un conjunto de términos en los que dos genes están anotados, la función devuelve un escalar que refleja la cercanía de sentido entre ellos.\\
 Es posible cuantificar la similaridad semántica en una ontología representada por un grafo como GO, mediante diversas estrategias.
 \subsubsection{Comparación de términos en GO}
-Existen esencialmente dos formas distintas de comparar términos en GO: comparación a partir de los arcos del grafo y comparación a partir de los nodos y sus propiedades. En este trabajo estaremos interesados únicamente en comparar términos a partir de sus nodos, ya que son los nodos los que contendrán la información biológica en forma de anotaciones génicas.\\
 Sea $C$ el conjunto de todos los términos de una ontología GO, con un número total $\#C$ de anotaciones. Un término $c_i$ tendrá $\#c_i$ anotaciones, ya sea directamente o por intermedio de cualquiera de sus hijos. La probabilidad de que un gen tomado al azar, sin otro tipo de información, se encuentre anotado al concepto $c_i$ será entonces $P(c_i) = \frac{\#c_i}{\#C}$, con $P:C\Rightarrow [0:1]$.\\
 Se define el contenido de información de $c_i$ como $IC = -log_2(P(c_i))$, cantidad en el intervalo $(0, -log_2[\frac{1}{\#C}])$, que indica cuan específico e informativo es un término de la ontología. Para un $c_i$ y $c_j$ tales que $c_i \preceq c_j$, se tiene que $IC(c_i) \geq IC(C_j)$. Cuanto más específico sea un término, es menos probable que un gen dado esté anotado en el mismo, y por lo tanto, su contenido de información es mayor. El nodo raíz de la ontología tiene un contenido de información nulo, ya que es el ancestro de todos los términos de la misma y por lo tanto, saber que un concepto está anotado a la raíz no aporta información.\\
-Si bien el IC puede tener un sesgo, ya que términos en áreas actuales de interés en investigaciones biomédicas van a estar más anotados que otros términos en otras áreas, la utilización del IC sigue teniendo un sentido desde el punto de vista de la probabilidad, porque es mucho más probable (y menos significativo) que dos genes compartan un término frecuentemente usado, que uno no tan frecuente, más allá de si ese término es frecuente porque sea genérico o porque sea un término de interés para la investigación actual.\\
-Es posible definir una medida entre pares de términos utilizando el IC. Existen dos formas para ello: tomar el ancestro común más informativo (MICA, por sus siglas en inglés), en donde solo el ancestro común con mayor IC es considerado, o tomar el ancestro disjunto común (DCA por sus siglas en inglés), en la cual todos los ancestros comunes disjuntos (ancestros que no tienen ancestros comunes) son considerados.\\
-Una de las medidas de similaridad semántica más comúnmente utilizadas es la medida de similaridad semántica introducida por Resnik en \cite{Resnik1995}, que consiste en asignar como la medida de similaridad entre dos términos, el contenido de información del ancestro en común más informativo (el MICA):
+Es posible definir una medida entre pares de términos utilizando el IC. Una de las medidas de similaridad semántica más comúnmente utilizadas es la medida de similaridad semántica introducida por Resnik en \cite{Resnik1995}, que consiste en asignar como la medida de similaridad entre dos términos, el contenido de información del ancestro en común más informativo (el MICA):
 \begin{equation}
 	Sim_{res}(c_i, c_j) = \max\limits_{c \in S(c_i, c_j)}(-log_2[P(c)]) = IC(MICA[c_i, c_j])
 \end{equation}
@@ -133,15 +131,6 @@ A modo de ejemplo, tomemos el DAG de la figura \ref{fig:dag}, con 9 términos o 
     \caption{DAG con 9 términos o conceptos: $C=\{R, c_0,...,c_7\}$ y con 5 entidades mapeadas (genes anotados): $g_1=\{5, 6, 2, 0, r\}$, $g_2=\{5, 4, 2, 3, 0, r\}$, $g_3=\{7, 1, r\}$, $g_4=\{4, 3, 0, r\}$ y $g_5=\{2, 0, r\}$}
     \label{fig:dag}
 \end{figure}
-Al considerar solo el IC del MICA, la $Sim_{res}$ no tiene en cuenta la especificidad de los términos que compara, es decir, no toma en cuenta la distancia entre los términos y su MICA. Para tomar en cuenta esta distancia, las medidas de Lin \cite{Lin1998} y Jiang-Conrath \cite{Jiang1997} relacionan el IC del MICA con el IC de los términos a comparar:
-\begin{equation}
-	Sim_{lin}(c_i, c_j) = \frac{2\times IC(MICA[c_i, c_j])}{IC(c_i)+IC(c_j)}
-\end{equation}
-\begin{equation}
-	Sim_{JC}(c_i, c_j) = 1-IC(c_i)+IC(c_j)-2\times IC(MICA[c_i, c_j])
-\end{equation}
-Un inconveniente de estas medidas es que se encuentran desplazadas del grafo, es decir, estas medidas son proporcionales a las diferencias entre los IC de los términos y de sus ancestros comunes, independientemente del valor absoluto de IC del ancestro.
-Una restricción de todas estas medidas es que solo toman en cuenta el MICA, a pesar de que los términos GO pueden tener varios ancestros disjuntos comunes (DCA). Para evitar esta restricción, \cite{Pesquita2009} propuso la aproximación GraSM, que puede ser aplicada a todas las medidas descritas anteriormente, simplemente reemplazando el IC del MICA, por el promedio de los IC de los DCA. 
 Existen más de dos docenas de medidas de similaridad entre términos GO, y no siempre es claro cuál es el mejor para un dado propósito. Sin embargo, generalmente la elección de una medida por defecto es suficiente\cite{Bose2016}. En este trabajo utilizaremos la $Sim_{res}$, por tratarse de una medida simple y efectiva.\\
 Una vez establecida una medida de similaridad semantica entre termino GO, existen distintas formas para extender esta idea y definir una similaridad semántica entre genes. Básicamente existen 2
 estrategias. La primera se basa en medidas globales (groupwise en inglés), que comparan globalmente los conjuntos de términos en los que dos genes están anotados, $GO(g_1)$ y $GO(g_2)$, por ejemplo, contando cuantos términos comparten: $|GO(g_1) \cap GO(g_2)|$.\cite{Lee2004} \\
@@ -179,8 +168,7 @@ Es posible distinguir dos tipos de agrupamientos, conocidos como agrupamiento du
 Además de la distinción mencionada más arriba, los métodos de agrupamiento pueden dividirse (entre otros) fundamentalmente entre agrupamientos jerárquicos y agrupamientos no jerárquicos.
 Las dos estrategias de agrupamientos no jerárquicos que se presentan a continuación fueron utilizadas en el desarrollo de este trabajo.
 \subsection{K-means}
-K-means es un método usual de agrupamiento no jerárquico en donde cada observación pertenece al grupo con la media más cercana a la observación.\\
-El mismo comienza agrupando los objetos de forma arbitraria en $K$ grupos distintos. El número $K$ puede ser elegido de forma aleatoria o estimado mediante algún otro método de agrupamiento jerárquico pero es siempre fijo. Luego, se calcula un promedio de la posición de todas las observaciones de cada grupo, llamado centroide. A continuación, los objetos individuales son redistribuidos de un grupo a otro dependiendo de que centroide esté más cerca de la observación. Este procedimiento de calcular el centroide de cada cluster y re agrupar los objetos más cercanos a los centroides disponibles se repite de manera iterativa una cantidad fija de veces o hasta la convergencia del método (se considera que el método converge cuando una iteración no modifica la iteración anterior).\\
+K-means es un método usual de agrupamiento no jerárquico en donde cada observación pertenece al grupo con la media más cercana a la observación, y donde $K$, el número de grupos, debe ser fijado a priori y puede ser determinado arbitrariamente o estimado a partir de algún factor de merito apropiado.\cite{Hartigan1979}\\
 Más formalmente, sea un conjunto de observaciones $\{\vec{x_1},...,\vec{x_n}\}$, k-means construye una partición de las observaciones en $k$ grupos con $k \leq n$ a fin de minimizar una función de costo, como ser la suma de los cuadrados dentro de cada grupo $G = \{g_1,...,g_k\}$: 
 \begin{equation}
 	C = argmin\sum\limits_{i=1}^k \sum\limits_{x_j \in g_i}||x_j-\mu_i||^2
@@ -194,7 +182,7 @@ La figura \ref{fig:ejemplo_k_means} muestra un conjunto de observaciones y los g
     \label{fig:ejemplo_k_means}
 \end{figure}
 Se observa que dependiendo del $k$ utilizado, el algoritmo encuentra particiones con mayor o menor nivel de \textit{resolución}. Volveremos sobre el tema de la resolución más adelante.
-\cite{Kogan2006, Hartigan1979}
+\cite{Kogan2006}
 
 \subsection{PAM}
 Si bien k-means es uno de los métodos de partición más utilizados ya que es muy eficiente en términos de tiempo computacional, el mismo es muy sensible a observaciones aisladas. Por esta razón, en algunos métodos se reemplazan los centroides, que son puntos no necesariamente pertenecientes al conjunto de observaciones, por medoides, que son los objetos más centrales dentro del grupo (se reemplaza k-means por k-medoids). Esto hace que el método sea insensible a observaciones aisladas.\\
@@ -209,36 +197,12 @@ Existen dos acercamientos distintos para realizar un agrupamiento jerárquico: s
 Un agrupamiento jerárquico aglomerativo comienza con cada objeto en un grupo separado. Luego, se unen los dos grupos más cercanos de acuerdo a algún criterio definido generando un nuevo grupo a partir de ambos. Al nuevo grupo se le asignará una distancia al resto de los grupos de acuerdo a cierto criterio. Esto se repite hasta que solo quede un único grupo.\\
 Es un tipo de procedimiento determinista y voraz (greedy en inglés), ya que realiza las decisiones tomando en cuenta los óptimos locales en cada etapa, esperando obtener con esto un óptimo global.\\
 Se dice que una partición es más fina (o un refinamiento) de otra partición, si cada grupo de una partición más fina está contenido dentro de un grupo de la partición más gruesa, es decir, cada grupo de la partición más fina es un sub-grupo de un grupo de la partición más gruesa. El agrupamiento jerárquico es un método cuyo resultado es un conjunto de particiones anidadas $P_n, P_{n-1}, ..., P_1$ cada vez más gruesas, donde cada nivel más alto une dos grupos de una partición de un nivel más bajo.\\
-Para poder realizar este procedimiento, es necesario definir cuan cercanos son dos grupos:
-\subsection{Método de Ward}
-Este método busca unir los grupos de una forma tal que se minimice la pérdida de información asociada a cada unión, usualmente cuantificada como el error de la suma de los cuadrados (ESS). Dado un conjunto de puntos $C$, el ESS asociado a $C$ queda definido por:
-\begin{equation}
-	ESS(C) = \sum\limits_{\vec{x} \in C}(\vec{x}-\mu (C))(\vec{x}-\mu (C))^T
-\end{equation}
-con $\mu (C) = \frac{1}{|C|}\sum\limits_{\vec{x} \in C}\vec{x}$, el valor medio de $C$. Suponiendo que una dada partición está separada en $k$ grupos, $\{C_1, C_2,...,C_k\}$, entonces se tiene que la pérdida de información de la partición está dada por:
-\begin{equation}
-	ESS = \sum\limits_{i=1}^k ESS(C_i)
-	\label{eq:ESS}
-\end{equation}
-En cada etapa de este método, se prueban todas las uniones de grupos posibles de a pares y se realiza aquella unión que minimiza \ref{eq:ESS}.\\
-En el agrupamiento jerárquico, el ESS comienza en cero, ya que cada punto pertenece a un grupo distinto, y crece a medida que se unen grupos. Al ser un algoritmo voraz, la ESS para un dado número de grupos $k$ no será necesariamente la mínima.
-\subsection{Método de enlace único (o single-link en inglés)}
-Este método es uno de los métodos más simples para agrupamiento jerárquico. El mismo define la distancia entre dos grupos como la mínima distancia entre entre sus miembros. Sean $C_i$ y $C_j$ dos grupos, entonces la distancia de enlace único se define como:
-\begin{equation}
-	D_{sl}(C_i, C_j) = \min\limits_{\vec{x} \in C_i, \vec{y} \in C_j} d(\vec{x}, \vec{y})
-\end{equation}
-con $d(\vec{x}, \vec{y})$ la función de distancia utilizada para calcular la matriz de disimilaridad entre los elementos.
-El nombre de enlace único hace referencia a que dos grupos están cerca aunque tengan un único par de puntos cerca. Este método permite el manejo de grupos con formas complejas y es invariante ante transformaciones monótonas (como una transformación logarítmica) \cite{Johnson1967}.\\
-Este algoritmo solamente considera la separación entre elementos, dejando de lado la compacidad o el balance en los grupos.
-\subsection{Método de enlace completo (o complete-link en inglés)}
-Este método es similar al método de enlace único, ya que toma la distancia entre dos grupos como el máximo de la distancia entre sus puntos:
+Para poder realizar este procedimiento, es necesario definir cuan cercanos son dos grupos. Existen diferentes criterios para ello, entre los que cabe mencionar el método de Ward, el de enlace único y el de enlace promedio. En este trabajo, utilizaremos el método de enlace completo (o complete-linkage en inglés), que consiste en tomar la distancia entre dos grupos como el máximo de la distancia entre sus puntos:
 \begin{equation}
 	D_{cl}(C_i, C_j) = \max\limits_{\vec{x} \in C_i, \vec{y} \in C_j} d(\vec{x}, \vec{y})
 \end{equation}
 con $d(\vec{x}, \vec{y})$ la función de distancia utilizada para calcular la matriz de disimilaridad entre los elementos.\\
-En este trabajo, utilizaremos el método de enlace completo.
-\cite{Shalizi2009, Gan2007, Johnson1967}
-
+Este método permite el manejo de grupos con formas complejas y es invariante ante transformaciones monótonas (como una transformación logarítmica) \cite{Johnson1967} y considera solamente la separación entre elementos, dejando de lado la compacidad o el balance en los grupos.\cite{Shalizi2009, Gan2007}
 \subsection{Representación de un agrupamiento jerárquico - dendrogramas}
 Un agrupamiento jerárquico puede representarse como un árbol, llamado dendrograma, que permite una rápida interpretación. En un dendrograma, cada nodo está asociado con una altura $h$, tal que si $A$ y $B$ son dos nodos del dendrograma, $h$ cumple:
 \begin{equation}
@@ -254,7 +218,7 @@ A modo ilustrativo, la figura \ref{fig:agrupamiento_jerarquico} muestra el agrup
 De estos gráficos es claro que cada método produce una secuencia diferente de particiones, y dependerá de la aplicación que se requiera, cual de los métodos utilizar.
 \section{Detectando grupos en el agrupamiento jerárquico}
 \label{sec:grupos_en_agrupamiento_jerarquico}
-El agrupamiento jerárquico organiza los objetos en árboles (dendrogramas) cuyas ramas son los grupos deseados. El proceso de detección de grupos se conoce como corte de árbol, corte de ramas o podado de ramas. 
+El agrupamiento jerárquico organiza los objetos en árboles (dendrogramas) cuyas ramas son los grupos deseados. El proceso de detección de grupos a partir de esta estructura se conoce como corte de árbol, corte de ramas o podado de ramas. 
 \subsection{Corte de árbol estático}
 El método más sencillo de podado es conocido como corte de árbol estático, y funciona definiendo cada rama contigua debajo de una altura fija de corte, como un grupo separado. La cantidad de grupos obtenidos por éste método depende fuertemente de la altura de  corte elegida. La figura \ref{fig:corte_arbol_estatico} muestra dos alturas de corte posibles y los grupos que se obtienen a partir de cada una de ellas.
 \begin{figure}[h]
@@ -264,7 +228,7 @@ El método más sencillo de podado es conocido como corte de árbol estático, y
     \label{fig:corte_arbol_estatico}
 \end{figure}
 Al cortar el árbol en $h=3$, se obtienen dos grupos, el grupo $g_1$, que contiene a las observaciones $\{6, 3, 1, 10\}$ y el grupo $g_2$ que contiene a las observaciones $\{2, 4, 8, 5, 7, 9\}$, mientras que al cortarlo en $h=2$, se obtienen cuatro grupos, $g_1'$ con la observación $\{6\}$, $g_2'$ con las observaciones $\{3, 1, 10\}$, $g_3'$ con las observaciones $\{2, 4\}$ y $g_4'$ con las observaciones $\{5, 8, 7, 9\}$.\\
-A partir de un ejemplo tan sencillo es inmediato notar que el problema del agrupamiento es un problema ``mal planteado'', es decir, cualquier conjunto de puntos puede ser agrupado de maneras drásticamente distintas, sin que exista a priori un único criterio para preferir uno u otro agrupamiento. La fuente de ambigüedades a este respecto más importante, es que la forma en que los datos deberían ser agrupados, depende fuertemente de la \textit{resolución} deseada. Lo que parece una única nube de puntos puede resultar ser, al analizar los datos con mayor resolución, una partición compuesta de muchos grupos. Cada tarea deberá encontrar el nivel adecuado de resolución para obtener la cantidad ``correcta'' de grupos.\cite{Domany1999}\cite{Langfelder2008}
+Este ejemplo tan sencillo permite poner de manifiesto que el problema del agrupamiento es un problema ``mal planteado'', es decir, cualquier conjunto de puntos puede ser agrupado de maneras drásticamente distintas, sin que exista a priori un único criterio para preferir uno u otro agrupamiento. La fuente de ambigüedades a este respecto más importante, es que la forma en que los datos deberían ser agrupados, depende fuertemente de la \textit{resolución} deseada. Lo que parece una única nube de puntos puede resultar ser, al analizar los datos con mayor resolución, una partición compuesta de muchos grupos. Cada tarea deberá encontrar el nivel adecuado de resolución para obtener la cantidad ``correcta'' de grupos.\cite{Domany1999}\cite{Langfelder2008}
 \subsection{Corte de árbol dinámico híbrido}
 Si bien es posible detectar grupos distintos en el dendrograma a partir de una inspección visual, utilizar una técnica de corte de árbol estático de forma programática no siempre logra identificar adecuadamente los grupos, ya que al poseer grupos anidados, un solo corte a una altura prefijada no será capaz de detectarlos todos. El método de corte de árbol dinámico híbrido ataca este problema analizando la forma de las ramas del dendrograma en lugar de una altura absoluta \cite{Langfelder2008}. El mismo construye los grupos de abajo hacia arriba en dos pasos. En el primer paso, se detectan las ramas que satisfacen un criterio específico para ser grupos. Este paso de poda está basado en la información de unión del dendrograma. En el segundo paso, se miden cuán cerca de los grupos detectados en el primer paso están todos los objetos no asignados previamente. Si un objeto está suficientemente cerca de un grupo, es asignado a ese grupo. En este paso, se ignora el dendrograma y se utiliza únicamente la información de disimilaridad. Este paso puede considerarse un método modificado de particionado alrededor de medoides (modified Partitioning Around Medoids o mPAM, en inglés). Por eso el nombre de \textit{híbrido}, al tratarse de una mezcla entre agrupamiento jerárquico y no jerárquico.
 Los criterios específicos para la detección de grupos se basan en los siguientes cuatro criterios de la forma de las ramas:
@@ -293,11 +257,13 @@ Para el paso 2, de tipo PAM, los objetos no asignados (o aquellos grupos que no 
 Es posible controlar la sensibilidad de las divisiones de los grupos mediante el parámetro \textit{deepSplit}, que puede tomar los valores de 1 a 4. Para un $deepSplit=1$, el método producirá relativamente pocos grupos, de muchos elementos y bien definidos, mientras que para $deepSplit=4$, el método producirá más grupos pero con una dispersión mayor en el núcleo y separado por brechas más pequeñas.\\
 Para una descripción más detallada del algoritmo, el lector interesado puede referirse a \cite{Langfelder2008}, \cite{Langfelder2007}.
 
-\section{Infomap y CNM}
-\label{sec:comunidades}
-Como se desarrolló en la sección \ref{sec:redes}, las redes son construcciones útiles para esquematizar la organización de las interacciones en distintos tipos de sistemas. Sin embargo, por motivos de visualización, solo se pueden representar pequeños sistemas. Las redes reales son usualmente tan grandes que es necesario representarlas mediante algún mecanismo de granularidad más gruesa, es decir, descomponer a la red en módulos que representen varios nodos y arcos. Los módulos son conjuntos de módulos que tienen un alto solapamiento topológico. Este es el objetivo básico de lo que se conoce como \textit{detección de comunidades}.\\
-Una red puede representarse con una matriz de adjacencia $A=[a_{ij}]$ que codifica que pares de nodos están conectados. A es una matriz simétrica donde cada $a_{ij}$ puede tomar un valor entre $[0, 1]$. Para una red no pesada, $0$ indica que dos nodos no están conectados, mientras que $1$ indica que si lo están. Para una red pesada, el elemento de matriz indica la fuerza de la conexión, tomando un valor entre $[0, 1]$.\\
-A partir de la matriz de adjacencia, es posible construir una matriz de solapamiento topológico $T = [t_{ij}]$ (TOM por sus siglas en inglés) que es una medida de similaridad para redes biológicas y está definida como:
+%Sin embargo, por motivos de visualización, solo se pueden representar pequeños sistemas. Las redes reales son usualmente tan grandes que es necesario representarlas mediante algún mecanismo de granularidad más gruesa, es decir, descomponer a la red en módulos que representen varios nodos y arcos. Los módulos son conjuntos de módulos que tienen un alto solapamiento topológico. Este es el objetivo básico de lo que se conoce como \textit{detección de comunidades}.\\
+
+\section{Agrupamiento y similaridad en redes}
+Como se desarrolló en la sección \ref{sec:redes}, las redes son construcciones útiles para esquematizar la organización de las interacciones en distintos tipos de sistemas. En particular, a partir de estas construcciones es posible estimar nociones de distancia y similaridad entre nodos. 
+\subsection{Solapamiento topológico}
+Una red puede representarse con una matriz de adyacencia $A=[a_{ij}]$ que codifica que pares de nodos están conectados. Para el caso de enlaces no dirigidos, $A$ es una matriz simétrica donde cada $a_{ij}$ puede tomar un valor entre $[0, 1]$. Para una red no pesada, $0$ indica que dos nodos no están conectados, mientras que $1$ indica que si lo están. Para una red pesada, el elemento de matriz indica la fuerza de la conexión, tomando un valor entre $[0, 1]$.\\
+A partir de la matriz de adyacencia, es posible construir una matriz de solapamiento topológico $T = [t_{ij}]$ (TOM por sus siglas en inglés) que puede utilizarse como una medida de similaridad para redes biológicas y está definida como:
 \begin{equation}
 t_{ij} = \begin{cases} 
       \frac{l_{ij}+a_{ij}}{min\{k_i,k_j\}+1-a_{ij}} & i\neq j \\
@@ -306,6 +272,8 @@ t_{ij} = \begin{cases}
 \end{equation}
 donde $l_{ij} = \sum\limits_u a_{iu}a_{uj}$, $k_i = \sum\limits_u a_{iu}$ y $u$ es un índice que recorre todos los nodos de la red.\\
 El solapamiento topológico de dos nodos refleja su similaridad en términos de los nodos en común que conectan. Básicamente, $t_{ij}$ es un indicador del acuerdo entre el conjunto de nodos vecinos a $i$ con el conjunto de nodos vecinos a $j$. Utilizando esta similaridad, se obtiene una matriz de disimilaridad $D = 1-TOM$ y con esto es posible realizar agrupamientos utilizando, entre otras, alguna de las técnicas antes mencionadas. Además de TOM, es posible definir una matriz de solapamiento topológico generalizada de orden $m$, $T[m] = [t[m]_{ij}]$ (GTOMm), tal que mida el acuerdo entre los nodos que son accesibles por $i$ y por $j$ en $m$ pasos.\cite{Horvath2007}\\
-En este trabajo utilizaremos dos métodos de modularización en redes, Infomap \cite{Rosvall2008} y CNM \cite{Clauset2004}.\\
+\subsection{Detección de comunidades en redes}
+\label{sec:comunidades}
+En muchos casos, el análisis de patrones de interacción entre partes de un sistema, relevadas en redes complejas permite reconocer la existencia de una organización modular entre sus componentes. Esto también ocurre en muchas redes de origen biológico \cite{Barabasi2004}. De hecho, en los últimos años, muchos trabajos han explorado el vinculo existente entre comunidades de nodos en una red que representa entidades biológicas y la noción de ``módulos de funcionalidad biológica'' de Hartwell \cite{Hartwell1999} que postula la existencia de agrupamientos de componentes moleculares, y sus interacciones, capaces de llevar adelante una función biológica especifica. En este trabajo utilizaremos dos métodos de reconocimiento de comunas en redes, Infomap \cite{Rosvall2008} y CNM \cite{Clauset2004}.\\
 El método o algoritmo Infomap hace uso de criterios de optimización basados en teorías de información, donde los módulos se definen de tal forma que la longitud media de la descripción de un proceso de paseo al azar en el grafo sea mínima, mientras que el desarrollado por Clauset, Newman y Moore que denominaremos CNM, a partir de ciertas heurísticas, busca particiones de la red optimizando directamente una función de calidad $Q$.\\
 Ambos métodos serán utilizados en este trabajo con el fin de comparar los resultados obtenidos para las comunidades Infomap y CNM con los obtenidos para los métodos de agrupamiento usados.\cite{Berenstein2014, Rosvall2008}\\

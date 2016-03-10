@@ -165,19 +165,6 @@
 \newblock Proceedings of the National Academy of Sciences of the United States
   of America \textbf{95} (1998) 14863.
 
-\bibitem{Lin1998}
-\textsc{D.~Lin}.
-\newblock \emph{{An Information-Theoretic Definition of Similarity}}.
-\newblock In: Proc. of the 15th Internatio- nal Conference on Machine Learning
-  (1998) 296.
-
-\bibitem{Jiang1997}
-\textsc{J.~Jiang}.
-\newblock \emph{{Semantic Similarity Based on Corpus Statistics and Lexical
-  Taxonomy}}.
-\newblock Proceedings of International Conference Research on Computational
-  Linguistics  (1997) 19.
-
 \bibitem{Lee2004}
 \textsc{H.~K. Lee} \emph{et~al.}
 \newblock \emph{{Coexpression Analysis of Human Genes Across Many Microarray
@@ -196,15 +183,28 @@
   Ontology: the relationship between sequence and annotation.}
 \newblock Bioinformatics  (2003).
 
-\bibitem{Kogan2006}
-\textsc{J.~Kogan}.
-\newblock \emph{{Introduction to Clustering Large and High-Dimensional Data}}
-  (2006).
+\bibitem{Lin1998}
+\textsc{D.~Lin}.
+\newblock \emph{{An Information-Theoretic Definition of Similarity}}.
+\newblock In: Proc. of the 15th Internatio- nal Conference on Machine Learning
+  (1998) 296.
+
+\bibitem{Jiang1997}
+\textsc{J.~Jiang}.
+\newblock \emph{{Semantic Similarity Based on Corpus Statistics and Lexical
+  Taxonomy}}.
+\newblock Proceedings of International Conference Research on Computational
+  Linguistics  (1997) 19.
 
 \bibitem{Hartigan1979}
 \textsc{J.~Hartigan}.
 \newblock \emph{{A K-Means Clustering Algorithm}}.
 \newblock Journal of the Royal Statistical Society \textbf{28} (1979) 100.
+
+\bibitem{Kogan2006}
+\textsc{J.~Kogan}.
+\newblock \emph{{Introduction to Clustering Large and High-Dimensional Data}}
+  (2006).
 
 \bibitem{Park2009}
 \textsc{H.~S. Park}.
@@ -243,6 +243,17 @@
   Modules in Gene Networks}}.
 \newblock bioinformatics  (2007).
 
+\bibitem{Barabasi2004}
+\textsc{A.~Barabási}.
+\newblock \emph{{Network biology: understanding the cell’s functional
+  organization}}.
+\newblock Nat. Rev.Genet.  (2004) 101.
+
+\bibitem{Hartwell1999}
+\textsc{L.~Hartwell} \emph{et~al.}
+\newblock \emph{{From molecular to modular cell biology}}.
+\newblock Nature  (1999) 47.
+
 \bibitem{Rosvall2008}
 \textsc{M.~Rosvall}.
 \newblock \emph{{Maps of random walks on complex networks reveal community
@@ -256,18 +267,18 @@
 \newblock Phys. Rev. E \textbf{70} (2004) 66111.
 \newline\urlprefix\url{http://prola.aps.org/abstract/PRE/v70/i6/e066111}
 
+\bibitem{Dutkowski2013}
+\textsc{J.~Dutkowski} \emph{et~al.}
+\newblock \emph{{A gene ontology inferred from molecular networks.}}
+  \textbf{31} (2013) 38.
+\newline\urlprefix\url{http://www.nature.com/nbt/journal/v31/n1/abs/nbt.2463.html$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3654867{\&}tool=pmcentrez{\&}rendertype=abstract}
+
 \bibitem{Datta2006}
 \textsc{S.~Datta}.
 \newblock \emph{{Methods for evaluating clustering algorithms for gene
   expression data using a reference set of functional classes.}}
 \newblock BMC bioinformatics \textbf{7} (2006) 397.
 \newline\urlprefix\url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1590054{\{}{\&}{\}}tool=pmcentrez{\{}{\&}{\}}rendertype=abstract}
-
-\bibitem{Dutkowski2013}
-\textsc{J.~Dutkowski} \emph{et~al.}
-\newblock \emph{{A gene ontology inferred from molecular networks.}}
-  \textbf{31} (2013) 38.
-\newline\urlprefix\url{http://www.nature.com/nbt/journal/v31/n1/abs/nbt.2463.html$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3654867{\&}tool=pmcentrez{\&}rendertype=abstract}
 
 \bibitem{Cristianini2006}
 \textsc{N.~Cristianini} \emph{et~al.}
@@ -279,6 +290,17 @@
 \newblock \emph{{Learning kernels from indefinite similarities}}.
 \newblock Proceedings of the 26th Annual International Conference on Machine
   Learning - ICML 2009  (2009) 1.
+
+\bibitem{Erdos1959}
+\textsc{P.~Erdos} \emph{et~al.}
+\newblock \emph{{On random graphs}}.
+\newblock Publicationes Mathematicae  (1959) 290.
+
+\bibitem{Molloy1995}
+\textsc{M.~Molloy} \emph{et~al.}
+\newblock \emph{{A critical-point form random graphs with a given degree
+  sequence}}.
+\newblock Random structures and Algorithms  (1995) 161.
 
 \bibitem{Berenstein2010}
 \textsc{A.~J. Berenstein}.
@@ -292,10 +314,5 @@
 \newblock \emph{{A general framework for weighted gene co-expression network
   analysis.}}
 \newblock Stat. Appl. Genet. Mol. Biol.  (2005).
-
-\bibitem{Hochberg1995}
-\textsc{Y.~Hochberg}.
-\newblock \emph{{Controlling the False Discovery Rate: A Practical and Powerful
-  Approach to Multiple Testing}} \textbf{57} (1995) 289.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  9 MAR 2016 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  10 MAR 2016 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,6 +369,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks28
@@ -444,13 +451,25 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count108
 \c@subtable=\count109
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
 )
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 20.
+
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 22.
+
 (./tesis_de_licenciatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
@@ -466,20 +485,20 @@ LaTeX Warning: Label `sec:go' multiply defined.
 aux) (./cap_7_metrica_mixta.aux) (./cap_8_conclusiones_y_perspectivas.aux))
 \openout1 = `tesis_de_licenciatura.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -546,15 +565,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
-* v-part:(T,H,B)=(99.58464pt, 595.8007pt, 99.58464pt)
+* h-part:(L,W,R)=(85.35826pt, 472.03123pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 652.70622pt, 56.9055pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=443.57848pt
-* \textheight=595.8007pt
+* \textwidth=472.03123pt
+* \textheight=652.70622pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-9.68535pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -572,30 +591,37 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \celsius on input line 28.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 28.
+LaTeX Info: Redefining \celsius on input line 38.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 38.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 28.
-Package gensymb Info: Using \Omega for \ohm on input line 28.
+LaTeX Info: Redefining \ohm on input line 38.
+Package gensymb Info: Using \Omega for \ohm on input line 38.
 
 Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
 
 ] [2
 
@@ -613,8 +639,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [9
 
-]
-(./tesis_de_licenciatura.toc
+] (./tesis_de_licenciatura.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [10
@@ -623,7 +648,16 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write3
 \openout3 = `tesis_de_licenciatura.toc'.
 
- [11]
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+
+
+Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
 \openout2 = `cap_0_motivaciones_y_objetivos.aux'.
 
  (./cap_0_motivaciones_y_objetivos.tex
@@ -639,7 +673,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 [12
 
 
-]) [13]
+])
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [13]
 \openout2 = `cap_1_introduccion.aux'.
 
  (./cap_1_introduccion.tex
@@ -649,13 +686,13 @@ File: figuras/celula_eucariota.png Graphic file (type png)
 
 <use figuras/celula_eucariota.png>
 Package pdftex.def Info: figuras/celula_eucariota.png used on input line 9.
-(pdftex.def)             Requested size: 354.86412pt x 207.78082pt.
+(pdftex.def)             Requested size: 377.62642pt x 221.10915pt.
 
 <figuras/adn1.png, id=52, 1339.0025pt x 794.97pt>
 File: figuras/adn1.png Graphic file (type png)
  <use figuras/adn1.png>
 Package pdftex.def Info: figuras/adn1.png used on input line 16.
-(pdftex.def)             Requested size: 354.86412pt x 210.67818pt.
+(pdftex.def)             Requested size: 377.62642pt x 224.19127pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
@@ -664,127 +701,147 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--21
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [14
 
 
 
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/adn2.png, id=56, 926.46124pt x 329.23pt>
+] <figuras/adn2.png, id=56, 926.46124pt x 329.23pt>
 File: figuras/adn2.png Graphic file (type png)
  <use figuras/adn2.png>
 Package pdftex.def Info: figuras/adn2.png used on input line 27.
-(pdftex.def)             Requested size: 354.86412pt x 126.1084pt.
+(pdftex.def)             Requested size: 377.62642pt x 134.19646pt.
 
 <figuras/adn3.png, id=57, 526.96875pt x 614.295pt>
 File: figuras/adn3.png Graphic file (type png)
  <use figuras/adn3.png>
 Package pdftex.def Info: figuras/adn3.png used on input line 35.
-(pdftex.def)             Requested size: 221.78923pt x 258.54579pt.
+(pdftex.def)             Requested size: 236.01561pt x 275.12729pt.
 )
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 [15 <./figuras/celula_eucariota.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[16 <./figuras/adn1.png>] [17 <./figuras/adn2.png>] [18 <./figuras/adn3.png>]
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+[16 <./figuras/adn1.png> <./figuras/adn2.png>]
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+ [17 <./figuras/adn3.png>]
 \openout2 = `cap_2_materiales_y_metodos.aux'.
 
 
 (./cap_2_materiales_y_metodos.tex
 Cap\'{\i }tulo 2.
-<figuras/micromatriz.png, id=75, 1118.1775pt x 806.01125pt>
+<figuras/micromatriz.png, id=72, 1118.1775pt x 806.01125pt>
 File: figuras/micromatriz.png Graphic file (type png)
 
 <use figuras/micromatriz.png>
 Package pdftex.def Info: figuras/micromatriz.png used on input line 11.
-(pdftex.def)             Requested size: 354.86412pt x 255.78888pt.
+(pdftex.def)             Requested size: 377.62642pt x 272.19539pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19
+[18
 
 
 
-] [20 <./figuras/micromatriz.png>] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+]
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+ [19 <./figuras/micromatriz.png>]
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
 
  []
 
-<figuras/ai1_lci.png, id=91, 1237.62375pt x 773.89125pt>
+LaTeX Info: Redefining \. on input line 53.
+LaTeX Info: Redefining \% on input line 53.
+[21] <figuras/ai1_lci.png, id=91, 1237.62375pt x 773.89125pt>
 File: figuras/ai1_lci.png Graphic file (type png)
 
 <use figuras/ai1_lci.png>
-Package pdftex.def Info: figuras/ai1_lci.png used on input line 57.
-(pdftex.def)             Requested size: 354.86412pt x 221.89566pt.
- [22]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figuras/mapa_kegg.png, id=95, 497.86pt x 591.20876pt>
+Package pdftex.def Info: figuras/ai1_lci.png used on input line 54.
+(pdftex.def)             Requested size: 377.62642pt x 236.12505pt.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+ [22 <./figuras/ai1_lci.png>]
+<figuras/mapa_kegg.png, id=98, 497.86pt x 591.20876pt>
 File: figuras/mapa_kegg.png Graphic file (type png)
 
 <use figuras/mapa_kegg.png>
-Package pdftex.def Info: figuras/mapa_kegg.png used on input line 67.
-(pdftex.def)             Requested size: 354.86412pt x 421.41202pt.
- [23]
+Package pdftex.def Info: figuras/mapa_kegg.png used on input line 63.
+(pdftex.def)             Requested size: 377.62642pt x 448.43925pt.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+ [23 <./figuras/mapa_kegg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 73--81
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-<figuras/ejemplo_de_go.png, id=99, 682.55pt x 701.62125pt>
+<figuras/ejemplo_de_go.png, id=103, 682.55pt x 701.62125pt>
 File: figuras/ejemplo_de_go.png Graphic file (type png)
 
 <use figuras/ejemplo_de_go.png>
-Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 87.
-(pdftex.def)             Requested size: 221.78923pt x 227.98137pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--99
+Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 82.
+(pdftex.def)             Requested size: 377.62642pt x 388.18393pt.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 94--94
 []\OT1/cmr/m/n/12 Anotaci^^Son (in-fe-ri-da
  []
 
 
-Overfull \hbox (0.98723pt too wide) in paragraph at lines 99--99
+Overfull \hbox (0.98723pt too wide) in paragraph at lines 94--94
 []\OT1/cmr/m/n/12 Siglas| 
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 113--113
+Underfull \hbox (badness 1072) in paragraph at lines 108--108
 []\OT1/cmr/m/n/12 Secuencia o si-mi-la-ri-
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 115--115
+Underfull \hbox (badness 4479) in paragraph at lines 110--110
 []\OT1/cmr/m/n/12 An^^Sali-sis compu-tacio-
  []
 
-<figuras/codigos_de_evidencia.png, id=100, 702.625pt x 702.625pt>
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+[25 <./figuras/ejemplo_de_go.png>]
+<figuras/codigos_de_evidencia.png, id=113, 702.625pt x 702.625pt>
 File: figuras/codigos_de_evidencia.png Graphic file (type png)
 
 <use figuras/codigos_de_evidencia.png>
 Package pdftex.def Info: figuras/codigos_de_evidencia.png used on input line 12
-7.
-(pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
-) [24 <./figuras/ai1_lci.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[25]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[26] [27] [28 <./figuras/mapa_kegg.png>] [29 <./figuras/ejemplo_de_go.png>]
-[30 <./figuras/codigos_de_evidencia.png>]
+1.
+(pdftex.def)             Requested size: 377.62642pt x 377.63213pt.
+)
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [26 <./figuras/codigos_de_evidencia.png>]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [27]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [28]
 \openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
 
-
-(./cap_3_metodos_de_agrupamiento_de_datos.tex
+ (./cap_3_metodos_de_agrupamiento_de_datos.tex
 Cap\'{\i }tulo 3.
-[31
+[29
 
 
 
@@ -793,328 +850,409 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[32] [33]
-<figuras/perfiles_anti_coregulados.png, id=140, 702.625pt x 702.625pt>
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+[30] <figuras/perfiles_sin_agrupar.png, id=131, 702.625pt x 702.625pt>
+File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
+
+<use figuras/perfiles_sin_agrupar.png>
+Package pdftex.def Info: figuras/perfiles_sin_agrupar.png used on input line 71
+.
+(pdftex.def)             Requested size: 283.22162pt x 283.23213pt.
+
+<figuras/perfiles_anti_coregulados.png, id=132, 702.625pt x 702.625pt>
 File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_anti_coregulados.png>
 Package pdftex.def Info: figuras/perfiles_anti_coregulados.png used on input li
-ne 71.
-(pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
+ne 78.
+(pdftex.def)             Requested size: 212.41261pt x 212.40802pt.
 
-<figuras/perfiles_coregulados.png, id=141, 702.625pt x 702.625pt>
+<figuras/perfiles_coregulados.png, id=133, 702.625pt x 702.625pt>
 File: figuras/perfiles_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_coregulados.png>
-Package pdftex.def Info: figuras/perfiles_coregulados.png used on input line 77
+Package pdftex.def Info: figuras/perfiles_coregulados.png used on input line 84
 .
-(pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
-
-<figuras/perfiles_sin_agrupar.png, id=142, 702.625pt x 702.625pt>
-File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
-
-<use figuras/perfiles_sin_agrupar.png>
-Package pdftex.def Info: figuras/perfiles_sin_agrupar.png used on input line 83
-.
-(pdftex.def)             Requested size: 146.3817pt x 146.37627pt.
- [34] [35 <./figuras/perfiles_anti_coregulados.png (PNG copy)> <./figuras/perfi
-les_coregulados.png (PNG copy)> <./figuras/perfiles_sin_agrupar.png (PNG copy)>
-] [36] [37
-
-]
-<figuras/dag.png, id=159, 454.69875pt x 313.17pt>
+(pdftex.def)             Requested size: 212.41261pt x 212.40802pt.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [31]
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+ [32]
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
+ [33 <./figuras/perfiles_sin_agrupar.png> <./figuras/perfiles_anti_coregulados.
+png> <./figuras/perfiles_coregulados.png (PNG copy)>] <figuras/dag.png, id=147,
+ 454.69875pt x 313.17pt>
 File: figuras/dag.png Graphic file (type png)
- <use figuras/dag.png>
-Package pdftex.def Info: figuras/dag.png used on input line 132.
-(pdftex.def)             Requested size: 221.78923pt x 152.75696pt.
 
-[38 <./figuras/dag.png>] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
+<use figuras/dag.png>
+Package pdftex.def Info: figuras/dag.png used on input line 130.
+(pdftex.def)             Requested size: 236.01561pt x 162.55305pt.
 
+Overfull \hbox (26.13966pt too wide) in paragraph at lines 125--139
+\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 R; c[]; :::; c[]\OMS/cmsy/m/n/12 g$ \OT1/cmr
+/m/n/12 y con 5 en-ti-da-des ma-pea-das (ge-nes ano-ta-dos): $\OML/cmm/m/it/12 
+g[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT
+1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m
+/n/12 0\OML/cmm/m/it/12 ; r\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/
+12 g[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; 
+\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cm
+r/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; r\OMS/cmsy/m/n
+/12 g$\OT1/cmr/m/n/12 ,
  []
-
-[40] <figuras/ejemplo_k_means.png, id=170, 702.625pt x 401.5pt>
-File: figuras/ejemplo_k_means.png Graphic file (type png)
-
-<use figuras/ejemplo_k_means.png>
-Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 192.
-(pdftex.def)             Requested size: 354.86412pt x 202.78346pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] [42 <./figuras/ejemplo_k_means.png (PNG copy)>] [43]
-<figuras/agrupamiento_jerarquico.png, id=181, 702.625pt x 702.625pt>
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+[34
+
+]
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+ [35 <./figuras/dag.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 163--166
+
+ []
+
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
+[36] <figuras/ejemplo_k_means.png, id=159, 702.625pt x 401.5pt>
+File: figuras/ejemplo_k_means.png Graphic file (type png)
+
+<use figuras/ejemplo_k_means.png>
+Package pdftex.def Info: figuras/ejemplo_k_means.png used on input line 180.
+(pdftex.def)             Requested size: 377.62642pt x 215.78978pt.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+ [37 <./figuras/ejemplo_k_means.png (PNG copy)>] <figuras/agrupamiento_jerarqui
+co.png, id=163, 702.625pt x 702.625pt>
 File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 
 <use figuras/agrupamiento_jerarquico.png>
 Package pdftex.def Info: figuras/agrupamiento_jerarquico.png used on input line
- 250.
-(pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (5.24925pt too wide) in paragraph at lines 255--255
-[]\OT1/cmr/bx/n/17.28 Detectando gru-pos en el agru-pa-mien-to jer^^Sarqui-
- []
-
-<figuras/corte_arbol_estatico.png, id=182, 702.625pt x 702.625pt>
+ 214.
+(pdftex.def)             Requested size: 377.62642pt x 377.63213pt.
+LaTeX Info: Redefining \. on input line 219.
+LaTeX Info: Redefining \% on input line 219.
+ [38]
+<figuras/corte_arbol_estatico.png, id=167, 702.625pt x 702.625pt>
 File: figuras/corte_arbol_estatico.png Graphic file (type png)
 
 <use figuras/corte_arbol_estatico.png>
-Package pdftex.def Info: figuras/corte_arbol_estatico.png used on input line 26
-2.
-(pdftex.def)             Requested size: 354.86412pt x 354.87106pt.
- [44]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[45 <./figuras/agrupamiento_jerarquico.png>] [46 <./figuras/corte_arbol_estatic
-o.png (PNG copy)>]
-<figuras/cut_tree_dynamic_ejemplo.png, id=193, 969.6225pt x 413.545pt>
+Package pdftex.def Info: figuras/corte_arbol_estatico.png used on input line 22
+6.
+(pdftex.def)             Requested size: 377.62642pt x 377.63213pt.
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [39 <./figuras/agrupamiento_jerarquico.png>]
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+ [40 <./figuras/corte_arbol_estatico.png (PNG copy)>]
+<figuras/cut_tree_dynamic_ejemplo.png, id=175, 969.6225pt x 413.545pt>
 File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
 
 <use figuras/cut_tree_dynamic_ejemplo.png>
 Package pdftex.def Info: figuras/cut_tree_dynamic_ejemplo.png used on input lin
-e 287.
-(pdftex.def)             Requested size: 354.86412pt x 151.34967pt.
+e 251.
+(pdftex.def)             Requested size: 377.62642pt x 161.06104pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47] [48 <./figuras/cut_tree_dynamic_ejemplo.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 306--47
+LaTeX Info: Redefining \. on input line 259.
+LaTeX Info: Redefining \% on input line 259.
+[41]
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+ [42 <./figuras/cut_tree_dynamic_ejemplo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 272--275
 
  []
 
-[49]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 277--57
+
+ []
+
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+[43]
 \openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
 
  (./cap_4_analisis_de_datos_transcripcionales.tex
 Cap\'{\i }tulo 4.
+<figuras/densidad_de_desviacion_estandar.pdf, id=187, 614.295pt x 794.97pt>
+File: figuras/densidad_de_desviacion_estandar.pdf Graphic file (type pdf)
 
-<figuras/densidad_de_desviacion_estandar.png, id=206, 1117.17375pt x 751.80875p
-t>
-File: figuras/densidad_de_desviacion_estandar.png Graphic file (type png)
- <use figuras/densidad_de_desviacion_estandar.png>
-Package pdftex.def Info: figuras/densidad_de_desviacion_estandar.png used on in
+<use figuras/densidad_de_desviacion_estandar.pdf>
+Package pdftex.def Info: figuras/densidad_de_desviacion_estandar.pdf used on in
 put line 14.
-(pdftex.def)             Requested size: 177.42868pt x 119.39706pt.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
 
-<figuras/densidad_para_niveles.png, id=207, 1117.17375pt x 751.80875pt>
-File: figuras/densidad_para_niveles.png Graphic file (type png)
+<figuras/densidad_para_niveles.pdf, id=188, 614.295pt x 794.97pt>
+File: figuras/densidad_para_niveles.pdf Graphic file (type pdf)
 
-<use figuras/densidad_para_niveles.png>
-Package pdftex.def Info: figuras/densidad_para_niveles.png used on input line 2
+<use figuras/densidad_para_niveles.pdf>
+Package pdftex.def Info: figuras/densidad_para_niveles.pdf used on input line 2
 0.
-(pdftex.def)             Requested size: 177.42868pt x 119.39706pt.
-
-Overfull \hbox (6.3522pt too wide) in paragraph at lines 7--28
-\OT1/cmr/m/n/12 Una vez apli-ca-do es-te fil-tro por des-via-ci^^Son est^^Sanda
-r, se aplic^^So un fil-tro de ti-po ``$\OML/cmm/m/it/12 KsobreA$\OT1/cmr/m/n/12
- '',
- []
-
-[50
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+ [44
 
 
 
-] [51 <./figuras/densidad_de_desviacion_estandar.png (PNG copy)> <./figuras/den
-sidad_para_niveles.png>]
-<figuras/barrido_k_ch.png, id=215, 1204.5pt x 966.61125pt>
+]
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.71667pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <./figuras/densidad_de_desviacion_estandar.pdf> <./figuras/densidad_para_ni
+veles.pdf>]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [46]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [47]
+<figuras/barrido_k_ch.png, id=214, 1204.5pt x 966.61125pt>
 File: figuras/barrido_k_ch.png Graphic file (type png)
 
 <use figuras/barrido_k_ch.png>
-Package pdftex.def Info: figuras/barrido_k_ch.png used on input line 85.
-(pdftex.def)             Requested size: 199.60895pt x 160.17719pt.
+Package pdftex.def Info: figuras/barrido_k_ch.png used on input line 86.
+(pdftex.def)             Requested size: 330.42041pt x 265.16257pt.
 
-<figuras/barrido_k_dunn.png, id=216, 1204.5pt x 966.61125pt>
+<figuras/barrido_k_dunn.png, id=215, 1204.5pt x 966.61125pt>
 File: figuras/barrido_k_dunn.png Graphic file (type png)
 
 <use figuras/barrido_k_dunn.png>
-Package pdftex.def Info: figuras/barrido_k_dunn.png used on input line 91.
-(pdftex.def)             Requested size: 199.60895pt x 160.17719pt.
+Package pdftex.def Info: figuras/barrido_k_dunn.png used on input line 92.
+(pdftex.def)             Requested size: 330.42041pt x 265.16257pt.
 
-<figuras/perfiles_k_means.png, id=217, 1380.15625pt x 717.68124pt>
+<figuras/perfiles_k_means.png, id=216, 1213.53375pt x 744.7825pt>
 File: figuras/perfiles_k_means.png Graphic file (type png)
 
 <use figuras/perfiles_k_means.png>
-Package pdftex.def Info: figuras/perfiles_k_means.png used on input line 100.
-(pdftex.def)             Requested size: 354.86412pt x 184.523pt.
- [52]
+Package pdftex.def Info: figuras/perfiles_k_means.png used on input line 101.
+(pdftex.def)             Requested size: 472.03123pt x 289.70259pt.
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+ [48
+
+ <./figuras/barrido_k_ch.png> <./figuras/barrido_k_dunn.png>] <figuras/perfiles
+_ds_1.pdf, id=223, 614.295pt x 794.97pt>
+File: figuras/perfiles_ds_1.pdf Graphic file (type pdf)
+
+<use figuras/perfiles_ds_1.pdf>
+Package pdftex.def Info: figuras/perfiles_ds_1.pdf used on input line 113.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+<figuras/perfiles_ds_4.pdf, id=224, 614.295pt x 794.97pt>
+File: figuras/perfiles_ds_4.pdf Graphic file (type pdf)
+
+<use figuras/perfiles_ds_4.pdf>
+Package pdftex.def Info: figuras/perfiles_ds_4.pdf used on input line 119.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 49 und
+efined on input line 126.
+
+
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 49 und
+efined on input line 126.
+
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+[49 <./figuras/perfiles_k_means.png (PNG copy)>]
+<figuras/correlacion_media_por_tamano_ds_1.pdf, id=228, 614.295pt x 794.97pt>
+File: figuras/correlacion_media_por_tamano_ds_1.pdf Graphic file (type pdf)
+
+<use figuras/correlacion_media_por_tamano_ds_1.pdf>
+Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_1.pdf used on 
+input line 132.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+<figuras/correlacion_media_por_tamano_ds_4.pdf, id=229, 614.295pt x 794.97pt>
+File: figuras/correlacion_media_por_tamano_ds_4.pdf Graphic file (type pdf)
+
+<use figuras/correlacion_media_por_tamano_ds_4.pdf>
+Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_4.pdf used on 
+input line 138.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+<figuras/histograma_ds_1.pdf, id=230, 614.295pt x 794.97pt>
+File: figuras/histograma_ds_1.pdf Graphic file (type pdf)
+
+<use figuras/histograma_ds_1.pdf>
+Package pdftex.def Info: figuras/histograma_ds_1.pdf used on input line 145.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+<figuras/histograma_ds_4.pdf, id=231, 614.295pt x 794.97pt>
+File: figuras/histograma_ds_4.pdf Graphic file (type pdf)
+
+<use figuras/histograma_ds_4.pdf>
+Package pdftex.def Info: figuras/histograma_ds_4.pdf used on input line 151.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+
+LaTeX Warning: Reference `ref:histograma_ds_1' on page 50 undefined on input li
+ne 158.
+
+
+LaTeX Warning: Reference `ref:histograma_ds_4' on page 50 undefined on input li
+ne 158.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+<figuras/ecdf_k_ds1_ds4.pdf, id=232, 614.295pt x 794.97pt>
+File: figuras/ecdf_k_ds1_ds4.pdf Graphic file (type pdf)
+
+<use figuras/ecdf_k_ds1_ds4.pdf>
+Package pdftex.def Info: figuras/ecdf_k_ds1_ds4.pdf used on input line 164.
+(pdftex.def)             Requested size: 424.82523pt x 549.77931pt.
+
+<figuras/fraccion_de_km_en_ds1_en_ds4.pdf, id=233, 614.295pt x 794.97pt>
+File: figuras/fraccion_de_km_en_ds1_en_ds4.pdf Graphic file (type pdf)
+
+<use figuras/fraccion_de_km_en_ds1_en_ds4.pdf>
+Package pdftex.def Info: figuras/fraccion_de_km_en_ds1_en_ds4.pdf used on input
+ line 171.
+(pdftex.def)             Requested size: 391.62772pt x 506.81396pt.
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+ [50 <./figuras/perfiles_ds_1.pdf> <./figuras/perfiles_ds_4.pdf>]
+
+LaTeX Warning: Text page 51 contains only floats.
+
+
+Overfull \vbox (2.06096pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
+
+[51 <./figuras/correlacion_media_por_tamano_ds_1.pdf> <./figuras/correlacion_me
+dia_por_tamano_ds_4.pdf> <./figuras/histograma_ds_1.pdf> <./figuras/histograma_
+ds_4.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figuras/perfiles_ds_1.png, id=221, 1204.5pt x 903.375pt>
-File: figuras/perfiles_ds_1.png Graphic file (type png)
 
-<use figuras/perfiles_ds_1.png>
-Package pdftex.def Info: figuras/perfiles_ds_1.png used on input line 112.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-<figuras/perfiles_ds_4.png, id=222, 1204.5pt x 903.375pt>
-File: figuras/perfiles_ds_4.png Graphic file (type png)
-
-<use figuras/perfiles_ds_4.png>
-Package pdftex.def Info: figuras/perfiles_ds_4.png used on input line 118.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
- [53 <./figuras/barrido_k_ch.png> <./figuras/barrido_k_dunn.png>]
-
-LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 54 und
-efined on input line 125.
-
-
-LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 54 und
-efined on input line 125.
-
-[54 <./figuras/perfiles_k_means.png (PNG copy)> <./figuras/perfiles_ds_1.png (P
-NG copy)> <./figuras/perfiles_ds_4.png (PNG copy)>]
-<figuras/correlacion_media_por_tamano_ds_1.png, id=233, 1204.5pt x 903.375pt>
-File: figuras/correlacion_media_por_tamano_ds_1.png Graphic file (type png)
-
-<use figuras/correlacion_media_por_tamano_ds_1.png>
-Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_1.png used on 
-input line 131.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-<figuras/correlacion_media_por_tamano_ds_4.png, id=234, 1204.5pt x 903.375pt>
-File: figuras/correlacion_media_por_tamano_ds_4.png Graphic file (type png)
-
-<use figuras/correlacion_media_por_tamano_ds_4.png>
-Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_4.png used on 
-input line 137.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-<figuras/histograma_ds_1.png, id=235, 1204.5pt x 903.375pt>
-File: figuras/histograma_ds_1.png Graphic file (type png)
-
-<use figuras/histograma_ds_1.png>
-Package pdftex.def Info: figuras/histograma_ds_1.png used on input line 144.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-<figuras/histograma_ds_4.png, id=236, 1204.5pt x 903.375pt>
-File: figuras/histograma_ds_4.png Graphic file (type png)
-
-<use figuras/histograma_ds_4.png>
-Package pdftex.def Info: figuras/histograma_ds_4.png used on input line 150.
-(pdftex.def)             Requested size: 199.60895pt x 149.6983pt.
-
-
-LaTeX Warning: Reference `ref:histograma_ds_1' on page 55 undefined on input li
-ne 157.
-
-
-LaTeX Warning: Reference `ref:histograma_ds_4' on page 55 undefined on input li
-ne 157.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
-[55 <./figuras/correlacion_media_por_tamano_ds_1.png (PNG copy)> <./figuras/cor
-relacion_media_por_tamano_ds_4.png (PNG copy)> <./figuras/histograma_ds_1.png> 
-<./figuras/histograma_ds_4.png>]
-<figuras/ecdf_k_ds1_ds4.png, id=242, 1204.5pt x 903.375pt>
-File: figuras/ecdf_k_ds1_ds4.png Graphic file (type png)
-
-<use figuras/ecdf_k_ds1_ds4.png>
-Package pdftex.def Info: figuras/ecdf_k_ds1_ds4.png used on input line 163.
-(pdftex.def)             Requested size: 266.14978pt x 199.61153pt.
-
-<figuras/fraccion_de_km_en_ds1.png, id=243, 903.375pt x 719.68875pt>
-File: figuras/fraccion_de_km_en_ds1.png Graphic file (type png)
-
-<use figuras/fraccion_de_km_en_ds1.png>
-Package pdftex.def Info: figuras/fraccion_de_km_en_ds1.png used on input line 1
-72.
-(pdftex.def)             Requested size: 221.78923pt x 176.69316pt.
-
-<figuras/fraccion_de_ds1_en_ds4.png, id=244, 903.375pt x 719.68875pt>
-File: figuras/fraccion_de_ds1_en_ds4.png Graphic file (type png)
-
-<use figuras/fraccion_de_ds1_en_ds4.png>
-Package pdftex.def Info: figuras/fraccion_de_ds1_en_ds4.png used on input line 
-179.
-(pdftex.def)             Requested size: 354.86412pt x 282.70908pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--187
-
- []
-
-[56 <./figuras/ecdf_k_ds1_ds4.png (PNG copy)>]) [57] [58 <./figuras/fraccion_de
-_km_en_ds1.png> <./figuras/fraccion_de_ds1_en_ds4.png (PNG copy)>]
+)
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [52]
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [53 <./figuras/ecdf_k_ds1_ds4.pdf>]
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [54 <./figuras/fraccion_de_km_en_ds1_en_ds4.pdf>]
 \openout2 = `cap_5_bhi.aux'.
 
-
-(./cap_5_bhi.tex
+ (./cap_5_bhi.tex
 Cap\'{\i }tulo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+LaTeX Warning: Reference `fig:interacting_densities' on page 55 undefined on in
+put line 14.
+
+<figuras/interacting_densities_cc.pdf, id=302, 614.295pt x 794.97pt>
+File: figuras/interacting_densities_cc.pdf Graphic file (type pdf)
+
+<use figuras/interacting_densities_cc.pdf>
+Package pdftex.def Info: figuras/interacting_densities_cc.pdf used on input lin
+e 19.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+<figuras/interacting_densities_bpa.pdf, id=303, 614.295pt x 794.97pt>
+File: figuras/interacting_densities_bpa.pdf Graphic file (type pdf)
+
+<use figuras/interacting_densities_bpa.pdf>
+Package pdftex.def Info: figuras/interacting_densities_bpa.pdf used on input li
+ne 24.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+
+<figuras/interacting_densities_bpb.pdf, id=304, 614.295pt x 794.97pt>
+File: figuras/interacting_densities_bpb.pdf Graphic file (type pdf)
+
+<use figuras/interacting_densities_bpb.pdf>
+Package pdftex.def Info: figuras/interacting_densities_bpb.pdf used on input li
+ne 29.
+(pdftex.def)             Requested size: 212.41261pt x 274.88359pt.
+ [55
+
+
+
+]
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [56]
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [57 <./figuras/interacting_densities_cc.pdf> <./figuras/interacting_densities_
+bpa.pdf> <./figuras/interacting_densities_bpb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
-[59
-
-
-
-] <figuras/correlacion_de_a_pares_bhi.png, id=258, 1204.5pt x 579.16376pt>
+<figuras/correlacion_de_a_pares_bhi.png, id=332, 1204.5pt x 579.16376pt>
 File: figuras/correlacion_de_a_pares_bhi.png Graphic file (type png)
 
 <use figuras/correlacion_de_a_pares_bhi.png>
 Package pdftex.def Info: figuras/correlacion_de_a_pares_bhi.png used on input l
-ine 37.
-(pdftex.def)             Requested size: 354.86412pt x 170.63089pt.
- [60] [61 <./figuras/correlacion_de_a_pares_bhi.png>]
+ine 77.
+(pdftex.def)             Requested size: 587.43161pt x 282.46712pt.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [58]
+<figuras/bhi_km_ds1_ds4_control1.pdf, id=336, 794.97pt x 614.295pt>
+File: figuras/bhi_km_ds1_ds4_control1.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:interacting_densities' on page 62 undefined on in
-put line 51.
+<use figuras/bhi_km_ds1_ds4_control1.pdf>
+Package pdftex.def Info: figuras/bhi_km_ds1_ds4_control1.pdf used on input line
+ 90.
+(pdftex.def)             Requested size: 377.62642pt x 291.81189pt.
 
-<figuras/interacting_densities_cc.png, id=267, 1204.5pt x 889.3225pt>
-File: figuras/interacting_densities_cc.png Graphic file (type png)
+<figuras/bhi_km_ds1_ds4_control2.pdf, id=337, 794.97pt x 614.295pt>
+File: figuras/bhi_km_ds1_ds4_control2.pdf Graphic file (type pdf)
 
-<use figuras/interacting_densities_cc.png>
-Package pdftex.def Info: figuras/interacting_densities_cc.png used on input lin
-e 56.
-(pdftex.def)             Requested size: 221.78923pt x 163.7486pt.
+<use figuras/bhi_km_ds1_ds4_control2.pdf>
+Package pdftex.def Info: figuras/bhi_km_ds1_ds4_control2.pdf used on input line
+ 96.
+(pdftex.def)             Requested size: 377.62642pt x 291.81189pt.
 
-<figuras/interacting_densities_bpa.png, id=268, 1204.5pt x 889.3225pt>
-File: figuras/interacting_densities_bpa.png Graphic file (type png)
 
-<use figuras/interacting_densities_bpa.png>
-Package pdftex.def Info: figuras/interacting_densities_bpa.png used on input li
-ne 61.
-(pdftex.def)             Requested size: 221.78923pt x 163.7486pt.
+LaTeX Warning: Float too large for page by 18.19536pt on input line 101.
 
-<figuras/interacting_densities_bpb.png, id=269, 1204.5pt x 889.3225pt>
-File: figuras/interacting_densities_bpb.png Graphic file (type png)
-
-<use figuras/interacting_densities_bpb.png>
-Package pdftex.def Info: figuras/interacting_densities_bpb.png used on input li
-ne 66.
-(pdftex.def)             Requested size: 221.78923pt x 163.7486pt.
-
-<figuras/bhi_km_ds1_ds4_control1.png, id=270, 1204.5pt x 687.56876pt>
-File: figuras/bhi_km_ds1_ds4_control1.png Graphic file (type png)
-
-<use figuras/bhi_km_ds1_ds4_control1.png>
-Package pdftex.def Info: figuras/bhi_km_ds1_ds4_control1.png used on input line
- 83.
-(pdftex.def)             Requested size: 354.86412pt x 202.56874pt.
-
-<figuras/bhi_km_ds1_ds4_control2.png, id=271, 1204.5pt x 687.56876pt>
-File: figuras/bhi_km_ds1_ds4_control2.png Graphic file (type png)
-
-<use figuras/bhi_km_ds1_ds4_control2.png>
-Package pdftex.def Info: figuras/bhi_km_ds1_ds4_control2.png used on input line
- 89.
-(pdftex.def)             Requested size: 354.86412pt x 202.56874pt.
- [62]) [63] [64 <./figuras/interacting_densities_cc.png (PNG copy)> <./figuras/
-interacting_densities_bpa.png (PNG copy)> <./figuras/interacting_densities_bpb.
-png (PNG copy)>] [65 <./figuras/bhi_km_ds1_ds4_control1.png (PNG copy)> <./figu
-ras/bhi_km_ds1_ds4_control2.png (PNG copy)>]
+)
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [59]
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [60 <./figuras/correlacion_de_a_pares_bhi.png>]
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [61]
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+ [62 <./figuras/bhi_km_ds1_ds4_control1.pdf> <./figuras/bhi_km_ds1_ds4_control2
+.pdf>]
 \openout2 = `cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_
 expresion.aux'.
 
@@ -1122,7 +1260,7 @@ expresion.aux'.
 (./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
 tex
 Cap\'{\i }tulo 6.
-[66
+[63
 
 
 
@@ -1131,186 +1269,210 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
-<figuras/kta_global_cc.png, id=289, 1204.5pt x 1561.835pt>
-File: figuras/kta_global_cc.png Graphic file (type png)
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+[64] <figuras/kta_global_cc.pdf, id=372, 794.97pt x 614.295pt>
+File: figuras/kta_global_cc.pdf Graphic file (type pdf)
 
-<use figuras/kta_global_cc.png>
-Package pdftex.def Info: figuras/kta_global_cc.png used on input line 39.
-(pdftex.def)             Requested size: 310.49763pt x 238.31653pt.
+<use figuras/kta_global_cc.pdf>
+Package pdftex.def Info: figuras/kta_global_cc.pdf used on input line 38.
+(pdftex.def)             Requested size: 330.42801pt x 261.0766pt.
 
-<figuras/kta_global_bpa.png, id=290, 1204.5pt x 1561.835pt>
-File: figuras/kta_global_bpa.png Graphic file (type png)
+<figuras/kta_global_bpa.pdf, id=373, 794.97pt x 614.295pt>
+File: figuras/kta_global_bpa.pdf Graphic file (type pdf)
 
-<use figuras/kta_global_bpa.png>
-Package pdftex.def Info: figuras/kta_global_bpa.png used on input line 45.
-(pdftex.def)             Requested size: 310.49763pt x 238.31653pt.
+<use figuras/kta_global_bpa.pdf>
+Package pdftex.def Info: figuras/kta_global_bpa.pdf used on input line 43.
+(pdftex.def)             Requested size: 330.42801pt x 261.0766pt.
 
-<figuras/kta_global_bpb.png, id=291, 1204.5pt x 1561.835pt>
-File: figuras/kta_global_bpb.png Graphic file (type png)
+<figuras/kta_global_bpb.pdf, id=374, 794.97pt x 614.295pt>
+File: figuras/kta_global_bpb.pdf Graphic file (type pdf)
 
-<use figuras/kta_global_bpb.png>
-Package pdftex.def Info: figuras/kta_global_bpb.png used on input line 51.
-(pdftex.def)             Requested size: 310.49763pt x 238.31653pt.
- [67]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `fig:zkta_global' on page 68 undefined on input line 6
-1.
-
-[68 <./figuras/kta_global_cc.png (PNG copy)>]
-
-LaTeX Warning: Text page 69 contains only floats.
-
-[69 <./figuras/kta_global_bpa.png (PNG copy)> <./figuras/kta_global_bpb.png (PN
-G copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+<use figuras/kta_global_bpb.pdf>
+Package pdftex.def Info: figuras/kta_global_bpb.pdf used on input line 48.
+(pdftex.def)             Requested size: 330.42801pt x 261.0766pt.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+ [65 <./figuras/kta_global_cc.pdf> <./figuras/kta_global_bpa.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
+LaTeX Info: Redefining \. on input line 59.
+LaTeX Info: Redefining \% on input line 59.
+[66 <./figuras/kta_global_bpb.pdf>]
+<figuras/erdos_renyi_vs_30kmnn.pdf, id=400, 794.97pt x 614.295pt>
+File: figuras/erdos_renyi_vs_30kmnn.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+<use figuras/erdos_renyi_vs_30kmnn.pdf>
+Package pdftex.def Info: figuras/erdos_renyi_vs_30kmnn.pdf used on input line 6
+3.
+(pdftex.def)             Requested size: 377.62642pt x 291.81189pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--72
 
  []
 
-<figuras/distribucion_de_grado.png, id=301, 838.13126pt x 751.80875pt>
-File: figuras/distribucion_de_grado.png Graphic file (type png)
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+[67 <./figuras/erdos_renyi_vs_30kmnn.pdf>]
+<figuras/betweenness_er_30_conf.pdf, id=414, 794.97pt x 614.295pt>
+File: figuras/betweenness_er_30_conf.pdf Graphic file (type pdf)
 
-<use figuras/distribucion_de_grado.png>
-Package pdftex.def Info: figuras/distribucion_de_grado.png used on input line 8
-0.
-(pdftex.def)             Requested size: 354.86412pt x 318.31569pt.
+<use figuras/betweenness_er_30_conf.pdf>
+Package pdftex.def Info: figuras/betweenness_er_30_conf.pdf used on input line 
+73.
+(pdftex.def)             Requested size: 377.62642pt x 291.81189pt.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [68 <./figuras/betweenness_er_30_conf.pdf>] <figuras/nx_vs_ny.pdf, id=428, 794
+.97pt x 614.295pt>
+File: figuras/nx_vs_ny.pdf Graphic file (type pdf)
 
-<figuras/distribucion_de_betweenness.png, id=302, 1204.5pt x 1080.035pt>
-File: figuras/distribucion_de_betweenness.png Graphic file (type png)
+<use figuras/nx_vs_ny.pdf>
+Package pdftex.def Info: figuras/nx_vs_ny.pdf used on input line 87.
+(pdftex.def)             Requested size: 293.7158pt x 226.96689pt.
 
-<use figuras/distribucion_de_betweenness.png>
-Package pdftex.def Info: figuras/distribucion_de_betweenness.png used on input 
-line 86.
-(pdftex.def)             Requested size: 354.86412pt x 318.19557pt.
- [70]
-<figuras/nx_vs_ny.png, id=306, 1204.5pt x 1080.035pt>
-File: figuras/nx_vs_ny.png Graphic file (type png)
+<figuras/wy_vs_wynanotados.pdf, id=429, 794.97pt x 614.295pt>
+File: figuras/wy_vs_wynanotados.pdf Graphic file (type pdf)
 
-<use figuras/nx_vs_ny.png>
-Package pdftex.def Info: figuras/nx_vs_ny.png used on input line 99.
-(pdftex.def)             Requested size: 199.60895pt x 178.97264pt.
+<use figuras/wy_vs_wynanotados.pdf>
+Package pdftex.def Info: figuras/wy_vs_wynanotados.pdf used on input line 93.
+(pdftex.def)             Requested size: 293.7158pt x 226.96689pt.
 
-<figuras/wy_vs_wynanotados.png, id=307, 1204.5pt x 1080.035pt>
-File: figuras/wy_vs_wynanotados.png Graphic file (type png)
+<figuras/lktaanotados_vs_wnyanotados.pdf, id=430, 794.97pt x 614.295pt>
+File: figuras/lktaanotados_vs_wnyanotados.pdf Graphic file (type pdf)
 
-<use figuras/wy_vs_wynanotados.png>
-Package pdftex.def Info: figuras/wy_vs_wynanotados.png used on input line 105.
-(pdftex.def)             Requested size: 199.60895pt x 178.97264pt.
+<use figuras/lktaanotados_vs_wnyanotados.pdf>
+Package pdftex.def Info: figuras/lktaanotados_vs_wnyanotados.pdf used on input 
+line 99.
+(pdftex.def)             Requested size: 293.7158pt x 226.96689pt.
 
-<figuras/lktaanotados_vs_wnyanotados.png, id=308, 1204.5pt x 1080.035pt>
-File: figuras/lktaanotados_vs_wnyanotados.png Graphic file (type png)
+<figuras/lktaanotados_vs_nyanotados.pdf, id=431, 794.97pt x 614.295pt>
+File: figuras/lktaanotados_vs_nyanotados.pdf Graphic file (type pdf)
 
-<use figuras/lktaanotados_vs_wnyanotados.png>
-Package pdftex.def Info: figuras/lktaanotados_vs_wnyanotados.png used on input 
-line 111.
-(pdftex.def)             Requested size: 199.60895pt x 178.97264pt.
-
-<figuras/lktaanotados_vs_nyanotados.png, id=309, 1204.5pt x 1080.035pt>
-File: figuras/lktaanotados_vs_nyanotados.png Graphic file (type png)
-
-<use figuras/lktaanotados_vs_nyanotados.png>
-Package pdftex.def Info: figuras/lktaanotados_vs_nyanotados.png used on input l
-ine 117.
-(pdftex.def)             Requested size: 199.60895pt x 178.97264pt.
- [71]) [72] [73 <./figuras/distribucion_de_grado.png>] [74 <./figuras/distribuc
-ion_de_betweenness.png>] [75 <./figuras/nx_vs_ny.png> <./figuras/wy_vs_wynanota
-dos.png> <./figuras/lktaanotados_vs_wnyanotados.png> <./figuras/lktaanotados_vs
-_nyanotados.png>]
+<use figuras/lktaanotados_vs_nyanotados.pdf>
+Package pdftex.def Info: figuras/lktaanotados_vs_nyanotados.pdf used on input l
+ine 105.
+(pdftex.def)             Requested size: 293.7158pt x 226.96689pt.
+)
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [69]
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [70 <./figuras/nx_vs_ny.pdf> <./figuras/wy_vs_wynanotados.pdf> <./figuras/lkta
+anotados_vs_wnyanotados.pdf> <./figuras/lktaanotados_vs_nyanotados.pdf>]
 \openout2 = `cap_7_metrica_mixta.aux'.
 
-
-(./cap_7_metrica_mixta.tex
+ (./cap_7_metrica_mixta.tex
 Cap\'{\i }tulo 7.
-[76
+[71
 
 
 
-] <figuras/distribucion_de_stress.png, id=335, 1204.5pt x 1080.035pt>
+] <figuras/distribucion_de_stress.png, id=465, 1204.5pt x 1080.035pt>
 File: figuras/distribucion_de_stress.png Graphic file (type png)
 
 <use figuras/distribucion_de_stress.png>
 Package pdftex.def Info: figuras/distribucion_de_stress.png used on input line 
 25.
-(pdftex.def)             Requested size: 354.86412pt x 318.19557pt.
- [77] [78 <./figuras/distribucion_de_stress.png>]
+(pdftex.def)             Requested size: 377.62642pt x 338.5978pt.
+LaTeX Info: Redefining \. on input line 33.
+LaTeX Info: Redefining \% on input line 33.
+ [72 <./figuras/distribucion_de_stress.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 40--45
 
  []
 
-[79] <figuras/metodos_mixtos_grupo_2.png, id=347, 1204.5pt x 1080.035pt>
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+[73] <figuras/metodos_mixtos_grupo_2.png, id=474, 1204.5pt x 1080.035pt>
 File: figuras/metodos_mixtos_grupo_2.png Graphic file (type png)
 
 <use figuras/metodos_mixtos_grupo_2.png>
 Package pdftex.def Info: figuras/metodos_mixtos_grupo_2.png used on input line 
 46.
-(pdftex.def)             Requested size: 354.86412pt x 318.19557pt.
+(pdftex.def)             Requested size: 377.62642pt x 338.5978pt.
 
-<figuras/metodos_mixtos_grupo_9.png, id=348, 1204.5pt x 1080.035pt>
+<figuras/metodos_mixtos_grupo_9.png, id=475, 1204.5pt x 1080.035pt>
 File: figuras/metodos_mixtos_grupo_9.png Graphic file (type png)
 
 <use figuras/metodos_mixtos_grupo_9.png>
 Package pdftex.def Info: figuras/metodos_mixtos_grupo_9.png used on input line 
 51.
-(pdftex.def)             Requested size: 354.86412pt x 318.19557pt.
- [80 <./figuras/metodos_mixtos_grupo_2.png (PNG copy)>] [81 <./figuras/metodos_
-mixtos_grupo_9.png (PNG copy)>]
-<figuras/bhi_nuevo_vs_bhi_original.png, id=355, 803.0pt x 719.68875pt>
+(pdftex.def)             Requested size: 377.62642pt x 338.5978pt.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
+ [74 <./figuras/metodos_mixtos_grupo_2.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+ [75 <./figuras/metodos_mixtos_grupo_9.png (PNG copy)>]
+<figuras/bhi_nuevo_vs_bhi_original.png, id=482, 803.0pt x 719.68875pt>
 File: figuras/bhi_nuevo_vs_bhi_original.png Graphic file (type png)
 
 <use figuras/bhi_nuevo_vs_bhi_original.png>
 Package pdftex.def Info: figuras/bhi_nuevo_vs_bhi_original.png used on input li
 ne 59.
-(pdftex.def)             Requested size: 354.86412pt x 318.0477pt.
- [82 <./figuras/bhi_nuevo_vs_bhi_original.png (PNG copy)>]
-<figuras/metodos_mixtos_2_6_13.pdf, id=359, 578.16pt x 722.7pt>
+(pdftex.def)             Requested size: 377.62642pt x 338.45143pt.
+
+
+LaTeX Warning: Citation `Hochberg1995' on page 76 undefined on input line 65.
+
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+[76 <./figuras/bhi_nuevo_vs_bhi_original.png (PNG copy)>]
+<figuras/metodos_mixtos_2_6_13.pdf, id=486, 578.16pt x 722.7pt>
 File: figuras/metodos_mixtos_2_6_13.pdf Graphic file (type pdf)
 
 <use figuras/metodos_mixtos_2_6_13.pdf>
 Package pdftex.def Info: figuras/metodos_mixtos_2_6_13.pdf used on input line 7
 0.
-(pdftex.def)             Requested size: 354.86412pt x 443.58118pt.
- [83]
-<figuras/fisher_grupo_2.pdf, id=363, 746.79pt x 643.40375pt>
+(pdftex.def)             Requested size: 377.62642pt x 472.03212pt.
+
+<figuras/fisher_grupo_2.pdf, id=487, 746.79pt x 643.40375pt>
 File: figuras/fisher_grupo_2.pdf Graphic file (type pdf)
 
 <use figuras/fisher_grupo_2.pdf>
 Package pdftex.def Info: figuras/fisher_grupo_2.pdf used on input line 78.
-(pdftex.def)             Requested size: 443.57848pt x 382.1673pt.
- [84 <./figuras/metodos_mixtos_2_6_13.pdf>]
-<figuras/fisher_grupo_6.pdf, id=375, 723.70375pt x 643.40375pt>
+(pdftex.def)             Requested size: 472.03123pt x 406.68169pt.
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+ [77 <./figuras/metodos_mixtos_2_6_13.pdf>]
+<figuras/fisher_grupo_6.pdf, id=498, 723.70375pt x 643.40375pt>
 File: figuras/fisher_grupo_6.pdf Graphic file (type pdf)
 
 <use figuras/fisher_grupo_6.pdf>
 Package pdftex.def Info: figuras/fisher_grupo_6.pdf used on input line 84.
-(pdftex.def)             Requested size: 443.57848pt x 394.36069pt.
- [85 <./figuras/fisher_grupo_2.pdf>]
-<figuras/fisher_grupo_13.pdf, id=387, 542.025pt x 477.785pt>
+(pdftex.def)             Requested size: 472.03123pt x 419.66048pt.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+ [78 <./figuras/fisher_grupo_2.pdf>]
+<figuras/fisher_grupo_13.pdf, id=512, 542.025pt x 477.785pt>
 File: figuras/fisher_grupo_13.pdf Graphic file (type pdf)
 
 <use figuras/fisher_grupo_13.pdf>
 Package pdftex.def Info: figuras/fisher_grupo_13.pdf used on input line 90.
-(pdftex.def)             Requested size: 443.57848pt x 391.02074pt.
- [86 <./figuras/fisher_grupo_6.pdf>] [87 <./figuras/fisher_grupo_13.pdf>]) [88]
+(pdftex.def)             Requested size: 472.03123pt x 416.09973pt.
+LaTeX Info: Redefining \. on input line 91.
+LaTeX Info: Redefining \% on input line 91.
+ [79 <./figuras/fisher_grupo_6.pdf>]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [80 <./figuras/fisher_grupo_13.pdf>])
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+ [81]
 \openout2 = `cap_8_conclusiones_y_perspectivas.aux'.
 
  (./cap_8_conclusiones_y_perspectivas.tex
 Cap\'{\i }tulo 8.
-) [89
+) [82
 
 
 
 ] (./tesis_de_licenciatura.bbl
-Overfull \hbox (52.58104pt too wide) in paragraph at lines 47--51
+Overfull \hbox (24.12828pt too wide) in paragraph at lines 47--51
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.mrc-lmb.cam.ac.uk/genomes/madan
 m/microarray/chapter-final.pdf 
  []
@@ -1322,45 +1484,46 @@ ray da-ta from At-Ge-nEx-press\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (40.78813pt too wide) in paragraph at lines 59--63
+Overfull \hbox (12.33537pt too wide) in paragraph at lines 59--63
 \OT1/cmtt/m/n/12 https://www.arabidopsis.org/portals/expression/microarray/ATGe
 nExpress.jsp\OT1/cmr/m/n/12 . 
  []
 
-[90
+[83
 
 
 
 ]
-Overfull \hbox (15.53102pt too wide) in paragraph at lines 132--138
-\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
-le/pii/S0378437198004944 
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+ [84]
+Overfull \hbox (567.35356pt too wide) in paragraph at lines 271--275
+\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.nature.com/nbt/journal/v31/n1/a
+bs/nbt.2463.html$\OMS/cmsy/m/n/12 n$\OT1/cmtt/m/n/12 nhttp://www.pubmedcentral.
+nih.gov/articlerender.fcgi?artid=3654867&tool=pmcentrez&rendertype=abstract 
  []
 
-[91] [92]
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 264
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 281
 .
- (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
+(/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
 File: omscmtt.fd 
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 264.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 281.
 
-Overfull \hbox (249.48119pt too wide) in paragraph at lines 260--265
+Overfull \hbox (221.02843pt too wide) in paragraph at lines 277--282
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.pubmedcentral.nih.gov/articlere
 nder.fcgi?artid=1590054\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/12 g\O
 T1/cmtt/m/n/12 tool=pmcentrez\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/
 12 g\OT1/cmtt/m/n/12 rendertype=abstract 
  []
 
-
-Overfull \hbox (595.80632pt too wide) in paragraph at lines 267--271
-\OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.nature.com/nbt/journal/v31/n1/a
-bs/nbt.2463.html$\OMS/cmsy/m/n/12 n$\OT1/cmtt/m/n/12 nhttp://www.pubmedcentral.
-nih.gov/articlerender.fcgi?artid=3654867&tool=pmcentrez&rendertype=abstract 
- []
-
-) [93] (./tesis_de_licenciatura.aux
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
+[85])
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+ [86] (./tesis_de_licenciatura.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  (./cap_0_motivaciones_y_objetivos.aux)
@@ -1377,34 +1540,32 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5801 strings out of 494917
- 90166 string characters out of 6178372
- 178449 words of memory out of 5000000
- 8807 multiletter control sequences out of 15000+600000
- 16033 words of font info for 61 fonts, out of 8000000 for 9000
+ 5928 strings out of 494917
+ 91322 string characters out of 6178372
+ 169382 words of memory out of 5000000
+ 8928 multiletter control sequences out of 15000+600000
+ 15782 words of font info for 60 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 38i,14n,39p,1417b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,43p,1417b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tesis_de_licenciatura.pdf (94 pages, 4993092 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on tesis_de_licenciatura.pdf (87 pages, 4421001 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
+ 610 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

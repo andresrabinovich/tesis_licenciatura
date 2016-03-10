@@ -1,5 +1,5 @@
 \chapter{Materiales y Metodos}\label{materiales_y_metodos}
-Las técnicas de relevamientos transcripcionales de gran escala, tales como las micromatrices de ADN y secuenciamientos de ARN (secuenciadores de próxima generación), permiten el monitoreo en paralelo de la totalidad del genoma. En este capítulo daremos una introducción al funcionamiento del primer tipo de tecnologías, que será la que usaremos extensivamente en este trabajo, y a los diferentes conjuntos de datos que utilizaremos.\cite{Bose2016}
+Las técnicas de relevamientos transcripcionales de gran escala, tales como las micromatrices de ADN y secuenciamientos de ARN por medio de secuenciadores de nueva generacion, permiten el monitoreo en paralelo del nivel de actividad transcripcional de la totalidad del genoma. En este capítulo daremos una introducción al funcionamiento del primer tipo de tecnologías, que será la que usaremos extensivamente en este trabajo, y a los diferentes conjuntos de datos que utilizaremos.\cite{Bose2016}
 
 \section{Micromatrices de ADN}
 La tecnología de micromatrices de ADN se constituyó como una herramienta indispensable para el monitoréo de niveles de expresión a lo largo de todo el genoma de un organismo, estimando la concentración de ARNm que está siendo exportado desde el núcleo celular hacia el citoplasma para la síntesis de determinadas proteínas.\\
@@ -14,7 +14,7 @@ Dependiendo de la tecnología utilizada, las micromatrices pueden ser de canal �
 \end{figure}
 En las micromatrices de un solo canal, las moléculas de ARNm son extraídas de las células de interés del organismo y mediante diversas técnicas son transcritas inversamente a ADN. Luego, el ADN es transcrito nuevamente a ARNm utilizando ARN marcado con un compuesto fluorescente (biotina). Estas copias marcadas y aumentadas son luego colocadas en la micromatriz, permitiendo que el ARNm se difunda por toda la misma.\\
 Cuando el ARNm encuentra una sonda que contiene su copia complementaria, se hibridiza con la misma, es decir se pega con una afinidad mucho mayor con la que se puede pegar a cualquier otra. Al lavarse la solución de ARNm, solo aquellos que se hibridizaron con la copia complementaria se mantienen unidos. Finalmente, se ilumina la micromatriz con luz laser de longitud adecuada y se mide la cantidad de fluorescencia emitida por cada sonda. Esta cantidad está asociada a la cantidad de ácido nucléico que se ligó a una dada sonda y eso a su vez será proporcional a la concentración de ese ARNm particular en el tejido de interés.\\
-El resultado de un experimento con micromatrices es una tabla o matriz de expresión de $N_g x N_m$ donde cada fila corresponde a los niveles de expresión de cada gen particular ($N_g \approx 20000$ genes), y cada columna a cada muestra ($N_m \approx 15$ muestras) de tejido tomada.\\
+El resultado de un experimento con micromatrices es una tabla o matriz de expresión de $N_g x N_m$ donde cada fila corresponde a los niveles de expresión de cada gen particular ($N_g$ del orden de $10000$ genes), y cada columna a cada muestra ($N_m$ del orden de $10$ muestras) de tejido tomada.\\
 Estos tecnologías plantean entonces el problema de como analizar bastas cantidades de datos para obtener información de interés, como ser:
 \begin{enumerate}
 	\item La identificación de los genes que forman parte de algún proceso biológico
@@ -22,7 +22,9 @@ Estos tecnologías plantean entonces el problema de como analizar bastas cantida
 	\item Proveer evidencia de la función de proteínas cuyo rol en el organismo se desconoce
 \end{enumerate}
 En este trabajo, analizaremos el conjunto de datos Wiegel, datos obtenidos mediante esta tecnología, que detallaremos a continuación.\cite{Babu2004,Schulze2001,Domany2003}
-\section{Conjunto de datos transcripcionales Wiegel}\label{sec:wiegel}
+\section{Cambios transcripcionales en respuesta a stress abiotico en A.thaliana}\label{sec:wiegel}
+Debido a su naturaleza śesil, las plantas están constantemente sometidas a una variedad de estímulos y stress de origen biótico (virus, interacción con animales, etc) y abiótico (temperaturas extremas, salinidad del suelo, etc). Para sobrevivir en este entorno, estos organismos han desarrollada una compleja red de señalización y respuesta transcripcional que les permiten elaborar las respuestas adecuadas. Por ejemplo, en respuesta a sequía o bajas temperaturas la respuesta transcripcional de estos organismos incluye un incremento en la expresión de genes que codifican para proteínas hidrofílicas, con el objeto de prevenir daños en la membrana. Así mismo, la expresión de genes de proteínas ``chaperonas'', que ayudan a estabilizar la forma de otras proteínas
+en situaciones de congelamiento o deshidratación también es incrementada.\\
 En el marco del proyecto AtGenExpress, (un esfuerzo multinacional desarrollado para descubrir el transcriptoma del organismo modelo multicelular Arabidopsis thaliana), el grupo \textit{Weigel \& Lohmann}, de Alemania, realizó en el año 2004 un exhaustivo estudio de expresión del transcriptoma de Arabidopsis thaliana utilizando las micromatrices de ADN Affymetrix ATH1, con el objetivo de comprender las complejas redes de genes que, se conjetura, controlan la tolerancia de la planta al estrés. Para ello, se sometió a plantas de Arabidopsis, de idéntico genotipo y de idénticas condiciones de crecimiento, a diversos tratamientos de estrés.\\
 Los tratamientos de estrés se realizaron de tal forma de excluir efectos circadianos (oscilaciones de las variables biológicas en intervalos regulares de tiempo asociadas con un cambio ambiental rítmico), tomando muestras o de la raíz (root) o del tallo (shoot) en dos réplicas biológicas cada 0 minutos, 30 minutos, 1 hora, 3 horas, 6 horas, 12 horas y 24 horas luego del comienzo del tratamiento. En algunos de los tratamientos, por ejemplo, de luz ultravioleta, las alteraciones transcripcionales producto del estrés fueron tan rápidas que se tomaron además muestras a los 15 minutos del comienzo  del mismo. Las muestras de control se tomaron de plantas no sometidas a ningún tratamiento de estrés de la misma forma que con las plantas tratadas.\\
 Además de un tratamiento de control, se realizaron los siguientes tratamientos de estrés:
@@ -37,11 +39,7 @@ Se hirió a las plantas utilizando un elemento punzante consistente en 16 agujas
 \subsubsection*{Tratamiento de sequía}
 Las plantas fueron expuestas a una corriente de aire durante 15 minuto, lapso durante el cual perdieron un 10\% de su peso. Luego, se las devolvió a la cámara de cultivo hasta la cosecha.
 \subsubsection*{Tratamiento con luz ultravioleta B}
-Se irradió a las plantas durante 15 minutos con luz ultravioleta B. Bajo estas condiciones se induce una respuesta de la planta tanto para daño por radiación de onda corta como para radiación ultravioleta.
-
-Además de estos tratamientos, se sometió de forma similar a tratamientos oxidativos, de genotoxicidad y de calor y recuperación.
-\hl{en el paper no figura la informacion de los tratamientos de genotoxic, oxidative y heat and recovery}
-\cite{AtGenExpress, Kilian2007}
+Se irradió a las plantas durante 15 minutos con luz ultravioleta B. Bajo estas condiciones se induce una respuesta de la planta tanto para daño por radiación de onda corta como para radiación ultravioleta. \cite{AtGenExpress, Kilian2007}
 \section{PIN - Redes de interacción de proteínas}
 \label{sec:redes}
 Las redes son construcciones útiles para esquematizar la organización de las interacciones en distinto tipo de sistemas. Las redes permiten tener una vision global de como estan organizadas dichas interacciones.\\
@@ -52,22 +50,20 @@ La primera, una red experimental de interacciones binarias de alta confianza est
 Utilizando los pares obtenidos confeccionaron un conjunto de datos consistente en 5664 interacciones binarias entre 2661 proteínas, llamado Arabidopsis Interactome versión 1 ``main screen'', que llamaremos $AI1_{main}$.\\
 La segunda red utilizada fue una red binaria de interacción de proteínas, que llamaremos, $LCI_{binaria}$, obtenida de \cite{Hahn2013}, material suplementario, tabla 4, consistente en aproximadamente 4300 interacciones entre alrededor de 2200 proteínas de \textit{Arabidospis}. La misma fue obtenida mediante curado manual de literatura, es decir, en lugar de realizar ensayos de alto rendimiento en busca de pares de proteínas interactuantes, se realiza una revisión exhaustiva de la literatura existente en busca de interacciones que aparezcan en ensayos de pequeña escala previamente realizados sobre pocas proteínas y motivados por hipótesis previas (hypothesis-driven en inglés), ensayos altamente fiables.\cite{Cusick2009}\\
 El solapamiento observado entre ambas se encuentra en el rango esperado dado la cobertura del proteoma que hacen estas redes, como muestra el diagrama de la figura \ref{fig:ai1_lci}.
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{ai1_lci}
-    \caption{(Arriba) Representación de las redes $LCI_{binaria}$ (azul) y $AI1_{main}$ (verde). (Abajo a la izquierda) Los conjuntos de datos son representados por diagramas de Venn cuadrados. El tamaño es proporcional al número de interacciones. (Abajo a la derecha) Los solapamientos observados y esperados de $AI1_{main}$ con $LCI_{binaria}$ (fuente: \cite{Hahn2013}} 
-    \label{fig:ai1_lci}
-\end{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{ai1_lci}
+\captionof{figure}{(Arriba) Representación de las redes $LCI_{binaria}$ (azul) y $AI1_{main}$ (verde). (Abajo a la izquierda) Los conjuntos de datos son representados por diagramas de Venn cuadrados. El tamaño es proporcional al número de interacciones. (Abajo a la derecha) Los solapamientos observados y esperados de $AI1_{main}$ con $LCI_{binaria}$ (fuente: \cite{Hahn2013}} 
+\label{fig:ai1_lci}
+\end{center}
 \section{KEGG - Vías metabólicas}
 \label{sec:kegg}
 Una vía metabólica es un conjunto de reacciones químicas que suceden dentro de una célula. En una vía, la sustancia quimica inicial, llamada metabolito, es modificada por una serie de reacciones químicas catalizadas por enzimas. En estas reacciones, el producto de una enzima es utilizado como substrato por la siguiente enzima y así hasta alcanzar un producto final, que puede usarse inmediatamente, almacenarse o iniciar una nueva vía metabólica. El metabolismo de una célula consise en una red o vías interconectadas que permiten la síntesis o ruptura de las moléculas, acciones conocidas como anabolismo y catabolismo, respectivamente. Descubrir este tipo de redes es fundamental para obtener una imagen global de la actividad celular (figura \ref{fig:mapa_kegg}).\\
 La Enciclopedia de Genes y Genomas de Kyoto (KEGG, por sus siglas en inglés), es una base de datos sobre diversos genomas, vías biológicas, enfermedades, drogas y sustancias químicas.
-\begin{figure}[h]
-    \centering
+\begin{center}
     \includegraphics[width=0.8\textwidth]{mapa_kegg}
-    \caption{Mapa KEGG de la vía metabólica de Arabidopsis Thaliana  \textit{Synthesis and degradation of ketone bodies}}
+    \captionof{figure}{Mapa KEGG de la vía metabólica de Arabidopsis Thaliana  \textit{Synthesis and degradation of ketone bodies}}
     \label{fig:mapa_kegg}
-\end{figure}
+\end{center}
 La misma provee de una base de datos de vías metabólicas que contiene recursos para la representación de procesos celulares tales como el metabolismo, transducción de señales y ciclo celular. La figura \ref{fig:mapa_kegg} muestra un mapa KEGG de la vía metabólica de Arabidopsis Thaliana ``Synthesis and degradation of ketone bodies''. En la misma, se puede observar que a priori, la estructura de una vis metabólica excede el lenguaje de redes. Las interacciones metabólicas suelen involucrar sustratos, productos y enzimas en relaciones que son difícil de capturar utilizando únicamente interacciones binarias. 
 En nuestro trabajo utilizamos el abordaje de Gabriele Sales y colaboradores \cite{Graphite2015} para mapear vias metabólicas en redes.\\
 Se conformó una red uniendo todas las vías metabólicas presentes en la base de datos y teniendo en cuenta solamente aquellos genes presentes en el conjunto de datos Weigel, obteniéndose una red de 1992 nodos y 23009 arcos.
@@ -82,12 +78,11 @@ Un término de componente celular (CC) describe un componente de una célula que
 Finalmente, los términos de función molecular (MF) describen las actividades que ocurren a nivel molecular, por ejemplo, ``actividad catalítica'' o ``actividad de transporte''.\\
 Cada una de estas tres ontologias está estructurada como un grafo acíclico dirigido (DAG por sus siglas en inglés).\\
 Cada nodo representa un término que describe alguna función. Los términos se unen entre si mediante relaciones direccionales del tipo ``es un'' o ``es parte de'', donde el primero expresa una relación de clase-subclase y el segundo una relación de parte-todo (figura \ref{fig:ejemplo_de_go}). Cuando un producto génico es descrito por un termino GO, se dice que el mismo está anotado en ese término, ya sea de forma directa o a través de herencia, ya que estar anotado en un término implica estar anotado en todos los términos ancestrales, regla conocida como \textit{regla del camino verdadero}.\\
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{ejemplo_de_go}
-    \caption{Subgrafo de la ontología BP de GO mostrando el proceso biológico ``Positive regulation of cellular component organization''.}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{ejemplo_de_go}
+    \captionof{figure}{Subgrafo de la ontología BP de GO mostrando el proceso biológico ``Positive regulation of cellular component organization''.}
     \label{fig:ejemplo_de_go}
-\end{figure}
+\end{center}
 Formalmente, podemos describir estás relaciones de la ontología GO de la siguiente manera:\\
 Sea $C=\{c_i / 1\leq i \leq N\}$ un conjunto ordenado finito de conceptos que representan términos GO. Los mismos se relacionan entre si a través de las relaciones antes consignadas, de tal forma que $c_i \rightarrow c_j$ denota que $c_i$ es un/es parte de $c_j$. Basado en esto, es posible definir una relación binaria sobre $C$, denotada por $\preceq$, tal que $c_i \preceq c_j$, es decir $c_j$ es un ancestro de $c_i$ en la jerarquía GO. Notar entonces que si $c_k \preceq c_i$ y $c_i \preceq c_j \Rightarrow c_k \preceq c_j$ (regla del camino verdadero). En cada grafo existe un término raíz de la jerarquía $r$, tal que $c_i \preceq r \forall c_i \in C$.\\
 Los conceptos más generales se hallarán más próximos al término raíz, mientras que los más específicos e informativos se alejarán del mismo. La anotación de un gen o producto génico se realiza siempre al nodo mas especifico, pudiendo ser anotado además en varios conceptos biológicos a la vez.\\
@@ -122,10 +117,9 @@ Modelo de secuencia & ISM & Análisis comp. & Se utiliza cuando la evidencia de 
 \end{sidewaystable}
 La figura \ref{fig:codigos_de_evidencia} muestra la fracción que representa cada tipo de anotación para cada ontología.\\
 Las cantidad total de anotaciones para BP, MF y CC, sin tener en cuenta aquellas pertenecientes a la categoría IEA, totalizan 2540816, 207087 y 1043851 anotaciones respectivamente.
-\begin{figure}[h]
-    \centering
+\begin{center}
     \includegraphics[width=0.8\textwidth]{codigos_de_evidencia}
-    \caption{Códigos de evidencia en cada una de las ontologías y la fracción del total que representan.}
+    \captionof{figure}{Códigos de evidencia en cada una de las ontologías y la fracción del total que representan.}
     \label{fig:codigos_de_evidencia}
-\end{figure}
-En particular, en este trabajo se tuvieron en cuenta únicamente las evidencias obtenidas experimentalmente. Para ello, se tomaron dos subconjuntos de anotaciones de la ontología BP, que llamaremos BPA, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 512235 anotaciones y BPB, consistente en las anotaciones IDA, IPI, IGI, IMP y IEP, con un total de 573688. Además, se utilizó un subconjunto de la ontología CC, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 693991 anotaciones. \cite{Pandey2008, Resnik1995, Bose2016, Pesquita2009, Berenstein2014, Ashburner}
+\end{center}
+En particular, en este trabajo se tuvieron en cuenta únicamente las evidencias obtenidas experimentalmente. Para ello, se tomaron dos subconjuntos de anotaciones de la ontología BP, que llamaremos BPA, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 512235 anotaciones y BPB, consistente en las anotaciones IDA, IPI, IGI, IMP y IEP, con un total de 573688. La diferencia entre estos dos conjuntos es la consideración o no de anotaciones IEP, obtenidas a partir de relevamientos de expresión. Es decir, de ensayos de la misma naturaleza que los que deseamos contextualizar en este trabajo. Además, se utilizó un subconjunto de la ontología CC, consistente en las anotaciones IDA, IPI, IGI, IMP, con un total de 693991 anotaciones. \cite{Pandey2008, Resnik1995, Bose2016, Pesquita2009, Berenstein2014, Ashburner}

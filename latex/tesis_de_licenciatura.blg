@@ -12,6 +12,7 @@ A level-1 auxiliary file: cap_7_metrica_mixta.aux
 A level-1 auxiliary file: cap_8_conclusiones_y_perspectivas.aux
 The style file: formato_bibliografia.bst
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "Hochberg1995"
 Warning--empty journal in Domany2003
 Warning--missing publisher in Alberts2015
 Warning--empty journal in Berenstein2014
@@ -22,46 +23,45 @@ Warning--missing publisher in Kogan2006
 Warning--empty journal in Ibrahim2012
 Warning--empty journal in Langfelder2007
 Warning--empty journal in Dutkowski2013
-Warning--empty journal in Hochberg1995
-You've used 51 entries,
+You've used 54 entries,
             2638 wiz_defined-function locations,
-            920 strings with 13670 characters,
-and the built_in function-call counts, 13281 in all, are:
-= -- 886
-> -- 289
+            942 strings with 14077 characters,
+and the built_in function-call counts, 14188 in all, are:
+= -- 953
+> -- 316
 < -- 2
-+ -- 136
-- -- 68
-* -- 738
-:= -- 1558
-add.period$ -- 142
-call.type$ -- 51
++ -- 148
+- -- 74
+* -- 783
+:= -- 1667
+add.period$ -- 152
+call.type$ -- 54
 change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 1394
-empty$ -- 1468
-format.name$ -- 85
-if$ -- 3009
+cite$ -- 64
+duplicate$ -- 1483
+empty$ -- 1560
+format.name$ -- 94
+if$ -- 3220
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 339
-newline$ -- 259
-num.names$ -- 51
-pop$ -- 506
+int.to.str$ -- 54
+missing$ -- 359
+newline$ -- 275
+num.names$ -- 54
+pop$ -- 541
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 375
+skip$ -- 404
 stack$ -- 0
-substring$ -- 321
-swap$ -- 838
+substring$ -- 348
+swap$ -- 890
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 83
-width$ -- 53
-write$ -- 501
+warning$ -- 10
+while$ -- 89
+width$ -- 56
+write$ -- 533
 (There were 11 warnings)

@@ -105,7 +105,7 @@ Se observa que la cantidad de grupos que maximiza estos índices es 2. Se realiz
 Estas estructuras tan grandes son de difícil interpretación biológica, ya que si bien las respuestas de expresión dentro de cada grupo son similares, existe mucha heterogeneidad en las funciones biológicas de los genes que los componen. El método k-means está entonces trabajando a una escala que no permite extraer información biológica de los grupos. Será necesario entonces aumentar la granularidad mediante la consideracion de otros métodos de agrupamiento.
 \section{Agrupamiento con corte de árbol dinámico}
 Utilizando el método de corte de árbol dinámico se realizó un agrupamiento para cada tratamiento, utilizando alternativamente los parámetros $deepSplit=1$ (que llamaremos $ds1$, de menor granularidad) y $deepSplit=4$ (que llamaremos $ds4$, de mayor granularidad). Las figuras \ref{fig:perfiles_ds_1} y \ref{fig:perfiles_ds_4} muestran algunos de los perfiles obtenidos con cada parámetro respectivamente para el tratamiento ``Frío''.\\ 
-En general, para todos los tratamientos, los grupos obtenidos por este método tienen mayor correlación media ($\rho$)que los obtenidos por el método k-means, obteniéndose una mayor cantidad de grupos con el $ds4$ que con $ds1$.\\
+En general, para todos los tratamientos, los grupos obtenidos por este método tienen mayor correlación media ($\rho$) que los obtenidos por el método k-means, obteniéndose una mayor cantidad de grupos con el $ds4$ que con $ds1$.\\
 \begin{figure*}[t!]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}

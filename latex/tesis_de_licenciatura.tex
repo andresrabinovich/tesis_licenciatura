@@ -11,7 +11,7 @@
 \usepackage{cite}
 \usepackage{gensymb} %este paquete habilita el uso del simbolito de grados centígrados \degree
 \usepackage{rotating} %este paquete permite rotar una tabla para que quede vertical y en toda la página
-\usepackage[font={small,it}]{caption} %$este paquete se necesita para el subcaption
+\usepackage[font={normalsize,it}]{caption} %$este paquete se necesita para el subcaption
 \usepackage{subcaption} %$este paquete permite tener subfiguras
 \usepackage{fancyhdr}
 
@@ -21,7 +21,7 @@
 \fancyhead[OL]{\nouppercase\leftmark}
 \fancyhead[ER,OR]{\thepage}
 
-\DeclareCaptionFormat{myformat}{\fontsize{8}{9}\selectfont#1#2#3}
+\DeclareCaptionFormat{myformat}{\fontsize{10}{11}\selectfont#1#2#3}
 \captionsetup{format=myformat}
 
 \newcommand{\paginaenblanco}{\clearpage\mbox{}\newpage}
@@ -38,28 +38,28 @@
 \begin{document}
 
 %--------------------DESDE ACA LOS COMENTARIOS-------------------
-%\maketitle
-%\paginaenblanco
-%\chapter*{Hoja a completar por los jurados}
-%\paginaenblanco
-%\chapter*{Resumen}
-%\paginaenblanco
-%\chapter*{Abstract}
-%\paginaenblanco
-%\chapter*{Dedicatoria}
-%\paginaenblanco
+\maketitle
+\paginaenblanco
+\chapter*{Hoja a completar por los jurados}
+\paginaenblanco
+\chapter*{Resumen}
+\paginaenblanco
+\chapter*{Abstract}
+\paginaenblanco
+\chapter*{Dedicatoria}
+\paginaenblanco
 
-%\tableofcontents
+\tableofcontents
 
-%\include{cap_0_motivaciones_y_objetivos}
-%\include{cap_1_introduccion}
-%\include{cap_2_materiales_y_metodos}
-%\include{cap_3_metodos_de_agrupamiento_de_datos}
-%\include{cap_4_analisis_de_datos_transcripcionales}
-%\include{cap_5_bhi}
+\include{cap_0_motivaciones_y_objetivos}
+\include{cap_1_introduccion}
+\include{cap_2_materiales_y_metodos}
+\include{cap_3_metodos_de_agrupamiento_de_datos}
+\include{cap_4_analisis_de_datos_transcripcionales}
+\include{cap_5_bhi}
 \include{cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion}
-%\include{cap_7_metrica_mixta}
-%\include{cap_8_conclusiones_y_perspectivas}
+\include{cap_7_metrica_mixta}
+\include{cap_8_conclusiones_y_perspectivas}
 
 \clearpage
 \bibliographystyle{formato_bibliografia}

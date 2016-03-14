@@ -1,5 +1,5 @@
-\chapter{Análisis de conjunto de datos transcripcionales de respuesta a stress abiótico en plantas}
-En este capítulo analizaremos el conjunto de datos transcripcionales obtenidos por Wiegel \& Lohmann para la planta Arabidopsis thaliana presentados en la sección \ref{sec:wiegel}, utilizando para ello los métodos de agrupamiento k-means (sección \ref{sec:agrupamientos_no_jerarquicos}) y corte de árbol dinámico híbrido (sección \ref{sec:grupos_en_agrupamiento_jerarquico}) introducidos en el capítulo \ref{materiales_y_metodos}.\\\\
+\chapter{Análisis de la respuesta transcripcional a estrés abiótico en plantas}
+En este capítulo analizaremos el conjunto de datos transcripcionales obtenidos por Wiegel \& Lohmann para la planta \textit{Arabidopsis thaliana} presentados en la sección \ref{sec:wiegel}, utilizando para ello los métodos de agrupamiento k-means (sección \ref{sec:agrupamientos_no_jerarquicos}) y corte de árbol dinámico híbrido (sección \ref{sec:grupos_en_agrupamiento_jerarquico}) introducidos en el capítulo \ref{materiales_y_metodos}.\\\\
 Una vez obtenidos los grupos en el espacio de expresión, utilizaremos índices BHI e Interacting Densities para cuantificar el grado de coherencia entre estas estructuras y el conocimiento almacenado en el espacio GO.\\\\
 Luego, analizaremos la coherencia de los resultados obtenidos en el espacio de expresión con la de resultados obtenidos en otros espacios de conocimiento, como GO (sección \ref{sec:go}), PIN  (sección \ref{sec:redes}) y KEGG (sección \ref{sec:kegg}), esperando que estos conocimientos sean diferentes pero no ortogonales. 
 
@@ -104,7 +104,7 @@ Se observa que la cantidad de grupos que maximiza estos índices es 2. Se realiz
 \end{figure}
 Estas estructuras tan grandes son de difícil interpretación biológica, ya que si bien las respuestas de expresión dentro de cada grupo son similares, existe mucha heterogeneidad en las funciones biológicas de los genes que los componen. Esto se debe a que el método k-means está trabajando a una escala que no permite extraer información biológica de los grupos. Será necesario entonces aumentar la granularidad mediante la consideración de otros métodos de agrupamiento.
 \section{Agrupamiento con corte de árbol dinámico}
-Utilizando el método de corte de árbol dinámico se realizó un agrupamiento para cada tratamiento, utilizando alternativamente los parámetros $deepSplit=1$ (que llamaremos $ds1$, de menor granularidad) y $deepSplit=4$ (que llamaremos $ds4$, de mayor granularidad). Las figuras \ref{ref:histograma_ds_1} y \ref{ref:histograma_ds_4} presentan histogramas de los tamaños de los grupos obtenidos, en escala logarítmica, para cada método. Se observa que $ds1$ llega a tener grupos de mayor tamaño que $ds4$ pero menor cantidad de grupos en total. Esto es esperable ya que una variación en el parámetro $deepsplit$ aumenta o disminuye la granularidad del método.\\
+Utilizando el método de corte de árbol dinámico se realizó un agrupamiento para cada tratamiento, utilizando alternativamente los parámetros $deepSplit=1$ (que llamaremos $ds1$, de menor granularidad) y $deepSplit=4$ (que llamaremos $ds4$, de mayor granularidad). Las figuras \ref{fig:histograma_ds_1} y \ref{fig:histograma_ds_4} presentan histogramas de los tamaños de los grupos obtenidos, en escala logarítmica, para cada método. Se observa que $ds1$ llega a tener grupos de mayor tamaño que $ds4$ pero menor cantidad de grupos en total. Esto es esperable ya que una variación en el parámetro $deepsplit$ aumenta o disminuye la granularidad del método.\\
 \begin{sidewaysfigure}[H]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
@@ -139,7 +139,7 @@ En general, para todos los tratamientos, los grupos obtenidos por el método de 
     \end{subfigure}
     \caption{Perfiles de expresión génica de los 9 grupos más grandes obtenidos con el método corte de árbol dinámico para $ds1$ y $ds4$ para el tratamiento 'Frío'. En negro, el valor medio de cada grupo. En el título se consigna la correlación media de cada uno (rho).}
 \end{sidewaysfigure}
-Para cada parámetro, cada tratamiento y cada grupo, se realizó un control nulo consistente en tomar la misma cantidad de genes presentes en el grupo, pero de forma aleatoria, del conjunto de genes que formaban el tratamiento, y medir su correlación media. Esto se realizó 1000 veces para cada grupo. Las figuras \ref{ref:correlacion_media_por_tamano_ds_1} y \ref{ref:correlacion_media_por_tamano_ds_4} muestran la correlación media por tamaño de grupo y el control nulo para $ds1$ y $ds4$ respectivamente. Los grupos fueron agrupados por tamaño de a 10 genes, donde los colores más claros indican mayor cantidad de grupos que los oscuros. El gráfico tiene además la media, en negro, y el segundo y tercer cuartil, en gris, para la distribución del control nulo.
+Para cada parámetro, cada tratamiento y cada grupo, se realizó un control nulo consistente en tomar la misma cantidad de genes presentes en el grupo, pero de forma aleatoria, del conjunto de genes que formaban el tratamiento, y medir su correlación media. Esto se realizó 1000 veces para cada grupo. Las figuras \ref{fig:correlacion_media_por_tamano_ds_1} y \ref{fig:correlacion_media_por_tamano_ds_4} muestran la correlación media por tamaño de grupo y el control nulo para $ds1$ y $ds4$ respectivamente. Los grupos fueron agrupados por tamaño de a 10 genes, donde los colores más claros indican mayor cantidad de grupos que los oscuros. El gráfico tiene además la media, en negro, y el segundo y tercer cuartil, en gris, para la distribución del control nulo.
 \begin{sidewaysfigure}[H]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
@@ -163,35 +163,17 @@ Estos grupos de $ds1$ comparativamente grandes tienen alta correlación. Sin emb
 Otra forma de visualizar la diferencia en los tamaños de los grupos que obtiene cada método es mediante la función de distribución acumulada empírica que se observa en la figura \ref{fig:ecdf_k_ds1_ds4}. En la misma se observa que corte de árbol dinámico con $ds4$ produce la mayor cantidad de grupos con los menores tamaños, seguida por la misma técnica pero con $ds1$ y finalmente por k-means con solamente dos grupos muy masivos.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\textwidth]{ecdf_k_ds1_ds4.pdf}
+    \includegraphics[width=0.45\textwidth]{ecdf_k_ds1_ds4.pdf}
     \caption{Función de distribución acumulada empírica en función del tamaño de grupo para los métodos k-means (k=2) en azul, $ds1$ en rojo y $ds4$ en verde para el tratamiento 'Frío'.}
     \label{fig:ecdf_k_ds1_ds4}
 \end{figure}
 Por otro lado, para poder caracterizar la granularidad de las particiones halladas con cada método, podemos calcular la fracción de los grupos más grandes de una partición en otra partición. La figura \ref{fig:fraccion_de_km_en_ds1_en_ds4} muestra como están distribuidos los dos grupos de la partición k-means en los grupos de la partición corte de árbol dinámico con $ds1$ y los 4 grupos más grandes de la partición corte de árbol dinámico con $ds1$ en la de $ds4$.
 \begin{sidewaysfigure}
     \centering
-    \includegraphics[width=0.6\textwidth]{fraccion_de_km_en_ds1_en_ds4.pdf}
+    \includegraphics[width=0.5\textwidth]{fraccion_de_km_en_ds1_en_ds4.pdf}
     \caption{Fracción de grupos de una partición más fina dentro de grupos en una partición más gruesa para el tratamiento 'Frío', con $ds1$, $ds4$ y k-means. En rojo, aquellos subgrupos que están contenidos en más de un 50\% en el grupo. La linea punteada marca el porcentaje del grupo que representa el total del subgrupo.}
     \label{fig:fraccion_de_km_en_ds1_en_ds4}
 \end{sidewaysfigure}
-%\begin{figure*}[t!]
-    %\centering
-    %\begin{subfigure}[t]{0.35\textheight}
-    %\centering
-    %\includegraphics[width=1\textwidth]{fraccion_de_km_en_ds1.pdf}
-    %\caption{Fracción de grupos de $ds1$ en los grupos k-means.}
-  %%  \label{fig:fraccion_de_km_en_ds1}
- %   \end{subfigure}
-    
- %   \begin{subfigure}[t]{0.35\textheight}
- %   \centering
- %%   \includegraphics[width=1\textwidth]{fraccion_de_ds1_en_ds4.pdf}
- %   \caption{Fracción de grupos de $ds4$ en los grupos más masivos de $ds1$.}
- %   \label{fig:fraccion_de_ds1_en_ds4}
- %   \end{subfigure}
-%    \caption{Fracción de grupos de una partición más fina dentro de grupos en una partición más gruesa para el tratamiento 'Frío', con $ds1$, $ds4$ y k-means. En rojo, aquellos subgrupos que están contenidos en más de un 50\% en el grupo. La linea punteada marca el porcentaje del grupo que representa el total del subgrupo.}
-%\end{figure*}
-
 Aquellos subgrupos (los grupos de una partición contenidos en el grupo de otra partición) que están contenidos en más (menos) de un 50\% en el grupo aparecen en rojo (negro). La linea punteada indica el porcentaje del grupo que representaría el subgrupo, si el subgrupo estuviera contenido completamente en el grupo.
 En cada caso, se observa que los grupos más grandes de una partición con menor granularidad se parten en grupos más pequeños en otra partición con mayor granularidad, es decir, la partición $ds4$ está contenida en la partición $ds1$ (es un refinamiento de la misma) y esta a su vez está contenida en la partición k-means.\\\\
 \clearpage

@@ -9,7 +9,7 @@ El índice de Densidades de interacción, o ID, introducido por Dutkowski en \ci
 Con $NE(GO_j)$ la cantidad de pares de genes anotados en $GO_j$ que se encuentran juntos en un mismo grupo transcripcional $C_x$ y $N(GO_j)$ la cantidad de pares de genes anotados en $GO_j$.\\\\
 Por ejemplo, para un término $GO_j$ con 20 genes anotados y una partición de 3 grupos transcripcionales, donde en el primer grupo hay 5 genes que están anotados en $GO_j$, en el segundo hay dos y en el tercero hay tres, obtenemos que $ID(GO_j) = \frac{\binom{5}{2}+\binom{2}{2}+\binom{3}{2}}{\binom{20}{2}}=\frac{14}{190}\approx 0.07$.\\\\
 Como es de nuestro interés establecer un escenario de funcionalidad biológica para los agrupamientos detectados en el espacio transcripcional, nos interesará cotejar la densidad de interacciones para términos de las ontologías BPA y BPB. Al mismo tiempo analizaremos términos de la ontología CC, ya que asumiremos que para cumplir una determinada función, las proteínas deben colocalizar en alguna estructura subcelular, y por lo tanto estar anotadas en las mismas categorías CC (o similares).\\\\
-Para tener una idea del orden de magnitud de los indices obtenidos para el caso de estructuras detectadas en el espacio transcripcional, calculamos ademas este indice para las comunidades encontradas en las redes de interacción de proteínas, y de reacciones metabólicas presentadas en la sección \ref{sec:redes}. Para ello consideramos las respectivas particiones Infomap (ver sección \ref{sec:comunidades}).\\\\
+Para tener una idea del orden de magnitud de los índices obtenidos para el caso de estructuras detectadas en el espacio transcripcional, calculamos ademas este índice para las comunidades encontradas en las redes de interacción de proteínas, y de reacciones metabólicas presentadas en la sección \ref{sec:redes}. Para ello consideramos las respectivas particiones Infomap (ver sección \ref{sec:comunidades}).\\\\
 Finalmente, realizamos un control nulo de tipo 2 para cada tratamiento, reordenando las etiquetas de la partición de forma aleatoria 1000 veces y calculando el $ID$ en cada caso.\\\\
 Para cada ontología utilizada, se calculó la media de $ID$ de todos los tratamientos agrupados por cantidad de anotaciones por término, al igual que para cada una de las redes y para el control nulo. Estos valores pueden observarse en las figuras \ref{fig:interacting_densities}. Las escalas utilizadas son escalas logarítmicas. 
 \begin{figure*}[t!]
@@ -29,8 +29,8 @@ Para cada ontología utilizada, se calculó la media de $ID$ de todos los tratam
     \includegraphics[width=1\textwidth]{interacting_densities_bpb.pdf}
     \caption{ID para ontología BPB.}
     \end{subfigure}    
-    \caption{Índice de densidad de interacción, ID, para distintas redes de proteínas, vías metabólicas y particiones de expresión.\hl{revisar estos graficos, quedo mal la leyenda. Ver de cuanto era el binning y ponerlo}}
-    \label{interacting_densities}
+    \caption{Densidad de interacción en función de la cantidad de anotaciones por término para $ds1$ (círculos rojos), $ds4$ (rombos violeta), PIN AI1 (triángulos rosa), PIN LCI (cruces verdes), KEGG (cruces azules) y control nulo (triángulos invertidos negros).}
+    \label{fig:interacting_densities}
 \end{figure*}
 
 Encontramos que:
@@ -41,14 +41,14 @@ Encontramos que:
 \item Las estructuras detectadas en el espacio transcripcional con resolución $ds1$ presentan mayor congruencia biológica, según este indicador, que aquellas obtenidas con resolución $ds4$. Esto sería un indicio acerca de cual sería la escala de granularidad apropiada para interpretar las estructuras encontradas.
 \item Finalmente queremos mencionar como resultado interesante la baja coherencia encontrada para el caso de la red de interacción de proteínas $LCI$, aunque encontrar las razones de este resultado exceden los alcances de este trabajo. 
 \end{enumerate}
-\section{Índice de homogeneidad biológica}
+\section{Indice de homogeneidad biológica}
 El índice de homogeneidad biológica (o BHI por sus siglas en inglés) de una partición, introducido por Datta \cite{Datta2006} es un observable que cuantifica el grado en que una partición presenta grupos biológicamente homogéneos, reportando, para cada grupo, la máxima proporción de pares de genes agrupados que comparten una misma clase funcional de Ontología Génica. Consideremos dos genes $x$ e $y$ que pertenecen a un mismo grupo $D$ de una partición dada, con un total de $k$ grupos, y sean $C(x)$ y $C(y)$ los conjuntos de todas las clases funcionales que tienen anotados a los genes $x$ e $y$ respectivamente. Sea además la función indicadora $I(C(x)=C(y))$ que toma el valor $1$ si hay al menos una clase en donde ambos genes estén anotados, y $0$ en caso contrario. Entonces, el índice de homogeneidad biológica queda definido como:
 \begin{equation}
 	BHI_j = \frac{1}{n_j(n_j-1)}\sum\limits_{x\neq y\in D_j}I(C(x)=C(y))
 \end{equation}
 con $n_j$ la cantidad de genes anotados en el grupo $D_j$.\\\\
 
-\subsection{Modificaciones al Índice de homogeneidad biológica}
+\subsection{Modificaciones al índice de homogeneidad biológica}
 \label{subsec:control_nulo}
 Presentaremos a continuación dos variantes del BHI que modificarán la función indicadora para hacer uso de la similaridad semántica y del contenido de información génico.\\\\
 El índice de homogeneidad biológica con contenido de información, $BHI_j^{IC}$ para un grupo se define como:
@@ -74,7 +74,7 @@ Para caracterizar el comportamiento de cada uno de estos índices se midieron lo
 \begin{sidewaysfigure}
     \centering
     \includegraphics[width=0.9\textheight]{correlacion_de_a_pares_bhi}
-    \caption{Correlación de a pares para los distintos índices de homogeneidad biológica presentados para cada uno de los grupos del tratamiento 'Frío' obtenidos con $ds=1$. Se observa que todos los índices tienen una alta correlación entre si.\hl{que son las funciones de distribucion que aparecen}}
+    \caption{Correlación de a pares y distribución para los distintos índices de homogeneidad biológica presentados para cada uno de los grupos del tratamiento 'Frío' obtenidos con $ds=1$. Se observa que todos los índices tienen una alta correlación entre si.}
     \label{fig:correlacion_de_a_pares_bhi}
 \end{sidewaysfigure}
 \clearpage
@@ -86,7 +86,8 @@ Se observa que de los dos grupos de kmeans, solo uno presenta un BHI superior a 
     \begin{subfigure}[t]{0.7\textwidth}
     \centering
     \includegraphics[width=1\textwidth]{bhi_km_ds1_ds4_control1.pdf}
-    \caption{BHI para cada uno de los grupos del tratamiento 'Frío' y control nulo 1. En rojo, el valor medio del BHI, en violeta una desviación estándar por sobre el valor medio y en negro una desviación estandar por debajo del mismo.}
+    \caption{BHI para cada uno de los grupos del tratamiento 'Frío' y control nulo 1. 
+	La curva negra indica 1 $\sigma$, la roja 2 $\sigma$ y la violeta 3 $\sigma$ de la distribución del BHI del control nulo 1.}
     \label{fig:bhi_km_ds1_ds4_control1}
     \end{subfigure}
     \begin{subfigure}[t]{0.7\textwidth}

@@ -15,43 +15,43 @@
 \usepackage{subcaption} %$este paquete permite tener subfiguras
 \usepackage{fancyhdr}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[EL]{\nouppercase\rightmark}
-\fancyhead[OL]{\nouppercase\leftmark}
-\fancyhead[ER,OR]{\thepage}
-
 \DeclareCaptionFormat{myformat}{\fontsize{10}{11}\selectfont#1#2#3}
 \captionsetup{format=myformat}
 
 \newcommand{\paginaenblanco}{\clearpage\mbox{}\newpage}
 
-\title{
-	{\large Análisis y detección de correlaciones en relevamientos transcripcionales de gran escala}\\
-    {Tesis de Licenciatura en Ciencias Físicas}\\
-	{\large Facultad de Ciencias Exactas y Naturales}\\
-	{\large Universidad de Buenos Aires}
-}
-\author{Andrés Rabinovich}
-\date{Marzo 2016}
-
 \begin{document}
 
+%\title{
+%	{\Huge Análisis y detección de correlaciones en relevamientos transcripcionales de gran escala}\\
+%    {Tesis de Licenciatura en Ciencias Físicas}\\
+%	{\large Facultad de Ciencias Exactas y Naturales}\\
+%	{\large Universidad de Buenos Aires}
+%}
+%\author{Andrés Rabinovich}
+%\date{Marzo 2016}
+
 %--------------------DESDE ACA LOS COMENTARIOS-------------------
-\maketitle
+%\maketitle
+\include{titulo}
 \paginaenblanco
-\chapter*{Hoja a completar por los jurados}
-\paginaenblanco
+%\chapter*{Hoja a completar por los jurados}
+%\paginaenblanco
 \include{cap_resumen}
-\paginaenblanco
-\chapter*{Abstract}
-\paginaenblanco
-\chapter*{Dedicatoria}
-\paginaenblanco
+%\paginaenblanco
+\include{cap_abstract}
+%\paginaenblanco
+%\chapter*{Dedicatoria}
+%\paginaenblanco
 
 \tableofcontents
 
 \include{cap_0_motivaciones_y_objetivos}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[EL]{\nouppercase\rightmark}
+\fancyhead[OL]{\nouppercase\leftmark}
+\fancyhead[ER,OR]{\thepage}
 \include{cap_1_introduccion}
 \include{cap_2_materiales_y_metodos}
 \include{cap_3_metodos_de_agrupamiento_de_datos}

@@ -27,7 +27,6 @@
 \newblock \emph{{Yeast Biochemical Pathways. KEGG: Kyoto encyclopedia of genes
   and genomes}}.
 \newblock Nucleic Acids Res \textbf{28} (2000) 27.
-\newline\urlprefix\url{http://pathway.yeastgenome.org/biocyc/}
 
 \bibitem{org.At.tair.db2015}
 \textsc{arabidopsis.org}.
@@ -54,8 +53,6 @@
 \textsc{M.~Babu}.
 \newblock \emph{{An Introduction to Microarray Data Analysis}}.
 \newblock Computational Genomics: Theory and Application  (2004) 225.
-\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/%
-chapter-final.pdf}
 
 \bibitem{Schulze2001}
 \textsc{A.~Schulze}.
@@ -67,8 +64,7 @@ chapter-final.pdf}
 \textsc{arabidopsis.org}.
 \newblock \emph{Microarray data from AtGenExpress}.
 \newblock
-  \url{https://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.%
-jsp}.
+  \url{https://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp}.
 
 \bibitem{Bruckner2009}
 \textsc{A.~Br{\"{u}}ckner} \emph{et~al.}
@@ -103,7 +99,6 @@ jsp}.
   Taxonomy}}.
 \newblock roceedings of the 14th international joint conference on Artificial
   intelligence - Volume 1 - IJCAI'95 \textbf{1} (1995) 6.
-\newline\urlprefix\url{http://arxiv.org/abs/cmp-lg/9511007}
 
 \bibitem{Pesquita2009}
 \textsc{C.~Pesquita} \emph{et~al.}
@@ -136,14 +131,11 @@ jsp}.
   of an ill-posed problem}}.
 \newblock Physica A: Statistical Mechanics and its Applications \textbf{263}
   (1999) 158.
-\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S03784%
-37198004944}
 
 \bibitem{Chen2009}
 \textsc{S.~Chen} \emph{et~al.}
 \newblock \emph{{On the similarity metric and the distance metric}}.
 \newblock Theoretical Computer Science \textbf{410} (2009) 2365.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/j.tcs.2009.02.023}
 
 \bibitem{Kheng2010}
 \textsc{L.~W. Kheng}.
@@ -268,23 +260,17 @@ jsp}.
 \textsc{a.~Clauset} \emph{et~al.}
 \newblock \emph{{Finding community structure in very large networks}}.
 \newblock Phys. Rev. E \textbf{70} (2004) 66111.
-\newline\urlprefix\url{http://prola.aps.org/abstract/PRE/v70/i6/e066111}
 
 \bibitem{Dutkowski2013}
 \textsc{J.~Dutkowski} \emph{et~al.}
 \newblock \emph{{A gene ontology inferred from molecular networks.}}
   \textbf{31} (2013) 38.
-\newline\urlprefix\url{http://www.nature.com/nbt/journal/v31/n1/abs/nbt.2463.h%
-tml$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3654%
-867{\&}tool=pmcentrez{\&}rendertype=abstract}
 
 \bibitem{Datta2006}
 \textsc{S.~Datta}.
 \newblock \emph{{Methods for evaluating clustering algorithms for gene
   expression data using a reference set of functional classes.}}
 \newblock BMC bioinformatics \textbf{7} (2006) 397.
-\newline\urlprefix\url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?art%
-id=1590054{\{}{\&}{\}}tool=pmcentrez{\{}{\&}{\}}rendertype=abstract}
 
 \bibitem{Cristianini2006}
 \textsc{N.~Cristianini} \emph{et~al.}

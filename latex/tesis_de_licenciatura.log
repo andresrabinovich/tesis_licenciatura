@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  12 MAR 2016 11:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  14 MAR 2016 08:08
 entering extended mode
  %&-line parsing enabled.
 **tesis_de_licenciatura.tex
@@ -455,7 +455,17 @@ less on input line 20.
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 22.
 
-(./tesis_de_licenciatura.aux (./cap_8_conclusiones_y_perspectivas.aux))
+(./tesis_de_licenciatura.aux (./cap_resumen.aux)
+(./cap_0_motivaciones_y_objetivos.aux) (./cap_1_introduccion.aux)
+(./cap_2_materiales_y_metodos.aux)
+(./cap_3_metodos_de_agrupamiento_de_datos.aux)
+(./cap_4_analisis_de_datos_transcripcionales.aux) (./cap_5_bhi.aux)
+(./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
+aux) (./cap_7_metrica_mixta.aux
+
+LaTeX Warning: Label `eq:stress' multiply defined.
+
+) (./cap_8_conclusiones_y_perspectivas.aux))
 \openout1 = `tesis_de_licenciatura.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
@@ -561,11 +571,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] [3
 
-] [4
+]
+\openout2 = `cap_resumen.aux'.
 
-] [5
+ (./cap_resumen.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 2--45
 
-] [6
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--45
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--45
+
+ []
+
+[4
+
+
+] [5] [6
+
 
 ] [7
 
@@ -573,9 +611,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] [9
 
-] (./tesis_de_licenciatura.toc [10
+] [10
 
-])
+] (./tesis_de_licenciatura.toc [11
+
+]
+Overfull \hbox (16.36787pt too wide) in paragraph at lines 53--53
+ [][] []\OT1/cmr/m/n/12 Modulaci^^Son de he-te-ro-ge-nei-da-des trans-crip-cio-
+na-les con in-for-ma-ci^^Son biol^^Sogi- 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `tesis_de_licenciatura.toc'.
 
@@ -586,42 +632,65 @@ Package Fancyhdr Warning: \headheight is too small (14.49998pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[12]
 \openout2 = `cap_0_motivaciones_y_objetivos.aux'.
 
  (./cap_0_motivaciones_y_objetivos.tex
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
-[12
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--6
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 8--54
+
+ []
 
 
-]) [13]
+Underfull \hbox (badness 10000) in paragraph at lines 8--54
+
+ []
+
+[13
+
+
+] [14]
 \openout2 = `cap_1_introduccion.aux'.
 
  (./cap_1_introduccion.tex
 Cap\'{\i }tulo 1.
-
-LaTeX Warning: Reference `fig:celula_eucariota' on page 14 undefined on input l
-ine 5.
-
-
-LaTeX Warning: Reference `fig:adn1' on page 14 undefined on input line 6.
-
-<figuras/celula_eucariota.png, id=49, 1361.085pt x 796.9775pt>
+<figuras/celula_eucariota.png, id=53, 1361.085pt x 796.9775pt>
 File: figuras/celula_eucariota.png Graphic file (type png)
 
 <use figuras/celula_eucariota.png>
-<figuras/adn1.png, id=51, 1339.0025pt x 794.97pt>
+<figuras/adn1.png, id=55, 1339.0025pt x 794.97pt>
 File: figuras/adn1.png Graphic file (type png)
  <use figuras/adn1.png>
-Underfull \hbox (badness 10000) in paragraph at lines 5--21
+Underfull \hbox (badness 10000) in paragraph at lines 4--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--20
 
  []
 
@@ -631,176 +700,387 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14
+[15
 
 
 
-]
-
-LaTeX Warning: Reference `fig:adn2' on page 15 undefined on input line 24.
-
-<figuras/adn2.png, id=55, 926.46124pt x 329.23pt>
+] <figuras/adn2.png, id=59, 926.46124pt x 329.23pt>
 File: figuras/adn2.png Graphic file (type png)
  <use figuras/adn2.png>
-<figuras/adn3.png, id=56, 526.96875pt x 614.295pt>
+<figuras/adn3.png, id=60, 526.96875pt x 614.295pt>
 File: figuras/adn3.png Graphic file (type png)
  <use figuras/adn3.png>)
+Underfull \hbox (badness 10000) in paragraph at lines 22--55
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
-[15 <./figuras/celula_eucariota.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 22--55
 
-[16 <./figuras/adn1.png> <./figuras/adn2.png>] [17 <./figuras/adn3.png>]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--55
+
+ []
+
+[16 <./figuras/celula_eucariota.png>] [17 <./figuras/adn1.png> <./figuras/adn2.
+png>] [18 <./figuras/adn3.png>] [19]
 \openout2 = `cap_2_materiales_y_metodos.aux'.
 
-
-(./cap_2_materiales_y_metodos.tex
+ (./cap_2_materiales_y_metodos.tex
 Cap\'{\i }tulo 2.
-<figuras/micromatriz.png, id=71, 1118.1775pt x 806.01125pt>
+<figuras/micromatriz.png, id=79, 1118.1775pt x 806.01125pt>
 File: figuras/micromatriz.png Graphic file (type png)
 
 <use figuras/micromatriz.png>
+Underfull \hbox (badness 10000) in paragraph at lines 5--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--15
+
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18
 
-
-
-] [19 <./figuras/micromatriz.png>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
  []
 
 
-LaTeX Warning: Reference `fig:ai1_lci' on page 21 undefined on input line 52.
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
 
-[21] <figuras/ai1_lci.png, id=90, 1237.62375pt x 773.89125pt>
-File: figuras/ai1_lci.png Graphic file (type png)
-
-<use figuras/ai1_lci.png>
-
-LaTeX Warning: Reference `fig:mapa_kegg' on page 22 undefined on input line 60.
+ []
 
 
-[22 <./figuras/ai1_lci.png>]
-<figuras/mapa_kegg.png, id=98, 497.86pt x 591.20876pt>
+Underfull \hbox (badness 10000) in paragraph at lines 16--20
+
+ []
+
+[20
+
+
+
+] [21 <./figuras/micromatriz.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--32
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
+
+[24] <figuras/mapa_kegg.png, id=101, 497.86pt x 591.20876pt>
 File: figuras/mapa_kegg.png Graphic file (type png)
 
 <use figuras/mapa_kegg.png>
-
-LaTeX Warning: Reference `fig:mapa_kegg' on page 23 undefined on input line 67.
-
-
-[23 <./figuras/mapa_kegg.png>]
-
-LaTeX Warning: Reference `fig:ejemplo_de_go' on page 24 undefined on input line
- 80.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--81
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
 
  []
 
-[24] <figuras/ejemplo_de_go.png, id=107, 682.55pt x 701.62125pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+[25 <./figuras/mapa_kegg.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--76
+
+ []
+
+[26] <figuras/ejemplo_de_go.png, id=109, 682.55pt x 701.62125pt>
 File: figuras/ejemplo_de_go.png Graphic file (type png)
 
 <use figuras/ejemplo_de_go.png>
-
-LaTeX Warning: Reference `tab:tipos_de_anotaciones' on page 25 undefined on inp
-ut line 89.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]\OT1/cmr/m/n/12 Anotaci^^Son (in-fe-ri-da
- []
-
-
-Overfull \hbox (0.98723pt too wide) in paragraph at lines 94--94
+Overfull \hbox (0.98723pt too wide) in paragraph at lines 89--89
 []\OT1/cmr/m/n/12 Siglas| 
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 108--108
-[]\OT1/cmr/m/n/12 Secuencia o si-mi-la-ri-
+Underfull \hbox (badness 2073) in paragraph at lines 103--103
+[]\OT1/cmr/m/n/12 Similaridad es-truc-tu-
  []
 
 
-Underfull \hbox (badness 4479) in paragraph at lines 110--110
+Underfull \hbox (badness 4479) in paragraph at lines 105--105
 []\OT1/cmr/m/n/12 An^^Sali-sis compu-tacio-
  []
 
 
-LaTeX Warning: Reference `fig:codigos_de_evidencia' on page 25 undefined on inp
-ut line 118.
+Underfull \hbox (badness 10000) in paragraph at lines 81--115
 
-[25 <./figuras/ejemplo_de_go.png>]
-<figuras/codigos_de_evidencia.png, id=113, 702.625pt x 702.625pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--115
+
+ []
+
+[27 <./figuras/ejemplo_de_go.png>]
+<figuras/codigos_de_evidencia.png, id=114, 702.625pt x 702.625pt>
 File: figuras/codigos_de_evidencia.png Graphic file (type png)
 
-<use figuras/codigos_de_evidencia.png>) [26 <./figuras/codigos_de_evidencia.png
- (PNG copy)>] [27] [28]
+<use figuras/codigos_de_evidencia.png> [28] [29]) [30 <./figuras/codigos_de_evi
+dencia.png (PNG copy)>]
 \openout2 = `cap_3_metodos_de_agrupamiento_de_datos.aux'.
 
  (./cap_3_metodos_de_agrupamiento_de_datos.tex
 Cap\'{\i }tulo 3.
-[29
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+[31
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 13--17
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[30]
 
-LaTeX Warning: Reference `fig:perfiles_sin_agrupar' on page 31 undefined on inp
-ut line 65.
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
-<figuras/perfiles_sin_agrupar.png, id=132, 702.625pt x 702.625pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--37
+
+ []
+
+[32] [33] <figuras/perfiles_sin_agrupar.png, id=138, 702.625pt x 648.4225pt>
 File: figuras/perfiles_sin_agrupar.png Graphic file (type png)
 
 <use figuras/perfiles_sin_agrupar.png>
-<figuras/perfiles_anti_coregulados.png, id=133, 702.625pt x 702.625pt>
+<figuras/perfiles_anti_coregulados.png, id=139, 702.625pt x 649.42625pt>
 File: figuras/perfiles_anti_coregulados.png Graphic file (type png)
 
 <use figuras/perfiles_anti_coregulados.png>
-<figuras/perfiles_coregulados.png, id=134, 702.625pt x 702.625pt>
+<figuras/perfiles_coregulados.png, id=140, 702.625pt x 650.43pt>
 File: figuras/perfiles_coregulados.png Graphic file (type png)
 
-<use figuras/perfiles_coregulados.png> [31]
+<use figuras/perfiles_coregulados.png>
+Underfull \hbox (badness 10000) in paragraph at lines 66--92
 
-LaTeX Warning: Reference `eq:distancia_correlacion_absoluta' on page 32 undefin
-ed on input line 113.
-
-
-LaTeX Warning: Reference `fig:perfiles_anti_coregulados' on page 32 undefined o
-n input line 113.
+ []
 
 
-LaTeX Warning: Reference `eq:distancia_correlacion' on page 32 undefined on inp
-ut line 114.
+Underfull \hbox (badness 10000) in paragraph at lines 66--92
+
+ []
 
 
-LaTeX Warning: Reference `fig:perfiles_coregulados' on page 32 undefined on inp
-ut line 114.
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
+
+ []
 
 
-LaTeX Warning: Reference `eq:distancia_correlacion' on page 32 undefined on inp
-ut line 115.
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
 
-[32] [33 <./figuras/perfiles_sin_agrupar.png> <./figuras/perfiles_anti_coregula
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--105
+
+ []
+
+[34] [35 <./figuras/perfiles_sin_agrupar.png> <./figuras/perfiles_anti_coregula
 dos.png> <./figuras/perfiles_coregulados.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 113--117
 
-LaTeX Warning: Reference `fig:dag' on page 34 undefined on input line 128.
+ []
 
-<figuras/dag.png, id=149, 454.69875pt x 313.17pt>
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+<figuras/dag.png, id=154, 454.69875pt x 313.17pt>
 File: figuras/dag.png Graphic file (type png)
  <use figuras/dag.png>
-Overfull \hbox (26.13966pt too wide) in paragraph at lines 126--140
+Underfull \hbox (badness 10000) in paragraph at lines 127--141
+
+ []
+
+
+Overfull \hbox (26.13966pt too wide) in paragraph at lines 127--141
 \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 R; c[]; :::; c[]\OMS/cmsy/m/n/12 g$ \OT1/cmr
 /m/n/12 y con 5 en-ti-da-des ma-pea-das (ge-nes ano-ta-dos): $\OML/cmm/m/it/12 
 g[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT
@@ -813,55 +1093,143 @@ r/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; r\OMS/cmsy/m/n
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[34
-
-] [35 <./figuras/dag.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 164--167
+Underfull \hbox (badness 10000) in paragraph at lines 127--141
 
  []
 
-[36]
 
-LaTeX Warning: Reference `fig:ejemplo_k_means' on page 37 undefined on input li
-ne 178.
+Underfull \hbox (badness 10000) in paragraph at lines 127--141
 
-<figuras/ejemplo_k_means.png, id=162, 702.625pt x 401.5pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--141
+
+ []
+
+[37
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 144--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--149
+
+ []
+
+[38 <./figuras/dag.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--168
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+
+ []
+
+<figuras/ejemplo_k_means.png, id=168, 702.625pt x 401.5pt>
 File: figuras/ejemplo_k_means.png Graphic file (type png)
 
-<use figuras/ejemplo_k_means.png> [37 <./figuras/ejemplo_k_means.png (PNG copy)
->] [38]
+<use figuras/ejemplo_k_means.png>
+Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
-LaTeX Warning: Reference `fig:agrupamiento_jerarquico' on page 39 undefined on 
-input line 212.
+ []
 
-<figuras/agrupamiento_jerarquico.png, id=169, 702.625pt x 702.625pt>
+[40 <./figuras/ejemplo_k_means.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--203
+
+ []
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
+
+ []
+
+<figuras/agrupamiento_jerarquico.png, id=175, 702.625pt x 350.30875pt>
 File: figuras/agrupamiento_jerarquico.png Graphic file (type png)
 
-<use figuras/agrupamiento_jerarquico.png> [39 <./figuras/agrupamiento_jerarquic
+<use figuras/agrupamiento_jerarquico.png> [42 <./figuras/agrupamiento_jerarquic
 o.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:corte_arbol_estatico' on page 40 undefined on inp
-ut line 224.
-
-<figuras/corte_arbol_estatico.png, id=174, 702.625pt x 702.625pt>
+<figuras/corte_arbol_estatico.png, id=181, 702.625pt x 702.625pt>
 File: figuras/corte_arbol_estatico.png Graphic file (type png)
 
-<use figuras/corte_arbol_estatico.png> [40 <./figuras/corte_arbol_estatico.png 
-(PNG copy)>] [41]
-<figuras/cut_tree_dynamic_ejemplo.png, id=181, 969.6225pt x 413.545pt>
+<use figuras/corte_arbol_estatico.png>
+Underfull \hbox (badness 10000) in paragraph at lines 224--233
+
+ []
+
+[43 <./figuras/corte_arbol_estatico.png (PNG copy)>] [44]
+<figuras/cut_tree_dynamic_ejemplo.png, id=189, 969.6225pt x 413.545pt>
 File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
 
 <use figuras/cut_tree_dynamic_ejemplo.png>
+Underfull \hbox (badness 10000) in paragraph at lines 249--260
 
-LaTeX Warning: Reference `fig:cut_tree_dynamic_ejemplo' on page 42 undefined on
- input line 256.
+ []
 
 
-LaTeX Warning: Reference `sec:redes' on page 42 undefined on input line 264.
+Underfull \hbox (badness 10000) in paragraph at lines 249--260
 
-[42 <./figuras/cut_tree_dynamic_ejemplo.png>]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
+
+ []
+
+[45 <./figuras/cut_tree_dynamic_ejemplo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--276
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 273--276
 
  []
@@ -871,56 +1239,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--57
 
  []
 
-[43]
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--57
+
+ []
+
+[46] [47]
 \openout2 = `cap_4_analisis_de_datos_transcripcionales.aux'.
 
  (./cap_4_analisis_de_datos_transcripcionales.tex
 Cap\'{\i }tulo 4.
 
-LaTeX Warning: Reference `sec:wiegel' on page 44 undefined on input line 2.
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
 
 
-LaTeX Warning: Reference `sec:agrupamientos_no_jerarquicos' on page 44 undefine
-d on input line 2.
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
+ []
 
-LaTeX Warning: Reference `sec:grupos_en_agrupamiento_jerarquico' on page 44 und
-efined on input line 2.
-
-
-LaTeX Warning: Reference `materiales_y_metodos' on page 44 undefined on input l
-ine 2.
-
-
-LaTeX Warning: Reference `sec:go' on page 44 undefined on input line 4.
-
-
-LaTeX Warning: Reference `sec:redes' on page 44 undefined on input line 4.
-
-
-LaTeX Warning: Reference `sec:kegg' on page 44 undefined on input line 4.
-
-
-LaTeX Warning: Reference `fig:densidad_de_desviacion_estandar' on page 44 undef
-ined on input line 8.
-
-
-LaTeX Warning: Reference `fig:densidad_para_niveles' on page 44 undefined on in
-put line 9.
-
-<figuras/densidad_de_desviacion_estandar.pdf, id=190, 614.295pt x 794.97pt>
+<figuras/densidad_de_desviacion_estandar.pdf, id=200, 614.295pt x 794.97pt>
 File: figuras/densidad_de_desviacion_estandar.pdf Graphic file (type pdf)
 
 <use figuras/densidad_de_desviacion_estandar.pdf>
-<figuras/densidad_para_niveles.pdf, id=191, 614.295pt x 794.97pt>
+<figuras/densidad_para_niveles.pdf, id=201, 614.295pt x 794.97pt>
 File: figuras/densidad_para_niveles.pdf Graphic file (type pdf)
 
 <use figuras/densidad_para_niveles.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 7--28
 
-LaTeX Warning: Reference `tabla:genes_por_tratamiento' on page 44 undefined on 
-input line 26.
+ []
 
-[44
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--28
+
+ []
+
+[48
 
 
 
@@ -931,187 +1297,274 @@ Package Fancyhdr Warning: \headheight is too small (15.71667pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45 <./figuras/densidad_de_desviacion_estandar.pdf> <./figuras/densidad_para_ni
+[49 <./figuras/densidad_de_desviacion_estandar.pdf> <./figuras/densidad_para_ni
 veles.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
-LaTeX Warning: Reference `fig:barrido_k_ch' on page 46 undefined on input line 
-80.
+ []
 
 
-LaTeX Warning: Reference `fig:barrido_k_dunn' on page 46 undefined on input lin
-e 80.
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
 
-[46] [47] <figuras/barrido_k_ch.png, id=216, 1204.5pt x 966.61125pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
+
+ []
+
+[50] [51] <figuras/barrido_k_ch.png, id=227, 1204.5pt x 966.61125pt>
 File: figuras/barrido_k_ch.png Graphic file (type png)
 
 <use figuras/barrido_k_ch.png>
-<figuras/barrido_k_dunn.png, id=217, 1204.5pt x 966.61125pt>
+<figuras/barrido_k_dunn.png, id=228, 1204.5pt x 966.61125pt>
 File: figuras/barrido_k_dunn.png Graphic file (type png)
 
 <use figuras/barrido_k_dunn.png>
-
-LaTeX Warning: Reference `fig:perfiles_k_means' on page 48 undefined on input l
-ine 98.
-
-<figuras/perfiles_k_means.png, id=218, 1213.53375pt x 744.7825pt>
+<figuras/perfiles_k_means.png, id=229, 1213.53375pt x 744.7825pt>
 File: figuras/perfiles_k_means.png Graphic file (type png)
 
-<use figuras/perfiles_k_means.png> [48
+<use figuras/perfiles_k_means.png> [52
 
  <./figuras/barrido_k_ch.png (PNG copy)> <./figuras/barrido_k_dunn.png (PNG cop
 y)>]
 
-LaTeX Warning: Reference `fig:perfiles_ds_1' on page 49 undefined on input line
- 107.
+LaTeX Warning: Reference `ref:histograma_ds_1' on page 53 undefined on input li
+ne 107.
 
 
-LaTeX Warning: Reference `fig:perfiles_ds_4' on page 49 undefined on input line
- 107.
+LaTeX Warning: Reference `ref:histograma_ds_4' on page 53 undefined on input li
+ne 107.
 
-<figuras/perfiles_ds_1.pdf, id=225, 614.295pt x 794.97pt>
+<figuras/histograma_ds_1.pdf, id=235, 794.97pt x 614.295pt>
+File: figuras/histograma_ds_1.pdf Graphic file (type pdf)
+
+<use figuras/histograma_ds_1.pdf>
+<figuras/histograma_ds_4.pdf, id=236, 794.97pt x 614.295pt>
+File: figuras/histograma_ds_4.pdf Graphic file (type pdf)
+
+<use figuras/histograma_ds_4.pdf>
+<figuras/perfiles_ds_1.pdf, id=237, 614.295pt x 794.97pt>
 File: figuras/perfiles_ds_1.pdf Graphic file (type pdf)
 
 <use figuras/perfiles_ds_1.pdf>
-<figuras/perfiles_ds_4.pdf, id=226, 614.295pt x 794.97pt>
+<figuras/perfiles_ds_4.pdf, id=238, 614.295pt x 794.97pt>
 File: figuras/perfiles_ds_4.pdf Graphic file (type pdf)
 
 <use figuras/perfiles_ds_4.pdf>
 
-LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 49 und
-efined on input line 126.
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_1' on page 53 und
+efined on input line 142.
 
 
-LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 49 und
-efined on input line 126.
+LaTeX Warning: Reference `ref:correlacion_media_por_tamano_ds_4' on page 53 und
+efined on input line 142.
 
-[49 <./figuras/perfiles_k_means.png (PNG copy)>]
-<figuras/correlacion_media_por_tamano_ds_1.pdf, id=230, 614.295pt x 794.97pt>
+<figuras/correlacion_media_por_tamano_ds_1.pdf, id=239, 614.295pt x 794.97pt>
 File: figuras/correlacion_media_por_tamano_ds_1.pdf Graphic file (type pdf)
 
 <use figuras/correlacion_media_por_tamano_ds_1.pdf>
-<figuras/correlacion_media_por_tamano_ds_4.pdf, id=231, 614.295pt x 794.97pt>
+<figuras/correlacion_media_por_tamano_ds_4.pdf, id=240, 614.295pt x 794.97pt>
 File: figuras/correlacion_media_por_tamano_ds_4.pdf Graphic file (type pdf)
 
 <use figuras/correlacion_media_por_tamano_ds_4.pdf>
-<figuras/histograma_ds_1.pdf, id=232, 614.295pt x 794.97pt>
-File: figuras/histograma_ds_1.pdf Graphic file (type pdf)
-
-<use figuras/histograma_ds_1.pdf>
-<figuras/histograma_ds_4.pdf, id=233, 614.295pt x 794.97pt>
-File: figuras/histograma_ds_4.pdf Graphic file (type pdf)
-
-<use figuras/histograma_ds_4.pdf>
-
-LaTeX Warning: Reference `ref:histograma_ds_1' on page 50 undefined on input li
-ne 158.
-
-
-LaTeX Warning: Reference `ref:histograma_ds_4' on page 50 undefined on input li
-ne 158.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
+Underfull \hbox (badness 10000) in paragraph at lines 107--161
 
  []
 
 
-LaTeX Warning: Reference `fig:ecdf_k_ds1_ds4' on page 50 undefined on input lin
-e 161.
+Underfull \hbox (badness 10000) in paragraph at lines 107--161
 
-<figuras/ecdf_k_ds1_ds4.pdf, id=234, 614.295pt x 794.97pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--161
+
+ []
+
+[53 <./figuras/perfiles_k_means.png (PNG copy)>] [54] [55 <./figuras/histograma
+_ds_1.pdf> <./figuras/histograma_ds_4.pdf>] [56 <./figuras/perfiles_ds_1.pdf> <
+./figuras/perfiles_ds_4.pdf>] [57 <./figuras/correlacion_media_por_tamano_ds_1.
+pdf> <./figuras/correlacion_media_por_tamano_ds_4.pdf>]
+<figuras/ecdf_k_ds1_ds4.pdf, id=299, 614.295pt x 794.97pt>
 File: figuras/ecdf_k_ds1_ds4.pdf Graphic file (type pdf)
 
 <use figuras/ecdf_k_ds1_ds4.pdf>
-
-LaTeX Warning: Reference `fig:fraccion_de_km_en_ds1_en_ds4' on page 50 undefine
-d on input line 168.
-
-<figuras/fraccion_de_km_en_ds1_en_ds4.pdf, id=235, 614.295pt x 794.97pt>
+<figuras/fraccion_de_km_en_ds1_en_ds4.pdf, id=300, 614.295pt x 794.97pt>
 File: figuras/fraccion_de_km_en_ds1_en_ds4.pdf Graphic file (type pdf)
 
-<use figuras/fraccion_de_km_en_ds1_en_ds4.pdf> [50 <./figuras/perfiles_ds_1.pdf
-> <./figuras/perfiles_ds_4.pdf>]
+<use figuras/fraccion_de_km_en_ds1_en_ds4.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
 
  []
 
-) [51] [52 <./figuras/correlacion_media_por_tamano_ds_1.pdf> <./figuras/correla
-cion_media_por_tamano_ds_4.pdf> <./figuras/histograma_ds_1.pdf> <./figuras/hist
-ograma_ds_4.pdf>] [53 <./figuras/ecdf_k_ds1_ds4.pdf>] [54 <./figuras/fraccion_d
-e_km_en_ds1_en_ds4.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+
+ []
+
+[58
+
+] [59 <./figuras/ecdf_k_ds1_ds4.pdf>] [60 <./figuras/fraccion_de_km_en_ds1_en_d
+s4.pdf>]) [61
+
+]
 \openout2 = `cap_5_bhi.aux'.
 
  (./cap_5_bhi.tex
 Cap\'{\i }tulo 5.
 
-LaTeX Warning: Reference `sec:redes' on page 55 undefined on input line 12.
-
-
-LaTeX Warning: Reference `sec:comunidades' on page 55 undefined on input line 1
-2.
-
-
-LaTeX Warning: Reference `fig:interacting_densities' on page 55 undefined on in
+LaTeX Warning: Reference `fig:interacting_densities' on page 62 undefined on in
 put line 14.
 
-<figuras/interacting_densities_cc.pdf, id=304, 614.295pt x 794.97pt>
+<figuras/interacting_densities_cc.pdf, id=326, 614.295pt x 794.97pt>
 File: figuras/interacting_densities_cc.pdf Graphic file (type pdf)
 
 <use figuras/interacting_densities_cc.pdf>
-<figuras/interacting_densities_bpa.pdf, id=305, 614.295pt x 794.97pt>
+<figuras/interacting_densities_bpa.pdf, id=327, 614.295pt x 794.97pt>
 File: figuras/interacting_densities_bpa.pdf Graphic file (type pdf)
 
 <use figuras/interacting_densities_bpa.pdf>
-<figuras/interacting_densities_bpb.pdf, id=306, 614.295pt x 794.97pt>
+<figuras/interacting_densities_bpb.pdf, id=328, 614.295pt x 794.97pt>
 File: figuras/interacting_densities_bpb.pdf Graphic file (type pdf)
 
-<use figuras/interacting_densities_bpb.pdf> [55
+<use figuras/interacting_densities_bpb.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 8--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--35
+
+ []
+
+[62
 
 
 
-] [56]
+] [63]
 
-LaTeX Warning: Text page 57 contains only floats.
+LaTeX Warning: Text page 64 contains only floats.
 
-[57 <./figuras/interacting_densities_cc.pdf> <./figuras/interacting_densities_b
+[64 <./figuras/interacting_densities_cc.pdf> <./figuras/interacting_densities_b
 pa.pdf> <./figuras/interacting_densities_bpb.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
 
-LaTeX Warning: Reference `fig:correlacion_de_a_pares_bhi' on page 58 undefined 
-on input line 74.
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
-<figuras/correlacion_de_a_pares_bhi.png, id=334, 1204.5pt x 579.16376pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+
+ []
+
+[65] <figuras/correlacion_de_a_pares_bhi.png, id=359, 1204.5pt x 579.16376pt>
 File: figuras/correlacion_de_a_pares_bhi.png Graphic file (type png)
 
-<use figuras/correlacion_de_a_pares_bhi.png> [58]
+<use figuras/correlacion_de_a_pares_bhi.png>
+Underfull \hbox (badness 10000) in paragraph at lines 69--80
 
-LaTeX Warning: Reference `fig:bhi_km_ds1_ds4_control1' on page 59 undefined on 
-input line 84.
+ []
 
 
-LaTeX Warning: Reference `fig:bhi_km_ds1_ds4_control2' on page 59 undefined on 
-input line 84.
+Underfull \hbox (badness 10000) in paragraph at lines 69--80
 
-<figuras/bhi_km_ds1_ds4_control1.pdf, id=338, 794.97pt x 614.295pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--80
+
+ []
+
+[66] [67 <./figuras/correlacion_de_a_pares_bhi.png (PNG copy)>]
+<figuras/bhi_km_ds1_ds4_control1.pdf, id=368, 794.97pt x 614.295pt>
 File: figuras/bhi_km_ds1_ds4_control1.pdf Graphic file (type pdf)
 
 <use figuras/bhi_km_ds1_ds4_control1.pdf>
-<figuras/bhi_km_ds1_ds4_control2.pdf, id=339, 794.97pt x 614.295pt>
+<figuras/bhi_km_ds1_ds4_control2.pdf, id=369, 794.97pt x 614.295pt>
 File: figuras/bhi_km_ds1_ds4_control2.pdf Graphic file (type pdf)
 
 <use figuras/bhi_km_ds1_ds4_control2.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 82--100
 
-LaTeX Warning: Float too large for page by 43.6898pt on input line 101.
+ []
 
-) [59] [60 <./figuras/correlacion_de_a_pares_bhi.png (PNG copy)>] [61] [62 <./f
-iguras/bhi_km_ds1_ds4_control1.pdf> <./figuras/bhi_km_ds1_ds4_control2.pdf>]
+)
+Underfull \hbox (badness 10000) in paragraph at lines 101--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--59
+
+ []
+
+[68
+
+]
+
+LaTeX Warning: Text page 69 contains only floats.
+
+[69 <./figuras/bhi_km_ds1_ds4_control1.pdf> <./figuras/bhi_km_ds1_ds4_control2.
+pdf>]
 \openout2 = `cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_
 expresion.aux'.
 
@@ -1119,278 +1572,497 @@ expresion.aux'.
 (./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
 tex
 Cap\'{\i }tulo 6.
-[63
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--17
+
+ []
+
+[70
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
 
-LaTeX Warning: Reference `eq:sim_rcmax' on page 64 undefined on input line 35.
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
 
 
-LaTeX Warning: Reference `eq:matriz_corrida' on page 64 undefined on input line
- 35.
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
 
 
-LaTeX Warning: Reference `fig:kta_global_cc' on page 64 undefined on input line
- 36.
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
+
+ []
 
 
-LaTeX Warning: Reference `fig:kta_global_bpa' on page 64 undefined on input lin
-e 36.
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
 
+ []
 
-LaTeX Warning: Reference `fig:kta_global_bpb' on page 64 undefined on input lin
-e 36.
-
-[64] <figuras/kta_global_cc.pdf, id=373, 794.97pt x 614.295pt>
+[71] <figuras/kta_global_cc.pdf, id=395, 794.97pt x 614.295pt>
 File: figuras/kta_global_cc.pdf Graphic file (type pdf)
 
 <use figuras/kta_global_cc.pdf>
-<figuras/kta_global_bpa.pdf, id=374, 794.97pt x 614.295pt>
+<figuras/kta_global_bpa.pdf, id=396, 794.97pt x 614.295pt>
 File: figuras/kta_global_bpa.pdf Graphic file (type pdf)
 
-<use figuras/kta_global_bpa.pdf>
-<figuras/kta_global_bpb.pdf, id=375, 794.97pt x 614.295pt>
+<use figuras/kta_global_bpa.pdf> [72 <./figuras/kta_global_cc.pdf>]
+<figuras/kta_global_bpb.pdf, id=407, 794.97pt x 614.295pt>
 File: figuras/kta_global_bpb.pdf Graphic file (type pdf)
 
-<use figuras/kta_global_bpb.pdf> [65 <./figuras/kta_global_cc.pdf> <./figuras/k
-ta_global_bpa.pdf>]
+<use figuras/kta_global_bpb.pdf>
 Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
-[66 <./figuras/kta_global_bpb.pdf>]
 
-LaTeX Warning: Reference `fig:erdos_renyi_vs_30kmnn' on page 67 undefined on in
-put line 61.
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
 
 
-LaTeX Warning: Reference `fig:betweenness_er_30_conf' on page 67 undefined on i
-nput line 66.
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
-<figuras/erdos_renyi_vs_30kmnn.pdf, id=401, 794.97pt x 614.295pt>
+ []
+
+[73 <./figuras/kta_global_bpa.pdf> <./figuras/kta_global_bpb.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+[74] <figuras/erdos_renyi_vs_30kmnn.pdf, id=426, 794.97pt x 614.295pt>
 File: figuras/erdos_renyi_vs_30kmnn.pdf Graphic file (type pdf)
 
 <use figuras/erdos_renyi_vs_30kmnn.pdf>
-<figuras/betweenness_er_30_conf.pdf, id=402, 794.97pt x 614.295pt>
+<figuras/betweenness_er_30_conf.pdf, id=427, 794.97pt x 614.295pt>
 File: figuras/betweenness_er_30_conf.pdf Graphic file (type pdf)
 
-<use figuras/betweenness_er_30_conf.pdf> [67]
+<use figuras/betweenness_er_30_conf.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 63--84
 
-LaTeX Warning: Reference `fig:nx_vs_ny' on page 68 undefined on input line 87.
+ []
 
 
-LaTeX Warning: Reference `fig:wy_vs_wynanotados' on page 68 undefined on input 
-line 88.
+Underfull \hbox (badness 10000) in paragraph at lines 63--84
 
-<figuras/nx_vs_ny.pdf, id=406, 794.97pt x 614.295pt>
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--84
+
+ []
+
+[75] [76 <./figuras/erdos_renyi_vs_30kmnn.pdf> <./figuras/betweenness_er_30_con
+f.pdf>] <figuras/nx_vs_ny.pdf, id=454, 794.97pt x 614.295pt>
 File: figuras/nx_vs_ny.pdf Graphic file (type pdf)
 
 <use figuras/nx_vs_ny.pdf>
-<figuras/wy_vs_wynanotados.pdf, id=407, 794.97pt x 614.295pt>
+<figuras/wy_vs_wynanotados.pdf, id=455, 794.97pt x 614.295pt>
 File: figuras/wy_vs_wynanotados.pdf Graphic file (type pdf)
 
 <use figuras/wy_vs_wynanotados.pdf>
-<figuras/lktaanotados_vs_wnyanotados.pdf, id=408, 794.97pt x 614.295pt>
+<figuras/lktaanotados_vs_wnyanotados.pdf, id=456, 794.97pt x 614.295pt>
 File: figuras/lktaanotados_vs_wnyanotados.pdf Graphic file (type pdf)
 
 <use figuras/lktaanotados_vs_wnyanotados.pdf>
-<figuras/lktaanotados_vs_nyanotados.pdf, id=409, 794.97pt x 614.295pt>
+<figuras/lktaanotados_vs_nyanotados.pdf, id=457, 794.97pt x 614.295pt>
 File: figuras/lktaanotados_vs_nyanotados.pdf Graphic file (type pdf)
 
 <use figuras/lktaanotados_vs_nyanotados.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 86--119
 
-LaTeX Warning: Reference `fig:lktaanotados_vs_wnyanotados' on page 68 undefined
- on input line 118.
+ []
 
 
-LaTeX Warning: Reference `fig:lktaanotados_vs_nyanotados' on page 68 undefined 
-on input line 118.
+Underfull \hbox (badness 10000) in paragraph at lines 86--119
 
-) [68] [69] [70 <./figuras/erdos_renyi_vs_30kmnn.pdf> <./figuras/betweenness_er
-_30_conf.pdf>] [71 <./figuras/nx_vs_ny.pdf> <./figuras/wy_vs_wynanotados.pdf> <
-./figuras/lktaanotados_vs_wnyanotados.pdf> <./figuras/lktaanotados_vs_nyanotado
-s.pdf>]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--119
+
+ []
+
+) [77
+
+] [78 <./figuras/nx_vs_ny.pdf> <./figuras/wy_vs_wynanotados.pdf> <./figuras/lkt
+aanotados_vs_wnyanotados.pdf> <./figuras/lktaanotados_vs_nyanotados.pdf>]
 \openout2 = `cap_7_metrica_mixta.aux'.
 
- (./cap_7_metrica_mixta.tex
+
+(./cap_7_metrica_mixta.tex
 Cap\'{\i }tulo 7.
-[72
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+[79
 
 
 
-]
+] <figuras/distribucion_strength_beta_1.pdf, id=492, 794.97pt x 614.295pt>
+File: figuras/distribucion_strength_beta_1.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:distribucion_strenght_beta_1' on page 73 undefine
-d on input line 30.
+<use figuras/distribucion_strength_beta_1.pdf>
+<figuras/distribucion_strength_beta_4.pdf, id=493, 794.97pt x 614.295pt>
+File: figuras/distribucion_strength_beta_4.pdf Graphic file (type pdf)
 
-<figuras/distribucion_strenght_beta_1.pdf, id=470, 794.97pt x 614.295pt>
-File: figuras/distribucion_strenght_beta_1.pdf Graphic file (type pdf)
+<use figuras/distribucion_strength_beta_4.pdf>
 
-<use figuras/distribucion_strenght_beta_1.pdf>
-<figuras/distribucion_strenght_beta_4.pdf, id=471, 794.97pt x 614.295pt>
-File: figuras/distribucion_strenght_beta_4.pdf Graphic file (type pdf)
-
-<use figuras/distribucion_strenght_beta_4.pdf>
-
-LaTeX Warning: Reference `eq:pesos_beta' on page 73 undefined on input line 47.
+LaTeX Warning: Reference `eq:pesos_beta' on page 80 undefined on input line 47.
 
 
 
-LaTeX Warning: Reference `fig:distribucion_strenght_beta_4' on page 73 undefine
-d on input line 47.
+Underfull \hbox (badness 10000) in paragraph at lines 29--48
+
+ []
 
 
-LaTeX Warning: Reference `fig:distribucion_de_stress' on page 73 undefined on i
-nput line 50.
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
-[73] <figuras/distribucion_de_stress.png, id=475, 1204.5pt x 1080.035pt>
+ []
+
+[80] <figuras/distribucion_de_stress.png, id=497, 1204.5pt x 1080.035pt>
 File: figuras/distribucion_de_stress.png Graphic file (type png)
 
-<use figuras/distribucion_de_stress.png> [74 <./figuras/distribucion_strenght_b
-eta_1.pdf> <./figuras/distribucion_strenght_beta_4.pdf>]
+<use figuras/distribucion_de_stress.png> [81 <./figuras/distribucion_strength_b
+eta_1.pdf> <./figuras/distribucion_strength_beta_4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
 
-LaTeX Warning: Reference `subsec:control_nulo' on page 75 undefined on input li
-ne 61.
-
-
-LaTeX Warning: Reference `fig:metodos_mixtos_grupo_2' on page 75 undefined on i
-nput line 64.
-
-
-LaTeX Warning: Reference `fig:metodos_mixtos_grupo_9' on page 75 undefined on i
-nput line 64.
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 59--65
 
  []
 
-[75 <./figuras/distribucion_de_stress.png (PNG copy)>]
-<figuras/metodos_mixtos_grupo_2.png, id=495, 1204.5pt x 1080.035pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--65
+
+ []
+
+[82 <./figuras/distribucion_de_stress.png (PNG copy)>] [83]
+<figuras/metodos_mixtos_grupo_2.png, id=521, 1204.5pt x 1080.035pt>
 File: figuras/metodos_mixtos_grupo_2.png Graphic file (type png)
 
-<use figuras/metodos_mixtos_grupo_2.png> [76]
-<figuras/metodos_mixtos_grupo_9.png, id=499, 1204.5pt x 1080.035pt>
+<use figuras/metodos_mixtos_grupo_2.png>
+<figuras/metodos_mixtos_grupo_9.png, id=522, 1204.5pt x 1080.035pt>
 File: figuras/metodos_mixtos_grupo_9.png Graphic file (type png)
 
-<use figuras/metodos_mixtos_grupo_9.png> [77 <./figuras/metodos_mixtos_grupo_2.
-png (PNG copy)>]
+<use figuras/metodos_mixtos_grupo_9.png> [84 <./figuras/metodos_mixtos_grupo_2.
+png (PNG copy)>] [85 <./figuras/metodos_mixtos_grupo_9.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
-LaTeX Warning: Reference `fig:bhi_nuevo_vs_bhi_original' on page 78 undefined o
-n input line 77.
+ []
 
-[78 <./figuras/metodos_mixtos_grupo_9.png (PNG copy)>]
-<figuras/bhi_nuevo_vs_bhi_original.pdf, id=507, 794.97pt x 614.295pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
+
+ []
+
+<figuras/bhi_nuevo_vs_bhi_original.pdf, id=530, 794.97pt x 614.295pt>
 File: figuras/bhi_nuevo_vs_bhi_original.pdf Graphic file (type pdf)
 
-<use figuras/bhi_nuevo_vs_bhi_original.pdf>
-
-LaTeX Warning: Reference `fig:metodos_mixtos_2_6_13' on page 79 undefined on in
-put line 86.
+<use figuras/bhi_nuevo_vs_bhi_original.pdf> [86
 
 
-LaTeX Warning: Reference `fig:fisher_grupo_2' on page 79 undefined on input lin
-e 86.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
+
+ []
 
 
-LaTeX Warning: Reference `fig:fisher_grupo_6' on page 79 undefined on input lin
-e 86.
+Underfull \hbox (badness 10000) in paragraph at lines 90--93
 
+ []
 
-LaTeX Warning: Reference `fig:fisher_grupo_13' on page 79 undefined on input li
-ne 86.
-
-<figuras/metodos_mixtos_2_6_13.pdf, id=508, 578.16pt x 722.7pt>
+<figuras/metodos_mixtos_2_6_13.pdf, id=534, 578.16pt x 722.7pt>
 File: figuras/metodos_mixtos_2_6_13.pdf Graphic file (type pdf)
 
-<use figuras/metodos_mixtos_2_6_13.pdf> [79 <./figuras/bhi_nuevo_vs_bhi_origina
-l.pdf>] [80 <./figuras/metodos_mixtos_2_6_13.pdf>]
-<figuras/fisher_grupo_2.pdf, id=527, 746.79pt x 643.40375pt>
+<use figuras/metodos_mixtos_2_6_13.pdf> [87 <./figuras/bhi_nuevo_vs_bhi_origina
+l.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+
+ []
+
+[88 <./figuras/metodos_mixtos_2_6_13.pdf>]
+<figuras/fisher_grupo_2.pdf, id=553, 746.79pt x 643.40375pt>
 File: figuras/fisher_grupo_2.pdf Graphic file (type pdf)
 
 <use figuras/fisher_grupo_2.pdf>
-<figuras/fisher_grupo_6.pdf, id=528, 723.70375pt x 643.40375pt>
+<figuras/fisher_grupo_6.pdf, id=554, 723.70375pt x 643.40375pt>
 File: figuras/fisher_grupo_6.pdf Graphic file (type pdf)
 
-<use figuras/fisher_grupo_6.pdf> [81 <./figuras/fisher_grupo_2.pdf>]
-<figuras/fisher_grupo_13.pdf, id=540, 542.025pt x 477.785pt>
+<use figuras/fisher_grupo_6.pdf>
+<figuras/fisher_grupo_13.pdf, id=555, 542.025pt x 477.785pt>
 File: figuras/fisher_grupo_13.pdf Graphic file (type pdf)
 
-<use figuras/fisher_grupo_13.pdf> [82 <./figuras/fisher_grupo_6.pdf>] [83 <./fi
-guras/fisher_grupo_13.pdf>]) [84]
+<use figuras/fisher_grupo_13.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--135
+
+ []
+
+[89]) [90] [91 <./figuras/fisher_grupo_2.pdf>] [92 <./figuras/fisher_grupo_6.pd
+f>] [93 <./figuras/fisher_grupo_13.pdf>]
 \openout2 = `cap_8_conclusiones_y_perspectivas.aux'.
 
- (./cap_8_conclusiones_y_perspectivas.tex
+
+(./cap_8_conclusiones_y_perspectivas.tex
 Cap\'{\i }tulo 8.
 
-LaTeX Warning: Reference `eq:ccp' on page 85 undefined on input line 3.
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
 
 
-LaTeX Warning: Reference `eq:similaridad_de_correlacion' on page 85 undefined o
-n input line 10.
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
 
 
-LaTeX Warning: Reference `eq:sim_rcmax' on page 85 undefined on input line 10.
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
 
 
-LaTeX Warning: Reference `eq:stress' on page 85 undefined on input line 12.
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
 
-[85
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--17
+
+ []
+
+[94
 
 
 
-]) [86] (./tesis_de_licenciatura.bbl
-Overfull \hbox (24.12828pt too wide) in paragraph at lines 47--51
+] [95]) [96] (./tesis_de_licenciatura.bbl
+Overfull \hbox (24.12828pt too wide) in paragraph at lines 54--59
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.mrc-lmb.cam.ac.uk/genomes/madan
 m/microarray/chapter-final.pdf 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--63
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
 []\OT1/cmr/m/sc/12 arabidopsis.org\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 Mi-cro-ar
 ray da-ta from At-Ge-nEx-press\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (12.33537pt too wide) in paragraph at lines 59--63
+Overfull \hbox (12.33537pt too wide) in paragraph at lines 67--72
 \OT1/cmtt/m/n/12 https://www.arabidopsis.org/portals/expression/microarray/ATGe
 nExpress.jsp\OT1/cmr/m/n/12 . 
  []
 
-[87
+[97
 
 
 
-] [88]
-Overfull \hbox (567.35356pt too wide) in paragraph at lines 271--275
+] [98]
+Overfull \hbox (567.35356pt too wide) in paragraph at lines 274--280
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.nature.com/nbt/journal/v31/n1/a
 bs/nbt.2463.html$\OMS/cmsy/m/n/12 n$\OT1/cmtt/m/n/12 nhttp://www.pubmedcentral.
 nih.gov/articlerender.fcgi?artid=3654867&tool=pmcentrez&rendertype=abstract 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 281
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 287
 .
 (/usr/share/texmf/tex/latex/R/tex/latex/omscmtt.fd
 File: omscmtt.fd 
 )
 LaTeX Font Info:    Font shape `OMS/cmtt/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 281.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 287.
 
-Overfull \hbox (221.02843pt too wide) in paragraph at lines 277--282
+Overfull \hbox (221.02843pt too wide) in paragraph at lines 282--288
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.pubmedcentral.nih.gov/articlere
 nder.fcgi?artid=1590054\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/12 g\O
 T1/cmtt/m/n/12 tool=pmcentrez\OMS/cmsy/m/n/12 f\OT1/cmtt/m/n/12 &\OMS/cmsy/m/n/
 12 g\OT1/cmtt/m/n/12 rendertype=abstract 
  []
 
-[89]) [90] (./tesis_de_licenciatura.aux (./cap_0_motivaciones_y_objetivos.aux)
-(./cap_1_introduccion.aux) (./cap_2_materiales_y_metodos.aux)
+[99]) [100] (./tesis_de_licenciatura.aux (./cap_resumen.aux)
+(./cap_0_motivaciones_y_objetivos.aux) (./cap_1_introduccion.aux)
+(./cap_2_materiales_y_metodos.aux)
 (./cap_3_metodos_de_agrupamiento_de_datos.aux)
 (./cap_4_analisis_de_datos_transcripcionales.aux) (./cap_5_bhi.aux)
 (./cap_6_coherencia_entre_la_metrica_transcripcional_y_el_espacio_de_expresion.
@@ -1399,17 +2071,17 @@ aux) (./cap_7_metrica_mixta.aux) (./cap_8_conclusiones_y_perspectivas.aux))
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4987 strings out of 494999
- 74906 string characters out of 1180816
- 147920 words of memory out of 3000000
- 7996 multiletter control sequences out of 15000+50000
+ 5022 strings out of 494999
+ 75829 string characters out of 1180816
+ 151754 words of memory out of 3000000
+ 8009 multiletter control sequences out of 15000+50000
  15476 words of font info for 59 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
- 36i,14n,43p,1634b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,14n,43p,1765b,551s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/font
@@ -1423,14 +2095,15 @@ ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on tesis_de_licenciatura.pdf (91 pages, 4507054 bytes).
+f-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt1
+2.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+
+Output written on tesis_de_licenciatura.pdf (101 pages, 4294694 bytes).
 PDF statistics:
- 653 PDF objects out of 1000 (max. 8388607)
+ 688 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 276 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

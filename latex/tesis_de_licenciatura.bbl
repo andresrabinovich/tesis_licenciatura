@@ -9,6 +9,13 @@
 \newblock Accedido: 2016-01-13.
 \newline\urlprefix\url{http://www.nature.com/subjects/functional-genomics}
 
+\bibitem{Kilian2007}
+\textsc{J.~Kilian} \emph{et~al.}
+\newblock \emph{{The AtGenExpress global stress expression data set: Protocols,
+  evaluation and model data analysis of UV-B light, drought and cold stress
+  responses}}.
+\newblock Plant Journal \textbf{50} (2007) 347.
+
 \bibitem{Hahn2013}
 \textsc{Arabidopsis-Interactome-Mapping-Consortium}.
 \newblock \emph{{Evidence for Network Evolution in an Arabidopsis Interactome
@@ -47,7 +54,8 @@
 \textsc{M.~Babu}.
 \newblock \emph{{An Introduction to Microarray Data Analysis}}.
 \newblock Computational Genomics: Theory and Application  (2004) 225.
-\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/chapter-final.pdf}
+\newline\urlprefix\url{http://www.mrc-lmb.cam.ac.uk/genomes/madanm/microarray/%
+chapter-final.pdf}
 
 \bibitem{Schulze2001}
 \textsc{A.~Schulze}.
@@ -59,14 +67,8 @@
 \textsc{arabidopsis.org}.
 \newblock \emph{Microarray data from AtGenExpress}.
 \newblock
-  \url{https://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.jsp}.
-
-\bibitem{Kilian2007}
-\textsc{J.~Kilian} \emph{et~al.}
-\newblock \emph{{The AtGenExpress global stress expression data set: Protocols,
-  evaluation and model data analysis of UV-B light, drought and cold stress
-  responses}}.
-\newblock Plant Journal \textbf{50} (2007) 347.
+  \url{https://www.arabidopsis.org/portals/expression/microarray/ATGenExpress.%
+jsp}.
 
 \bibitem{Bruckner2009}
 \textsc{A.~Br{\"{u}}ckner} \emph{et~al.}
@@ -134,7 +136,8 @@
   of an ill-posed problem}}.
 \newblock Physica A: Statistical Mechanics and its Applications \textbf{263}
   (1999) 158.
-\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378437198004944}
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S03784%
+37198004944}
 
 \bibitem{Chen2009}
 \textsc{S.~Chen} \emph{et~al.}
@@ -271,14 +274,17 @@
 \textsc{J.~Dutkowski} \emph{et~al.}
 \newblock \emph{{A gene ontology inferred from molecular networks.}}
   \textbf{31} (2013) 38.
-\newline\urlprefix\url{http://www.nature.com/nbt/journal/v31/n1/abs/nbt.2463.html$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3654867{\&}tool=pmcentrez{\&}rendertype=abstract}
+\newline\urlprefix\url{http://www.nature.com/nbt/journal/v31/n1/abs/nbt.2463.h%
+tml$\backslash$nhttp://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=3654%
+867{\&}tool=pmcentrez{\&}rendertype=abstract}
 
 \bibitem{Datta2006}
 \textsc{S.~Datta}.
 \newblock \emph{{Methods for evaluating clustering algorithms for gene
   expression data using a reference set of functional classes.}}
 \newblock BMC bioinformatics \textbf{7} (2006) 397.
-\newline\urlprefix\url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=1590054{\{}{\&}{\}}tool=pmcentrez{\{}{\&}{\}}rendertype=abstract}
+\newline\urlprefix\url{http://www.pubmedcentral.nih.gov/articlerender.fcgi?art%
+id=1590054{\{}{\&}{\}}tool=pmcentrez{\{}{\&}{\}}rendertype=abstract}
 
 \bibitem{Cristianini2006}
 \textsc{N.~Cristianini} \emph{et~al.}

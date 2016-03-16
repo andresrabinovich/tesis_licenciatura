@@ -1,13 +1,114 @@
-\documentclass{beamer}
+
+% Este documento LaTeX fue diseñado por profesores  del Departamento de Matemáticas 
+% de la Universidad de Antioqua (http://ciencias.udea.edu.co/). Usted puede modificarlo
+% y personalizarlo a su gusto bajo los términos de la licencia de documentación libre GNU.
+% http://es.wikipedia.org/w/index.php?title=Licencia_de_documentaci%C3%B3n_libre_de_GNU&oldid=15717448
+
+\documentclass[serif,9pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\addtobeamertemplate{navigation symbols}{}{
+    \insertframenumber/\inserttotalframenumber
+}
+\setbeamercolor{navigation symbols}{fg=black}
+\usetheme{Warsaw}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{verbatim} %para comentarios multilinea
+
+\newif\ifplacelogo % Para que el logo solo figure en el primer slide
+\placelogotrue
+\logo{\ifplacelogo\includegraphics[scale=0.25]{logo_exactas}\fi}
+
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
 \begin{document}
-  \begin{frame}
-    \frametitle{This is the first slide}
-    %Content goes here
-  \end{frame}
-  \begin{frame}
-    \frametitle{This is the second slide}
-    \framesubtitle{A bit more information about this}
-    %More content goes here
-  \end{frame}
-% etc
+\title[Análisis y Detección de Correlaciones en Relevamien\ldots ]{Análisis y Detección de Correlaciones en Relevamientos Transcripcionales de Gran Escala}  
+\author[Andrés Rabinovich]{Andrés Rabinovich\\{\small Director: Ariel Chernomoretz}}
+
+\institute[Departamento de Física]{
+	Departamento de Física\\	
+	Facultad de Ciencias Exactas y Naturales\\
+	Universidad de Buenos Aires}
+\date{Marzo 2016.}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\placelogofalse
+
+\begin{frame}
+\frametitle{Contenido}
+\tableofcontents
+\end{frame} 
+
+\section{Introducción} 
+
+\subsection{Breve introducción biológica}
+\begin{frame}
+\frametitle{Breve introducción biológica} 
+\end{frame}
+
+\subsection{Motivaciones}
+\begin{frame}
+\frametitle{Motivaciones} 
+\end{frame}
+
+\subsection{Arabidopsis thaliana}
+\begin{frame}
+\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en A.thaliana} 
+\end{frame}
+
+
+\subsection{El problema del agrupamiento}
+\begin{frame}
+\frametitle{El problema del agrupamiento} 
+\end{frame}
+
+\subsubsection*{Medidas de similaridad}
+\begin{frame}
+\frametitle{Medidas de similaridad} 
+\end{frame}
+
+\subsubsection*{Tipos de agrupamiento}
+\begin{frame}
+\frametitle{Tipos de agrupamiento} 
+\end{frame}
+
+\section{Análisis de relevamientos transcripcionales}
+
+\subsection{Métodos km, ds1, ds4}
+\begin{frame}
+\frametitle{Métodos km, ds1, ds4} 
+\end{frame}
+
+\subsection{Caracterización de particiones}
+\begin{frame}
+\frametitle{Caracterización de particiones} 
+\end{frame}
+
+\subsection{El problema de la escala}
+\begin{frame}
+\frametitle{El problema de la escala} 
+\end{frame}
+
+\section{Congruencia biológica}
+
+\subsection{Ontología génica (GO)}
+\begin{frame}
+\frametitle{Ontología génica (GO)} 
+\end{frame}
+
+\subsection{Densidades de interacción}
+\begin{frame}
+\frametitle{Densidades de interacción} 
+\end{frame}
+
+\subsection{Indice de homogeneidad biológica}
+\begin{frame}
+\frametitle{Indice de homogeneidad biológica} 
+\end{frame}
+
 \end{document}

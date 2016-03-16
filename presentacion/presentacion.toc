@@ -1,1 +1,15 @@
-\beamer@endinputifotherversion {3.10pt}
+\beamer@endinputifotherversion {3.33pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Breve introducci\IeC {\'o}n biol\IeC {\'o}gica}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Motivaciones}{4}{0}{1}
+\beamer@subsectionintoc {1}{3}{Arabidopsis thaliana}{5}{0}{1}
+\beamer@subsectionintoc {1}{4}{El problema del agrupamiento}{6}{0}{1}
+\beamer@sectionintoc {2}{An\IeC {\'a}lisis de relevamientos transcripcionales}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{M\IeC {\'e}todos km, ds1, ds4}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Caracterizaci\IeC {\'o}n de particiones}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{El problema de la escala}{11}{0}{2}
+\beamer@sectionintoc {3}{Congruencia biol\IeC {\'o}gica}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Ontolog\IeC {\'\i }a g\IeC {\'e}nica (GO)}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Densidades de interacci\IeC {\'o}n}{13}{0}{3}
+\beamer@subsectionintoc {3}{3}{Indice de homogeneidad biol\IeC {\'o}gica}{14}{0}{3}

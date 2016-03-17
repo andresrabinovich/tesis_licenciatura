@@ -4,7 +4,7 @@
 % y personalizarlo a su gusto bajo los términos de la licencia de documentación libre GNU.
 % http://es.wikipedia.org/w/index.php?title=Licencia_de_documentaci%C3%B3n_libre_de_GNU&oldid=15717448
 
-\documentclass[serif,9pt]{beamer}
+\documentclass[serif,9pt, t]{beamer}
 \setbeamertemplate{navigation symbols}{}
 \addtobeamertemplate{navigation symbols}{}{
     \insertframenumber/\inserttotalframenumber
@@ -15,6 +15,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{verbatim} %para comentarios multilinea
+\usepackage{subfig}
+
+\graphicspath{{../latex/figuras/}}
 
 \newif\ifplacelogo % Para que el logo solo figure en el primer slide
 \placelogotrue
@@ -46,25 +49,17 @@
 
 \section{Introducción} 
 
-\subsection{Breve introducción biológica}
-\begin{frame}
-\frametitle{Breve introducción biológica} 
-\end{frame}
+\subsection{Detección de correlaciones}
+\begin{frame}\frametitle{Detección de correlaciones} 
+\Large Agrupamiento de datos\medskip
+\normalsize
+\begin{itemize}
+\item Método de clasificación no supervisado.
+\item Consiste en agrupar elementos ``similares entre si''.
+\item Permite el descubrimiento de patrones en los datos.
+\item Posibilita obtener conclusiones sobre los datos.
+\end{itemize}
 
-\subsection{Motivaciones}
-\begin{frame}
-\frametitle{Motivaciones} 
-\end{frame}
-
-\subsection{Arabidopsis thaliana}
-\begin{frame}
-\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en A.thaliana} 
-\end{frame}
-
-
-\subsection{El problema del agrupamiento}
-\begin{frame}
-\frametitle{El problema del agrupamiento} 
 \end{frame}
 
 \subsubsection*{Medidas de similaridad}
@@ -75,6 +70,25 @@
 \subsubsection*{Tipos de agrupamiento}
 \begin{frame}
 \frametitle{Tipos de agrupamiento} 
+\end{frame}
+
+\subsection{Relevamientos transcripcionales de gran escala}
+
+\subsubsection*{Transcripción y traducción}
+\begin{frame}
+\frametitle{Transcripción y traducción}
+
+\begin{figure}[t!]
+  \centering
+  \subfloat[Célula eucariota]{\includegraphics[width=0.5\textwidth]{celula_eucariota}}
+  \subfloat[Dogma central de la biología molecular]{\includegraphics[width=0.5\textwidth]{adn3}}
+\end{figure}
+
+\end{frame}
+
+\subsubsection*{Planta Arabidopsis thaliana (``el oscilador armónico de la biología'')}
+\begin{frame}
+\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en A.thaliana} 
 \end{frame}
 
 \section{Análisis de relevamientos transcripcionales}
@@ -111,4 +125,35 @@
 \frametitle{Indice de homogeneidad biológica} 
 \end{frame}
 
+\section{Coherencia entre métricas}
+\begin{frame}
+\frametitle{Coherencia entre métrica transcripcional y espacio GO} 
+\end{frame}
+
+\subsection{KTA global}
+\begin{frame}
+\frametitle{KTA global} 
+\end{frame}
+
+\subsection{Modulación de heterogeneidades
+transcripcionales}
+\begin{frame}
+\frametitle{KTA local para modulación de heterogeneidades transcripcionales} 
+\end{frame}
+\subsubsection*{Métrica mixta}
+\begin{frame}
+\frametitle{Métrica mixta} 
+\end{frame}
+\subsubsection*{Método heurístico}
+\begin{frame}
+\frametitle{Método heurístico} 
+\end{frame}
+\subsubsection*{Interpretación biológica}
+\begin{frame}
+\frametitle{Interpretación biológica} 
+\end{frame}
+\section{Conclusiones y perspectivas}
+\begin{frame}
+\frametitle{Conclusiones y perspectivas} 
+\end{frame}
 \end{document}

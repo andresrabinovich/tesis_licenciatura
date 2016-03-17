@@ -1,6 +1,6 @@
 <map version="freeplane 1.3.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Presentaci&#xf3;n" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1458159587356"><hook NAME="MapStyle">
+<node TEXT="Presentaci&#xf3;n" ID="ID_1723255651" CREATED="1283093380553" MODIFIED="1458227180201"><hook NAME="MapStyle">
     <properties show_note_icons="true"/>
 
 <map_styles>
@@ -50,16 +50,14 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="5"/>
-<node TEXT="Introducci&#xf3;n" POSITION="right" ID="ID_90868772" CREATED="1458158947065" MODIFIED="1458159784839" VSHIFT="-20">
+<hook NAME="AutomaticEdgeColor" COUNTER="9"/>
+<node TEXT="Introducci&#xf3;n" POSITION="right" ID="ID_90868772" CREATED="1458158947065" MODIFIED="1458245728229" VSHIFT="-20">
 <edge COLOR="#0000ff"/>
-<node TEXT="Introducci&#xf3;n Biol&#xf3;gica" ID="ID_1811407543" CREATED="1458153824177" MODIFIED="1458159784837"/>
-<node TEXT="Motivaciones" ID="ID_280182642" CREATED="1458152294626" MODIFIED="1458158962561" VSHIFT="-10"/>
-<node TEXT="Cambios transcripcionales en respuesta a estr&#xe9;s abi&#xf3;tico en A.thaliana" ID="ID_945725125" CREATED="1458152795745" MODIFIED="1458161977936"/>
-<node TEXT="El problema del agrupamiento" ID="ID_1372257621" CREATED="1458152827689" MODIFIED="1458162175515">
+<node TEXT="Detecci&#xf3;n de correlaciones" ID="ID_1372257621" CREATED="1458152827689" MODIFIED="1458245728224" VSHIFT="-20">
 <node TEXT="Medidas de similaridad" ID="ID_765834024" CREATED="1458159001577" MODIFIED="1458159035825" VSHIFT="10"/>
 <node TEXT="Tipos de agrupamientos" ID="ID_1651908880" CREATED="1458159044353" MODIFIED="1458159067905"/>
 </node>
+<node TEXT="Transcripci&#xf3;n y traducci&#xf3;n y A. thaliana" ID="ID_1811407543" CREATED="1458153824177" MODIFIED="1458245722754"/>
 </node>
 <node TEXT="An&#xe1;lisis de relevamientos transcripcionales" POSITION="right" ID="ID_1954327334" CREATED="1458159454625" MODIFIED="1458162420913">
 <edge COLOR="#ff00ff"/>
@@ -71,13 +69,15 @@
 <edge COLOR="#00ff2d"/>
 <node TEXT="Ontolog&#xed;a g&#xe9;nica (GO)" ID="ID_704732305" CREATED="1458154606308" MODIFIED="1458162808641"/>
 <node TEXT="Interacting densities" ID="ID_1096833908" CREATED="1458153978617" MODIFIED="1458162827864"/>
-<node TEXT="BHI bajo?" ID="ID_394341648" CREATED="1458154002225" MODIFIED="1458159624291">
-<node TEXT="Coherencia entre m&#xe9;trica transcripcional y espacio GO (KTA global)" ID="ID_1861470562" CREATED="1458155113921" MODIFIED="1458155551870"/>
-<node TEXT="KTA local para&#xa;Modulaci&#xf3;n de heterogeneidades&#xa;transcripcionales" ID="ID_309606378" CREATED="1458155187273" MODIFIED="1458159624288" VSHIFT="50">
+<node TEXT="BHI bajo?" ID="ID_394341648" CREATED="1458154002225" MODIFIED="1458227196315"/>
+</node>
+<node TEXT="Coherencia entre m&#xe9;trica transcripcional y espacio GO" POSITION="right" ID="ID_1861470562" CREATED="1458155113921" MODIFIED="1458227186472" HGAP="90" VSHIFT="-16">
+<edge COLOR="#007c00"/>
+<node TEXT="KTA global" ID="ID_1245154962" CREATED="1458227188069" MODIFIED="1458227214652"/>
+<node TEXT="KTA local para&#xa;Modulaci&#xf3;n de heterogeneidades&#xa;transcripcionales" ID="ID_309606378" CREATED="1458155187273" MODIFIED="1458227196309" VSHIFT="50">
 <node TEXT="M&#xe9;trica mixta" ID="ID_1834689038" CREATED="1458155297113" MODIFIED="1458155693973"/>
 <node TEXT="M&#xe9;todo heur&#xed;stico" ID="ID_1543759087" CREATED="1458155335265" MODIFIED="1458155348055"/>
 <node TEXT="Interpretaci&#xf3;n biol&#xf3;gica" ID="ID_208716350" CREATED="1458155348657" MODIFIED="1458155353391"/>
-</node>
 </node>
 </node>
 <node TEXT="Conclusiones y perspectivas" POSITION="right" ID="ID_1863270821" CREATED="1458155359793" MODIFIED="1458159442264" HGAP="50" VSHIFT="20">

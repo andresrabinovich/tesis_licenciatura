@@ -1,12 +1,14 @@
-\beamer@endinputifotherversion {3.33pt}
+\beamer@endinputifotherversion {3.10pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Detecci\IeC {\'o}n de correlaciones}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Relevamientos transcripcionales de gran escala}{6}{0}{1}
-\beamer@sectionintoc {2}{An\IeC {\'a}lisis de relevamientos transcripcionales}{8}{0}{2}
-\beamer@subsectionintoc {2}{1}{M\IeC {\'e}todos km, ds1, ds4}{8}{0}{2}
-\beamer@subsectionintoc {2}{2}{Caracterizaci\IeC {\'o}n de particiones}{9}{0}{2}
-\beamer@subsectionintoc {2}{3}{El problema de la escala}{10}{0}{2}
+\beamer@subsectionintoc {1}{2}{Relevamientos transcripcionales de gran escala}{4}{0}{1}
+\beamer@sectionintoc {2}{An\IeC {\'a}lisis de relevamientos transcripcionales}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Medidas de similaridad y distancia}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Tipos de agrupamiento}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{M\IeC {\'e}todos utilizados}{8}{0}{2}
+\beamer@subsectionintoc {2}{4}{Caracterizaci\IeC {\'o}n de particiones}{9}{0}{2}
+\beamer@subsectionintoc {2}{5}{El problema de la escala}{10}{0}{2}
 \beamer@sectionintoc {3}{Congruencia biol\IeC {\'o}gica}{11}{0}{3}
 \beamer@subsectionintoc {3}{1}{Ontolog\IeC {\'\i }a g\IeC {\'e}nica (GO)}{11}{0}{3}
 \beamer@subsectionintoc {3}{2}{Densidades de interacci\IeC {\'o}n}{12}{0}{3}

@@ -17,7 +17,7 @@
 \usepackage{verbatim} %para comentarios multilinea
 \usepackage{subfig}
 
-\graphicspath{{../latex/figuras/}}
+\graphicspath{{figuras/}}
 
 \newif\ifplacelogo % Para que el logo solo figure en el primer slide
 \placelogotrue
@@ -27,7 +27,7 @@
 
 \begin{document}
 \title[Análisis y Detección de Correlaciones en Relevamien\ldots ]{Análisis y Detección de Correlaciones en Relevamientos Transcripcionales de Gran Escala}  
-\author[Andrés Rabinovich]{Andrés Rabinovich\\{\small Director: Ariel Chernomoretz}}
+\author[Andrés Rabinovich]{Andrés Rabinovich\\{\small Director: Dr. Ariel Chernomoretz}}
 
 \institute[Departamento de Física]{
 	Departamento de Física\\	
@@ -51,34 +51,33 @@
 
 \subsection{Detección de correlaciones}
 \begin{frame}\frametitle{Detección de correlaciones} 
-\Large Agrupamiento de datos\medskip
+\large
+Queremos encontrar relaciones entre grandes cantidades de datos.\\\bigskip
+Lo vamos a hacer usando métodos de agrupamiento o ``clustering''.\medskip
 \normalsize
 \begin{itemize}
-\item Método de clasificación no supervisado.
-\item Consiste en agrupar elementos ``similares entre si''.
-\item Permite el descubrimiento de patrones en los datos.
-\item Posibilita obtener conclusiones sobre los datos.
+\item Son métodos de clasificación no supervisados.
+\item Consisten en agrupar elementos ``similares entre si''.
+\item Permiten el descubrimiento de patrones en los datos.
+\item Posibilitan obtener conclusiones sobre los datos.
 \end{itemize}
+\bigskip
+\underline{A modo de ejemplo}\medskip
 
-\end{frame}
+El conjunto: $\{-5, -3, -2, 2, 3\}$\medskip
 
-\subsubsection*{Medidas de similaridad}
-\begin{frame}
-\frametitle{Medidas de similaridad} 
-\end{frame}
+Agrupado por módulo: $\{-5\}$, $\{-3, 3\}$ y $\{-2, 2\}$\medskip
 
-\subsubsection*{Tipos de agrupamiento}
-\begin{frame}
-\frametitle{Tipos de agrupamiento} 
+Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
 \end{frame}
 
 \subsection{Relevamientos transcripcionales de gran escala}
 
 \subsubsection*{Transcripción y traducción}
 \begin{frame}
-\frametitle{Transcripción y traducción}
+\frametitle{Transcripción y traducción (dogma central de la biología molecular)}
 
-\begin{figure}[t!]
+\begin{figure}[t]
   \centering
   \subfloat[Célula eucariota]{\includegraphics[width=0.5\textwidth]{celula_eucariota}}
   \subfloat[Dogma central de la biología molecular]{\includegraphics[width=0.5\textwidth]{adn3}}
@@ -86,16 +85,66 @@
 
 \end{frame}
 
-\subsubsection*{Planta Arabidopsis thaliana (``el oscilador armónico de la biología'')}
+\subsubsection*{Cambios transcripcionales}
 \begin{frame}
-\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en A.thaliana} 
+	\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en \textit{A. thaliana}} 
+	\begin{columns}[T]
+		\column{0.5\textwidth}
+			\includegraphics[width=1\textwidth]{micromatriz_y_arabidopsis}
+		\column{0.5\textwidth}
+			\bigskip
+			\Large 
+			Datos de estrés abiótico:
+			\medskip
+			\begin{itemize}
+				\item 11 tratamientos
+				\item $\approx 22000$ genes
+				\item entre 4 y 8 mediciones temporales por gen y por tratamiento 
+			\end{itemize}			
+			\centering	
+			\includegraphics[width=0.9\textwidth]{perfiles_sin_agrupar.pdf}			
+	\end{columns}
 \end{frame}
 
 \section{Análisis de relevamientos transcripcionales}
 
-\subsection{Métodos km, ds1, ds4}
+
+\subsection{Medidas de similaridad y distancia}
+\begin{frame} \frametitle{Medidas de similaridad y distancia} 
+\centering
+Necesitamos definir que significa que dos datos sean ``similares''\bigskip
+\begin{columns}[T]
+\column{0.45\textwidth}
+	Distancia euclidiana en espacio de alta dimensionalidad:\\
+	\begin{equation}
+		d_{euc}(\vec{x}, \vec{y}) = [\sum\limits_{i=1}^n (x_i-y_i)^2]^\frac{1}{2}
+	\end{equation}
+	\bigskip
+	\centering
+	\includegraphics[width=0.7\textwidth]{distancia_euclidiana}
+
+\column{0.55\textwidth}
+	Distancia basada en el coeficiente de correlación de Pearson:\\
+	\begin{equation}
+		r(\vec{x}, \vec{y}) = \frac{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{s_x s_y}
+	\end{equation}
+	\begin{equation}
+		d_{ccp}(\vec{x}, \vec{y}) = 1-r(\vec{x}, \vec{y})
+	\end{equation}
+	\centering	
+	\includegraphics[width=0.7\textwidth]{perfiles_coregulados.pdf}
+\end{columns}
+
+\end{frame}
+
+\subsection{Tipos de agrupamiento}
 \begin{frame}
-\frametitle{Métodos km, ds1, ds4} 
+\frametitle{Tipos de agrupamiento} 
+\end{frame}
+
+\subsection{Métodos utilizados}
+\begin{frame}
+\frametitle{Métodos k-means, corte de árbol dinámico} 
 \end{frame}
 
 \subsection{Caracterización de particiones}

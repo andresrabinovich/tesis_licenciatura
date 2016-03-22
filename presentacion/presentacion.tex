@@ -340,7 +340,7 @@ KTA global entre expresión y ontología BPB con control nulo
 \end{frame}
 
 \subsection{Modulación de heterogeneidades
-transcripcionales}
+transcripcionales con GO}
 \begin{frame}\frametitle{Red 30 primeros vecinos mutuos} 
 \bigskip
 \begin{columns}[T]
@@ -397,19 +397,65 @@ transcripcionales}
 \end{frame}
 
 \subsubsection*{Métrica mixta}
-\begin{frame}
-\frametitle{Métrica mixta} 
+\begin{frame}\frametitle{Métrica mixta} 
+Modificaremos los pesos de las aristas utilizando la información de coherencia biológica presente en KTA:
+\begin{equation}
+	w_{ij} = simcor_{ij}^{stress}
+\end{equation}
+Donde:
+\begin{equation}
+	stress = \frac{KTA_{fondo}}{KTAl_{ij}}
+\end{equation}
+Típicamente $stress$ oscila entre $0.8$ y $1.2$.\\
+Buscamos un parámetro $\beta$ tal que la distribución de \textit{strenght} de la red siga una ley de potencias:
+\begin{equation}
+	w_{ij}^{'} = w_{ij}^{\beta}
+\end{equation}
+\centering
+\includegraphics[width=0.3\textwidth]{distribucion_strength_beta_1.pdf}
+\includegraphics[width=0.3\textwidth]{distribucion_strength_beta_4.pdf}
 \end{frame}
-\subsubsection*{Método heurístico}
-\begin{frame}
-\frametitle{Método heurístico} 
+
+\subsubsection*{Métodos heurísticos}
+
+\begin{frame}\frametitle{Métodos heurísticos} 
+\centering
+Buscamos subestructura en los grupos a partir de la métrica mixta
+\centering
+\includegraphics[width=0.7\textwidth]{metodos_mixtos_grupo_2.png}
 \end{frame}
+
+\begin{frame}\frametitle{Métodos heurísticos - caracterización de particiones} 
+\centering
+Caracterizamos los nuevos subgrupos hallados
+\centering
+\includegraphics[width=1\textwidth]{bhi_nuevo_vs_bhi_original.pdf}
+\end{frame}
+
 \subsubsection*{Interpretación biológica}
-\begin{frame}
-\frametitle{Interpretación biológica} 
+\begin{frame}\frametitle{Interpretación biológica} 
+\centering
+\includegraphics[width=0.9\textwidth]{fisher_grupo_2.pdf}
 \end{frame}
+
 \section{Conclusiones y perspectivas}
-\begin{frame}
-\frametitle{Conclusiones y perspectivas} 
+\begin{frame}\frametitle{Conclusiones y perspectivas}
+\begin{itemize}
+\item Mediante técnicas de agrupamiento de datos fue posible encontrar grupos de genes con perfiles de expresión altamente correlacionados.
+\item Distintos métodos darán distintas particiones en función de la resolución que logran.
+\item Mediante una métrica mixta fue posible encontrar particiones con alta homogeneidad biológica y con alta correlación transcripcional.
+\item Utilizamos la ontología GO para dar una interpretación biológica a los grupos obtenidos y encontramos que en general, la granularidad óptima de los grupos fue de $\approx$ 50 genes.
+\item Estas técnicas podrían funcionar como punto de partida para inferir funciones biológicas de genes de los que se tiene poco conocimiento.
+\item Sería interesante en un futuro agregar la información contenida en otros espacios de conocimiento biológico, como ser vías metabólicas o redes de interacción de proteínas.
+\end{itemize}
 \end{frame}
+
+\begin{frame}\frametitle{Agradecimientos}
+\Large
+\centering
+¡Muchas gracias!\\
+FOTO DEL GRUPO
+%\includegraphics[width=0.9\textwidth]{}
+\end{frame}
+
 \end{document}

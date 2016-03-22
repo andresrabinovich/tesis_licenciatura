@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.10pt}
+\beamer@endinputifotherversion {3.33pt}
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Detecci\IeC {\'o}n de correlaciones}{3}{0}{1}
@@ -14,5 +14,5 @@
 \beamer@sectionintoc {4}{Coherencia entre m\IeC {\'e}tricas}{17}{0}{4}
 \beamer@subsectionintoc {4}{1}{M\IeC {\'e}trica en GO}{17}{0}{4}
 \beamer@subsectionintoc {4}{2}{KTA global}{18}{0}{4}
-\beamer@subsectionintoc {4}{3}{Modulaci\IeC {\'o}n de heterogeneidades transcripcionales}{20}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones y perspectivas}{26}{0}{5}
+\beamer@subsectionintoc {4}{3}{Modulaci\IeC {\'o}n de heterogeneidades transcripcionales con GO}{20}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones y perspectivas}{27}{0}{5}

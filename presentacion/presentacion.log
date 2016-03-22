@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  21 MAR 2016 23:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  22 MAR 2016 08:22
 entering extended mode
  %&-line parsing enabled.
 **presentacion.tex
@@ -1319,27 +1319,51 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [19
 
  <./figuras/kta_global_bpb.pdf>]
+<figuras/erdos_renyi_vs_30kmnn.pdf, id=498, 794.97pt x 614.295pt>
+File: figuras/erdos_renyi_vs_30kmnn.pdf Graphic file (type pdf)
+
+<use figuras/erdos_renyi_vs_30kmnn.pdf>
+<figuras/betweenness_er_30_conf.pdf, id=499, 794.97pt x 614.295pt>
+File: figuras/betweenness_er_30_conf.pdf Graphic file (type pdf)
+
+<use figuras/betweenness_er_30_conf.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [20
 
-]
+ <./figuras/erdos_renyi_vs_30kmnn.pdf> <./figuras/betweenness_er_30_conf.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [21
 
-]
+] <figuras/nx_vs_ny.pdf, id=547, 765.86125pt x 545.03625pt>
+File: figuras/nx_vs_ny.pdf Graphic file (type pdf)
+
+<use figuras/nx_vs_ny.pdf>
+<figuras/lktaanotados_vs_wnyanotados.pdf, id=548, 765.86125pt x 550.055pt>
+File: figuras/lktaanotados_vs_wnyanotados.pdf Graphic file (type pdf)
+
+<use figuras/lktaanotados_vs_wnyanotados.pdf>
+<figuras/wy_vs_wynanotados.pdf, id=549, 765.86125pt x 550.055pt>
+File: figuras/wy_vs_wynanotados.pdf Graphic file (type pdf)
+
+<use figuras/wy_vs_wynanotados.pdf>
+<figuras/lktaanotados_vs_nyanotados.pdf, id=550, 765.86125pt x 550.055pt>
+File: figuras/lktaanotados_vs_nyanotados.pdf Graphic file (type pdf)
+
+<use figuras/lktaanotados_vs_nyanotados.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [22
 
-]
+ <./figuras/nx_vs_ny.pdf> <./figuras/lktaanotados_vs_wnyanotados.pdf> <./figura
+s/wy_vs_wynanotados.pdf> <./figuras/lktaanotados_vs_nyanotados.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1352,6 +1376,20 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  []
 
 [24
+
+]
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
+
+]
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[26
 
 ]
 \tf@nav=\write6
@@ -1370,10 +1408,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16789 strings out of 494999
- 309971 string characters out of 1180816
+ 16827 strings out of 494999
+ 311072 string characters out of 1180816
  386948 words of memory out of 3000000
- 19453 multiletter control sequences out of 15000+50000
+ 19481 multiletter control sequences out of 15000+50000
  11470 words of font info for 45 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
  49i,20n,62p,441b,824s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1390,9 +1428,9 @@ public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6
 .pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/s
 hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on presentacion.pdf (24 pages, 2905510 bytes).
+Output written on presentacion.pdf (26 pages, 3144406 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 303 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 719 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 333 words of extra memory for PDF output out of 10000 (max. 10000000)
 

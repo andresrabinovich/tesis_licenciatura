@@ -331,7 +331,7 @@ con $\langle K_1, K_1 \rangle _F = \sum_{i,j=1}^m K1(x_i, x_j)K2(x_i, x_j)$ es e
 
 \begin{frame}\frametitle{KTA global} 
 \centering
-KTA global entre expresión y ontología BP con control nulo
+KTA global entre expresión y ontología BPB con control nulo
 \begin{figure}
     	\centering
 	\includegraphics[width=0.8\textwidth]{kta_global_bpb.pdf}
@@ -341,9 +341,61 @@ KTA global entre expresión y ontología BP con control nulo
 
 \subsection{Modulación de heterogeneidades
 transcripcionales}
-\begin{frame}
-\frametitle{KTA local para modulación de heterogeneidades transcripcionales} 
+\begin{frame}\frametitle{Red 30 primeros vecinos mutuos} 
+\bigskip
+\begin{columns}[T]
+	\column{0.5\textwidth}
+	\centering
+    Distribución de grado\\	
+    \bigskip
+    \includegraphics[width=1\textwidth]{erdos_renyi_vs_30kmnn.pdf}\\
+    Red y modelo nulo Erdös-Renyi
+    \column{0.5\textwidth}
+    \centering
+    Betweenness\\
+    \bigskip
+    \includegraphics[width=1\textwidth]{betweenness_er_30_conf.pdf}\\
+    Red, modelo nulo Erdös-Renyi y modelo configuracional
+\end{columns}
 \end{frame}
+
+\begin{frame}\frametitle{Red 30 primeros vecinos mutuos - vecindades locales} 
+\bigskip
+\begin{columns}[T]
+	\column{0.5\textwidth}
+	Vecindad de una arista a primeros vecinos:
+	\bigskip
+	\begin{itemize}
+	\item $n_x$ nodos.
+	\item $n_y$ nodos anotados.
+	\item $wyn$ promedio de pesos de aristas en GO.
+	\item $wyn_{anotados}$ promedio de pesos de aristas en GO con nodos anotados.	
+	\end{itemize}
+    \column{0.5\textwidth}
+    \centering
+    \bigskip
+    GRAFICO DE VECINDAD
+    %\includegraphics[width=1\textwidth]{}\\
+\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Caracterización de vecindades locales tratamiento ``Frío''} 
+\begin{columns}[T]
+	\column{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.90\textwidth]{nx_vs_ny.pdf}
+    
+    \centering
+    \includegraphics[width=0.90\textwidth]{lktaanotados_vs_wnyanotados.pdf}
+	\column{0.5\textwidth}    
+    \centering
+    \includegraphics[width=0.90\textwidth]{wy_vs_wynanotados.pdf}
+    
+    \centering    
+    \includegraphics[width=0.90\textwidth]{lktaanotados_vs_nyanotados.pdf}
+\end{columns}
+\end{frame}
+
 \subsubsection*{Métrica mixta}
 \begin{frame}
 \frametitle{Métrica mixta} 

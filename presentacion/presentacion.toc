@@ -15,4 +15,4 @@
 \beamer@subsectionintoc {4}{1}{M\IeC {\'e}trica en GO}{17}{0}{4}
 \beamer@subsectionintoc {4}{2}{KTA global}{18}{0}{4}
 \beamer@subsectionintoc {4}{3}{Modulaci\IeC {\'o}n de heterogeneidades transcripcionales}{20}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones y perspectivas}{24}{0}{5}
+\beamer@sectionintoc {5}{Conclusiones y perspectivas}{26}{0}{5}

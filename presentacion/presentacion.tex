@@ -16,7 +16,9 @@
 \usepackage[spanish]{babel}
 \usepackage{verbatim} %para comentarios multilinea
 \usepackage{subfig}
-
+\newcommand{\insm}{%
+\smash{\raisebox{.5\dimexpr3\baselineskip+4\itemsep+2\parskip}{$\left.\rule{0pt}{.5\dimexpr4\baselineskip+3\itemsep+3\parskip}\right\}$\ \parbox{5.5cm}{Newton Cotes formulae of different degrees}}}
+}
 \graphicspath{{figuras/}}
 
 \newif\ifplacelogo % Para que el logo solo figure en el primer slide
@@ -49,33 +51,13 @@
 
 \section{Introducción} 
 
-\subsection{Detección de correlaciones}
-\begin{frame}\frametitle{Detección de correlaciones} 
-\large
-Queremos encontrar relaciones entre grandes cantidades de datos.\\\bigskip
-Lo vamos a hacer usando métodos de agrupamiento o ``clustering''.\medskip
-\normalsize
-\begin{itemize}
-\item Son métodos de clasificación no supervisados.
-\item Consisten en agrupar elementos ``similares entre si''.
-\item Permiten el descubrimiento de patrones en los datos.
-\item Posibilitan obtener conclusiones sobre los datos.
-\end{itemize}
-\bigskip
-\underline{A modo de ejemplo}\medskip
-
-El conjunto: $\{-5, -3, -2, 2, 3\}$\medskip
-
-Agrupado por módulo: $\{-5\}$, $\{-3, 3\}$ y $\{-2, 2\}$\medskip
-
-Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
-\end{frame}
 
 \subsection{Relevamientos transcripcionales de gran escala}
 
 \subsubsection*{Transcripción y traducción}
 \begin{frame}\frametitle{Transcripción y traducción (dogma central de la biología molecular)}
-
+\centering 
+Células, ADN, ARNm, proteínas y otras yerbas...
 \begin{figure}[t]
   \centering
   \subfloat[Célula eucariota]{\includegraphics[width=0.5\textwidth]{celula_eucariota}}
@@ -94,14 +76,44 @@ Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
 			\Large 
 			Datos de estrés abiótico:
 			\medskip
+			\Fontvi
 			\begin{itemize}
-				\item 11 tratamientos
-				\item $\approx 22000$ genes
-				\item entre 4 y 8 mediciones temporales por gen y por tratamiento 
+				\item 11 tratamientos: frío, calor, osmótico, salinidad, sequía, genotoxicidad, oxidación, UV, herida, recuperación y control.
+				\item $\approx 22000$ genes.
+				\item Nos quedaremos con un subconjunto de $\approx 6000$ genes que son los que se movieron en algún tratamiento.
+				\item entre 4 y 8 mediciones temporales por gen y por tratamiento.
 			\end{itemize}			
 			\centering	
-			\includegraphics[width=0.9\textwidth]{perfiles_sin_agrupar.pdf}			
+			\includegraphics[width=0.7\textwidth]{perfiles_sin_agrupar.pdf}			
 	\end{columns}
+\end{frame}
+
+\subsection{Detección de correlaciones}
+\begin{frame}\frametitle{Detección de correlaciones} 
+\large
+Queremos inferir estrategias del organismo frente a los tratamientos.\\\bigskip
+Lo vamos a hacer usando métodos de agrupamiento o ``clustering'' para encontrar relaciones y estructura en esta gran cantidad de datos.\medskip
+\normalsize
+\begin{itemize}
+\item Son métodos no supervisados.
+\item Consisten en agrupar elementos ``similares entre si''.
+\item Permiten el descubrimiento de patrones en los datos.
+\item Posibilitan obtener conclusiones sobre los datos.
+\end{itemize}
+\bigskip
+\begin{columns}[T]
+	\column{0.5\textwidth}
+		\Fontvi
+		\underline{A modo de ejemplo}\medskip
+
+		El conjunto: $\{-5, -3, -2, 2, 3\}$\medskip
+
+		Agrupado por módulo: $\{-5\}$, $\{-3, 3\}$ y $\{-2, 2\}$\medskip
+
+		Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
+	\column{0.5\textwidth}
+	\includegraphics[width=0.8\textwidth]{perfiles_coregulados.pdf}
+\end{columns}
 \end{frame}
 
 \section{Análisis de relevamientos transcripcionales}
@@ -109,18 +121,6 @@ Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
 \subsection{Medidas de similaridad y distancia}
 \begin{frame} \frametitle{Medidas de similaridad y distancia} 
 \centering
-Necesitamos definir que significa que dos datos sean ``similares''\bigskip
-\begin{columns}[T]
-\column{0.45\textwidth}
-	Distancia euclidiana en espacio de alta dimensionalidad:\\
-	\begin{equation}
-		d_{euc}(\vec{x}, \vec{y}) = [\sum\limits_{i=1}^n (x_i-y_i)^2]^\frac{1}{2}
-	\end{equation}
-	\bigskip
-	\centering
-	\includegraphics[width=0.7\textwidth]{distancia_euclidiana}
-
-\column{0.55\textwidth}
 	Distancia basada en el coeficiente de correlación de Pearson:\\
 	\begin{equation}
 		r(\vec{x}, \vec{y}) = \frac{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{s_x s_y}
@@ -128,51 +128,91 @@ Necesitamos definir que significa que dos datos sean ``similares''\bigskip
 	\begin{equation}
 		d_{ccp}(\vec{x}, \vec{y}) = 1-r(\vec{x}, \vec{y})
 	\end{equation}
+
 	\centering	
-	\includegraphics[width=0.7\textwidth]{perfiles_coregulados.pdf}
-\end{columns}
+	\includegraphics[width=0.45\textwidth]{perfiles_coregulados.pdf}
 
 \end{frame}
 
 \subsection{Métodos de agrupamiento utilizados}
-\begin{frame}\frametitle{Método de agrupamiento k-means} 
+%\begin{frame}\frametitle{Método de agrupamiento k-means} 
+%\begin{columns}[T]
+%\column{0.5\textwidth}
+%	\begin{itemize}
+%	\item Agrupamiento no jerárquico.
+%	\item Cada observación pertenece al grupo con la media más cercana.
+%	\item La cantidad k de grupos debe ser fijada a priori.
+%	\item Utiliza la distancia euclidiana.
+%	\end{itemize}
+%	Para datos estandarizados:
+%	\begin{equation}
+%		\tilde{x_i} = \frac{x_i-\bar{x}}{s_x}
+%	\end{equation}	
+%	la distancia euclidiana se relaciona con la correlación como:
+%	\begin{equation}
+%		d(\vec{x}, \vec{y}) = \sqrt{2(n-1)(1-r(\vec{x}, \vec{y}))}
+%	\end{equation}
+
+%\column{0.5\textwidth}
+%	\centering	
+%	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k3.pdf}
+	
+%	\centering	
+%	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k5.pdf}	
+%\end{columns}
+%\end{frame}
+
+%\begin{frame}\frametitle{Método de agrupamiento corte de árbol dinámico} 
+%\centering
+%\begin{itemize}
+%\item Agrupamiento jerárquico.
+%\item Utiliza la distancia de correlación.
+%\item Se puede ``sintonizar'' la resolución del método. 
+%\item DS1 particiones gruesas, con pocos grupos bien definidos.
+%\item DS4 particiones finas, con muchos grupos más dispersos.
+%\end{itemize}
+%\includegraphics[height=0.55\textheight]{cut_tree_dynamic_ejemplo}	
+%\end{frame}
+
+\begin{frame}\frametitle{Métodos de agrupamiento} 
+
 \begin{columns}[T]
 \column{0.5\textwidth}
-	\begin{itemize}
-	\item Agrupamiento no jerárquico.
-	\item Cada observación pertenece al grupo con la media más cercana.
-	\item La cantidad k de grupos debe ser fijada a priori.
-	\item Utiliza la distancia euclidiana.
-	\end{itemize}
-	Para datos estandarizados:
-	\begin{equation}
-		\tilde{x_i} = \frac{x_i-\bar{x}}{s_x}
-	\end{equation}	
-	la distancia euclidiana se relaciona con la correlación como:
-	\begin{equation}
-		d(\vec{x}, \vec{y}) = \sqrt{2(n-1)(1-r(\vec{x}, \vec{y}))}
-	\end{equation}
-
+Método k-means
+\begin{itemize}
+	\item Busca estructuras compactas.
+	\item La cantidad k de grupos debe ser fijada a priori.  
+	\item Muy rápida ejecución. 	
+\end{itemize}
 \column{0.5\textwidth}
-	\centering	
-	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k2.pdf}
-	
-	\centering	
-	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k5.pdf}	
+\end{columns}
+\bigskip
+\bigskip
+\begin{columns}[T]
+\column{0.5\textwidth}
+Método corte de árbol dinámico
+\begin{itemize}
+	\item Agrupamiento jerárquico.
+	\item El agrupamiento puede representarse mediante un dendrograma.
+	\item Utiliza la distancia de correlación.
+	\item La cantidad óptima de grupos k es decidida por el método.
+\end{itemize}			
+\column{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{dendrograma_muestra.pdf}
 \end{columns}
 \end{frame}
 
-\subsection{Métodos de agrupamiento utilizados}
-\begin{frame}\frametitle{Método de agrupamiento corte de árbol dinámico} 
+\begin{frame}\frametitle{Métodos de agrupamiento - ejemplos} 
 \centering
-\begin{itemize}
-\item Agrupamiento jerárquico.
-\item Utiliza la distancia de correlación.
-\item Se puede ``sintonizar'' la resolución del método. 
-\item DS1 particiones gruesas, con pocos grupos bien definidos.
-\item DS4 particiones finas, con muchos grupos más dispersos.
-\end{itemize}
-\includegraphics[height=0.55\textheight]{cut_tree_dynamic_ejemplo}	
+\begin{columns}[T]
+\column{0.5\textwidth}
+    \includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k2.pdf}
+\column{0.5\textwidth}
+    \includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k5.pdf}
+\end{columns}
+\centering
+\includegraphics[width=0.4\textwidth]{ejemplo_dtc.pdf}    
 \end{frame}
 
 \subsection{Caracterización de particiones}
@@ -183,42 +223,45 @@ Necesitamos definir que significa que dos datos sean ``similares''\bigskip
 
 \begin{frame}\frametitle{Perfiles tratamiento ``Frío'' con corte de árbol dinámico} 
 \centering
-A modo de ejemplo, los nueve perfiles más grandes de cada partición
-\begin{columns}[T]
-\column{0.5\textwidth}
-	\centering
-	DS1 (particiones más gruesas)
-	\includegraphics[width=0.9\textwidth]{perfiles_ds_1.pdf}	
-\column{0.5\textwidth}
-	\centering
-	DS4 (particiones más finas)
-	\includegraphics[width=0.9\textwidth]{perfiles_ds_4.pdf}	
-\end{columns}
+A modo de ejemplo, los nueve perfiles más grandes de una partición de tratamiento ``Frío'' y DS1.\\
+\includegraphics[width=0.8\textwidth, height=0.8\textheight]{perfiles_ds_1.pdf}	
 \end{frame}
 
-\begin{frame}\frametitle{Caracterización de particiones corte de árbol dinámico} 
-\centering
-Correlación media por tamaño de grupo
-\begin{columns}[T]
-\column{0.5\textwidth}
-	\centering
-	DS1 (particiones más gruesas)
-	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_1.pdf}	
-\column{0.5\textwidth}
-	\centering
-	DS4 (particiones más finas)
-	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_4.pdf}	
-\end{columns}
-\end{frame}
+%\begin{frame}\frametitle{Caracterización de particiones corte de árbol dinámico} 
+%\centering
+%Correlación media por tamaño de grupo
+%\begin{columns}[T]
+%\column{0.5\textwidth}
+%	\centering
+%	DS1 (particiones más gruesas)
+%	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_1.pdf}	
+%\column{0.5\textwidth}
+%	\centering
+%	DS4 (particiones más finas)
+%	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_4.pdf}	
+%\end{columns}
+%\end{frame}
 
+%\begin{frame}\frametitle{Caracterización de granularidad de las particiones halladas} 
+%\centering
+%Fracción de grupos en una partición más fina dentro de grupos de una partición más gruesa (tratamiento ``Frío'')
+%\begin{figure}
+%    \centering
+%	\includegraphics[height=1.6\textheight]{fraccion_de_km_en_ds1_en_ds4.pdf}	
+%\end{figure}
+%\end{frame}
 
-\begin{frame}\frametitle{Caracterización de granularidad de las particiones halladas} 
-\centering
-Fracción de grupos en una partición más fina dentro de grupos de una partición más gruesa (tratamiento ``Frío'')
-\begin{figure}
-    \centering
-	\includegraphics[height=1.6\textheight]{fraccion_de_km_en_ds1_en_ds4.pdf}	
-\end{figure}
+\begin{frame}\frametitle{Granularidad de las particiones} 
+Granularidad y resolución de los métodos
+\bigskip
+\begin{itemize}
+\item Una partición $A$ es más fina que una partición $B$ si cada grupo de $A$ está contenido en un grupo de $B$.
+\item Tenemos tres formas de realizar particiones de nuestros datos.
+\item DS4 genera particiones más finas que DS1 y este a su vez que k-means.
+\item Tenemos distintas maneras de encontrar estructura en nuestros datos y las distintas heterogeneidades aparecerán a distintas escalas.
+\item Deberemos buscar la escala óptima a la que trabajar con este conjunto de datos y para eso vamos a pasar a un espacio de conocimiento biológico. 
+\end{itemize}
+
 \end{frame}
 
 \section{Congruencia biológica}
@@ -234,11 +277,14 @@ Fracción de grupos en una partición más fina dentro de grupos de una partici�
 		\item Estructura de grafo acíclico dirigido (DAG).
 		\item Cada nodo representa un témino que describe alguna función.
 		\item Los nodos se unen entre si por medio de relaciones ``es un'' o ``es parte de''.
-		\item Un gen descrito por un término está ``anotado'' en ese término.
 	\end{itemize}
 	\column{0.5\textwidth}
 	\centering
 	\includegraphics[width=1.1\textwidth]{ejemplo_de_go}	
+	
+	\medskip
+	\Fontvi
+	Un gen descrito por un término está ``anotado'' en ese término.	
 \end{columns}
 \end{frame}
 
@@ -273,10 +319,10 @@ Buscamos cuantificar la congruencia biológica de las particiones halladas
 	\column{0.3\textwidth}
 	\Fontvi
 	\begin{enumerate}
-	\item Términos mas específicos presentan mayor ID.
-	\item Agrupamientos hasta 100 genes correlacionan con la información biológica embebida en la ontología.
-	\item Las estructuras en KEGG presentan mayor congruencia con las ontologías, seguidas por AI1 y expresión.
-	\item $ds1$ presenta mayor congruencia biológica que $ds4$. Indicio acerca de la escala de granularidad apropiada.
+	\item Términos mas específicos presentan mayor ID en una relación decreciente.
+	\item DS1 presenta mayor congruencia biológica que DS4. Indicio acerca de la escala apropiada.
+	\item Ambos presentan mayor congruencia biológica que control nulo.
+	\item Los agrupamientos inducidos por otra información presentan mayor congruencia que los inducidos por expresión.
 	\end{enumerate}
 	\column{0.7\textwidth}
 	\begin{figure}
@@ -289,30 +335,26 @@ Buscamos cuantificar la congruencia biológica de las particiones halladas
 \begin{frame}\frametitle{Indice de homogeneidad biológica} 
 \begin{figure}
     	\centering
-	\includegraphics[width=0.8\textwidth]{bhi_km_ds1_ds4_control1.pdf}
+	\includegraphics[width=0.78\textwidth]{bhi_km_ds1_ds4_control1.pdf}
 \end{figure}
+\Fontvi
 \centering
-Particiones altamente coherentes pero de baja calidad de BHI.
+Grupos altamente coherentes pero de baja calidad de BHI. No tienen soporte biológico.
 \end{frame}
 
 \section{Coherencia entre métricas}
 
 \subsection{Métrica en GO}
 \begin{frame}\frametitle{Similaridad entre genes en GO}
-Definimos la similaridad entre genes en el espacio GO como:
-\begin{equation}
-	Sim_{rcmax}(GO(g_1), GO(g_2)) = \max\{\frac{1}{N}\sum\limits_{i}\max\limits_{1\leq j \leq M}S_{ij}, \frac{1}{M}\sum\limits_{j}\max\limits_{1\leq i \leq N}S_{ij}\}
-\end{equation}
+\centering
+Podemos definir similaridades entre genes en el espacio GO\\
 \bigskip
-Donde:
-\begin{equation}
-	S(g_1, g_2)_{ij} = Sim_{res}(GO(g_1^i), GO(g_2^j)), \forall i \in \{1,...,N\} y \forall j \in \{1,...,M\}
-\end{equation}
-con:
+\includegraphics[width=0.5\textwidth]{dag.pdf}
+\\\bigskip
+Utilizando la similaridad entre términos:
 \begin{equation}
 	Sim_{res}(c_i, c_j) = \max\limits_{c \in S(c_i, c_j)}(-log_2[P(c)]) = IC(MICA[c_i, c_j])
 \end{equation}
-la similaridad entre términos.
 \end{frame}
 
 \subsection{KTA global}
@@ -326,7 +368,8 @@ El KTA de un kernel $k_1$ con respecto a un kernel $k_2$ del conjunto $C$ cuanti
 \begin{equation}
 	\hat{A}(C, k_1, k_2) = \frac{\langle K_1, K_2 \rangle _F}{\sqrt{\langle K_1, K_1 \rangle _F \langle K_2, K_2 \rangle _F}}
 \end{equation}
-con $\langle K_1, K_1 \rangle _F = \sum_{i,j=1}^m K1(x_i, x_j)K2(x_i, x_j)$ es el producto interno de Frobenius.\\
+con $\langle K_1, K_1 \rangle _F = \sum_{i,j=1}^m K_1(x_i, x_j)K_2(x_i, x_j)$ es el producto interno de Frobenius.\\
+Intiutivamente, si $\langle K_1, K_1 \rangle$ es grande, ambos kernels son coherentes.
 \end{frame}
 
 \begin{frame}\frametitle{KTA global} 
@@ -341,29 +384,31 @@ KTA global entre expresión y ontología BPB con control nulo
 
 \subsection{Modulación de heterogeneidades
 transcripcionales con GO}
-\begin{frame}\frametitle{Red 30 primeros vecinos mutuos} 
-\bigskip
-\begin{columns}[T]
-	\column{0.5\textwidth}
-	\centering
-    Distribución de grado\\	
-    \bigskip
-    \includegraphics[width=1\textwidth]{erdos_renyi_vs_30kmnn.pdf}\\
-    Red y modelo nulo Erdös-Renyi
-    \column{0.5\textwidth}
-    \centering
-    Betweenness\\
-    \bigskip
-    \includegraphics[width=1\textwidth]{betweenness_er_30_conf.pdf}\\
-    Red, modelo nulo Erdös-Renyi y modelo configuracional
-\end{columns}
-\end{frame}
+%\begin{frame}\frametitle{Red 30 primeros vecinos mutuos} 
+%\bigskip
+%\begin{columns}[T]
+%	\column{0.5\textwidth}
+%	\centering
+%   Distribución de grado\\	
+%  \bigskip
+%    \includegraphics[width=1\textwidth]{erdos_renyi_vs_30kmnn.pdf}\\
+%    Red y modelo nulo Erdös-Renyi
+%    \column{0.5\textwidth}
+%    \centering
+%    Betweenness\\
+%    \bigskip
+%    \includegraphics[width=1\textwidth]{betweenness_er_30_conf.pdf}\\
+%    Red, modelo nulo Erdös-Renyi y modelo configuracional
+%\end{columns}
+%\end{frame}
 
 \begin{frame}\frametitle{Red 30 primeros vecinos mutuos - vecindades locales} 
+\centering
+Queremos detectar zonas de alta coherencia.\\
 \bigskip
 \begin{columns}[T]
 	\column{0.5\textwidth}
-	Vecindad de una arista a primeros vecinos:
+	 Generamos una red de 30 primeros vecinos mutuos y vamos a ver arista por arista, una localidad definida por los primeros vecinos:
 	\bigskip
 	\begin{itemize}
 	\item $n_x$ nodos.
@@ -374,8 +419,10 @@ transcripcionales con GO}
     \column{0.5\textwidth}
     \centering
     \bigskip
-    GRAFICO DE VECINDAD
-    %\includegraphics[width=1\textwidth]{}\\
+    \includegraphics[width=0.8\textwidth]{vecindario_local.pdf}\\
+    \bigskip
+    \Fontvi
+	A modo de ejemplo, la red para tratamiento ``Frío'' consta de 1951 nodos y 18436 aristas.
 \end{columns}
 \end{frame}
 
@@ -398,22 +445,21 @@ transcripcionales con GO}
 
 \subsubsection*{Métrica mixta}
 \begin{frame}\frametitle{Métrica mixta} 
-Modificaremos los pesos de las aristas utilizando la información de coherencia biológica presente en KTA:
+Dada una arista, el peso de una arista y el promedio de pesos, tenemos una manera de decir cuando una vecindad es o no biologicamente coherente.\\
+\bigskip
+Vamos a usar esto para encontrar grupos transcripcionales teniendo en cuenta las coherencias biológicas locales modificando los pesos:
+\bigskip
 \begin{equation}
-	w_{ij} = simcor_{ij}^{stress}
+	w_{ij} = simcor_{ij}^{\beta*stress_{ij}}
 \end{equation}
 Donde:
 \begin{equation}
-	stress = \frac{KTA_{fondo}}{KTAl_{ij}}
+	stress_{ij} = \frac{KTA_{fondo}}{KTAl_{ij}}
 \end{equation}
-Típicamente $stress$ oscila entre $0.8$ y $1.2$.\\
-Buscamos un parámetro $\beta$ tal que la distribución de \textit{strenght} de la red siga una ley de potencias:
-\begin{equation}
-	w_{ij}^{'} = w_{ij}^{\beta}
-\end{equation}
-\centering
-\includegraphics[width=0.3\textwidth]{distribucion_strength_beta_1.pdf}
-\includegraphics[width=0.3\textwidth]{distribucion_strength_beta_4.pdf}
+\bigskip
+Típicamente el $stress$ oscila entre $0.8$ y $1.2$.\\
+\bigskip
+$\beta$ es un parámetro que permite aumentar aún más la homogeneidad de la red.
 \end{frame}
 
 \subsubsection*{Métodos heurísticos}

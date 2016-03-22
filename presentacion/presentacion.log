@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  22 MAR 2016 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.2.2)  22 MAR 2016 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,20 +1009,20 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1088,7 +1088,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1098,9 +1098,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 (./presentacion.out) (./presentacion.out)
 \@outlinefile=\write5
@@ -1131,9 +1131,9 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 29.
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \includegraphics on input line 31.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: Incompatible package detected (regarding \caption).
@@ -1152,17 +1152,17 @@ Package caption Info: End \AtBeginDocument code.
 (./presentacion.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 31.
+(hyperref)                setting the option has no effect on input line 33.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 42.
+(Font)              size <5> substituted on input line 44.
 
-<figuras/logo_exactas.jpg, id=91, 193.91257pt x 188.90376pt>
+<figuras/logo_exactas.jpg, id=87, 193.91257pt x 188.90376pt>
 File: figuras/logo_exactas.jpg Graphic file (type jpg)
 
 <use figuras/logo_exactas.jpg>
-Package pdftex.def Info: figuras/logo_exactas.jpg used on input line 42.
+Package pdftex.def Info: figuras/logo_exactas.jpg used on input line 44.
 (pdftex.def)             Requested size: 48.47801pt x 47.22581pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
@@ -1181,38 +1181,54 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [2
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 72.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 72.
+] <figuras/celula_eucariota.png, id=149, 1361.085pt x 1167.36125pt>
+File: figuras/celula_eucariota.png Graphic file (type png)
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+<use figuras/celula_eucariota.png>
+Package pdftex.def Info: figuras/celula_eucariota.png used on input line 67.
+(pdftex.def)             Requested size: 153.64493pt x 131.77669pt.
+
+<figuras/adn3.png, id=151, 526.96875pt x 614.295pt>
+File: figuras/adn3.png Graphic file (type png)
+ <use figuras/adn3.png>
+Package pdftex.def Info: figuras/adn3.png used on input line 67.
+(pdftex.def)             Requested size: 153.64493pt x 179.10643pt.
+
+Overfull \vbox (16.99635pt too high) detected at line 67
+ []
+
+
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [3
 
-] <figuras/celula_eucariota.png, id=169, 1361.085pt x 1167.36125pt>
-File: figuras/celula_eucariota.png Graphic file (type png)
+ <./figuras/celula_eucariota.png> <./figuras/adn3.png>]
+<figuras/micromatriz_y_arabidopsis.png, id=168, 702.625pt x 806.01125pt>
+File: figuras/micromatriz_y_arabidopsis.png Graphic file (type png)
 
-<use figuras/celula_eucariota.png>
-Package pdftex.def Info: figuras/celula_eucariota.png used on input line 85.
-(pdftex.def)             Requested size: 153.64493pt x 131.77669pt.
+<use figuras/micromatriz_y_arabidopsis.png>
+Package pdftex.def Info: figuras/micromatriz_y_arabidopsis.png used on input li
+ne 89.
+(pdftex.def)             Requested size: 153.64493pt x 176.25302pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
 
-<figuras/adn3.png, id=171, 526.96875pt x 614.295pt>
-File: figuras/adn3.png Graphic file (type png)
- <use figuras/adn3.png>
-Package pdftex.def Info: figuras/adn3.png used on input line 85.
-(pdftex.def)             Requested size: 153.64493pt x 179.10643pt.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 
-Overfull \vbox (4.29636pt too high) detected at line 85
- []
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<figuras/perfiles_sin_agrupar.pdf, id=169, 794.97pt x 614.295pt>
+File: figuras/perfiles_sin_agrupar.pdf Graphic file (type pdf)
 
+<use figuras/perfiles_sin_agrupar.pdf>
+Package pdftex.def Info: figuras/perfiles_sin_agrupar.pdf used on input line 89
+.
+(pdftex.def)             Requested size: 107.55098pt x 83.10434pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
@@ -1220,26 +1236,14 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [4
 
- <./figuras/celula_eucariota.png> <./figuras/adn3.png>]
-<figuras/micromatriz_y_arabidopsis.png, id=189, 702.625pt x 806.01125pt>
-File: figuras/micromatriz_y_arabidopsis.png Graphic file (type png)
+ <./figuras/micromatriz_y_arabidopsis.png> <./figuras/perfiles_sin_agrupar.pdf>
+] <figuras/perfiles_coregulados.pdf, id=193, 794.97pt x 614.295pt>
+File: figuras/perfiles_coregulados.pdf Graphic file (type pdf)
 
-<use figuras/micromatriz_y_arabidopsis.png>
-Package pdftex.def Info: figuras/micromatriz_y_arabidopsis.png used on input li
-ne 105.
-(pdftex.def)             Requested size: 153.64493pt x 176.25302pt.
-
-<figuras/perfiles_sin_agrupar.pdf, id=190, 794.97pt x 614.295pt>
-File: figuras/perfiles_sin_agrupar.pdf Graphic file (type pdf)
-
-<use figuras/perfiles_sin_agrupar.pdf>
-Package pdftex.def Info: figuras/perfiles_sin_agrupar.pdf used on input line 10
-5.
-(pdftex.def)             Requested size: 138.2795pt x 106.84709pt.
-
-Overfull \vbox (11.31616pt too high) detected at line 105
- []
-
+<use figuras/perfiles_coregulados.pdf>
+Package pdftex.def Info: figuras/perfiles_coregulados.pdf used on input line 11
+7.
+(pdftex.def)             Requested size: 122.9164pt x 94.9804pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
@@ -1247,26 +1251,13 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [5
 
- <./figuras/micromatriz_y_arabidopsis.png> <./figuras/perfiles_sin_agrupar.pdf>
-] <figuras/distancia_euclidiana.png, id=213, 531.9875pt x 425.59pt>
-File: figuras/distancia_euclidiana.png Graphic file (type png)
-
-<use figuras/distancia_euclidiana.png>
-Package pdftex.def Info: figuras/distancia_euclidiana.png used on input line 13
-5.
-(pdftex.def)             Requested size: 96.79521pt x 77.43411pt.
-
-<figuras/perfiles_coregulados.pdf, id=214, 794.97pt x 614.295pt>
+ <./figuras/perfiles_coregulados.pdf>]
 File: figuras/perfiles_coregulados.pdf Graphic file (type pdf)
 
 <use figuras/perfiles_coregulados.pdf>
 Package pdftex.def Info: figuras/perfiles_coregulados.pdf used on input line 13
 5.
-(pdftex.def)             Requested size: 118.30673pt x 91.41852pt.
-
-Overfull \vbox (5.09268pt too high) detected at line 135
- []
-
+(pdftex.def)             Requested size: 138.2795pt x 106.84709pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
@@ -1274,20 +1265,13 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [6
 
- <./figuras/distancia_euclidiana.png> <./figuras/perfiles_coregulados.pdf>]
-<figuras/ejemplo_kmeans_k2.pdf, id=238, 794.97pt x 614.295pt>
-File: figuras/ejemplo_kmeans_k2.pdf Graphic file (type pdf)
+] <figuras/dendrograma_muestra.pdf, id=230, 794.97pt x 614.295pt>
+File: figuras/dendrograma_muestra.pdf Graphic file (type pdf)
 
-<use figuras/ejemplo_kmeans_k2.pdf>
-Package pdftex.def Info: figuras/ejemplo_kmeans_k2.pdf used on input line 163.
-(pdftex.def)             Requested size: 122.9164pt x 94.9804pt.
-
-<figuras/ejemplo_kmeans_k5.pdf, id=239, 794.97pt x 614.295pt>
-File: figuras/ejemplo_kmeans_k5.pdf Graphic file (type pdf)
-
-<use figuras/ejemplo_kmeans_k5.pdf>
-Package pdftex.def Info: figuras/ejemplo_kmeans_k5.pdf used on input line 163.
-(pdftex.def)             Requested size: 122.9164pt x 94.9804pt.
+<use figuras/dendrograma_muestra.pdf>
+Package pdftex.def Info: figuras/dendrograma_muestra.pdf used on input line 204
+.
+(pdftex.def)             Requested size: 153.64493pt x 118.72316pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
@@ -1295,14 +1279,27 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [7
 
- <./figuras/ejemplo_kmeans_k2.pdf> <./figuras/ejemplo_kmeans_k5.pdf>]
-<figuras/cut_tree_dynamic_ejemplo.png, id=267, 969.6225pt x 413.545pt>
-File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
+ <./figuras/dendrograma_muestra.pdf>]
+<figuras/ejemplo_kmeans_k2.pdf, id=250, 794.97pt x 614.295pt>
+File: figuras/ejemplo_kmeans_k2.pdf Graphic file (type pdf)
 
-<use figuras/cut_tree_dynamic_ejemplo.png>
-Package pdftex.def Info: figuras/cut_tree_dynamic_ejemplo.png used on input lin
-e 176.
-(pdftex.def)             Requested size: 295.80101pt x 126.15813pt.
+<use figuras/ejemplo_kmeans_k2.pdf>
+Package pdftex.def Info: figuras/ejemplo_kmeans_k2.pdf used on input line 216.
+(pdftex.def)             Requested size: 122.9164pt x 94.9804pt.
+
+<figuras/ejemplo_kmeans_k5.pdf, id=251, 794.97pt x 614.295pt>
+File: figuras/ejemplo_kmeans_k5.pdf Graphic file (type pdf)
+
+<use figuras/ejemplo_kmeans_k5.pdf>
+Package pdftex.def Info: figuras/ejemplo_kmeans_k5.pdf used on input line 216.
+(pdftex.def)             Requested size: 122.9164pt x 94.9804pt.
+
+<figuras/ejemplo_dtc.pdf, id=252, 794.97pt x 614.295pt>
+File: figuras/ejemplo_dtc.pdf Graphic file (type pdf)
+
+<use figuras/ejemplo_dtc.pdf>
+Package pdftex.def Info: figuras/ejemplo_dtc.pdf used on input line 216.
+(pdftex.def)             Requested size: 122.91406pt x 94.97102pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
@@ -1310,12 +1307,13 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [8
 
- <./figuras/cut_tree_dynamic_ejemplo.png>]
-<figuras/perfiles_k_means.png, id=283, 1213.53375pt x 744.7825pt>
+ <./figuras/ejemplo_kmeans_k2.pdf> <./figuras/ejemplo_kmeans_k5.pdf> <./figuras
+/ejemplo_dtc.pdf>]
+<figuras/perfiles_k_means.png, id=285, 1213.53375pt x 744.7825pt>
 File: figuras/perfiles_k_means.png Graphic file (type png)
 
 <use figuras/perfiles_k_means.png>
-Package pdftex.def Info: figuras/perfiles_k_means.png used on input line 182.
+Package pdftex.def Info: figuras/perfiles_k_means.png used on input line 222.
 (pdftex.def)             Requested size: 307.28987pt x 188.59306pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
@@ -1325,21 +1323,14 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [9
 
  <./figuras/perfiles_k_means.png (PNG copy)>]
-<figuras/perfiles_ds_1.pdf, id=298, 614.295pt x 794.97pt>
+<figuras/perfiles_ds_1.pdf, id=299, 614.295pt x 794.97pt>
 File: figuras/perfiles_ds_1.pdf Graphic file (type pdf)
 
 <use figuras/perfiles_ds_1.pdf>
-Package pdftex.def Info: figuras/perfiles_ds_1.pdf used on input line 197.
-(pdftex.def)             Requested size: 138.2795pt x 178.94543pt.
+Package pdftex.def Info: figuras/perfiles_ds_1.pdf used on input line 228.
+(pdftex.def)             Requested size: 245.8355pt x 183.49428pt.
 
-<figuras/perfiles_ds_4.pdf, id=299, 614.295pt x 794.97pt>
-File: figuras/perfiles_ds_4.pdf Graphic file (type pdf)
-
-<use figuras/perfiles_ds_4.pdf>
-Package pdftex.def Info: figuras/perfiles_ds_4.pdf used on input line 197.
-(pdftex.def)             Requested size: 138.2795pt x 178.94543pt.
-
-Overfull \vbox (0.76035pt too high) detected at line 197
+Overfull \vbox (1.93417pt too high) detected at line 228
  []
 
 
@@ -1349,44 +1340,22 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [10
 
- <./figuras/perfiles_ds_1.pdf> <./figuras/perfiles_ds_4.pdf>]
-<figuras/correlacion_media_por_tamano_ds_1.pdf, id=328, 614.295pt x 794.97pt>
-File: figuras/correlacion_media_por_tamano_ds_1.pdf Graphic file (type pdf)
-
-<use figuras/correlacion_media_por_tamano_ds_1.pdf>
-Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_1.pdf used on 
-input line 212.
-(pdftex.def)             Requested size: 138.2795pt x 178.94543pt.
-
-<figuras/correlacion_media_por_tamano_ds_4.pdf, id=329, 614.295pt x 794.97pt>
-File: figuras/correlacion_media_por_tamano_ds_4.pdf Graphic file (type pdf)
-
-<use figuras/correlacion_media_por_tamano_ds_4.pdf>
-Package pdftex.def Info: figuras/correlacion_media_por_tamano_ds_4.pdf used on 
-input line 212.
-(pdftex.def)             Requested size: 138.2795pt x 178.94543pt.
-
-Overfull \vbox (0.76035pt too high) detected at line 212
- []
-
-
+ <./figuras/perfiles_ds_1.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
- <./figuras/correlacion_media_por_tamano_ds_1.pdf> <./figuras/correlacion_media
-_por_tamano_ds_4.pdf>]
-<figuras/fraccion_de_km_en_ds1_en_ds4.pdf, id=363, 614.295pt x 794.97pt>
-File: figuras/fraccion_de_km_en_ds1_en_ds4.pdf Graphic file (type pdf)
+] <figuras/ejemplo_de_go.png, id=335, 682.55pt x 701.62125pt>
+File: figuras/ejemplo_de_go.png Graphic file (type png)
 
-<use figuras/fraccion_de_km_en_ds1_en_ds4.pdf>
-Package pdftex.def Info: figuras/fraccion_de_km_en_ds1_en_ds4.pdf used on input
- line 222.
-(pdftex.def)             Requested size: 283.60081pt x 367.00485pt.
+<use figuras/ejemplo_de_go.png>
+Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 289.
+(pdftex.def)             Requested size: 169.01035pt x 173.72404pt.
 
-Overfull \vbox (193.94475pt too high) detected at line 222
+Overfull \hbox (15.36542pt too wide) in paragraph at lines 289--289
+ [][] 
  []
 
 
@@ -1396,31 +1365,8 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [12
 
- <./figuras/fraccion_de_km_en_ds1_en_ds4.pdf>]
-<figuras/ejemplo_de_go.png, id=385, 682.55pt x 701.62125pt>
-File: figuras/ejemplo_de_go.png Graphic file (type png)
-
-<use figuras/ejemplo_de_go.png>
-Package pdftex.def Info: figuras/ejemplo_de_go.png used on input line 243.
-(pdftex.def)             Requested size: 169.01035pt x 173.72404pt.
-
-Overfull \hbox (15.36542pt too wide) in paragraph at lines 243--243
- [][] 
- []
-
-
-Overfull \vbox (5.31487pt too high) detected at line 243
- []
-
-
-Overfull \hbox (2.21254pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[13
-
  <./figuras/ejemplo_de_go.png>]
-Overfull \hbox (21.87527pt too wide) detected at line 269
+Overfull \hbox (21.87527pt too wide) detected at line 315
 \OML/cmm/m/it/9 BHI[] \OT1/cmr/m/n/9 = [] [] \OML/cmm/m/it/9 I\OT1/cmr/m/n/9 (\
 OML/cmm/m/it/9 C\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = \OML/cmm/m/
 it/9 C\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 y\OT1/cmr/m/n/9 ))
@@ -1431,15 +1377,30 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[14
+[13
 
-] <figuras/interacting_densities_bpb.pdf, id=413, 794.97pt x 614.295pt>
+] <figuras/interacting_densities_bpb.pdf, id=363, 794.97pt x 614.295pt>
 File: figuras/interacting_densities_bpb.pdf Graphic file (type pdf)
 
 <use figuras/interacting_densities_bpb.pdf>
 Package pdftex.def Info: figuras/interacting_densities_bpb.pdf used on input li
-ne 287.
+ne 333.
 (pdftex.def)             Requested size: 215.10196pt x 166.21805pt.
+
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[14
+
+ <./figuras/interacting_densities_bpb.pdf>]
+<figuras/bhi_km_ds1_ds4_control1.pdf, id=383, 794.97pt x 614.295pt>
+File: figuras/bhi_km_ds1_ds4_control1.pdf Graphic file (type pdf)
+
+<use figuras/bhi_km_ds1_ds4_control1.pdf>
+Package pdftex.def Info: figuras/bhi_km_ds1_ds4_control1.pdf used on input line
+ 343.
+(pdftex.def)             Requested size: 239.68571pt x 185.20851pt.
 
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
@@ -1447,16 +1408,16 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [15
 
- <./figuras/interacting_densities_bpb.pdf>]
-<figuras/bhi_km_ds1_ds4_control1.pdf, id=435, 794.97pt x 614.295pt>
-File: figuras/bhi_km_ds1_ds4_control1.pdf Graphic file (type pdf)
+ <./figuras/bhi_km_ds1_ds4_control1.pdf>]
+<figuras/dag.pdf, id=403, 528.97626pt x 308.15125pt>
+File: figuras/dag.pdf Graphic file (type pdf)
+ <use figuras/dag.pdf>
+Package pdftex.def Info: figuras/dag.pdf used on input line 358.
+(pdftex.def)             Requested size: 153.64493pt x 89.50262pt.
 
-<use figuras/bhi_km_ds1_ds4_control1.pdf>
-Package pdftex.def Info: figuras/bhi_km_ds1_ds4_control1.pdf used on input line
- 296.
-(pdftex.def)             Requested size: 245.83282pt x 189.9608pt.
-
-Overfull \vbox (5.4507pt too high) detected at line 296
+Overfull \hbox (6.40022pt too wide) has occurred while \output is active
+ []\OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO[] 
+ 
  []
 
 
@@ -1466,7 +1427,7 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [16
 
- <./figuras/bhi_km_ds1_ds4_control1.pdf>]
+ <./figuras/dag.pdf>]
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
  []\OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO[] 
  
@@ -1479,24 +1440,11 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [17
 
-]
-Overfull \hbox (6.40022pt too wide) has occurred while \output is active
- []\OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO[] 
- 
- []
-
-
-Overfull \hbox (2.21254pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[18
-
-] <figuras/kta_global_bpb.pdf, id=481, 764.8575pt x 563.10374pt>
+] <figuras/kta_global_bpb.pdf, id=443, 764.8575pt x 563.10374pt>
 File: figuras/kta_global_bpb.pdf Graphic file (type pdf)
 
 <use figuras/kta_global_bpb.pdf>
-Package pdftex.def Info: figuras/kta_global_bpb.pdf used on input line 340.
+Package pdftex.def Info: figuras/kta_global_bpb.pdf used on input line 383.
 (pdftex.def)             Requested size: 245.83282pt x 180.98737pt.
 
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
@@ -1509,24 +1457,65 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[19
+[18
 
  <./figuras/kta_global_bpb.pdf>]
-<figuras/erdos_renyi_vs_30kmnn.pdf, id=505, 794.97pt x 614.295pt>
-File: figuras/erdos_renyi_vs_30kmnn.pdf Graphic file (type pdf)
+<figuras/vecindario_local.pdf, id=466, 502.87875pt x 554.07pt>
+File: figuras/vecindario_local.pdf Graphic file (type pdf)
 
-<use figuras/erdos_renyi_vs_30kmnn.pdf>
-Package pdftex.def Info: figuras/erdos_renyi_vs_30kmnn.pdf used on input line 3
-60.
-(pdftex.def)             Requested size: 153.64493pt x 118.72316pt.
+<use figuras/vecindario_local.pdf>
+Package pdftex.def Info: figuras/vecindario_local.pdf used on input line 427.
+(pdftex.def)             Requested size: 122.9164pt x 135.42284pt.
 
-<figuras/betweenness_er_30_conf.pdf, id=506, 794.97pt x 614.295pt>
-File: figuras/betweenness_er_30_conf.pdf Graphic file (type pdf)
+Overfull \vbox (0.83774pt too high) detected at line 427
+ []
 
-<use figuras/betweenness_er_30_conf.pdf>
-Package pdftex.def Info: figuras/betweenness_er_30_conf.pdf used on input line 
-360.
-(pdftex.def)             Requested size: 153.64493pt x 118.72316pt.
+
+Overfull \hbox (6.40022pt too wide) has occurred while \output is active
+ \OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO  
+ []
+
+
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+ <./figuras/vecindario_local.pdf>]
+<figuras/nx_vs_ny.pdf, id=493, 765.86125pt x 545.03625pt>
+File: figuras/nx_vs_ny.pdf Graphic file (type pdf)
+
+<use figuras/nx_vs_ny.pdf>
+Package pdftex.def Info: figuras/nx_vs_ny.pdf used on input line 444.
+(pdftex.def)             Requested size: 138.2795pt x 98.40169pt.
+
+<figuras/lktaanotados_vs_wnyanotados.pdf, id=494, 765.86125pt x 550.055pt>
+File: figuras/lktaanotados_vs_wnyanotados.pdf Graphic file (type pdf)
+
+<use figuras/lktaanotados_vs_wnyanotados.pdf>
+Package pdftex.def Info: figuras/lktaanotados_vs_wnyanotados.pdf used on input 
+line 444.
+(pdftex.def)             Requested size: 138.2795pt x 99.30777pt.
+
+<figuras/wy_vs_wynanotados.pdf, id=495, 765.86125pt x 550.055pt>
+File: figuras/wy_vs_wynanotados.pdf Graphic file (type pdf)
+
+<use figuras/wy_vs_wynanotados.pdf>
+Package pdftex.def Info: figuras/wy_vs_wynanotados.pdf used on input line 444.
+(pdftex.def)             Requested size: 138.2795pt x 99.30777pt.
+
+<figuras/lktaanotados_vs_nyanotados.pdf, id=496, 765.86125pt x 550.055pt>
+File: figuras/lktaanotados_vs_nyanotados.pdf Graphic file (type pdf)
+
+<use figuras/lktaanotados_vs_nyanotados.pdf>
+Package pdftex.def Info: figuras/lktaanotados_vs_nyanotados.pdf used on input l
+ine 444.
+(pdftex.def)             Requested size: 138.2795pt x 99.30777pt.
+
+Overfull \vbox (0.48045pt too high) detected at line 444
+ []
+
 
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
  \OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO  
@@ -1539,7 +1528,8 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [20
 
- <./figuras/erdos_renyi_vs_30kmnn.pdf> <./figuras/betweenness_er_30_conf.pdf>]
+ <./figuras/nx_vs_ny.pdf> <./figuras/lktaanotados_vs_wnyanotados.pdf> <./figura
+s/wy_vs_wynanotados.pdf> <./figuras/lktaanotados_vs_nyanotados.pdf>]
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
  \OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO  
  []
@@ -1551,37 +1541,15 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [21
 
-] <figuras/nx_vs_ny.pdf, id=555, 765.86125pt x 545.03625pt>
-File: figuras/nx_vs_ny.pdf Graphic file (type pdf)
+] <figuras/metodos_mixtos_grupo_2.png, id=559, 1204.5pt x 1080.035pt>
+File: figuras/metodos_mixtos_grupo_2.png Graphic file (type png)
 
-<use figuras/nx_vs_ny.pdf>
-Package pdftex.def Info: figuras/nx_vs_ny.pdf used on input line 397.
-(pdftex.def)             Requested size: 138.2795pt x 98.40169pt.
+<use figuras/metodos_mixtos_grupo_2.png>
+Package pdftex.def Info: figuras/metodos_mixtos_grupo_2.png used on input line 
+472.
+(pdftex.def)             Requested size: 215.10196pt x 192.86526pt.
 
-<figuras/lktaanotados_vs_wnyanotados.pdf, id=556, 765.86125pt x 550.055pt>
-File: figuras/lktaanotados_vs_wnyanotados.pdf Graphic file (type pdf)
-
-<use figuras/lktaanotados_vs_wnyanotados.pdf>
-Package pdftex.def Info: figuras/lktaanotados_vs_wnyanotados.pdf used on input 
-line 397.
-(pdftex.def)             Requested size: 138.2795pt x 99.30777pt.
-
-<figuras/wy_vs_wynanotados.pdf, id=557, 765.86125pt x 550.055pt>
-File: figuras/wy_vs_wynanotados.pdf Graphic file (type pdf)
-
-<use figuras/wy_vs_wynanotados.pdf>
-Package pdftex.def Info: figuras/wy_vs_wynanotados.pdf used on input line 397.
-(pdftex.def)             Requested size: 138.2795pt x 99.30777pt.
-
-<figuras/lktaanotados_vs_nyanotados.pdf, id=558, 765.86125pt x 550.055pt>
-File: figuras/lktaanotados_vs_nyanotados.pdf Graphic file (type pdf)
-
-<use figuras/lktaanotados_vs_nyanotados.pdf>
-Package pdftex.def Info: figuras/lktaanotados_vs_nyanotados.pdf used on input l
-ine 397.
-(pdftex.def)             Requested size: 138.2795pt x 99.30777pt.
-
-Overfull \vbox (0.48045pt too high) detected at line 397
+Overfull \vbox (0.35516pt too high) detected at line 472
  []
 
 
@@ -1596,23 +1564,18 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [22
 
- <./figuras/nx_vs_ny.pdf> <./figuras/lktaanotados_vs_wnyanotados.pdf> <./figura
-s/wy_vs_wynanotados.pdf> <./figuras/lktaanotados_vs_nyanotados.pdf>]
-<figuras/distribucion_strength_beta_1.pdf, id=605, 794.97pt x 614.295pt>
-File: figuras/distribucion_strength_beta_1.pdf Graphic file (type pdf)
+ <./figuras/metodos_mixtos_grupo_2.png (PNG copy)>]
+<figuras/bhi_nuevo_vs_bhi_original.pdf, id=575, 794.97pt x 614.295pt>
+File: figuras/bhi_nuevo_vs_bhi_original.pdf Graphic file (type pdf)
 
-<use figuras/distribucion_strength_beta_1.pdf>
-Package pdftex.def Info: figuras/distribucion_strength_beta_1.pdf used on input
- line 417.
-(pdftex.def)             Requested size: 92.1879pt x 71.22827pt.
+<use figuras/bhi_nuevo_vs_bhi_original.pdf>
+Package pdftex.def Info: figuras/bhi_nuevo_vs_bhi_original.pdf used on input li
+ne 479.
+(pdftex.def)             Requested size: 307.28987pt x 237.45569pt.
 
-<figuras/distribucion_strength_beta_4.pdf, id=606, 794.97pt x 614.295pt>
-File: figuras/distribucion_strength_beta_4.pdf Graphic file (type pdf)
+Overfull \vbox (44.94559pt too high) detected at line 479
+ []
 
-<use figuras/distribucion_strength_beta_4.pdf>
-Package pdftex.def Info: figuras/distribucion_strength_beta_4.pdf used on input
- line 417.
-(pdftex.def)             Requested size: 92.1879pt x 71.22827pt.
 
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
  \OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO  
@@ -1625,17 +1588,15 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [23
 
- <./figuras/distribucion_strength_beta_1.pdf> <./figuras/distribucion_strength_
-beta_4.pdf>]
-<figuras/metodos_mixtos_grupo_2.png, id=636, 1204.5pt x 1080.035pt>
-File: figuras/metodos_mixtos_grupo_2.png Graphic file (type png)
+ <./figuras/bhi_nuevo_vs_bhi_original.pdf>]
+<figuras/fisher_grupo_2.pdf, id=595, 746.79pt x 643.40375pt>
+File: figuras/fisher_grupo_2.pdf Graphic file (type pdf)
 
-<use figuras/metodos_mixtos_grupo_2.png>
-Package pdftex.def Info: figuras/metodos_mixtos_grupo_2.png used on input line 
-426.
-(pdftex.def)             Requested size: 215.10196pt x 192.86526pt.
+<use figuras/fisher_grupo_2.pdf>
+Package pdftex.def Info: figuras/fisher_grupo_2.pdf used on input line 485.
+(pdftex.def)             Requested size: 276.559pt x 238.27164pt.
 
-Overfull \vbox (0.35516pt too high) detected at line 426
+Overfull \vbox (33.06154pt too high) detected at line 485
  []
 
 
@@ -1650,66 +1611,19 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [24
 
- <./figuras/metodos_mixtos_grupo_2.png (PNG copy)>]
-<figuras/bhi_nuevo_vs_bhi_original.pdf, id=652, 794.97pt x 614.295pt>
-File: figuras/bhi_nuevo_vs_bhi_original.pdf Graphic file (type pdf)
-
-<use figuras/bhi_nuevo_vs_bhi_original.pdf>
-Package pdftex.def Info: figuras/bhi_nuevo_vs_bhi_original.pdf used on input li
-ne 433.
-(pdftex.def)             Requested size: 307.28987pt x 237.45569pt.
-
-Overfull \vbox (44.94559pt too high) detected at line 433
- []
-
-
-Overfull \hbox (6.40022pt too wide) has occurred while \output is active
- \OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO  
- []
-
-
+ <./figuras/fisher_grupo_2.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [25
 
- <./figuras/bhi_nuevo_vs_bhi_original.pdf>]
-<figuras/fisher_grupo_2.pdf, id=674, 746.79pt x 643.40375pt>
-File: figuras/fisher_grupo_2.pdf Graphic file (type pdf)
-
-<use figuras/fisher_grupo_2.pdf>
-Package pdftex.def Info: figuras/fisher_grupo_2.pdf used on input line 439.
-(pdftex.def)             Requested size: 276.559pt x 238.27164pt.
-
-Overfull \vbox (33.06154pt too high) detected at line 439
- []
-
-
-Overfull \hbox (6.40022pt too wide) has occurred while \output is active
- \OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO  
- []
-
-
-Overfull \hbox (2.21254pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[26
-
- <./figuras/fisher_grupo_2.pdf>]
-Overfull \hbox (2.21254pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
 ]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[28
+[26
 
 ]
 \tf@nav=\write6
@@ -1721,29 +1635,29 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 507.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 507.
  (./presentacion.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 507.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 507.
 Package rerunfilecheck Info: File `presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: 4BC69394C38BA964C12EB56AA48781E8;1236.
+(rerunfilecheck)             Checksum: D785036542DF2CDE4F5A49D1D4BA9750;1149.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 461.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 507.
  ) 
 Here is how much of TeX's memory you used:
- 19094 strings out of 494917
- 360300 string characters out of 6178372
- 434459 words of memory out of 5000000
- 21776 multiletter control sequences out of 15000+600000
- 11815 words of font info for 46 fonts, out of 8000000 for 9000
+ 19035 strings out of 494917
+ 358538 string characters out of 6178372
+ 434559 words of memory out of 5000000
+ 21733 multiletter control sequences out of 15000+600000
+ 8978 words of font info for 35 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  48i,20n,62p,432b,846s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb>
@@ -1756,16 +1670,14 @@ s/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on presentacion.pdf (28 pages, 3296801 bytes).
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on presentacion.pdf (26 pages, 2917641 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 653 compressed objects within 7 object streams
- 78 named destinations out of 1000 (max. 500000)
- 368 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 582 compressed objects within 6 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 

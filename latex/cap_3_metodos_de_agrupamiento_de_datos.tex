@@ -129,7 +129,7 @@ Con $S(c_i, c_j)$ el conjunto de ancestros comunes de $c_i$ y $c_j$. De esta man
 A modo de ejemplo, tomemos el DAG de la figura \ref{fig:dag}, con 9 términos o conceptos: $C=\{R, c_0,...,c_7\}$ y con 5 entidades mapeadas (genes anotados): $g_1=\{5, 6, 2, 0, r\}$, $g_2=\{5, 4, 2, 3, 0, r\}$, $g_3=\{7, 1, r\}$, $g_4=\{4, 3, 0, r\}$ y $g_5=\{2, 0, r\}$. Podemos calcular la similaridad semántica de Resnik entre los términos $c_4$ y $c_6$, por ejemplo, sabiendo que $\#C = 5$ y que el ancestro común más informativo de ambos es $c_0$, con $\#c_0=4$. Se tiene entonces que $Sim_{res}(c_4, c_6) = IC(MICA) = IC(c_0) = -log_2(\frac{\#c_0}{\#C}) = -log_2(\frac{4}{6}) = 0.32$. Si quisieramos calcular ahora la similaridad semántica Resnik entre $c_5$ y $c_6$, obtendríamos $Sim_{res}(c_5, c_6) = IC(c_2) = -log_2(\frac{3}{5}) = 0.73$. Por lo tanto, para Resnik, los conceptos $c_5$ y $c_6$ son entre sí, más similares que los conceptos $c_4$ y $c_6$.\\\\
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{dag}
+    \includegraphics[width=0.5\textwidth]{dag.pdf}
     \caption{DAG con 9 términos o conceptos: $C=\{R, c_0,...,c_7\}$ y con 5 entidades mapeadas (genes anotados): $g_1=\{5, 6, 2, 0, r\}$, $g_2=\{5, 4, 2, 3, 0, r\}$, $g_3=\{7, 1, r\}$, $g_4=\{4, 3, 0, r\}$ y $g_5=\{2, 0, r\}$}
     \label{fig:dag}
 \end{figure}

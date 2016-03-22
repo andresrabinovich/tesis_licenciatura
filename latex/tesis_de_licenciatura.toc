@@ -1,57 +1,57 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n biol\IeC {\'o}gica}{11}
-\contentsline {section}{\numberline {1.1}Informaci\IeC {\'o}n hereditaria: ADN}{11}
-\contentsline {section}{\numberline {1.2}Transcripci\IeC {\'o}n y traducci\IeC {\'o}n: dogma central de la biolog\IeC {\'\i }a molecular}{12}
-\contentsline {chapter}{\numberline {2}Materiales y Metodos}{16}
-\contentsline {section}{\numberline {2.1}Micromatrices de ADN}{16}
-\contentsline {section}{\numberline {2.2}Cambios transcripcionales en respuesta a estr\IeC {\'e}s abiotico en \textit {A.thaliana}}{18}
-\contentsline {section}{\numberline {2.3}PIN - Redes de interacci\IeC {\'o}n de prote\IeC {\'\i }nas}{19}
-\contentsline {subsection}{\numberline {2.3.1}PINs AI1 y LCI binaria}{20}
-\contentsline {section}{\numberline {2.4}KEGG - V\IeC {\'\i }as metab\IeC {\'o}licas}{20}
-\contentsline {section}{\numberline {2.5}GO - Ontolog\IeC {\'\i }a g\IeC {\'e}nica}{22}
-\contentsline {chapter}{\numberline {3}M\IeC {\'e}todos de agrupamiento de datos}{27}
-\contentsline {section}{\numberline {3.1}Similaridad, distancia y disimilaridad}{28}
-\contentsline {subsection}{\numberline {3.1.1}Medidas de distancia}{29}
-\contentsline {subsubsection}{Distancia euclidiana}{29}
-\contentsline {subsubsection}{Distancia Manhattan o Taxicab}{29}
-\contentsline {subsubsection}{Distancia m\IeC {\'a}xima}{30}
-\contentsline {subsubsection}{Distancia de Minkowsky}{30}
-\contentsline {subsubsection}{Coeficiente de correlaci\IeC {\'o}n de Pearson}{30}
-\contentsline {subsection}{\numberline {3.1.2}Similaridad sem\IeC {\'a}ntica}{33}
-\contentsline {subsubsection}{Comparaci\IeC {\'o}n de t\IeC {\'e}rminos en GO}{33}
-\contentsline {section}{\numberline {3.2}Estrategias de agrupamiento}{35}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n biol\IeC {\'o}gica}{12}
+\contentsline {section}{\numberline {1.1}Informaci\IeC {\'o}n hereditaria: ADN}{12}
+\contentsline {section}{\numberline {1.2}Transcripci\IeC {\'o}n y traducci\IeC {\'o}n: dogma central de la biolog\IeC {\'\i }a molecular}{13}
+\contentsline {chapter}{\numberline {2}Materiales y Metodos}{17}
+\contentsline {section}{\numberline {2.1}Micromatrices de ADN}{17}
+\contentsline {section}{\numberline {2.2}Cambios transcripcionales en respuesta a estr\IeC {\'e}s abiotico en \textit {A.thaliana}}{19}
+\contentsline {section}{\numberline {2.3}PIN - Redes de interacci\IeC {\'o}n de prote\IeC {\'\i }nas}{20}
+\contentsline {subsection}{\numberline {2.3.1}PINs AI1 y LCI binaria}{21}
+\contentsline {section}{\numberline {2.4}KEGG - V\IeC {\'\i }as metab\IeC {\'o}licas}{21}
+\contentsline {section}{\numberline {2.5}GO - Ontolog\IeC {\'\i }a g\IeC {\'e}nica}{23}
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todos de agrupamiento de datos}{28}
+\contentsline {section}{\numberline {3.1}Similaridad, distancia y disimilaridad}{29}
+\contentsline {subsection}{\numberline {3.1.1}Medidas de distancia}{30}
+\contentsline {subsubsection}{Distancia euclidiana}{30}
+\contentsline {subsubsection}{Distancia Manhattan o Taxicab}{30}
+\contentsline {subsubsection}{Distancia m\IeC {\'a}xima}{31}
+\contentsline {subsubsection}{Distancia de Minkowsky}{31}
+\contentsline {subsubsection}{Coeficiente de correlaci\IeC {\'o}n de Pearson}{31}
+\contentsline {subsection}{\numberline {3.1.2}Similaridad sem\IeC {\'a}ntica}{34}
+\contentsline {subsubsection}{Comparaci\IeC {\'o}n de t\IeC {\'e}rminos en GO}{34}
+\contentsline {section}{\numberline {3.2}Estrategias de agrupamiento}{36}
 \contentsline {section}{\numberline {3.3}Agrupamientos no jer\IeC {\'a}rquicos}{36}
-\contentsline {subsection}{\numberline {3.3.1}K-means}{36}
-\contentsline {subsection}{\numberline {3.3.2}PAM}{37}
-\contentsline {section}{\numberline {3.4}Agrupamientos jer\IeC {\'a}rquicos}{37}
-\contentsline {subsection}{\numberline {3.4.1}Representaci\IeC {\'o}n de un agrupamiento jer\IeC {\'a}rquico - dendrogramas}{38}
-\contentsline {section}{\numberline {3.5}Detectando grupos en el agrupamiento jer\IeC {\'a}rquico}{39}
-\contentsline {subsection}{\numberline {3.5.1}Corte de \IeC {\'a}rbol est\IeC {\'a}tico}{39}
-\contentsline {subsection}{\numberline {3.5.2}Corte de \IeC {\'a}rbol din\IeC {\'a}mico h\IeC {\'\i }brido}{40}
-\contentsline {section}{\numberline {3.6}Similaridad y agrupamiento en redes}{41}
-\contentsline {subsection}{\numberline {3.6.1}Solapamiento topol\IeC {\'o}gico}{42}
-\contentsline {subsection}{\numberline {3.6.2}Detecci\IeC {\'o}n de comunidades en redes}{42}
-\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de la respuesta transcripcional a estr\IeC {\'e}s abi\IeC {\'o}tico en plantas}{44}
-\contentsline {section}{\numberline {4.1}Proceso de filtrado}{44}
-\contentsline {section}{\numberline {4.2}Agrupamiento con k-means}{46}
-\contentsline {section}{\numberline {4.3}Agrupamiento con corte de \IeC {\'a}rbol din\IeC {\'a}mico}{49}
-\contentsline {section}{\numberline {4.4}Comparaci\IeC {\'o}n de escalas de resoluci\IeC {\'o}n de los m\IeC {\'e}todos}{54}
-\contentsline {section}{\numberline {4.5}Discusi\IeC {\'o}n}{56}
-\contentsline {chapter}{\numberline {5}Congruencia biol\IeC {\'o}gica de agrupamientos transcripcionales}{57}
-\contentsline {section}{\numberline {5.1}Densidades de interacci\IeC {\'o}n}{57}
-\contentsline {section}{\numberline {5.2}Indice de homogeneidad biol\IeC {\'o}gica}{59}
-\contentsline {subsection}{\numberline {5.2.1}Modificaciones al \IeC {\'\i }ndice de homogeneidad biol\IeC {\'o}gica}{60}
-\contentsline {section}{\numberline {5.3}Congruencia biol\IeC {\'o}gica de las particiones transcripcionales}{63}
-\contentsline {chapter}{\numberline {6}Coherencia entre m\IeC {\'e}trica transcripcional y espacio de conocimiento GO}{65}
-\contentsline {section}{\numberline {6.1}Alineamiento de n\IeC {\'u}cleo-objetivo}{65}
-\contentsline {section}{\numberline {6.2}Espacio de expresi\IeC {\'o}n y GO}{66}
-\contentsline {section}{\numberline {6.3}Alineamiento de n\IeC {\'u}cleo-objetivo local}{69}
-\contentsline {subsection}{\numberline {6.3.1}Vecindades transcripcionales}{69}
-\contentsline {subsection}{\numberline {6.3.2}KTA local red 30kmnn}{72}
-\contentsline {chapter}{\numberline {7}M\IeC {\'e}trica mixta}{74}
-\contentsline {section}{\numberline {7.1}Hacia una m\IeC {\'e}trica mixta}{74}
-\contentsline {subsection}{\numberline {7.1.1}Modulaci\IeC {\'o}n de heterogeneidades transcripcionales con informaci\IeC {\'o}n biol\IeC {\'o}gica}{75}
-\contentsline {subsection}{\numberline {7.1.2}Heterogeneidades en escala de grupo}{76}
-\contentsline {section}{\numberline {7.2}M\IeC {\'e}todo heur\IeC {\'\i }stico}{77}
-\contentsline {section}{\numberline {7.3}Interpretaci\IeC {\'o}n biol\IeC {\'o}gica}{81}
-\contentsline {chapter}{\numberline {8}Conclusiones y perspectivas}{89}
+\contentsline {subsection}{\numberline {3.3.1}K-means}{37}
+\contentsline {subsection}{\numberline {3.3.2}PAM}{38}
+\contentsline {section}{\numberline {3.4}Agrupamientos jer\IeC {\'a}rquicos}{38}
+\contentsline {subsection}{\numberline {3.4.1}Representaci\IeC {\'o}n de un agrupamiento jer\IeC {\'a}rquico - dendrogramas}{39}
+\contentsline {section}{\numberline {3.5}Detectando grupos en el agrupamiento jer\IeC {\'a}rquico}{40}
+\contentsline {subsection}{\numberline {3.5.1}Corte de \IeC {\'a}rbol est\IeC {\'a}tico}{40}
+\contentsline {subsection}{\numberline {3.5.2}Corte de \IeC {\'a}rbol din\IeC {\'a}mico h\IeC {\'\i }brido}{41}
+\contentsline {section}{\numberline {3.6}Similaridad y agrupamiento en redes}{42}
+\contentsline {subsection}{\numberline {3.6.1}Solapamiento topol\IeC {\'o}gico}{43}
+\contentsline {subsection}{\numberline {3.6.2}Detecci\IeC {\'o}n de comunidades en redes}{43}
+\contentsline {chapter}{\numberline {4}An\IeC {\'a}lisis de la respuesta transcripcional a estr\IeC {\'e}s abi\IeC {\'o}tico en plantas}{45}
+\contentsline {section}{\numberline {4.1}Proceso de filtrado}{45}
+\contentsline {section}{\numberline {4.2}Agrupamiento con k-means}{47}
+\contentsline {section}{\numberline {4.3}Agrupamiento con corte de \IeC {\'a}rbol din\IeC {\'a}mico}{50}
+\contentsline {section}{\numberline {4.4}Comparaci\IeC {\'o}n de escalas de resoluci\IeC {\'o}n de los m\IeC {\'e}todos}{55}
+\contentsline {section}{\numberline {4.5}Discusi\IeC {\'o}n}{57}
+\contentsline {chapter}{\numberline {5}Congruencia biol\IeC {\'o}gica de agrupamientos transcripcionales}{58}
+\contentsline {section}{\numberline {5.1}Densidades de interacci\IeC {\'o}n}{58}
+\contentsline {section}{\numberline {5.2}Indice de homogeneidad biol\IeC {\'o}gica}{60}
+\contentsline {subsection}{\numberline {5.2.1}Modificaciones al \IeC {\'\i }ndice de homogeneidad biol\IeC {\'o}gica}{61}
+\contentsline {section}{\numberline {5.3}Congruencia biol\IeC {\'o}gica de las particiones transcripcionales}{64}
+\contentsline {chapter}{\numberline {6}Coherencia entre m\IeC {\'e}trica transcripcional y espacio de conocimiento GO}{66}
+\contentsline {section}{\numberline {6.1}Alineamiento de n\IeC {\'u}cleo-objetivo}{66}
+\contentsline {section}{\numberline {6.2}Espacio de expresi\IeC {\'o}n y GO}{67}
+\contentsline {section}{\numberline {6.3}Alineamiento de n\IeC {\'u}cleo-objetivo local}{70}
+\contentsline {subsection}{\numberline {6.3.1}Vecindades transcripcionales}{70}
+\contentsline {subsection}{\numberline {6.3.2}KTA local red 30kmnn}{73}
+\contentsline {chapter}{\numberline {7}M\IeC {\'e}trica mixta}{75}
+\contentsline {section}{\numberline {7.1}Hacia una m\IeC {\'e}trica mixta}{75}
+\contentsline {subsection}{\numberline {7.1.1}Modulaci\IeC {\'o}n de heterogeneidades transcripcionales con informaci\IeC {\'o}n biol\IeC {\'o}gica}{76}
+\contentsline {subsection}{\numberline {7.1.2}Heterogeneidades en escala de grupo}{77}
+\contentsline {section}{\numberline {7.2}M\IeC {\'e}todo heur\IeC {\'\i }stico}{78}
+\contentsline {section}{\numberline {7.3}Interpretaci\IeC {\'o}n biol\IeC {\'o}gica}{82}
+\contentsline {chapter}{\numberline {8}Conclusiones y perspectivas}{90}

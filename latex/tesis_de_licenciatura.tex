@@ -14,6 +14,7 @@
 \usepackage[font={normalsize,it}]{caption} %$este paquete se necesita para el subcaption
 \usepackage{subcaption} %$este paquete permite tener subfiguras
 \usepackage{fancyhdr}
+\usepackage{pdfpages}
 
 \DeclareCaptionFormat{myformat}{\fontsize{10}{11}\selectfont#1#2#3}
 \captionsetup{format=myformat}
@@ -34,6 +35,7 @@
 %--------------------DESDE ACA LOS COMENTARIOS-------------------
 %\maketitle
 \include{titulo}
+\includepdf[pages={1}]{pagina2.pdf}
 \paginaenblanco
 \include{agradecimientos}
 %\chapter*{Hoja a completar por los jurados}

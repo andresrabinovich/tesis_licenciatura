@@ -5,15 +5,14 @@
 \beamer@subsectionintoc {1}{2}{Relevamientos transcripcionales de gran escala}{4}{0}{1}
 \beamer@sectionintoc {2}{An\IeC {\'a}lisis de relevamientos transcripcionales}{6}{0}{2}
 \beamer@subsectionintoc {2}{1}{Medidas de similaridad y distancia}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Tipos de agrupamiento}{7}{0}{2}
-\beamer@subsectionintoc {2}{3}{M\IeC {\'e}todos utilizados}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{M\IeC {\'e}todos de agrupamiento utilizados}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{M\IeC {\'e}todos de agrupamiento utilizados}{8}{0}{2}
 \beamer@subsectionintoc {2}{4}{Caracterizaci\IeC {\'o}n de particiones}{9}{0}{2}
-\beamer@subsectionintoc {2}{5}{El problema de la escala}{10}{0}{2}
-\beamer@sectionintoc {3}{Congruencia biol\IeC {\'o}gica}{11}{0}{3}
-\beamer@subsectionintoc {3}{1}{Ontolog\IeC {\'\i }a g\IeC {\'e}nica (GO)}{11}{0}{3}
-\beamer@subsectionintoc {3}{2}{Densidades de interacci\IeC {\'o}n}{12}{0}{3}
-\beamer@subsectionintoc {3}{3}{Indice de homogeneidad biol\IeC {\'o}gica}{13}{0}{3}
-\beamer@sectionintoc {4}{Coherencia entre m\IeC {\'e}tricas}{14}{0}{4}
-\beamer@subsectionintoc {4}{1}{KTA global}{15}{0}{4}
-\beamer@subsectionintoc {4}{2}{Modulaci\IeC {\'o}n de heterogeneidades transcripcionales}{16}{0}{4}
-\beamer@sectionintoc {5}{Conclusiones y perspectivas}{20}{0}{5}
+\beamer@sectionintoc {3}{Congruencia biol\IeC {\'o}gica}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Ontolog\IeC {\'\i }a g\IeC {\'e}nica (GO)}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{Cuantificando la congruencia biol\IeC {\'o}gica}{14}{0}{3}
+\beamer@sectionintoc {4}{Coherencia entre m\IeC {\'e}tricas}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{M\IeC {\'e}trica en GO}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{KTA global}{18}{0}{4}
+\beamer@subsectionintoc {4}{3}{Modulaci\IeC {\'o}n de heterogeneidades transcripcionales}{20}{0}{4}
+\beamer@sectionintoc {5}{Conclusiones y perspectivas}{24}{0}{5}

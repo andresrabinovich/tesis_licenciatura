@@ -22,6 +22,7 @@
 \newif\ifplacelogo % Para que el logo solo figure en el primer slide
 \placelogotrue
 \logo{\ifplacelogo\includegraphics[scale=0.25]{logo_exactas}\fi}
+\newcommand\Fontvi{\fontsize{7}{7.2}\selectfont}
 
 \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
 
@@ -42,8 +43,7 @@
 
 \placelogofalse
 
-\begin{frame}
-\frametitle{Contenido}
+\begin{frame}\frametitle{Contenido}
 \tableofcontents
 \end{frame} 
 
@@ -74,8 +74,7 @@ Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
 \subsection{Relevamientos transcripcionales de gran escala}
 
 \subsubsection*{Transcripción y traducción}
-\begin{frame}
-\frametitle{Transcripción y traducción (dogma central de la biología molecular)}
+\begin{frame}\frametitle{Transcripción y traducción (dogma central de la biología molecular)}
 
 \begin{figure}[t]
   \centering
@@ -86,8 +85,7 @@ Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
 \end{frame}
 
 \subsubsection*{Cambios transcripcionales}
-\begin{frame}
-	\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en \textit{A. thaliana}} 
+\begin{frame}\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en \textit{A. thaliana}} 
 	\begin{columns}[T]
 		\column{0.5\textwidth}
 			\includegraphics[width=1\textwidth]{micromatriz_y_arabidopsis}
@@ -107,7 +105,6 @@ Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
 \end{frame}
 
 \section{Análisis de relevamientos transcripcionales}
-
 
 \subsection{Medidas de similaridad y distancia}
 \begin{frame} \frametitle{Medidas de similaridad y distancia} 
@@ -137,51 +134,209 @@ Necesitamos definir que significa que dos datos sean ``similares''\bigskip
 
 \end{frame}
 
-\subsection{Tipos de agrupamiento}
-\begin{frame}
-\frametitle{Tipos de agrupamiento} 
+\subsection{Métodos de agrupamiento utilizados}
+\begin{frame}\frametitle{Método de agrupamiento k-means} 
+\begin{columns}[T]
+\column{0.5\textwidth}
+	\begin{itemize}
+	\item Agrupamiento no jerárquico.
+	\item Cada observación pertenece al grupo con la media más cercana.
+	\item La cantidad k de grupos debe ser fijada a priori.
+	\item Utiliza la distancia euclidiana.
+	\end{itemize}
+	Para datos estandarizados:
+	\begin{equation}
+		\tilde{x_i} = \frac{x_i-\bar{x}}{s_x}
+	\end{equation}	
+	la distancia euclidiana se relaciona con la correlación como:
+	\begin{equation}
+		d(\vec{x}, \vec{y}) = \sqrt{2(n-1)(1-r(\vec{x}, \vec{y}))}
+	\end{equation}
+
+\column{0.5\textwidth}
+	\centering	
+	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k2.pdf}
+	
+	\centering	
+	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k5.pdf}	
+\end{columns}
 \end{frame}
 
-\subsection{Métodos utilizados}
-\begin{frame}
-\frametitle{Métodos k-means, corte de árbol dinámico} 
+\subsection{Métodos de agrupamiento utilizados}
+\begin{frame}\frametitle{Método de agrupamiento corte de árbol dinámico} 
+\centering
+\begin{itemize}
+\item Agrupamiento jerárquico.
+\item Utiliza la distancia de correlación.
+\item Se puede ``sintonizar'' la resolución del método. 
+\item DS1 particiones gruesas, con pocos grupos bien definidos.
+\item DS4 particiones finas, con muchos grupos más dispersos.
+\end{itemize}
+\includegraphics[height=0.55\textheight]{cut_tree_dynamic_ejemplo}	
 \end{frame}
 
 \subsection{Caracterización de particiones}
-\begin{frame}
-\frametitle{Caracterización de particiones} 
+\begin{frame}\frametitle{Perfiles tratamiento ``Frío'' con k-means} 
+\centering
+\includegraphics[width=1\textwidth]{perfiles_k_means}	
 \end{frame}
 
-\subsection{El problema de la escala}
-\begin{frame}
-\frametitle{El problema de la escala} 
+\begin{frame}\frametitle{Perfiles tratamiento ``Frío'' con corte de árbol dinámico} 
+\centering
+A modo de ejemplo, los nueve perfiles más grandes de cada partición
+\begin{columns}[T]
+\column{0.5\textwidth}
+	\centering
+	DS1 (particiones más gruesas)
+	\includegraphics[width=0.9\textwidth]{perfiles_ds_1.pdf}	
+\column{0.5\textwidth}
+	\centering
+	DS4 (particiones más finas)
+	\includegraphics[width=0.9\textwidth]{perfiles_ds_4.pdf}	
+\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Caracterización de particiones corte de árbol dinámico} 
+\centering
+Correlación media por tamaño de grupo
+\begin{columns}[T]
+\column{0.5\textwidth}
+	\centering
+	DS1 (particiones más gruesas)
+	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_1.pdf}	
+\column{0.5\textwidth}
+	\centering
+	DS4 (particiones más finas)
+	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_4.pdf}	
+\end{columns}
+\end{frame}
+
+
+\begin{frame}\frametitle{Caracterización de granularidad de las particiones halladas} 
+\centering
+Fracción de grupos en una partición más fina dentro de grupos de una partición más gruesa (tratamiento ``Frío'')
+\begin{figure}
+    \centering
+	\includegraphics[height=1.6\textheight]{fraccion_de_km_en_ds1_en_ds4.pdf}	
+\end{figure}
 \end{frame}
 
 \section{Congruencia biológica}
 
 \subsection{Ontología génica (GO)}
-\begin{frame}
-\frametitle{Ontología génica (GO)} 
+\begin{frame}\frametitle{Ontología génica (GO)}
+\begin{columns}[T]
+	\column{0.5\textwidth}
+	\begin{itemize}
+		\item Provee un vocabulario controlado de términos.
+		\item Permite comparar y clasificar entidades biológicas.
+		\item Tres ontologías: procesos biológicos (BP), componentes celulares (CC) y funciones moleculares (MF).
+		\item Estructura de grafo acíclico dirigido (DAG).
+		\item Cada nodo representa un témino que describe alguna función.
+		\item Los nodos se unen entre si por medio de relaciones ``es un'' o ``es parte de''.
+		\item Un gen descrito por un término está ``anotado'' en ese término.
+	\end{itemize}
+	\column{0.5\textwidth}
+	\centering
+	\includegraphics[width=1.1\textwidth]{ejemplo_de_go}	
+\end{columns}
 \end{frame}
 
-\subsection{Densidades de interacción}
-\begin{frame}
-\frametitle{Densidades de interacción} 
+\subsection{Cuantificando la congruencia biológica}
+\begin{frame}\frametitle{Observables} 
+\centering
+Buscamos cuantificar la congruencia biológica de las particiones halladas
+\bigskip
+\begin{columns}[T]
+	\column{0.5\textwidth}
+	Densidad de interacción:\\
+	\bigskip
+	\begin{equation}
+		ID(GO_j) = \frac{NE(GO_j)}{N(GO_j)}
+	\end{equation}
+	\bigskip
+	Con $NE(GO_j)$ la cantidad de pares de genes anotados en $GO_j$ que se encuentran juntos en un mismo grupo 	transcripcional $C_x$ y $N(GO_j)$ la cantidad de pares de genes anotados en $GO_j$.
+	\column{0.5\textwidth}
+	Indice de homogeneidad biológica:\\
+	\bigskip
+	\begin{equation}
+		BHI_j = \frac{1}{n_j(n_j-1)}\sum\limits_{x\neq y\in D_j}I(C(x)=C(y))
+	\end{equation}
+	\bigskip	
+	Con $n_j$ la cantidad de genes anotados en el grupo $D_j$.\\
+	La función indicadora $I(C(x)=C(y))$ que toma el valor $1$ si hay al menos una clase en donde ambos genes estén anotados, y $0$ en caso contrario.
+\end{columns}
 \end{frame}
 
-\subsection{Indice de homogeneidad biológica}
-\begin{frame}
-\frametitle{Indice de homogeneidad biológica} 
+\begin{frame}\frametitle{Densidad de interacción} 
+\begin{columns}[T]
+	\column{0.3\textwidth}
+	\Fontvi
+	\begin{enumerate}
+	\item Términos mas específicos presentan mayor ID.
+	\item Agrupamientos hasta 100 genes correlacionan con la información biológica embebida en la ontología.
+	\item Las estructuras en KEGG presentan mayor congruencia con las ontologías, seguidas por AI1 y expresión.
+	\item $ds1$ presenta mayor congruencia biológica que $ds4$. Indicio acerca de la escala de granularidad apropiada.
+	\end{enumerate}
+	\column{0.7\textwidth}
+	\begin{figure}
+	    	\centering
+		\includegraphics[width=1\textwidth]{interacting_densities_bpb.pdf}
+	\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Indice de homogeneidad biológica} 
+\begin{figure}
+    	\centering
+	\includegraphics[width=0.8\textwidth]{bhi_km_ds1_ds4_control1.pdf}
+\end{figure}
+\centering
+Particiones altamente coherentes pero de baja calidad de BHI.
 \end{frame}
 
 \section{Coherencia entre métricas}
-\begin{frame}
-\frametitle{Coherencia entre métrica transcripcional y espacio GO} 
+
+\subsection{Métrica en GO}
+\begin{frame}\frametitle{Similaridad entre genes en GO}
+Definimos la similaridad entre genes en el espacio GO como:
+\begin{equation}
+	Sim_{rcmax}(GO(g_1), GO(g_2)) = \max\{\frac{1}{N}\sum\limits_{i}\max\limits_{1\leq j \leq M}S_{ij}, \frac{1}{M}\sum\limits_{j}\max\limits_{1\leq i \leq N}S_{ij}\}
+\end{equation}
+\bigskip
+Donde:
+\begin{equation}
+	S(g_1, g_2)_{ij} = Sim_{res}(GO(g_1^i), GO(g_2^j)), \forall i \in \{1,...,N\} y \forall j \in \{1,...,M\}
+\end{equation}
+con:
+\begin{equation}
+	Sim_{res}(c_i, c_j) = \max\limits_{c \in S(c_i, c_j)}(-log_2[P(c)]) = IC(MICA[c_i, c_j])
+\end{equation}
+la similaridad entre términos.
 \end{frame}
 
 \subsection{KTA global}
-\begin{frame}
-\frametitle{KTA global} 
+\begin{frame}\frametitle{KTA global} 
+La noción de similaridad de a pares en cada espacio esta dada en términos de una función $k$ llamada kernel tal que
+\begin{equation}
+	K = K_{ij} = k(x_i, x_j)
+\end{equation}
+\bigskip
+El KTA de un kernel $k_1$ con respecto a un kernel $k_2$ del conjunto $C$ cuantifica la similaridad entre dos espacios y se define como:
+\begin{equation}
+	\hat{A}(C, k_1, k_2) = \frac{\langle K_1, K_2 \rangle _F}{\sqrt{\langle K_1, K_1 \rangle _F \langle K_2, K_2 \rangle _F}}
+\end{equation}
+con $\langle K_1, K_1 \rangle _F = \sum_{i,j=1}^m K1(x_i, x_j)K2(x_i, x_j)$ es el producto interno de Frobenius.\\
+\end{frame}
+
+\begin{frame}\frametitle{KTA global} 
+\centering
+KTA global entre expresión y ontología BP con control nulo
+\begin{figure}
+    	\centering
+	\includegraphics[width=0.8\textwidth]{kta_global_bpb.pdf}
+\end{figure}
+\centering
 \end{frame}
 
 \subsection{Modulación de heterogeneidades

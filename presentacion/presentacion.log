@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  20 MAR 2016 14:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  21 MAR 2016 23:41
 entering extended mode
  %&-line parsing enabled.
 **presentacion.tex
@@ -944,20 +944,20 @@ See the caption package documentation for explanation.
 ) (./presentacion.aux)
 \openout1 = `presentacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -1013,7 +1013,7 @@ driver: pdftex
 \MPnumerator=\count164
 \everyMPtoPDFconversion=\toks47
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -1023,8 +1023,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count165
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
  (./presentacion.out) (./presentacion.out)
 \@outlinefile=\write5
 \openout5 = `presentacion.out'.
@@ -1057,18 +1057,18 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
-LaTeX Info: Redefining \subref on input line 28.
+LaTeX Info: Redefining \subref on input line 29.
 Package caption Info: End \AtBeginDocument code.
  (./presentacion.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 30.
+(hyperref)                setting the option has no effect on input line 31.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 41.
+(Font)              size <5> substituted on input line 42.
 
-<figuras/logo_exactas.jpg, id=88, 193.91257pt x 188.90376pt>
+<figuras/logo_exactas.jpg, id=84, 193.91257pt x 188.90376pt>
 File: figuras/logo_exactas.jpg Graphic file (type jpg)
 
 <use figuras/logo_exactas.jpg>
@@ -1101,14 +1101,14 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [3
 
-] <figuras/celula_eucariota.png, id=172, 1361.085pt x 1167.36125pt>
+] <figuras/celula_eucariota.png, id=165, 1361.085pt x 1167.36125pt>
 File: figuras/celula_eucariota.png Graphic file (type png)
 
 <use figuras/celula_eucariota.png>
-<figuras/adn3.png, id=174, 526.96875pt x 614.295pt>
+<figuras/adn3.png, id=167, 526.96875pt x 614.295pt>
 File: figuras/adn3.png Graphic file (type png)
  <use figuras/adn3.png>
-Overfull \vbox (2.78943pt too high) detected at line 86
+Overfull \vbox (2.78943pt too high) detected at line 85
  []
 
 
@@ -1119,15 +1119,15 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [4
 
  <./figuras/celula_eucariota.png> <./figuras/adn3.png>]
-<figuras/micromatriz_y_arabidopsis.png, id=191, 702.625pt x 806.01125pt>
+<figuras/micromatriz_y_arabidopsis.png, id=184, 702.625pt x 806.01125pt>
 File: figuras/micromatriz_y_arabidopsis.png Graphic file (type png)
 
 <use figuras/micromatriz_y_arabidopsis.png>
-<figuras/perfiles_sin_agrupar.pdf, id=192, 794.97pt x 614.295pt>
+<figuras/perfiles_sin_agrupar.pdf, id=185, 794.97pt x 614.295pt>
 File: figuras/perfiles_sin_agrupar.pdf Graphic file (type pdf)
 
 <use figuras/perfiles_sin_agrupar.pdf>
-Overfull \vbox (4.80923pt too high) detected at line 107
+Overfull \vbox (4.80923pt too high) detected at line 105
  []
 
 
@@ -1138,15 +1138,15 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [5
 
  <./figuras/micromatriz_y_arabidopsis.png> <./figuras/perfiles_sin_agrupar.pdf>
-] <figuras/distancia_euclidiana.png, id=215, 531.9875pt x 425.59pt>
+] <figuras/distancia_euclidiana.png, id=208, 531.9875pt x 425.59pt>
 File: figuras/distancia_euclidiana.png Graphic file (type png)
 
 <use figuras/distancia_euclidiana.png>
-<figuras/perfiles_coregulados.pdf, id=216, 794.97pt x 614.295pt>
+<figuras/perfiles_coregulados.pdf, id=209, 794.97pt x 614.295pt>
 File: figuras/perfiles_coregulados.pdf Graphic file (type pdf)
 
 <use figuras/perfiles_coregulados.pdf>
-Overfull \vbox (3.58575pt too high) detected at line 138
+Overfull \vbox (3.58575pt too high) detected at line 135
  []
 
 
@@ -1157,76 +1157,144 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [6
 
  <./figuras/distancia_euclidiana.png> <./figuras/perfiles_coregulados.pdf>]
+<figuras/ejemplo_kmeans_k2.pdf, id=233, 794.97pt x 614.295pt>
+File: figuras/ejemplo_kmeans_k2.pdf Graphic file (type pdf)
+
+<use figuras/ejemplo_kmeans_k2.pdf>
+<figuras/ejemplo_kmeans_k5.pdf, id=234, 794.97pt x 614.295pt>
+File: figuras/ejemplo_kmeans_k5.pdf Graphic file (type pdf)
+
+<use figuras/ejemplo_kmeans_k5.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [7
 
-]
+ <./figuras/ejemplo_kmeans_k2.pdf> <./figuras/ejemplo_kmeans_k5.pdf>]
+<figuras/cut_tree_dynamic_ejemplo.png, id=262, 969.6225pt x 413.545pt>
+File: figuras/cut_tree_dynamic_ejemplo.png Graphic file (type png)
+
+<use figuras/cut_tree_dynamic_ejemplo.png>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [8
 
-]
+ <./figuras/cut_tree_dynamic_ejemplo.png>]
+<figuras/perfiles_k_means.png, id=278, 1213.53375pt x 744.7825pt>
+File: figuras/perfiles_k_means.png Graphic file (type png)
+
+<use figuras/perfiles_k_means.png>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [9
 
-]
+ <./figuras/perfiles_k_means.png (PNG copy)>]
+<figuras/perfiles_ds_1.pdf, id=293, 614.295pt x 794.97pt>
+File: figuras/perfiles_ds_1.pdf Graphic file (type pdf)
+
+<use figuras/perfiles_ds_1.pdf>
+<figuras/perfiles_ds_4.pdf, id=294, 614.295pt x 794.97pt>
+File: figuras/perfiles_ds_4.pdf Graphic file (type pdf)
+
+<use figuras/perfiles_ds_4.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [10
 
-]
+ <./figuras/perfiles_ds_1.pdf> <./figuras/perfiles_ds_4.pdf>]
+<figuras/correlacion_media_por_tamano_ds_1.pdf, id=322, 614.295pt x 794.97pt>
+File: figuras/correlacion_media_por_tamano_ds_1.pdf Graphic file (type pdf)
+
+<use figuras/correlacion_media_por_tamano_ds_1.pdf>
+<figuras/correlacion_media_por_tamano_ds_4.pdf, id=323, 614.295pt x 794.97pt>
+File: figuras/correlacion_media_por_tamano_ds_4.pdf Graphic file (type pdf)
+
+<use figuras/correlacion_media_por_tamano_ds_4.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
-]
+ <./figuras/correlacion_media_por_tamano_ds_1.pdf> <./figuras/correlacion_media
+_por_tamano_ds_4.pdf>]
+<figuras/fraccion_de_km_en_ds1_en_ds4.pdf, id=357, 614.295pt x 794.97pt>
+File: figuras/fraccion_de_km_en_ds1_en_ds4.pdf Graphic file (type pdf)
+
+<use figuras/fraccion_de_km_en_ds1_en_ds4.pdf>
+Overfull \vbox (194.84892pt too high) detected at line 222
+ []
+
+
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [12
 
-]
+ <./figuras/fraccion_de_km_en_ds1_en_ds4.pdf>]
+<figuras/ejemplo_de_go.png, id=379, 682.55pt x 701.62125pt>
+File: figuras/ejemplo_de_go.png Graphic file (type png)
+
+<use figuras/ejemplo_de_go.png>
+Overfull \hbox (15.36542pt too wide) in paragraph at lines 243--243
+ [][] 
+ []
+
+
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [13
 
-]
+ <./figuras/ejemplo_de_go.png>]
+Overfull \hbox (21.87527pt too wide) detected at line 269
+\OML/cmm/m/it/9 BHI[] \OT1/cmr/m/n/9 = [] [] \OML/cmm/m/it/9 I\OT1/cmr/m/n/9 (\
+OML/cmm/m/it/9 C\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = \OML/cmm/m/
+it/9 C\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 y\OT1/cmr/m/n/9 ))
+ []
+
+
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [14
 
-]
+] <figuras/interacting_densities_bpb.pdf, id=407, 794.97pt x 614.295pt>
+File: figuras/interacting_densities_bpb.pdf Graphic file (type pdf)
+
+<use figuras/interacting_densities_bpb.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [15
 
-]
+ <./figuras/interacting_densities_bpb.pdf>]
+<figuras/bhi_km_ds1_ds4_control1.pdf, id=428, 794.97pt x 614.295pt>
+File: figuras/bhi_km_ds1_ds4_control1.pdf Graphic file (type pdf)
+
+<use figuras/bhi_km_ds1_ds4_control1.pdf>
+Overfull \vbox (3.94377pt too high) detected at line 296
+ []
+
+
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [16
 
-]
+ <./figuras/bhi_km_ds1_ds4_control1.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1240,19 +1308,50 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [18
 
-]
+] <figuras/kta_global_bpb.pdf, id=474, 764.8575pt x 563.10374pt>
+File: figuras/kta_global_bpb.pdf Graphic file (type pdf)
+
+<use figuras/kta_global_bpb.pdf>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [19
 
-]
+ <./figuras/kta_global_bpb.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [20
+
+]
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[21
+
+]
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[22
+
+]
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[23
+
+]
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[24
 
 ]
 \tf@nav=\write6
@@ -1271,28 +1370,29 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16689 strings out of 494999
- 307127 string characters out of 1180816
- 387948 words of memory out of 3000000
- 19373 multiletter control sequences out of 15000+50000
- 10824 words of font info for 42 fonts, out of 3000000 for 9000
+ 16789 strings out of 494999
+ 309971 string characters out of 1180816
+ 386948 words of memory out of 3000000
+ 19453 multiletter control sequences out of 15000+50000
+ 11470 words of font info for 45 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
- 49i,20n,62p,441b,774s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,20n,62p,441b,824s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf
--texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb>
-Output written on presentacion.pdf (20 pages, 1969918 bytes).
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on presentacion.pdf (24 pages, 2905510 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 630 PDF objects out of 1000 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 

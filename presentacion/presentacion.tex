@@ -100,20 +100,9 @@ Lo vamos a hacer usando métodos de agrupamiento o ``clustering'' para encontrar
 \item Permiten el descubrimiento de patrones en los datos.
 \item Posibilitan obtener conclusiones sobre los datos.
 \end{itemize}
-\bigskip
-\begin{columns}[T]
-	\column{0.5\textwidth}
-		\Fontvi
-		\underline{A modo de ejemplo}\medskip
-
-		El conjunto: $\{-5, -3, -2, 2, 3\}$\medskip
-
-		Agrupado por módulo: $\{-5\}$, $\{-3, 3\}$ y $\{-2, 2\}$\medskip
-
-		Agrupado por signo: $\{-5, -3, -2\}$ y $\{2, 3\}$
-	\column{0.5\textwidth}
-	\includegraphics[width=0.8\textwidth]{perfiles_coregulados.pdf}
-\end{columns}
+\medskip
+\centering
+\includegraphics[width=0.45\textwidth]{perfiles_coregulados.pdf}
 \end{frame}
 
 \section{Análisis de relevamientos transcripcionales}
@@ -130,59 +119,20 @@ Lo vamos a hacer usando métodos de agrupamiento o ``clustering'' para encontrar
 	\end{equation}
 
 	\centering	
-	\includegraphics[width=0.45\textwidth]{perfiles_coregulados.pdf}
+	\includegraphics[width=0.45\textwidth]{perfiles_ejemplo_metricas.pdf}
 
 \end{frame}
 
 \subsection{Métodos de agrupamiento utilizados}
-%\begin{frame}\frametitle{Método de agrupamiento k-means} 
-%\begin{columns}[T]
-%\column{0.5\textwidth}
-%	\begin{itemize}
-%	\item Agrupamiento no jerárquico.
-%	\item Cada observación pertenece al grupo con la media más cercana.
-%	\item La cantidad k de grupos debe ser fijada a priori.
-%	\item Utiliza la distancia euclidiana.
-%	\end{itemize}
-%	Para datos estandarizados:
-%	\begin{equation}
-%		\tilde{x_i} = \frac{x_i-\bar{x}}{s_x}
-%	\end{equation}	
-%	la distancia euclidiana se relaciona con la correlación como:
-%	\begin{equation}
-%		d(\vec{x}, \vec{y}) = \sqrt{2(n-1)(1-r(\vec{x}, \vec{y}))}
-%	\end{equation}
-
-%\column{0.5\textwidth}
-%	\centering	
-%	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k3.pdf}
-	
-%	\centering	
-%	\includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k5.pdf}	
-%\end{columns}
-%\end{frame}
-
-%\begin{frame}\frametitle{Método de agrupamiento corte de árbol dinámico} 
-%\centering
-%\begin{itemize}
-%\item Agrupamiento jerárquico.
-%\item Utiliza la distancia de correlación.
-%\item Se puede ``sintonizar'' la resolución del método. 
-%\item DS1 particiones gruesas, con pocos grupos bien definidos.
-%\item DS4 particiones finas, con muchos grupos más dispersos.
-%\end{itemize}
-%\includegraphics[height=0.55\textheight]{cut_tree_dynamic_ejemplo}	
-%\end{frame}
-
 \begin{frame}\frametitle{Métodos de agrupamiento} 
-
 \begin{columns}[T]
 \column{0.5\textwidth}
 Método k-means
 \begin{itemize}
 	\item Busca estructuras compactas.
+	\item Muy rápida ejecución. 
 	\item La cantidad k de grupos debe ser fijada a priori.  
-	\item Muy rápida ejecución. 	
+	\item Existen figuras de mérito para decidir el k óptimo.
 \end{itemize}
 \column{0.5\textwidth}
 \end{columns}
@@ -195,11 +145,10 @@ Método corte de árbol dinámico
 	\item Agrupamiento jerárquico.
 	\item El agrupamiento puede representarse mediante un dendrograma.
 	\item Utiliza la distancia de correlación.
-	\item La cantidad óptima de grupos k es decidida por el método.
 \end{itemize}			
 \column{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{dendrograma_muestra.pdf}
+    \includegraphics[width=0.9\textwidth]{dendrograma_muestra.pdf}
 \end{columns}
 \end{frame}
 
@@ -259,7 +208,7 @@ Granularidad y resolución de los métodos
 \item Tenemos tres formas de realizar particiones de nuestros datos.
 \item DS4 genera particiones más finas que DS1 y este a su vez que k-means.
 \item Tenemos distintas maneras de encontrar estructura en nuestros datos y las distintas heterogeneidades aparecerán a distintas escalas.
-\item Deberemos buscar la escala óptima a la que trabajar con este conjunto de datos y para eso vamos a pasar a un espacio de conocimiento biológico. 
+\item Vamos a ver si existe una escala óptima en un sentido biológico a la que trabajar con este conjunto de datos y para eso vamos a utilizar un espacio de conocimiento biológico. 
 \end{itemize}
 
 \end{frame}
@@ -464,10 +413,18 @@ $\beta$ es un parámetro que permite aumentar aún más la homogeneidad de la re
 
 \subsubsection*{Métodos heurísticos}
 
+\begin{frame}\frametitle{Subestructura} 
+\centering
+Buscamos subestructura en los grupos a partir de la métrica mixta\\
+\bigskip
+\bigskip
+\bigskip
+\includegraphics[width=0.8\textwidth]{lupa.png}
+\end{frame}
+
 \begin{frame}\frametitle{Métodos heurísticos} 
 \centering
-Buscamos subestructura en los grupos a partir de la métrica mixta
-\centering
+Subestructura en grupo 2 de tratamiento ``Frío''
 \includegraphics[width=0.7\textwidth]{metodos_mixtos_grupo_2.png}
 \end{frame}
 

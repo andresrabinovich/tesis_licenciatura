@@ -16,9 +16,7 @@
 \usepackage[spanish]{babel}
 \usepackage{verbatim} %para comentarios multilinea
 \usepackage{subfig}
-\newcommand{\insm}{%
-\smash{\raisebox{.5\dimexpr3\baselineskip+4\itemsep+2\parskip}{$\left.\rule{0pt}{.5\dimexpr4\baselineskip+3\itemsep+3\parskip}\right\}$\ \parbox{5.5cm}{Newton Cotes formulae of different degrees}}}
-}
+
 \graphicspath{{figuras/}}
 
 \newif\ifplacelogo % Para que el logo solo figure en el primer slide
@@ -56,124 +54,131 @@
 
 \subsubsection*{Transcripción y traducción}
 \begin{frame}\frametitle{Transcripción y traducción (dogma central de la biología molecular)}
-\centering 
-Células, ADN, ARNm, proteínas y otras yerbas...
-\begin{figure}[t]
-  \centering
-  \subfloat[Célula eucariota]{\includegraphics[width=0.5\textwidth]{celula_eucariota}}
-  \subfloat[Dogma central de la biología molecular]{\includegraphics[width=0.5\textwidth]{adn3}}
-\end{figure}
-
+\begin{columns}
+    \column{\dimexpr\paperwidth-10pt}
+	\centering 
+	Células, ADN, ARNm, proteínas y otras yerbas...\\
+	\bigskip
+	\includegraphics[width=1\textwidth]{celula_y_adn}
+\end{columns}
 \end{frame}
 
 \subsubsection*{Cambios transcripcionales}
 \begin{frame}\frametitle{Cambios transcripcionales en respuesta a estrés abiótico en \textit{A. thaliana}} 
 	\begin{columns}[T]
 		\column{0.5\textwidth}
-			\includegraphics[width=1\textwidth]{micromatriz_y_arabidopsis}
+			\includegraphics[width=1\textwidth]{micromatriz_y_arabidopsis}\\
+			\tiny
+			[1] arabidopsis.org: AtGenExpress.
 		\column{0.5\textwidth}
-			\bigskip
 			\Large 
 			Datos de estrés abiótico:
 			\medskip
 			\Fontvi
 			\begin{itemize}
-				\item 11 tratamientos: frío, calor, osmótico, salinidad, sequía, genotoxicidad, oxidación, UV, herida, recuperación y control.
+				\item \textbf{10 tratamientos + control}: frío, calor, osmótico, salinidad, sequía, genotoxicidad, oxidación, UV, herida, recuperación.
 				\item $\approx 22000$ genes.
-				\item Nos quedaremos con un subconjunto de $\approx 6000$ genes que son los que se movieron en algún tratamiento.
-				\item entre 4 y 8 mediciones temporales por gen y por tratamiento.
+				\item $\approx 6000$ genes se \textbf{movieron} en algún tratamiento.
+				\item \textbf{Entre 4 y 8 mediciones} temporales por gen y por tratamiento.
 			\end{itemize}			
 			\centering	
-			\includegraphics[width=0.7\textwidth]{perfiles_sin_agrupar.pdf}			
+			\includegraphics[width=0.95\textwidth]{perfiles_sin_agrupar.pdf}			
 	\end{columns}
 \end{frame}
 
 \subsection{Detección de correlaciones}
 \begin{frame}\frametitle{Detección de correlaciones} 
-\large
 Queremos inferir estrategias del organismo frente a los tratamientos.\\\bigskip
-Lo vamos a hacer usando métodos de agrupamiento o ``clustering'' para encontrar relaciones y estructura en esta gran cantidad de datos.\medskip
-\normalsize
+Lo vamos a hacer usando \textbf{métodos de agrupamiento o ``clustering''} para encontrar relaciones y estructura en esta gran cantidad de datos.\medskip
+\begin{columns}[T]
+	\column{0.5\textwidth}
 \begin{itemize}
 \item Son métodos no supervisados.
-\item Consisten en agrupar elementos ``similares entre si''.
-\item Permiten el descubrimiento de patrones en los datos.
-\item Posibilitan obtener conclusiones sobre los datos.
+\item Consisten en agrupar elementos \textbf{``similares entre sí''}.
+\item Permiten el \textbf{descubrimiento de patrones} en los datos.
+\item Posibilitan obtener \textbf{conclusiones} sobre los datos.
 \end{itemize}
-\medskip
+\column{0.5\textwidth}
 \centering
-\includegraphics[width=0.45\textwidth]{perfiles_coregulados.pdf}
+\includegraphics[width=1\textwidth]{perfiles_coregulados.pdf}
+\end{columns}
 \end{frame}
 
 \section{Análisis de relevamientos transcripcionales}
 
 \subsection{Medidas de similaridad y distancia}
-\begin{frame} \frametitle{Medidas de similaridad y distancia} 
-\centering
-	Distancia basada en el coeficiente de correlación de Pearson:\\
-	\begin{equation}
+\begin{frame} \frametitle{Usamos el coeficiente de correlación de Pearson} 
+\begin{columns}
+\column{\dimexpr\paperwidth-30pt}
+\vspace{30pt}
+\begin{columns}[T]
+    \column{0.4\textwidth}
+	\centering
+	Distancia basada en el coeficiente de correlación de Pearson\\
+	\Fontvi
+	\begin{equation*}
 		r(\vec{x}, \vec{y}) = \frac{\frac{1}{n-1}\sum\limits_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})}{s_x s_y}
-	\end{equation}
-	\begin{equation}
+	\end{equation*}
+	\begin{equation*}
 		d_{ccp}(\vec{x}, \vec{y}) = 1-r(\vec{x}, \vec{y})
-	\end{equation}
-
+	\end{equation*}
+    \column{0.6\textwidth}
 	\centering	
-	\includegraphics[width=0.45\textwidth]{perfiles_ejemplo_metricas.pdf}
-
+	\includegraphics[width=0.9\textwidth]{perfiles_ejemplo_metricas.png}\\
+\end{columns}
+\end{columns}
 \end{frame}
 
 \subsection{Métodos de agrupamiento utilizados}
 \begin{frame}\frametitle{Métodos de agrupamiento} 
 \begin{columns}[T]
-\column{0.5\textwidth}
-Método k-means
+\small
+\column{0.4\textwidth}
+Método k-means\\
 \begin{itemize}
 	\item Busca estructuras compactas.
 	\item Muy rápida ejecución. 
 	\item La cantidad k de grupos debe ser fijada a priori.  
 	\item Existen figuras de mérito para decidir el k óptimo.
 \end{itemize}
-\column{0.5\textwidth}
-\end{columns}
 \bigskip
 \bigskip
-\begin{columns}[T]
-\column{0.5\textwidth}
-Método corte de árbol dinámico
+Método corte de árbol dinámico\\
 \begin{itemize}
 	\item Agrupamiento jerárquico.
-	\item El agrupamiento puede representarse mediante un dendrograma.
-	\item Utiliza la distancia de correlación.
+	\item Representación mediante \textbf{dendrograma}.
+	\item Ajuste por \textit{deepsplit} (usamos DS1 y DS4).
 \end{itemize}			
-\column{0.5\textwidth}
+	\column{0.6\textwidth}
     \centering
-    \includegraphics[width=0.9\textwidth]{dendrograma_muestra.pdf}
+    \vspace{-10pt}
+    \includegraphics[width=1.1\textwidth, height=1\textheight]{dendrograma_muestra.pdf}
 \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Métodos de agrupamiento - ejemplos} 
+\begin{frame}\frametitle{Ejemplo de agrupamientos} 
+\begin{figure}
 \centering
-\begin{columns}[T]
-\column{0.5\textwidth}
-    \includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k2.pdf}
-\column{0.5\textwidth}
-    \includegraphics[width=0.8\textwidth]{ejemplo_kmeans_k5.pdf}
-\end{columns}
-\centering
-\includegraphics[width=0.4\textwidth]{ejemplo_dtc.pdf}    
+\includegraphics[width=0.85\textwidth]{ejemplo_agrupaciones.png}
+\end{figure}
 \end{frame}
 
 \subsection{Caracterización de particiones}
-\begin{frame}\frametitle{Perfiles tratamiento ``Frío'' con k-means} 
+\begin{frame}\frametitle{Grupos con k-means} 
+\begin{columns}
+\column{\dimexpr\paperwidth-20pt}
 \centering
 \includegraphics[width=1\textwidth]{perfiles_k_means}	
+\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Perfiles tratamiento ``Frío'' con corte de árbol dinámico} 
+\begin{frame}\frametitle{Grupos con corte de árbol dinámico} 
 \centering
 A modo de ejemplo, los nueve perfiles más grandes de una partición de tratamiento ``Frío'' y DS1.\\
+\begin{figure}
+\centering
 \includegraphics[width=0.8\textwidth, height=0.8\textheight]{perfiles_ds_1.pdf}	
+\end{figure}
 \end{frame}
 
 %\begin{frame}\frametitle{Caracterización de particiones corte de árbol dinámico} 
@@ -200,17 +205,19 @@ A modo de ejemplo, los nueve perfiles más grandes de una partición de tratamie
 %\end{figure}
 %\end{frame}
 
-\begin{frame}\frametitle{Granularidad de las particiones} 
+\begin{frame}\frametitle{El problema de la escala} 
 Granularidad y resolución de los métodos
 \bigskip
 \begin{itemize}
-\item Una partición $A$ es más fina que una partición $B$ si cada grupo de $A$ está contenido en un grupo de $B$.
-\item Tenemos tres formas de realizar particiones de nuestros datos.
+\item Una partición $A$ es \textbf{más fina} que una partición $B$ si cada grupo de $A$ está contenido en un grupo de $B$.
+\item Tenemos \textbf{tres formas de realizar particiones} de nuestros datos.
 \item DS4 genera particiones más finas que DS1 y este a su vez que k-means.
-\item Tenemos distintas maneras de encontrar estructura en nuestros datos y las distintas heterogeneidades aparecerán a distintas escalas.
-\item Vamos a ver si existe una escala óptima en un sentido biológico a la que trabajar con este conjunto de datos y para eso vamos a utilizar un espacio de conocimiento biológico. 
+\item Tenemos distintas maneras de encontrar estructura en nuestros datos y las \textbf{distintas heterogeneidades aparecerán a distintas escalas}.
 \end{itemize}
-
+\bigskip
+Vamos a ver si existe una \textbf{escala óptima en un sentido biológico} a la que trabajar con éste conjunto de datos y para eso vamos a utilizar un espacio de conocimiento biológico.\\
+\hfill
+\includegraphics[width=0.2\textwidth]{granularidad.pdf}	
 \end{frame}
 
 \section{Congruencia biológica}
@@ -224,12 +231,12 @@ Granularidad y resolución de los métodos
 		\item Permite comparar y clasificar entidades biológicas.
 		\item Tres ontologías: procesos biológicos (BP), componentes celulares (CC) y funciones moleculares (MF).
 		\item Estructura de grafo acíclico dirigido (DAG).
-		\item Cada nodo representa un témino que describe alguna función.
+		\item Cada nodo representa un término que describe alguna función.
 		\item Los nodos se unen entre si por medio de relaciones ``es un'' o ``es parte de''.
 	\end{itemize}
 	\column{0.5\textwidth}
 	\centering
-	\includegraphics[width=1.1\textwidth]{ejemplo_de_go}	
+	\includegraphics[width=1\textwidth]{ejemplo_de_go.jpg}	
 	
 	\medskip
 	\Fontvi
@@ -243,23 +250,23 @@ Granularidad y resolución de los métodos
 Buscamos cuantificar la congruencia biológica de las particiones halladas
 \bigskip
 \begin{columns}[T]
-	\column{0.5\textwidth}
-	Densidad de interacción:\\
-	\bigskip
-	\begin{equation}
-		ID(GO_j) = \frac{NE(GO_j)}{N(GO_j)}
-	\end{equation}
-	\bigskip
-	Con $NE(GO_j)$ la cantidad de pares de genes anotados en $GO_j$ que se encuentran juntos en un mismo grupo 	transcripcional $C_x$ y $N(GO_j)$ la cantidad de pares de genes anotados en $GO_j$.
-	\column{0.5\textwidth}
-	Indice de homogeneidad biológica:\\
-	\bigskip
-	\begin{equation}
-		BHI_j = \frac{1}{n_j(n_j-1)}\sum\limits_{x\neq y\in D_j}I(C(x)=C(y))
-	\end{equation}
-	\bigskip	
-	Con $n_j$ la cantidad de genes anotados en el grupo $D_j$.\\
-	La función indicadora $I(C(x)=C(y))$ que toma el valor $1$ si hay al menos una clase en donde ambos genes estén anotados, y $0$ en caso contrario.
+\column{0.45\textwidth}
+Densidad de interacción:\\
+\bigskip
+\begin{equation}
+ID(GO_j) = \frac{NE(GO_j)}{N(GO_j)}
+\end{equation}\\
+\bigskip
+Con $NE(GO_j)$ la cantidad de pares de genes anotados en $GO_j$ que se encuentran juntos en un mismo grupo transcripcional $C_x$ y $N(GO_j)$ la cantidad de pares de genes anotados en $GO_j$.
+\column{0.55\textwidth}
+Indice de homogeneidad biológica:\\
+\bigskip
+\begin{equation*}
+BHI_j = \frac{1}{n_j(n_j-1)}\sum\limits_{x\neq y\in D_j}I(C(x)=C(y))
+\end{equation*}\\
+\medskip	
+Con $n_j$ la cantidad de genes anotados en el grupo $D_j$.\\
+La función indicadora $I(C(x)=C(y))$ toma el valor $1$ si hay al menos una clase en donde ambos genes estén anotados, y $0$ en caso contrario.
 \end{columns}
 \end{frame}
 
@@ -270,7 +277,7 @@ Buscamos cuantificar la congruencia biológica de las particiones halladas
 	\begin{enumerate}
 	\item Términos mas específicos presentan mayor ID en una relación decreciente.
 	\item DS1 presenta mayor congruencia biológica que DS4. Indicio acerca de la escala apropiada.
-	\item Ambos presentan mayor congruencia biológica que control nulo.
+	\item Ambos presentan mayor congruencia biológica que el control nulo.
 	\item Los agrupamientos inducidos por otra información presentan mayor congruencia que los inducidos por expresión.
 	\end{enumerate}
 	\column{0.7\textwidth}
@@ -308,7 +315,7 @@ Utilizando la similaridad entre términos:
 
 \subsection{KTA global}
 \begin{frame}\frametitle{KTA global} 
-La noción de similaridad de a pares en cada espacio esta dada en términos de una función $k$ llamada kernel tal que
+La noción de similaridad de a pares en cada espacio está dada en términos de una función $k$ llamada kernel tal que
 \begin{equation}
 	K = K_{ij} = k(x_i, x_j)
 \end{equation}
@@ -317,13 +324,13 @@ El KTA de un kernel $k_1$ con respecto a un kernel $k_2$ del conjunto $C$ cuanti
 \begin{equation}
 	\hat{A}(C, k_1, k_2) = \frac{\langle K_1, K_2 \rangle _F}{\sqrt{\langle K_1, K_1 \rangle _F \langle K_2, K_2 \rangle _F}}
 \end{equation}
-con $\langle K_1, K_1 \rangle _F = \sum_{i,j=1}^m K_1(x_i, x_j)K_2(x_i, x_j)$ es el producto interno de Frobenius.\\
-Intiutivamente, si $\langle K_1, K_1 \rangle$ es grande, ambos kernels son coherentes.
+con $\langle K_1, K_2 \rangle _F = \sum_{i,j=1}^m K_1(x_i, x_j)K_2(x_i, x_j)$ es el producto interno de Frobenius.\\
+Intuitivamente, si $\langle K_1, K_2 \rangle$ es grande, ambos kernels son coherentes.
 \end{frame}
 
 \begin{frame}\frametitle{KTA global} 
 \centering
-KTA global entre expresión y ontología BPB con control nulo
+KTA global entre expresión y ontología BP con control nulo
 \begin{figure}
     	\centering
 	\includegraphics[width=0.8\textwidth]{kta_global_bpb.pdf}
@@ -357,13 +364,14 @@ Queremos detectar zonas de alta coherencia.\\
 \bigskip
 \begin{columns}[T]
 	\column{0.5\textwidth}
-	 Generamos una red de 30 primeros vecinos mutuos y vamos a ver arista por arista, una localidad definida por los primeros vecinos:
-	\bigskip
+	 Generamos una red de 30 primeros vecinos mutuos y vamos a ver arista por arista, una localidad definida por los primeros vecinos:\\
 	\begin{itemize}
 	\item $n_x$ nodos.
 	\item $n_y$ nodos anotados.
-	\item $wyn$ promedio de pesos de aristas en GO.
-	\item $wyn_{anotados}$ promedio de pesos de aristas en GO con nodos anotados.	
+	\item $w_y$ distancia entre nodos $i$ y $j$ en GO.
+	\item $w_{ny}$ similaridades promedio en una vecindad en GO.
+	\item $w_{ny anotados}$ similaridades promedio en una vecindad en GO con nodos anotados.	
+	\item $ktal_{anotados}$ KTA en la vecindad de los nodos anotados.		
 	\end{itemize}
     \column{0.5\textwidth}
     \centering
@@ -394,7 +402,7 @@ Queremos detectar zonas de alta coherencia.\\
 
 \subsubsection*{Métrica mixta}
 \begin{frame}\frametitle{Métrica mixta} 
-Dada una arista, el peso de una arista y el promedio de pesos, tenemos una manera de decir cuando una vecindad es o no biologicamente coherente.\\
+Dada una arista, el peso de una arista y el promedio de pesos, tenemos una manera de cuantificar si una vecindad es o no biologicamente coherente.\\
 \bigskip
 Vamos a usar esto para encontrar grupos transcripcionales teniendo en cuenta las coherencias biológicas locales modificando los pesos:
 \bigskip
@@ -408,57 +416,96 @@ Donde:
 \bigskip
 Típicamente el $stress$ oscila entre $0.8$ y $1.2$.\\
 \bigskip
-$\beta$ es un parámetro que permite aumentar aún más la homogeneidad de la red.
+$\beta$ es un parámetro que va a acentuar las heterogeneidades para poder detectar subgrupos.
 \end{frame}
 
-\subsubsection*{Métodos heurísticos}
-
-\begin{frame}\frametitle{Subestructura} 
+\subsubsection*{Métrica mixta y métodos heurísticos}
+\begin{frame}\frametitle{Métrica mixta y métodos heurísticos} 
+\bigskip
 \centering
 Buscamos subestructura en los grupos a partir de la métrica mixta\\
-\bigskip
-\bigskip
-\bigskip
-\includegraphics[width=0.8\textwidth]{lupa.png}
+\vspace{10pt}
+\begin{columns}
+\column{\dimexpr\paperwidth-30pt}
+\begin{columns}[T]
+	\column{0.3\textwidth}
+	Heurísticas con métrica mixta:
+	\begin{itemize}
+	\item lkta.dtc
+	\item lkta.cnm
+	\item lkta.infomap
+	\end{itemize}
+	Comparación con métrica transcripcional:
+	\begin{itemize}
+		\item InsideX
+	\end{itemize}
+	\column{0.7\textwidth}
+	\vspace{10pt}
+	\centering
+	\includegraphics[width=1\textwidth]{lupa_chica.png}
+\end{columns}
+\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Métodos heurísticos} 
+\begin{frame}\frametitle{Coherencia biológica medida con BHI - Ejemplo} 
 \centering
-Subestructura en grupo 2 de tratamiento ``Frío''
-\includegraphics[width=0.7\textwidth]{metodos_mixtos_grupo_2.png}
+Subestructura en grupo 2 de tratamiento ``Frío''\\
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{metodos_mixtos_grupo_2_chico.png}
+\end{figure}
 \end{frame}
 
-\begin{frame}\frametitle{Métodos heurísticos - caracterización de particiones} 
+\begin{frame}\frametitle{Coherencia biológica medida con BHI} 
 \centering
-Caracterizamos los nuevos subgrupos hallados
+Caracterizamos los nuevos subgrupos hallados\\
+\vspace{20pt}
+\begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{bhi_nuevo_vs_bhi_original.pdf}
+\end{figure}
 \end{frame}
 
-\subsubsection*{Interpretación biológica}
-\begin{frame}\frametitle{Interpretación biológica} 
+\subsubsection*{Coherencia biológica a partir de sobrerepresentación (test de Fisher)}
+\begin{frame}\frametitle{Coherencia biológica a partir de sobrerepresentación (test de Fisher)} 
+\vspace{-30pt}
+\begin{columns}
+\column{\dimexpr\paperwidth-10pt}
+\begin{figure}
 \centering
-\includegraphics[width=0.9\textwidth]{fisher_grupo_2.pdf}
+\includegraphics[width=0.95\textwidth]{fisher_grupo_2.pdf}
+\end{figure}
+\end{columns}
 \end{frame}
 
-\section{Conclusiones y perspectivas}
-\begin{frame}\frametitle{Conclusiones y perspectivas}
+\section{Conclusiones}
+\begin{frame}\frametitle{Conclusiones}
+\bigskip
 \begin{itemize}
-\item Mediante técnicas de agrupamiento de datos fue posible encontrar grupos de genes con perfiles de expresión altamente correlacionados.
-\item Distintos métodos darán distintas particiones en función de la resolución que logran.
-\item Mediante una métrica mixta fue posible encontrar particiones con alta homogeneidad biológica y con alta correlación transcripcional.
-\item Utilizamos la ontología GO para dar una interpretación biológica a los grupos obtenidos y encontramos que en general, la granularidad óptima de los grupos fue de $\approx$ 50 genes.
-\item Estas técnicas podrían funcionar como punto de partida para inferir funciones biológicas de genes de los que se tiene poco conocimiento.
-\item Sería interesante en un futuro agregar la información contenida en otros espacios de conocimiento biológico, como ser vías metabólicas o redes de interacción de proteínas.
+\item Diferentes técnicas de agrupamiento nos permitieron obtener grupos correlacionados en el espacio de expresión.
+\item Cada método obtiene descripciones a diferente resolución.
+\item Buscamos analizar estas descripciones en función de la interpretabilidad biológica.
+\item Presentamos los observables BHI y KTA para cuantificar la coherencia entre los espacios y corroboramos que lo detectado en el espacio transcripcional es en general coherente con el conocimiento biológico.
+\item Introdujimos una versión local de KTA que nos permitió definir una métrica mixta.
+\item Presentamos heurísticas para identificar subestructuras transcripcionales con alta interpretabilidad y coherencia biológica.
 \end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Agradecimientos}
-\Large
+\begin{frame}\frametitle{Muchas gracias}
+\huge
 \centering
-¡Muchas gracias!\\
-FOTO DEL GRUPO
-%\includegraphics[width=0.9\textwidth]{}
+¡Muchas gracias por su atención!
+
+\vspace{50pt}
+¿Preguntas o comentarios?
+
+\end{frame}
+
+\begin{frame}\frametitle{Agradecimientos}
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{grupo.jpeg}
+\end{figure}
 \end{frame}
 
 \end{document}

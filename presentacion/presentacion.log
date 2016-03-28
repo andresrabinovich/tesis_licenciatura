@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  26 MAR 2016 16:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2016.1.13)  27 MAR 2016 21:13
 entering extended mode
  %&-line parsing enabled.
 **presentacion.tex
@@ -1234,7 +1234,7 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [12
 
  <./figuras/ejemplo_de_go.jpg>]
-Overfull \hbox (6.50984pt too wide) detected at line 271
+Overfull \hbox (6.50984pt too wide) detected at line 247
 \OML/cmm/m/it/9 BHI[] \OT1/cmr/m/n/9 = [] [] \OML/cmm/m/it/9 I\OT1/cmr/m/n/9 (\
 OML/cmm/m/it/9 C\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = \OML/cmm/m/
 it/9 C\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 y\OT1/cmr/m/n/9 ))
@@ -1258,18 +1258,18 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [14
 
  <./figuras/interacting_densities_bpb.pdf>]
-<figuras/bhi_km_ds1_ds4_control1.pdf, id=381, 794.97pt x 614.295pt>
-File: figuras/bhi_km_ds1_ds4_control1.pdf Graphic file (type pdf)
+<figuras/bhi_km_ds1_ds4_control1.png, id=381, 794.2473pt x 613.5723pt>
+File: figuras/bhi_km_ds1_ds4_control1.png Graphic file (type png)
 
-<use figuras/bhi_km_ds1_ds4_control1.pdf>
+<use figuras/bhi_km_ds1_ds4_control1.png>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [15
 
- <./figuras/bhi_km_ds1_ds4_control1.pdf>]
-<figuras/dag.pdf, id=401, 528.97626pt x 308.15125pt>
+ <./figuras/bhi_km_ds1_ds4_control1.png>]
+<figuras/dag.pdf, id=396, 528.97626pt x 308.15125pt>
 File: figuras/dag.pdf Graphic file (type pdf)
  <use figuras/dag.pdf>
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
@@ -1285,6 +1285,10 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [16
 
  <./figuras/dag.pdf>]
+<figuras/producto_escalar.png, id=422, 301.125pt x 240.9pt>
+File: figuras/producto_escalar.png Graphic file (type png)
+
+<use figuras/producto_escalar.png>
 Overfull \hbox (6.40022pt too wide) has occurred while \output is active
  []\OT1/cmr/m/n/5 Modulaci^^Son de heterogeneidades transcripcionales con GO[] 
  
@@ -1297,7 +1301,8 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [17
 
-] <figuras/kta_global_bpb.pdf, id=440, 764.8575pt x 563.10374pt>
+ <./figuras/producto_escalar.png>]
+<figuras/kta_global_bpb.pdf, id=437, 764.8575pt x 563.10374pt>
 File: figuras/kta_global_bpb.pdf Graphic file (type pdf)
 
 <use figuras/kta_global_bpb.pdf>
@@ -1314,7 +1319,7 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [18
 
  <./figuras/kta_global_bpb.pdf>]
-<figuras/vecindario_local.pdf, id=463, 502.87875pt x 554.07pt>
+<figuras/vecindario_local.pdf, id=460, 502.87875pt x 554.07pt>
 File: figuras/vecindario_local.pdf Graphic file (type pdf)
 
 <use figuras/vecindario_local.pdf>
@@ -1330,19 +1335,19 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [19
 
  <./figuras/vecindario_local.pdf>]
-<figuras/nx_vs_ny.pdf, id=490, 765.86125pt x 545.03625pt>
+<figuras/nx_vs_ny.pdf, id=485, 765.86125pt x 545.03625pt>
 File: figuras/nx_vs_ny.pdf Graphic file (type pdf)
 
 <use figuras/nx_vs_ny.pdf>
-<figuras/lktaanotados_vs_wnyanotados.pdf, id=491, 765.86125pt x 550.055pt>
+<figuras/lktaanotados_vs_wnyanotados.pdf, id=486, 765.86125pt x 550.055pt>
 File: figuras/lktaanotados_vs_wnyanotados.pdf Graphic file (type pdf)
 
 <use figuras/lktaanotados_vs_wnyanotados.pdf>
-<figuras/wy_vs_wynanotados.pdf, id=492, 765.86125pt x 550.055pt>
+<figuras/wy_vs_wynanotados.pdf, id=487, 765.86125pt x 550.055pt>
 File: figuras/wy_vs_wynanotados.pdf Graphic file (type pdf)
 
 <use figuras/wy_vs_wynanotados.pdf>
-<figuras/lktaanotados_vs_nyanotados.pdf, id=493, 765.86125pt x 550.055pt>
+<figuras/lktaanotados_vs_nyanotados.pdf, id=488, 765.86125pt x 550.055pt>
 File: figuras/lktaanotados_vs_nyanotados.pdf Graphic file (type pdf)
 
 <use figuras/lktaanotados_vs_nyanotados.pdf>
@@ -1370,7 +1375,7 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [21
 
-] <figuras/lupa_chica.png, id=555, 702.625pt x 356.33125pt>
+] <figuras/lupa_chica.png, id=550, 702.625pt x 356.33125pt>
 File: figuras/lupa_chica.png Graphic file (type png)
 
 <use figuras/lupa_chica.png>
@@ -1386,11 +1391,11 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [22
 
  <./figuras/lupa_chica.png>]
-<figuras/metodos_mixtos_grupo_2_chico.png, id=572, 602.25pt x 540.0175pt>
+<figuras/metodos_mixtos_grupo_2_chico.png, id=567, 602.25pt x 540.0175pt>
 File: figuras/metodos_mixtos_grupo_2_chico.png Graphic file (type png)
 
 <use figuras/metodos_mixtos_grupo_2_chico.png>
-Overfull \vbox (6.85648pt too high) detected at line 457
+Overfull \vbox (6.85648pt too high) detected at line 422
  []
 
 
@@ -1406,7 +1411,7 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [23
 
  <./figuras/metodos_mixtos_grupo_2_chico.png>]
-<figuras/bhi_nuevo_vs_bhi_original.pdf, id=588, 784.9325pt x 315.1775pt>
+<figuras/bhi_nuevo_vs_bhi_original.pdf, id=583, 784.9325pt x 315.1775pt>
 File: figuras/bhi_nuevo_vs_bhi_original.pdf Graphic file (type pdf)
 
 <use figuras/bhi_nuevo_vs_bhi_original.pdf>
@@ -1422,11 +1427,15 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [24
 
  <./figuras/bhi_nuevo_vs_bhi_original.pdf>]
-<figuras/fisher_grupo_2.pdf, id=610, 740.7675pt x 528.97626pt>
-File: figuras/fisher_grupo_2.pdf Graphic file (type pdf)
+<figuras/fisher_grupo_2-cropped.pdf, id=605, 493.0922pt x 402.56372pt>
+File: figuras/fisher_grupo_2-cropped.pdf Graphic file (type pdf)
 
-<use figuras/fisher_grupo_2.pdf>
-Overfull \vbox (22.51396pt too high) detected at line 479
+<use figuras/fisher_grupo_2-cropped.pdf>
+<figuras/fisher_grupo_2-solo-codigocolores.pdf, id=606, 236.38312pt x 76.75047p
+t>
+File: figuras/fisher_grupo_2-solo-codigocolores.pdf Graphic file (type pdf)
+ <use figuras/fisher_grupo_2-solo-codigocolores.pdf>
+Overfull \vbox (3.31863pt too high) detected at line 450
  []
 
 
@@ -1441,23 +1450,32 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 
 [25
 
- <./figuras/fisher_grupo_2.pdf>]
+ <./figuras/fisher_grupo_2-cropped.pdf> <./figuras/fisher_grupo_2-solo-codigoco
+lores.pdf>]
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [26
 
-]
+] <figuras/gracias.jpg, id=653, 856.04324pt x 535.40874pt>
+File: figuras/gracias.jpg Graphic file (type jpg)
+
+<use figuras/gracias.jpg>
+Overfull \vbox (9.73631pt too high) detected at line 476
+ []
+
+
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [27
 
-] <figuras/grupo.jpeg, id=659, 1284.8pt x 722.7pt>
+ <./figuras/gracias.jpg>] <figuras/grupo.jpeg, id=666, 1284.8pt x 722.7pt>
 File: figuras/grupo.jpeg Graphic file (type jpg)
- <use figuras/grupo.jpeg>
+
+<use figuras/grupo.jpeg>
 Overfull \hbox (2.21254pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1465,6 +1483,119 @@ Overfull \hbox (2.21254pt too wide) has occurred while \output is active
 [28
 
  <./figuras/grupo.jpeg>]
+<figuras/extras/barrido_k_ch.png, id=679, 1204.5pt x 966.61125pt>
+File: figuras/extras/barrido_k_ch.png Graphic file (type png)
+
+<use figuras/extras/barrido_k_ch.png>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[29
+
+ <./figuras/extras/barrido_k_ch.png (PNG copy)>]
+<figuras/extras/correlacion_media_por_tamano_ds_1.png, id=692, 1204.5pt x 903.3
+75pt>
+File: figuras/extras/correlacion_media_por_tamano_ds_1.png Graphic file (type p
+ng)
+ <use figuras/extras/correlacion_media_por_tamano_ds_1.png>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[30
+
+ <./figuras/extras/correlacion_media_por_tamano_ds_1.png (PNG copy)>]
+<figuras/extras/densidad_para_niveles.png, id=704, 602.25pt x 607.26875pt>
+File: figuras/extras/densidad_para_niveles.png Graphic file (type png)
+
+<use figuras/extras/densidad_para_niveles.png>
+Overfull \vbox (49.1621pt too high) detected at line 507
+ []
+
+
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[31
+
+ <./figuras/extras/densidad_para_niveles.png (PNG copy)>]
+<figuras/extras/ecdf_k_ds1_ds4.pdf, id=718, 614.295pt x 794.97pt>
+File: figuras/extras/ecdf_k_ds1_ds4.pdf Graphic file (type pdf)
+
+<use figuras/extras/ecdf_k_ds1_ds4.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[32
+
+ <./figuras/extras/ecdf_k_ds1_ds4.pdf>]
+<figuras/erdos_renyi_vs_30kmnn.pdf, id=736, 794.97pt x 614.295pt>
+File: figuras/erdos_renyi_vs_30kmnn.pdf Graphic file (type pdf)
+
+<use figuras/erdos_renyi_vs_30kmnn.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[33
+
+ <./figuras/erdos_renyi_vs_30kmnn.pdf>]
+<figuras/betweenness_er_30_conf.pdf, id=758, 794.97pt x 614.295pt>
+File: figuras/betweenness_er_30_conf.pdf Graphic file (type pdf)
+
+<use figuras/betweenness_er_30_conf.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[34
+
+ <./figuras/betweenness_er_30_conf.pdf>]
+<figuras/extras/distribucion_strength.pdf, id=780, 794.97pt x 614.295pt>
+File: figuras/extras/distribucion_strength.pdf Graphic file (type pdf)
+
+<use figuras/extras/distribucion_strength.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[35
+
+ <./figuras/extras/distribucion_strength.pdf>]
+<figuras/extras/distribucion_strength_beta_1.pdf, id=798, 794.97pt x 614.295pt>
+File: figuras/extras/distribucion_strength_beta_1.pdf Graphic file (type pdf)
+<use figuras/extras/distribucion_strength_beta_1.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[36
+
+ <./figuras/extras/distribucion_strength_beta_1.pdf>]
+<figuras/extras/distribucion_strength_beta_4.pdf, id=816, 794.97pt x 614.295pt>
+File: figuras/extras/distribucion_strength_beta_4.pdf Graphic file (type pdf)
+<use figuras/extras/distribucion_strength_beta_4.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[37
+
+ <./figuras/extras/distribucion_strength_beta_4.pdf>]
+<figuras/extras/erdos_renyi_vs_30kmnn.pdf, id=835, 794.97pt x 614.295pt>
+File: figuras/extras/erdos_renyi_vs_30kmnn.pdf Graphic file (type pdf)
+
+<use figuras/extras/erdos_renyi_vs_30kmnn.pdf>
+Overfull \hbox (2.21254pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[38
+
+ <./figuras/extras/erdos_renyi_vs_30kmnn.pdf>]
 \tf@nav=\write6
 \openout6 = `presentacion.nav'.
 
@@ -1481,11 +1612,11 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 16811 strings out of 494999
- 310320 string characters out of 1180816
- 386948 words of memory out of 3000000
- 19460 multiletter control sequences out of 15000+50000
- 10555 words of font info for 40 fonts, out of 3000000 for 9000
+ 16919 strings out of 494999
+ 313285 string characters out of 1180816
+ 386949 words of memory out of 3000000
+ 19533 multiletter control sequences out of 15000+50000
+ 10854 words of font info for 41 fonts, out of 3000000 for 9000
  54 hyphenation exceptions out of 8191
  49i,20n,62p,441b,874s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/shar
@@ -1498,18 +1629,19 @@ i6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on presentacion.pdf (28 pages, 2553971 bytes).
+lic/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
+exmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmsy5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on presentacion.pdf (38 pages, 3025428 bytes).
 PDF statistics:
- 757 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 325 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 952 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,7 +7,7 @@
 \documentclass[serif,9pt, t]{beamer}
 \setbeamertemplate{navigation symbols}{}
 \addtobeamertemplate{navigation symbols}{}{
-    \insertframenumber/\inserttotalframenumber
+    \insertframenumber/27%\inserttotalframenumber
 }
 \setbeamercolor{navigation symbols}{fg=black}
 \usetheme{Warsaw}
@@ -181,30 +181,6 @@ A modo de ejemplo, los nueve perfiles más grandes de una partición de tratamie
 \end{figure}
 \end{frame}
 
-%\begin{frame}\frametitle{Caracterización de particiones corte de árbol dinámico} 
-%\centering
-%Correlación media por tamaño de grupo
-%\begin{columns}[T]
-%\column{0.5\textwidth}
-%	\centering
-%	DS1 (particiones más gruesas)
-%	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_1.pdf}	
-%\column{0.5\textwidth}
-%	\centering
-%	DS4 (particiones más finas)
-%	\includegraphics[width=0.9\textwidth]{correlacion_media_por_tamano_ds_4.pdf}	
-%\end{columns}
-%\end{frame}
-
-%\begin{frame}\frametitle{Caracterización de granularidad de las particiones halladas} 
-%\centering
-%Fracción de grupos en una partición más fina dentro de grupos de una partición más gruesa (tratamiento ``Frío'')
-%\begin{figure}
-%    \centering
-%	\includegraphics[height=1.6\textheight]{fraccion_de_km_en_ds1_en_ds4.pdf}	
-%\end{figure}
-%\end{frame}
-
 \begin{frame}\frametitle{El problema de la escala} 
 Granularidad y resolución de los métodos
 \bigskip
@@ -227,9 +203,9 @@ Vamos a ver si existe una \textbf{escala óptima en un sentido biológico} a la 
 \begin{columns}[T]
 	\column{0.5\textwidth}
 	\begin{itemize}
-		\item Provee un vocabulario controlado de términos.
-		\item Permite comparar y clasificar entidades biológicas.
-		\item Tres ontologías: procesos biológicos (BP), componentes celulares (CC) y funciones moleculares (MF).
+		\item Provee un \textbf{vocabulario controlado de términos}.
+		\item Permite \textbf{comparar y clasificar} entidades biológicas.
+		\item Tres ontologías: \textbf{procesos biológicos} (BP), \textbf{componentes celulares} (CC) y \textbf{funciones moleculares} (MF).
 		\item Estructura de grafo acíclico dirigido (DAG).
 		\item Cada nodo representa un término que describe alguna función.
 		\item Los nodos se unen entre si por medio de relaciones ``es un'' o ``es parte de''.
@@ -261,9 +237,9 @@ Con $NE(GO_j)$ la cantidad de pares de genes anotados en $GO_j$ que se encuentra
 \column{0.55\textwidth}
 Indice de homogeneidad biológica:\\
 \bigskip
-\begin{equation*}
+\begin{equation}
 BHI_j = \frac{1}{n_j(n_j-1)}\sum\limits_{x\neq y\in D_j}I(C(x)=C(y))
-\end{equation*}\\
+\end{equation}\\
 \medskip	
 Con $n_j$ la cantidad de genes anotados en el grupo $D_j$.\\
 La función indicadora $I(C(x)=C(y))$ toma el valor $1$ si hay al menos una clase en donde ambos genes estén anotados, y $0$ en caso contrario.
@@ -291,11 +267,11 @@ La función indicadora $I(C(x)=C(y))$ toma el valor $1$ si hay al menos una clas
 \begin{frame}\frametitle{Indice de homogeneidad biológica} 
 \begin{figure}
     	\centering
-	\includegraphics[width=0.78\textwidth]{bhi_km_ds1_ds4_control1.pdf}
+	\includegraphics[width=0.78\textwidth]{bhi_km_ds1_ds4_control1.png}
 \end{figure}
 \Fontvi
 \centering
-Grupos altamente coherentes pero de baja calidad de BHI. No tienen soporte biológico.
+Grupos altamente coherentes pero de baja calidad de BHI. Bajo soporte biológico.
 \end{frame}
 
 \section{Coherencia entre métricas}
@@ -311,21 +287,27 @@ Utilizando la similaridad entre términos:
 \begin{equation}
 	Sim_{res}(c_i, c_j) = \max\limits_{c \in S(c_i, c_j)}(-log_2[P(c)]) = IC(MICA[c_i, c_j])
 \end{equation}
+\begin{equation}
+	Sim_{rcmax}(GO(g_1), GO(g_2)) = \max\{\frac{1}{N}\sum\limits_{i}\max\limits_{1\leq j \leq M}S_{ij}, \frac{1}{M}\sum\limits_{j}\max\limits_{1\leq i \leq N}S_{ij}\}
+\end{equation}
 \end{frame}
 
 \subsection{KTA global}
 \begin{frame}\frametitle{KTA global} 
-La noción de similaridad de a pares en cada espacio está dada en términos de una función $k$ llamada kernel tal que
+Matriz de similaridad de a pares:
 \begin{equation}
 	K = K_{ij} = k(x_i, x_j)
 \end{equation}
 \bigskip
-El KTA de un kernel $k_1$ con respecto a un kernel $k_2$ del conjunto $C$ cuantifica la similaridad entre dos espacios y se define como:
+El KTA se define como:
 \begin{equation}
-	\hat{A}(C, k_1, k_2) = \frac{\langle K_1, K_2 \rangle _F}{\sqrt{\langle K_1, K_1 \rangle _F \langle K_2, K_2 \rangle _F}}
+	KTA(C, k_1, k_2) = \frac{\langle K_1, K_2 \rangle _F}{\sqrt{\langle K_1, K_1 \rangle _F \langle K_2, K_2 \rangle _F}}
 \end{equation}
-con $\langle K_1, K_2 \rangle _F = \sum_{i,j=1}^m K_1(x_i, x_j)K_2(x_i, x_j)$ es el producto interno de Frobenius.\\
-Intuitivamente, si $\langle K_1, K_2 \rangle$ es grande, ambos kernels son coherentes.
+con $\langle K_1, K_2 \rangle _F = \sum_{i,j=1}^m K_1(x_i, x_j)K_2(x_i, x_j)$ el producto interno de Frobenius.\\
+Intuitivamente, si $\langle K_1, K_2 \rangle$ es grande, ambos kernels son coherentes.\\
+\vspace{20pt}
+\hfill
+\includegraphics[width=0.2\textwidth]{producto_escalar.png}
 \end{frame}
 
 \begin{frame}\frametitle{KTA global} 
@@ -340,23 +322,6 @@ KTA global entre expresión y ontología BP con control nulo
 
 \subsection{Modulación de heterogeneidades
 transcripcionales con GO}
-%\begin{frame}\frametitle{Red 30 primeros vecinos mutuos} 
-%\bigskip
-%\begin{columns}[T]
-%	\column{0.5\textwidth}
-%	\centering
-%   Distribución de grado\\	
-%  \bigskip
-%    \includegraphics[width=1\textwidth]{erdos_renyi_vs_30kmnn.pdf}\\
-%    Red y modelo nulo Erdös-Renyi
-%    \column{0.5\textwidth}
-%    \centering
-%    Betweenness\\
-%    \bigskip
-%    \includegraphics[width=1\textwidth]{betweenness_er_30_conf.pdf}\\
-%    Red, modelo nulo Erdös-Renyi y modelo configuracional
-%\end{columns}
-%\end{frame}
 
 \begin{frame}\frametitle{Red 30 primeros vecinos mutuos - vecindades locales} 
 \centering
@@ -368,7 +333,7 @@ Queremos detectar zonas de alta coherencia.\\
 	\begin{itemize}
 	\item $n_x$ nodos.
 	\item $n_y$ nodos anotados.
-	\item $w_y$ distancia entre nodos $i$ y $j$ en GO.
+	\item $w_y$ similaridad entre nodos $i$ y $j$ en GO.
 	\item $w_{ny}$ similaridades promedio en una vecindad en GO.
 	\item $w_{ny anotados}$ similaridades promedio en una vecindad en GO con nodos anotados.	
 	\item $ktal_{anotados}$ KTA en la vecindad de los nodos anotados.		
@@ -468,13 +433,19 @@ Caracterizamos los nuevos subgrupos hallados\\
 
 \subsubsection*{Coherencia biológica a partir de sobrerepresentación (test de Fisher)}
 \begin{frame}\frametitle{Coherencia biológica a partir de sobrerepresentación (test de Fisher)} 
-\vspace{-30pt}
+\vspace{-40pt}
 \begin{columns}
 \column{\dimexpr\paperwidth-10pt}
 \begin{figure}
 \centering
-\includegraphics[width=0.95\textwidth]{fisher_grupo_2.pdf}
+\includegraphics[height=0.95\textheight, width=1\textwidth]{fisher_grupo_2-cropped.pdf}
 \end{figure}
+\vspace{-45pt}
+\begin{columns}
+	\column{0.6\textwidth}
+	\column{0.4\textwidth}
+	\includegraphics[width=0.8\textwidth]{fisher_grupo_2-solo-codigocolores.pdf}
+\end{columns}	
 \end{columns}
 \end{frame}
 
@@ -497,14 +468,76 @@ Caracterizamos los nuevos subgrupos hallados\\
 ¡Muchas gracias por su atención!
 
 \vspace{50pt}
-¿Preguntas o comentarios?
+¿Preguntas o comentarios?\\
+\vspace{70pt}
+\hfill
+\includegraphics[width=0.3\textwidth]{gracias.jpg}
 
 \end{frame}
 
-\begin{frame}\frametitle{Agradecimientos}
+\begin{frame}\frametitle{El grupo}
+\Huge
+\centering
+El grupo
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{grupo.jpeg}
+\end{figure}
+\end{frame}
+%-----------------------------------------------------
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{extras/barrido_k_ch}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{extras/correlacion_media_por_tamano_ds_1}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{extras/densidad_para_niveles}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[height=0.8\textheight]{extras/ecdf_k_ds1_ds4.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{erdos_renyi_vs_30kmnn}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{betweenness_er_30_conf.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{extras/distribucion_strength_beta_1.pdf}
+\end{figure}
+\end{frame}
+
+\begin{frame}\frametitle{Contenido extra}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{extras/distribucion_strength_beta_4.pdf}
 \end{figure}
 \end{frame}
 
